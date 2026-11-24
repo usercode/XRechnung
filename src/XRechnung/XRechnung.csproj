@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+	  <TargetFramework>net10.0</TargetFramework>
+	  <Nullable>enable</Nullable>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Authors>usercode</Authors>
+	  <PackageProjectUrl>https://github.com/usercode/ImageWizard</PackageProjectUrl>
+	  <Description>XRechnung</Description>
+	  <PublishRepositoryUrl>true</PublishRepositoryUrl>
+	  <PackageIcon>logo.png</PackageIcon>
+	  <PackageReadmeFile>readme.md</PackageReadmeFile>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <PackageTags>image processing</PackageTags>
+	  <IncludeSymbols>true</IncludeSymbols>
+	  <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	  <MinVerTagPrefix>v</MinVerTagPrefix>
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+	  <NoWarn>CS1591</NoWarn>
+	  <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="11.0.100" PrivateAssets="All" />
+		<PackageReference Include="MinVer" Version="8.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	
+</Project>
