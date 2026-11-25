@@ -1,8 +1,8 @@
 ﻿using System.Xml.Linq;
 
-namespace XRechnung;
+namespace XRechnung.UBL;
 
-public static class UblNamespaces
+internal static class UblNamespaces
 {
     public static readonly XNamespace Invoice = "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2";
     public static readonly XNamespace CommonBasicComponents = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2";
