@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace XRechnung;
+﻿namespace XRechnung;
 
 /// <summary>
 /// Mit diesem Datentyp wird die Mengenangabe zu einem Einzelposten abgebildet. Er basiert auf dem Typ „Quantity.Type“, wie in ISO 15000-5:2014 Anhang B definiert.
@@ -19,6 +17,6 @@ public record class Quantity
 
     public override string ToString()
     {
-        return Value.ToString(CultureInfo.InvariantCulture);
+        return FormattableString.Invariant($"{Value} {UnitCode}");
     }
 }

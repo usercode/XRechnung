@@ -1,8788 +1,8792 @@
 namespace XRechnung;
 
 /// <summary>
-/// UN/ECE Recommendation N°20 unit of measure codes used in international trade.
+/// Codes for Units of Measure Used in International Trade (UN/ECE Recommendation N°20)
+/// <br /><br />
+/// ie Codeliste basiert auf UN/ECE Recommendation N°20. Als gelöscht oder veraltet markierte Codes werden nicht in die Codeliste übernommen. Die Codeliste kann im Zusammenhang mit EN16931-1:2017 und der darauf basierenden XRechnung (Standard und Extension) verwendet werden. Für Verwendungshinweise in diesem Kontext siehe: EN16931-3-2, 3-3, 3-4 Annex A bzw. die XRechnung-Spezifikation. Des Weiteren enthält die Codeliste alle Einträge, die für die Nutzung im Kontext des Standards XBestellung benötigt werden.
+/// <br /><br />
+/// https://www.xrepository.de/details/urn:xoev-de:kosit:codeliste:rec20_3
 /// </summary>
 public record class QuantityCode : Code
 {
     /// <summary>
     /// group
     /// </summary>
-    public static readonly QuantityCode Group = new QuantityCode { Value = "10" };
+    public static QuantityCode Group => new() { Value = "10" };
 
     /// <summary>
     /// outfit
     /// </summary>
-    public static readonly QuantityCode Outfit = new QuantityCode { Value = "11" };
+    public static QuantityCode Outfit => new() { Value = "11" };
 
     /// <summary>
     /// ration
     /// </summary>
-    public static readonly QuantityCode Ration = new QuantityCode { Value = "13" };
+    public static QuantityCode Ration => new() { Value = "13" };
 
     /// <summary>
     /// shot
     /// </summary>
-    public static readonly QuantityCode Shot = new QuantityCode { Value = "14" };
+    public static QuantityCode Shot => new() { Value = "14" };
 
     /// <summary>
     /// stick, military
     /// </summary>
-    public static readonly QuantityCode StickMilitary = new QuantityCode { Value = "15" };
+    public static QuantityCode StickMilitary => new() { Value = "15" };
 
     /// <summary>
     /// twenty foot container
     /// </summary>
-    public static readonly QuantityCode TwentyFootContainer = new QuantityCode { Value = "20" };
+    public static QuantityCode TwentyFootContainer => new() { Value = "20" };
 
     /// <summary>
     /// forty foot container
     /// </summary>
-    public static readonly QuantityCode FortyFootContainer = new QuantityCode { Value = "21" };
+    public static QuantityCode FortyFootContainer => new() { Value = "21" };
 
     /// <summary>
     /// decilitre per gram
     /// </summary>
-    public static readonly QuantityCode DecilitrePerGram = new QuantityCode { Value = "22" };
+    public static QuantityCode DecilitrePerGram => new() { Value = "22" };
 
     /// <summary>
     /// gram per cubic centimetre
     /// </summary>
-    public static readonly QuantityCode GramPerCubicCentimetre = new QuantityCode { Value = "23" };
+    public static QuantityCode GramPerCubicCentimetre => new() { Value = "23" };
 
     /// <summary>
     /// theoretical pound
     /// </summary>
-    public static readonly QuantityCode TheoreticalPound = new QuantityCode { Value = "24" };
+    public static QuantityCode TheoreticalPound => new() { Value = "24" };
 
     /// <summary>
     /// gram per square centimetre
     /// </summary>
-    public static readonly QuantityCode GramPerSquareCentimetre = new QuantityCode { Value = "25" };
+    public static QuantityCode GramPerSquareCentimetre => new() { Value = "25" };
 
     /// <summary>
     /// theoretical ton
     /// </summary>
-    public static readonly QuantityCode TheoreticalTon = new QuantityCode { Value = "27" };
+    public static QuantityCode TheoreticalTon => new() { Value = "27" };
 
     /// <summary>
     /// kilogram per square metre
     /// </summary>
-    public static readonly QuantityCode KilogramPerSquareMetre = new QuantityCode { Value = "28" };
+    public static QuantityCode KilogramPerSquareMetre => new() { Value = "28" };
 
     /// <summary>
     /// kilopascal square metre per gram
     /// </summary>
-    public static readonly QuantityCode KilopascalSquareMetrePerGram = new QuantityCode { Value = "33" };
+    public static QuantityCode KilopascalSquareMetrePerGram => new() { Value = "33" };
 
     /// <summary>
     /// kilopascal per millimetre
     /// </summary>
-    public static readonly QuantityCode KilopascalPerMillimetre = new QuantityCode { Value = "34" };
+    public static QuantityCode KilopascalPerMillimetre => new() { Value = "34" };
 
     /// <summary>
     /// millilitre per square centimetre second
     /// </summary>
-    public static readonly QuantityCode MillilitrePerSquareCentimetreSecond = new QuantityCode { Value = "35" };
+    public static QuantityCode MillilitrePerSquareCentimetreSecond => new() { Value = "35" };
 
     /// <summary>
     /// ounce per square foot
     /// </summary>
-    public static readonly QuantityCode OuncePerSquareFoot = new QuantityCode { Value = "37" };
+    public static QuantityCode OuncePerSquareFoot => new() { Value = "37" };
 
     /// <summary>
     /// ounce per square foot per 0,01inch
     /// </summary>
-    public static readonly QuantityCode OuncePerSquareFootPer001inch = new QuantityCode { Value = "38" };
+    public static QuantityCode OuncePerSquareFootPer001inch => new() { Value = "38" };
 
     /// <summary>
     /// millilitre per second
     /// </summary>
-    public static readonly QuantityCode MillilitrePerSecond = new QuantityCode { Value = "40" };
+    public static QuantityCode MillilitrePerSecond => new() { Value = "40" };
 
     /// <summary>
     /// millilitre per minute
     /// </summary>
-    public static readonly QuantityCode MillilitrePerMinute = new QuantityCode { Value = "41" };
+    public static QuantityCode MillilitrePerMinute => new() { Value = "41" };
 
     /// <summary>
     /// sitas
     /// </summary>
-    public static readonly QuantityCode Sitas = new QuantityCode { Value = "56" };
+    public static QuantityCode Sitas => new() { Value = "56" };
 
     /// <summary>
     /// mesh
     /// </summary>
-    public static readonly QuantityCode Mesh = new QuantityCode { Value = "57" };
+    public static QuantityCode Mesh => new() { Value = "57" };
 
     /// <summary>
     /// net kilogram
     /// </summary>
-    public static readonly QuantityCode NetKilogram = new QuantityCode { Value = "58" };
+    public static QuantityCode NetKilogram => new() { Value = "58" };
 
     /// <summary>
     /// part per million
     /// </summary>
-    public static readonly QuantityCode PartPerMillion = new QuantityCode { Value = "59" };
+    public static QuantityCode PartPerMillion => new() { Value = "59" };
 
     /// <summary>
     /// percent weight
     /// </summary>
-    public static readonly QuantityCode PercentWeight = new QuantityCode { Value = "60" };
+    public static QuantityCode PercentWeight => new() { Value = "60" };
 
     /// <summary>
     /// part per billion (US)
     /// </summary>
-    public static readonly QuantityCode PartPerBillionUS = new QuantityCode { Value = "61" };
+    public static QuantityCode PartPerBillionUS => new() { Value = "61" };
 
     /// <summary>
     /// millipascal
     /// </summary>
-    public static readonly QuantityCode Millipascal = new QuantityCode { Value = "74" };
+    public static QuantityCode Millipascal => new() { Value = "74" };
 
     /// <summary>
     /// milli-inch
     /// </summary>
-    public static readonly QuantityCode MilliInch = new QuantityCode { Value = "77" };
+    public static QuantityCode MilliInch => new() { Value = "77" };
 
     /// <summary>
     /// pound per square inch absolute
     /// </summary>
-    public static readonly QuantityCode PoundPerSquareInchAbsolute = new QuantityCode { Value = "80" };
+    public static QuantityCode PoundPerSquareInchAbsolute => new() { Value = "80" };
 
     /// <summary>
     /// henry
     /// </summary>
-    public static readonly QuantityCode Henry = new QuantityCode { Value = "81" };
+    public static QuantityCode Henry => new() { Value = "81" };
 
     /// <summary>
     /// foot pound-force
     /// </summary>
-    public static readonly QuantityCode FootPoundForce = new QuantityCode { Value = "85" };
+    public static QuantityCode FootPoundForce => new() { Value = "85" };
 
     /// <summary>
     /// pound per cubic foot
     /// </summary>
-    public static readonly QuantityCode PoundPerCubicFoot = new QuantityCode { Value = "87" };
+    public static QuantityCode PoundPerCubicFoot => new() { Value = "87" };
 
     /// <summary>
     /// poise
     /// </summary>
-    public static readonly QuantityCode Poise = new QuantityCode { Value = "89" };
+    public static QuantityCode Poise => new() { Value = "89" };
 
     /// <summary>
     /// stokes
     /// </summary>
-    public static readonly QuantityCode Stokes = new QuantityCode { Value = "91" };
+    public static QuantityCode Stokes => new() { Value = "91" };
 
     /// <summary>
     /// fixed rate
     /// </summary>
-    public static readonly QuantityCode FixedRate = new QuantityCode { Value = "1I" };
+    public static QuantityCode FixedRate => new() { Value = "1I" };
 
     /// <summary>
     /// radian per second
     /// </summary>
-    public static readonly QuantityCode RadianPerSecond = new QuantityCode { Value = "2A" };
+    public static QuantityCode RadianPerSecond => new() { Value = "2A" };
 
     /// <summary>
     /// radian per second squared
     /// </summary>
-    public static readonly QuantityCode RadianPerSecondSquared = new QuantityCode { Value = "2B" };
+    public static QuantityCode RadianPerSecondSquared => new() { Value = "2B" };
 
     /// <summary>
     /// roentgen
     /// </summary>
-    public static readonly QuantityCode Roentgen = new QuantityCode { Value = "2C" };
+    public static QuantityCode Roentgen => new() { Value = "2C" };
 
     /// <summary>
     /// volt AC
     /// </summary>
-    public static readonly QuantityCode VoltAC = new QuantityCode { Value = "2G" };
+    public static QuantityCode VoltAC => new() { Value = "2G" };
 
     /// <summary>
     /// volt DC
     /// </summary>
-    public static readonly QuantityCode VoltDC = new QuantityCode { Value = "2H" };
+    public static QuantityCode VoltDC => new() { Value = "2H" };
 
     /// <summary>
     /// British thermal unit (international table) per hour
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerHour = new QuantityCode { Value = "2I" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerHour => new() { Value = "2I" };
 
     /// <summary>
     /// cubic centimetre per second
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerSecond = new QuantityCode { Value = "2J" };
+    public static QuantityCode CubicCentimetrePerSecond => new() { Value = "2J" };
 
     /// <summary>
     /// cubic foot per hour
     /// </summary>
-    public static readonly QuantityCode CubicFootPerHour = new QuantityCode { Value = "2K" };
+    public static QuantityCode CubicFootPerHour => new() { Value = "2K" };
 
     /// <summary>
     /// cubic foot per minute
     /// </summary>
-    public static readonly QuantityCode CubicFootPerMinute = new QuantityCode { Value = "2L" };
+    public static QuantityCode CubicFootPerMinute => new() { Value = "2L" };
 
     /// <summary>
     /// centimetre per second
     /// </summary>
-    public static readonly QuantityCode CentimetrePerSecond = new QuantityCode { Value = "2M" };
+    public static QuantityCode CentimetrePerSecond => new() { Value = "2M" };
 
     /// <summary>
     /// decibel
     /// </summary>
-    public static readonly QuantityCode Decibel = new QuantityCode { Value = "2N" };
+    public static QuantityCode Decibel => new() { Value = "2N" };
 
     /// <summary>
     /// kilobyte
     /// </summary>
-    public static readonly QuantityCode Kilobyte = new QuantityCode { Value = "2P" };
+    public static QuantityCode Kilobyte => new() { Value = "2P" };
 
     /// <summary>
     /// kilobecquerel
     /// </summary>
-    public static readonly QuantityCode Kilobecquerel = new QuantityCode { Value = "2Q" };
+    public static QuantityCode Kilobecquerel => new() { Value = "2Q" };
 
     /// <summary>
     /// kilocurie
     /// </summary>
-    public static readonly QuantityCode Kilocurie = new QuantityCode { Value = "2R" };
+    public static QuantityCode Kilocurie => new() { Value = "2R" };
 
     /// <summary>
     /// megagram
     /// </summary>
-    public static readonly QuantityCode Megagram = new QuantityCode { Value = "2U" };
+    public static QuantityCode Megagram => new() { Value = "2U" };
 
     /// <summary>
     /// metre per minute
     /// </summary>
-    public static readonly QuantityCode MetrePerMinute = new QuantityCode { Value = "2X" };
+    public static QuantityCode MetrePerMinute => new() { Value = "2X" };
 
     /// <summary>
     /// milliroentgen
     /// </summary>
-    public static readonly QuantityCode Milliroentgen = new QuantityCode { Value = "2Y" };
+    public static QuantityCode Milliroentgen => new() { Value = "2Y" };
 
     /// <summary>
     /// millivolt
     /// </summary>
-    public static readonly QuantityCode Millivolt = new QuantityCode { Value = "2Z" };
+    public static QuantityCode Millivolt => new() { Value = "2Z" };
 
     /// <summary>
     /// megajoule
     /// </summary>
-    public static readonly QuantityCode Megajoule = new QuantityCode { Value = "3B" };
+    public static QuantityCode Megajoule => new() { Value = "3B" };
 
     /// <summary>
     /// manmonth
     /// </summary>
-    public static readonly QuantityCode Manmonth = new QuantityCode { Value = "3C" };
+    public static QuantityCode Manmonth => new() { Value = "3C" };
 
     /// <summary>
     /// centistokes
     /// </summary>
-    public static readonly QuantityCode Centistokes = new QuantityCode { Value = "4C" };
+    public static QuantityCode Centistokes => new() { Value = "4C" };
 
     /// <summary>
     /// microlitre
     /// </summary>
-    public static readonly QuantityCode Microlitre = new QuantityCode { Value = "4G" };
+    public static QuantityCode Microlitre => new() { Value = "4G" };
 
     /// <summary>
     /// micrometre (micron)
     /// </summary>
-    public static readonly QuantityCode MicrometreMicron = new QuantityCode { Value = "4H" };
+    public static QuantityCode MicrometreMicron => new() { Value = "4H" };
 
     /// <summary>
     /// milliampere
     /// </summary>
-    public static readonly QuantityCode Milliampere = new QuantityCode { Value = "4K" };
+    public static QuantityCode Milliampere => new() { Value = "4K" };
 
     /// <summary>
     /// megabyte
     /// </summary>
-    public static readonly QuantityCode Megabyte = new QuantityCode { Value = "4L" };
+    public static QuantityCode Megabyte => new() { Value = "4L" };
 
     /// <summary>
     /// milligram per hour
     /// </summary>
-    public static readonly QuantityCode MilligramPerHour = new QuantityCode { Value = "4M" };
+    public static QuantityCode MilligramPerHour => new() { Value = "4M" };
 
     /// <summary>
     /// megabecquerel
     /// </summary>
-    public static readonly QuantityCode Megabecquerel = new QuantityCode { Value = "4N" };
+    public static QuantityCode Megabecquerel => new() { Value = "4N" };
 
     /// <summary>
     /// microfarad
     /// </summary>
-    public static readonly QuantityCode Microfarad = new QuantityCode { Value = "4O" };
+    public static QuantityCode Microfarad => new() { Value = "4O" };
 
     /// <summary>
     /// newton per metre
     /// </summary>
-    public static readonly QuantityCode NewtonPerMetre = new QuantityCode { Value = "4P" };
+    public static QuantityCode NewtonPerMetre => new() { Value = "4P" };
 
     /// <summary>
     /// ounce inch
     /// </summary>
-    public static readonly QuantityCode OunceInch = new QuantityCode { Value = "4Q" };
+    public static QuantityCode OunceInch => new() { Value = "4Q" };
 
     /// <summary>
     /// ounce foot
     /// </summary>
-    public static readonly QuantityCode OunceFoot = new QuantityCode { Value = "4R" };
+    public static QuantityCode OunceFoot => new() { Value = "4R" };
 
     /// <summary>
     /// picofarad
     /// </summary>
-    public static readonly QuantityCode Picofarad = new QuantityCode { Value = "4T" };
+    public static QuantityCode Picofarad => new() { Value = "4T" };
 
     /// <summary>
     /// pound per hour
     /// </summary>
-    public static readonly QuantityCode PoundPerHour = new QuantityCode { Value = "4U" };
+    public static QuantityCode PoundPerHour => new() { Value = "4U" };
 
     /// <summary>
     /// ton (US) per hour
     /// </summary>
-    public static readonly QuantityCode TonUSPerHour = new QuantityCode { Value = "4W" };
+    public static QuantityCode TonUSPerHour => new() { Value = "4W" };
 
     /// <summary>
     /// kilolitre per hour
     /// </summary>
-    public static readonly QuantityCode KilolitrePerHour = new QuantityCode { Value = "4X" };
+    public static QuantityCode KilolitrePerHour => new() { Value = "4X" };
 
     /// <summary>
     /// barrel (US) per minute
     /// </summary>
-    public static readonly QuantityCode BarrelUSPerMinute = new QuantityCode { Value = "5A" };
+    public static QuantityCode BarrelUSPerMinute => new() { Value = "5A" };
 
     /// <summary>
     /// batch
     /// </summary>
-    public static readonly QuantityCode Batch = new QuantityCode { Value = "5B" };
+    public static QuantityCode Batch => new() { Value = "5B" };
 
     /// <summary>
     /// MMSCF/day
     /// </summary>
-    public static readonly QuantityCode MMSCFDay = new QuantityCode { Value = "5E" };
+    public static QuantityCode MMSCFDay => new() { Value = "5E" };
 
     /// <summary>
     /// hydraulic horse power
     /// </summary>
-    public static readonly QuantityCode HydraulicHorsePower = new QuantityCode { Value = "5J" };
+    public static QuantityCode HydraulicHorsePower => new() { Value = "5J" };
 
     /// <summary>
     /// ampere square metre per joule second
     /// </summary>
-    public static readonly QuantityCode AmpereSquareMetrePerJouleSecond = new QuantityCode { Value = "A10" };
+    public static QuantityCode AmpereSquareMetrePerJouleSecond => new() { Value = "A10" };
 
     /// <summary>
     /// angstrom
     /// </summary>
-    public static readonly QuantityCode Angstrom = new QuantityCode { Value = "A11" };
+    public static QuantityCode Angstrom => new() { Value = "A11" };
 
     /// <summary>
     /// astronomical unit
     /// </summary>
-    public static readonly QuantityCode AstronomicalUnit = new QuantityCode { Value = "A12" };
+    public static QuantityCode AstronomicalUnit => new() { Value = "A12" };
 
     /// <summary>
     /// attojoule
     /// </summary>
-    public static readonly QuantityCode Attojoule = new QuantityCode { Value = "A13" };
+    public static QuantityCode Attojoule => new() { Value = "A13" };
 
     /// <summary>
     /// barn
     /// </summary>
-    public static readonly QuantityCode Barn = new QuantityCode { Value = "A14" };
+    public static QuantityCode Barn => new() { Value = "A14" };
 
     /// <summary>
     /// barn per electronvolt
     /// </summary>
-    public static readonly QuantityCode BarnPerElectronvolt = new QuantityCode { Value = "A15" };
+    public static QuantityCode BarnPerElectronvolt => new() { Value = "A15" };
 
     /// <summary>
     /// barn per steradian electronvolt
     /// </summary>
-    public static readonly QuantityCode BarnPerSteradianElectronvolt = new QuantityCode { Value = "A16" };
+    public static QuantityCode BarnPerSteradianElectronvolt => new() { Value = "A16" };
 
     /// <summary>
     /// barn per steradian
     /// </summary>
-    public static readonly QuantityCode BarnPerSteradian = new QuantityCode { Value = "A17" };
+    public static QuantityCode BarnPerSteradian => new() { Value = "A17" };
 
     /// <summary>
     /// becquerel per kilogram
     /// </summary>
-    public static readonly QuantityCode BecquerelPerKilogram = new QuantityCode { Value = "A18" };
+    public static QuantityCode BecquerelPerKilogram => new() { Value = "A18" };
 
     /// <summary>
     /// becquerel per cubic metre
     /// </summary>
-    public static readonly QuantityCode BecquerelPerCubicMetre = new QuantityCode { Value = "A19" };
+    public static QuantityCode BecquerelPerCubicMetre => new() { Value = "A19" };
 
     /// <summary>
     /// ampere per centimetre
     /// </summary>
-    public static readonly QuantityCode AmperePerCentimetre = new QuantityCode { Value = "A2" };
+    public static QuantityCode AmperePerCentimetre => new() { Value = "A2" };
 
     /// <summary>
     /// British thermal unit (international table) per second square foot degree Rankine
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerSecondSquareFootDegreeRankine = new QuantityCode { Value = "A20" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerSecondSquareFootDegreeRankine => new() { Value = "A20" };
 
     /// <summary>
     /// British thermal unit (international table) per pound degree Rankine
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerPoundDegreeRankine = new QuantityCode { Value = "A21" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerPoundDegreeRankine => new() { Value = "A21" };
 
     /// <summary>
     /// British thermal unit (international table) per second foot degree Rankine
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerSecondFootDegreeRankine = new QuantityCode { Value = "A22" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerSecondFootDegreeRankine => new() { Value = "A22" };
 
     /// <summary>
     /// British thermal unit (international table) per hour square foot degree Rankine
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerHourSquareFootDegreeRankine = new QuantityCode { Value = "A23" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerHourSquareFootDegreeRankine => new() { Value = "A23" };
 
     /// <summary>
     /// candela per square metre
     /// </summary>
-    public static readonly QuantityCode CandelaPerSquareMetre = new QuantityCode { Value = "A24" };
+    public static QuantityCode CandelaPerSquareMetre => new() { Value = "A24" };
 
     /// <summary>
     /// coulomb metre
     /// </summary>
-    public static readonly QuantityCode CoulombMetre = new QuantityCode { Value = "A26" };
+    public static QuantityCode CoulombMetre => new() { Value = "A26" };
 
     /// <summary>
     /// coulomb metre squared per volt
     /// </summary>
-    public static readonly QuantityCode CoulombMetreSquaredPerVolt = new QuantityCode { Value = "A27" };
+    public static QuantityCode CoulombMetreSquaredPerVolt => new() { Value = "A27" };
 
     /// <summary>
     /// coulomb per cubic centimetre
     /// </summary>
-    public static readonly QuantityCode CoulombPerCubicCentimetre = new QuantityCode { Value = "A28" };
+    public static QuantityCode CoulombPerCubicCentimetre => new() { Value = "A28" };
 
     /// <summary>
     /// coulomb per cubic metre
     /// </summary>
-    public static readonly QuantityCode CoulombPerCubicMetre = new QuantityCode { Value = "A29" };
+    public static QuantityCode CoulombPerCubicMetre => new() { Value = "A29" };
 
     /// <summary>
     /// ampere per millimetre
     /// </summary>
-    public static readonly QuantityCode AmperePerMillimetre = new QuantityCode { Value = "A3" };
+    public static QuantityCode AmperePerMillimetre => new() { Value = "A3" };
 
     /// <summary>
     /// coulomb per cubic millimetre
     /// </summary>
-    public static readonly QuantityCode CoulombPerCubicMillimetre = new QuantityCode { Value = "A30" };
+    public static QuantityCode CoulombPerCubicMillimetre => new() { Value = "A30" };
 
     /// <summary>
     /// coulomb per kilogram second
     /// </summary>
-    public static readonly QuantityCode CoulombPerKilogramSecond = new QuantityCode { Value = "A31" };
+    public static QuantityCode CoulombPerKilogramSecond => new() { Value = "A31" };
 
     /// <summary>
     /// coulomb per mole
     /// </summary>
-    public static readonly QuantityCode CoulombPerMole = new QuantityCode { Value = "A32" };
+    public static QuantityCode CoulombPerMole => new() { Value = "A32" };
 
     /// <summary>
     /// coulomb per square centimetre
     /// </summary>
-    public static readonly QuantityCode CoulombPerSquareCentimetre = new QuantityCode { Value = "A33" };
+    public static QuantityCode CoulombPerSquareCentimetre => new() { Value = "A33" };
 
     /// <summary>
     /// coulomb per square metre
     /// </summary>
-    public static readonly QuantityCode CoulombPerSquareMetre = new QuantityCode { Value = "A34" };
+    public static QuantityCode CoulombPerSquareMetre => new() { Value = "A34" };
 
     /// <summary>
     /// coulomb per square millimetre
     /// </summary>
-    public static readonly QuantityCode CoulombPerSquareMillimetre = new QuantityCode { Value = "A35" };
+    public static QuantityCode CoulombPerSquareMillimetre => new() { Value = "A35" };
 
     /// <summary>
     /// cubic centimetre per mole
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerMole = new QuantityCode { Value = "A36" };
+    public static QuantityCode CubicCentimetrePerMole => new() { Value = "A36" };
 
     /// <summary>
     /// cubic decimetre per mole
     /// </summary>
-    public static readonly QuantityCode CubicDecimetrePerMole = new QuantityCode { Value = "A37" };
+    public static QuantityCode CubicDecimetrePerMole => new() { Value = "A37" };
 
     /// <summary>
     /// cubic metre per coulomb
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerCoulomb = new QuantityCode { Value = "A38" };
+    public static QuantityCode CubicMetrePerCoulomb => new() { Value = "A38" };
 
     /// <summary>
     /// cubic metre per kilogram
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerKilogram = new QuantityCode { Value = "A39" };
+    public static QuantityCode CubicMetrePerKilogram => new() { Value = "A39" };
 
     /// <summary>
     /// ampere per square centimetre
     /// </summary>
-    public static readonly QuantityCode AmperePerSquareCentimetre = new QuantityCode { Value = "A4" };
+    public static QuantityCode AmperePerSquareCentimetre => new() { Value = "A4" };
 
     /// <summary>
     /// cubic metre per mole
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerMole = new QuantityCode { Value = "A40" };
+    public static QuantityCode CubicMetrePerMole => new() { Value = "A40" };
 
     /// <summary>
     /// ampere per square metre
     /// </summary>
-    public static readonly QuantityCode AmperePerSquareMetre = new QuantityCode { Value = "A41" };
+    public static QuantityCode AmperePerSquareMetre => new() { Value = "A41" };
 
     /// <summary>
     /// curie per kilogram
     /// </summary>
-    public static readonly QuantityCode CuriePerKilogram = new QuantityCode { Value = "A42" };
+    public static QuantityCode CuriePerKilogram => new() { Value = "A42" };
 
     /// <summary>
     /// deadweight tonnage
     /// </summary>
-    public static readonly QuantityCode DeadweightTonnage = new QuantityCode { Value = "A43" };
+    public static QuantityCode DeadweightTonnage => new() { Value = "A43" };
 
     /// <summary>
     /// decalitre
     /// </summary>
-    public static readonly QuantityCode Decalitre = new QuantityCode { Value = "A44" };
+    public static QuantityCode Decalitre => new() { Value = "A44" };
 
     /// <summary>
     /// decametre
     /// </summary>
-    public static readonly QuantityCode Decametre = new QuantityCode { Value = "A45" };
+    public static QuantityCode Decametre => new() { Value = "A45" };
 
     /// <summary>
     /// decitex
     /// </summary>
-    public static readonly QuantityCode Decitex = new QuantityCode { Value = "A47" };
+    public static QuantityCode Decitex => new() { Value = "A47" };
 
     /// <summary>
     /// degree Rankine
     /// </summary>
-    public static readonly QuantityCode DegreeRankine = new QuantityCode { Value = "A48" };
+    public static QuantityCode DegreeRankine => new() { Value = "A48" };
 
     /// <summary>
     /// denier
     /// </summary>
-    public static readonly QuantityCode Denier = new QuantityCode { Value = "A49" };
+    public static QuantityCode Denier => new() { Value = "A49" };
 
     /// <summary>
     /// ampere square metre
     /// </summary>
-    public static readonly QuantityCode AmpereSquareMetre = new QuantityCode { Value = "A5" };
+    public static QuantityCode AmpereSquareMetre => new() { Value = "A5" };
 
     /// <summary>
     /// electronvolt
     /// </summary>
-    public static readonly QuantityCode Electronvolt = new QuantityCode { Value = "A53" };
+    public static QuantityCode Electronvolt => new() { Value = "A53" };
 
     /// <summary>
     /// electronvolt per metre
     /// </summary>
-    public static readonly QuantityCode ElectronvoltPerMetre = new QuantityCode { Value = "A54" };
+    public static QuantityCode ElectronvoltPerMetre => new() { Value = "A54" };
 
     /// <summary>
     /// electronvolt square metre
     /// </summary>
-    public static readonly QuantityCode ElectronvoltSquareMetre = new QuantityCode { Value = "A55" };
+    public static QuantityCode ElectronvoltSquareMetre => new() { Value = "A55" };
 
     /// <summary>
     /// electronvolt square metre per kilogram
     /// </summary>
-    public static readonly QuantityCode ElectronvoltSquareMetrePerKilogram = new QuantityCode { Value = "A56" };
+    public static QuantityCode ElectronvoltSquareMetrePerKilogram => new() { Value = "A56" };
 
     /// <summary>
     /// 8-part cloud cover
     /// </summary>
-    public static readonly QuantityCode Code8PartCloudCover = new QuantityCode { Value = "A59" };
+    public static QuantityCode Code8PartCloudCover => new() { Value = "A59" };
 
     /// <summary>
     /// ampere per square metre kelvin squared
     /// </summary>
-    public static readonly QuantityCode AmperePerSquareMetreKelvinSquared = new QuantityCode { Value = "A6" };
+    public static QuantityCode AmperePerSquareMetreKelvinSquared => new() { Value = "A6" };
 
     /// <summary>
     /// exajoule
     /// </summary>
-    public static readonly QuantityCode Exajoule = new QuantityCode { Value = "A68" };
+    public static QuantityCode Exajoule => new() { Value = "A68" };
 
     /// <summary>
     /// farad per metre
     /// </summary>
-    public static readonly QuantityCode FaradPerMetre = new QuantityCode { Value = "A69" };
+    public static QuantityCode FaradPerMetre => new() { Value = "A69" };
 
     /// <summary>
     /// ampere per square millimetre
     /// </summary>
-    public static readonly QuantityCode AmperePerSquareMillimetre = new QuantityCode { Value = "A7" };
+    public static QuantityCode AmperePerSquareMillimetre => new() { Value = "A7" };
 
     /// <summary>
     /// femtojoule
     /// </summary>
-    public static readonly QuantityCode Femtojoule = new QuantityCode { Value = "A70" };
+    public static QuantityCode Femtojoule => new() { Value = "A70" };
 
     /// <summary>
     /// femtometre
     /// </summary>
-    public static readonly QuantityCode Femtometre = new QuantityCode { Value = "A71" };
+    public static QuantityCode Femtometre => new() { Value = "A71" };
 
     /// <summary>
     /// foot per second squared
     /// </summary>
-    public static readonly QuantityCode FootPerSecondSquared = new QuantityCode { Value = "A73" };
+    public static QuantityCode FootPerSecondSquared => new() { Value = "A73" };
 
     /// <summary>
     /// foot pound-force per second
     /// </summary>
-    public static readonly QuantityCode FootPoundForcePerSecond = new QuantityCode { Value = "A74" };
+    public static QuantityCode FootPoundForcePerSecond => new() { Value = "A74" };
 
     /// <summary>
     /// freight ton
     /// </summary>
-    public static readonly QuantityCode FreightTon = new QuantityCode { Value = "A75" };
+    public static QuantityCode FreightTon => new() { Value = "A75" };
 
     /// <summary>
     /// gal
     /// </summary>
-    public static readonly QuantityCode Gal = new QuantityCode { Value = "A76" };
+    public static QuantityCode Gal => new() { Value = "A76" };
 
     /// <summary>
     /// ampere second
     /// </summary>
-    public static readonly QuantityCode AmpereSecond = new QuantityCode { Value = "A8" };
+    public static QuantityCode AmpereSecond => new() { Value = "A8" };
 
     /// <summary>
     /// gigacoulomb per cubic metre
     /// </summary>
-    public static readonly QuantityCode GigacoulombPerCubicMetre = new QuantityCode { Value = "A84" };
+    public static QuantityCode GigacoulombPerCubicMetre => new() { Value = "A84" };
 
     /// <summary>
     /// gigaelectronvolt
     /// </summary>
-    public static readonly QuantityCode Gigaelectronvolt = new QuantityCode { Value = "A85" };
+    public static QuantityCode Gigaelectronvolt => new() { Value = "A85" };
 
     /// <summary>
     /// gigahertz
     /// </summary>
-    public static readonly QuantityCode Gigahertz = new QuantityCode { Value = "A86" };
+    public static QuantityCode Gigahertz => new() { Value = "A86" };
 
     /// <summary>
     /// gigaohm
     /// </summary>
-    public static readonly QuantityCode Gigaohm = new QuantityCode { Value = "A87" };
+    public static QuantityCode Gigaohm => new() { Value = "A87" };
 
     /// <summary>
     /// gigaohm metre
     /// </summary>
-    public static readonly QuantityCode GigaohmMetre = new QuantityCode { Value = "A88" };
+    public static QuantityCode GigaohmMetre => new() { Value = "A88" };
 
     /// <summary>
     /// gigapascal
     /// </summary>
-    public static readonly QuantityCode Gigapascal = new QuantityCode { Value = "A89" };
+    public static QuantityCode Gigapascal => new() { Value = "A89" };
 
     /// <summary>
     /// rate
     /// </summary>
-    public static readonly QuantityCode Rate = new QuantityCode { Value = "A9" };
+    public static QuantityCode Rate => new() { Value = "A9" };
 
     /// <summary>
     /// gigawatt
     /// </summary>
-    public static readonly QuantityCode Gigawatt = new QuantityCode { Value = "A90" };
+    public static QuantityCode Gigawatt => new() { Value = "A90" };
 
     /// <summary>
     /// gon
     /// </summary>
-    public static readonly QuantityCode Gon = new QuantityCode { Value = "A91" };
+    public static QuantityCode Gon => new() { Value = "A91" };
 
     /// <summary>
     /// gram per cubic metre
     /// </summary>
-    public static readonly QuantityCode GramPerCubicMetre = new QuantityCode { Value = "A93" };
+    public static QuantityCode GramPerCubicMetre => new() { Value = "A93" };
 
     /// <summary>
     /// gram per mole
     /// </summary>
-    public static readonly QuantityCode GramPerMole = new QuantityCode { Value = "A94" };
+    public static QuantityCode GramPerMole => new() { Value = "A94" };
 
     /// <summary>
     /// gray
     /// </summary>
-    public static readonly QuantityCode Gray = new QuantityCode { Value = "A95" };
+    public static QuantityCode Gray => new() { Value = "A95" };
 
     /// <summary>
     /// gray per second
     /// </summary>
-    public static readonly QuantityCode GrayPerSecond = new QuantityCode { Value = "A96" };
+    public static QuantityCode GrayPerSecond => new() { Value = "A96" };
 
     /// <summary>
     /// hectopascal
     /// </summary>
-    public static readonly QuantityCode Hectopascal = new QuantityCode { Value = "A97" };
+    public static QuantityCode Hectopascal => new() { Value = "A97" };
 
     /// <summary>
     /// henry per metre
     /// </summary>
-    public static readonly QuantityCode HenryPerMetre = new QuantityCode { Value = "A98" };
+    public static QuantityCode HenryPerMetre => new() { Value = "A98" };
 
     /// <summary>
     /// bit
     /// </summary>
-    public static readonly QuantityCode Bit = new QuantityCode { Value = "A99" };
+    public static QuantityCode Bit => new() { Value = "A99" };
 
     /// <summary>
     /// ball
     /// </summary>
-    public static readonly QuantityCode Ball = new QuantityCode { Value = "AA" };
+    public static QuantityCode Ball => new() { Value = "AA" };
 
     /// <summary>
     /// bulk pack
     /// </summary>
-    public static readonly QuantityCode BulkPack = new QuantityCode { Value = "AB" };
+    public static QuantityCode BulkPack => new() { Value = "AB" };
 
     /// <summary>
     /// acre
     /// </summary>
-    public static readonly QuantityCode Acre = new QuantityCode { Value = "ACR" };
+    public static QuantityCode Acre => new() { Value = "ACR" };
 
     /// <summary>
     /// activity
     /// </summary>
-    public static readonly QuantityCode Activity = new QuantityCode { Value = "ACT" };
+    public static QuantityCode Activity => new() { Value = "ACT" };
 
     /// <summary>
     /// byte
     /// </summary>
-    public static readonly QuantityCode Byte = new QuantityCode { Value = "AD" };
+    public static QuantityCode Byte => new() { Value = "AD" };
 
     /// <summary>
     /// ampere per metre
     /// </summary>
-    public static readonly QuantityCode AmperePerMetre = new QuantityCode { Value = "AE" };
+    public static QuantityCode AmperePerMetre => new() { Value = "AE" };
 
     /// <summary>
     /// additional minute
     /// </summary>
-    public static readonly QuantityCode AdditionalMinute = new QuantityCode { Value = "AH" };
+    public static QuantityCode AdditionalMinute => new() { Value = "AH" };
 
     /// <summary>
     /// average minute per call
     /// </summary>
-    public static readonly QuantityCode AverageMinutePerCall = new QuantityCode { Value = "AI" };
+    public static QuantityCode AverageMinutePerCall => new() { Value = "AI" };
 
     /// <summary>
     /// fathom
     /// </summary>
-    public static readonly QuantityCode Fathom = new QuantityCode { Value = "AK" };
+    public static QuantityCode Fathom => new() { Value = "AK" };
 
     /// <summary>
     /// access line
     /// </summary>
-    public static readonly QuantityCode AccessLine = new QuantityCode { Value = "AL" };
+    public static QuantityCode AccessLine => new() { Value = "AL" };
 
     /// <summary>
     /// ampere hour
     /// </summary>
-    public static readonly QuantityCode AmpereHour = new QuantityCode { Value = "AMH" };
+    public static QuantityCode AmpereHour => new() { Value = "AMH" };
 
     /// <summary>
     /// ampere
     /// </summary>
-    public static readonly QuantityCode Ampere = new QuantityCode { Value = "AMP" };
+    public static QuantityCode Ampere => new() { Value = "AMP" };
 
     /// <summary>
     /// year
     /// </summary>
-    public static readonly QuantityCode Year = new QuantityCode { Value = "ANN" };
+    public static QuantityCode Year => new() { Value = "ANN" };
 
     /// <summary>
     /// troy ounce or apothecary ounce
     /// </summary>
-    public static readonly QuantityCode TroyOunceOrApothecaryOunce = new QuantityCode { Value = "APZ" };
+    public static QuantityCode TroyOunceOrApothecaryOunce => new() { Value = "APZ" };
 
     /// <summary>
     /// anti-hemophilic factor (AHF) unit
     /// </summary>
-    public static readonly QuantityCode AntiHemophilicFactorAHFUnit = new QuantityCode { Value = "AQ" };
+    public static QuantityCode AntiHemophilicFactorAHFUnit => new() { Value = "AQ" };
 
     /// <summary>
     /// assortment
     /// </summary>
-    public static readonly QuantityCode Assortment = new QuantityCode { Value = "AS" };
+    public static QuantityCode Assortment => new() { Value = "AS" };
 
     /// <summary>
     /// alcoholic strength by mass
     /// </summary>
-    public static readonly QuantityCode AlcoholicStrengthByMass = new QuantityCode { Value = "ASM" };
+    public static QuantityCode AlcoholicStrengthByMass => new() { Value = "ASM" };
 
     /// <summary>
     /// alcoholic strength by volume
     /// </summary>
-    public static readonly QuantityCode AlcoholicStrengthByVolume = new QuantityCode { Value = "ASU" };
+    public static QuantityCode AlcoholicStrengthByVolume => new() { Value = "ASU" };
 
     /// <summary>
     /// standard atmosphere
     /// </summary>
-    public static readonly QuantityCode StandardAtmosphere = new QuantityCode { Value = "ATM" };
+    public static QuantityCode StandardAtmosphere => new() { Value = "ATM" };
 
     /// <summary>
     /// american wire gauge
     /// </summary>
-    public static readonly QuantityCode AmericanWireGauge = new QuantityCode { Value = "AWG" };
+    public static QuantityCode AmericanWireGauge => new() { Value = "AWG" };
 
     /// <summary>
     /// assembly
     /// </summary>
-    public static readonly QuantityCode Assembly = new QuantityCode { Value = "AY" };
+    public static QuantityCode Assembly => new() { Value = "AY" };
 
     /// <summary>
     /// British thermal unit (international table) per pound
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerPound = new QuantityCode { Value = "AZ" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerPound => new() { Value = "AZ" };
 
     /// <summary>
     /// barrel (US) per day
     /// </summary>
-    public static readonly QuantityCode BarrelUSPerDay = new QuantityCode { Value = "B1" };
+    public static QuantityCode BarrelUSPerDay => new() { Value = "B1" };
 
     /// <summary>
     /// bit per second
     /// </summary>
-    public static readonly QuantityCode BitPerSecond = new QuantityCode { Value = "B10" };
+    public static QuantityCode BitPerSecond => new() { Value = "B10" };
 
     /// <summary>
     /// joule per kilogram kelvin
     /// </summary>
-    public static readonly QuantityCode JoulePerKilogramKelvin = new QuantityCode { Value = "B11" };
+    public static QuantityCode JoulePerKilogramKelvin => new() { Value = "B11" };
 
     /// <summary>
     /// joule per metre
     /// </summary>
-    public static readonly QuantityCode JoulePerMetre = new QuantityCode { Value = "B12" };
+    public static QuantityCode JoulePerMetre => new() { Value = "B12" };
 
     /// <summary>
     /// joule per square metre
     /// </summary>
-    public static readonly QuantityCode JoulePerSquareMetre = new QuantityCode { Value = "B13" };
+    public static QuantityCode JoulePerSquareMetre => new() { Value = "B13" };
 
     /// <summary>
     /// joule per metre to the fourth power
     /// </summary>
-    public static readonly QuantityCode JoulePerMetreToTheFourthPower = new QuantityCode { Value = "B14" };
+    public static QuantityCode JoulePerMetreToTheFourthPower => new() { Value = "B14" };
 
     /// <summary>
     /// joule per mole
     /// </summary>
-    public static readonly QuantityCode JoulePerMole = new QuantityCode { Value = "B15" };
+    public static QuantityCode JoulePerMole => new() { Value = "B15" };
 
     /// <summary>
     /// joule per mole kelvin
     /// </summary>
-    public static readonly QuantityCode JoulePerMoleKelvin = new QuantityCode { Value = "B16" };
+    public static QuantityCode JoulePerMoleKelvin => new() { Value = "B16" };
 
     /// <summary>
     /// credit
     /// </summary>
-    public static readonly QuantityCode Credit = new QuantityCode { Value = "B17" };
+    public static QuantityCode Credit => new() { Value = "B17" };
 
     /// <summary>
     /// joule second
     /// </summary>
-    public static readonly QuantityCode JouleSecond = new QuantityCode { Value = "B18" };
+    public static QuantityCode JouleSecond => new() { Value = "B18" };
 
     /// <summary>
     /// digit
     /// </summary>
-    public static readonly QuantityCode Digit = new QuantityCode { Value = "B19" };
+    public static QuantityCode Digit => new() { Value = "B19" };
 
     /// <summary>
     /// joule square metre per kilogram
     /// </summary>
-    public static readonly QuantityCode JouleSquareMetrePerKilogram = new QuantityCode { Value = "B20" };
+    public static QuantityCode JouleSquareMetrePerKilogram => new() { Value = "B20" };
 
     /// <summary>
     /// kelvin per watt
     /// </summary>
-    public static readonly QuantityCode KelvinPerWatt = new QuantityCode { Value = "B21" };
+    public static QuantityCode KelvinPerWatt => new() { Value = "B21" };
 
     /// <summary>
     /// kiloampere
     /// </summary>
-    public static readonly QuantityCode Kiloampere = new QuantityCode { Value = "B22" };
+    public static QuantityCode Kiloampere => new() { Value = "B22" };
 
     /// <summary>
     /// kiloampere per square metre
     /// </summary>
-    public static readonly QuantityCode KiloamperePerSquareMetre = new QuantityCode { Value = "B23" };
+    public static QuantityCode KiloamperePerSquareMetre => new() { Value = "B23" };
 
     /// <summary>
     /// kiloampere per metre
     /// </summary>
-    public static readonly QuantityCode KiloamperePerMetre = new QuantityCode { Value = "B24" };
+    public static QuantityCode KiloamperePerMetre => new() { Value = "B24" };
 
     /// <summary>
     /// kilobecquerel per kilogram
     /// </summary>
-    public static readonly QuantityCode KilobecquerelPerKilogram = new QuantityCode { Value = "B25" };
+    public static QuantityCode KilobecquerelPerKilogram => new() { Value = "B25" };
 
     /// <summary>
     /// kilocoulomb
     /// </summary>
-    public static readonly QuantityCode Kilocoulomb = new QuantityCode { Value = "B26" };
+    public static QuantityCode Kilocoulomb => new() { Value = "B26" };
 
     /// <summary>
     /// kilocoulomb per cubic metre
     /// </summary>
-    public static readonly QuantityCode KilocoulombPerCubicMetre = new QuantityCode { Value = "B27" };
+    public static QuantityCode KilocoulombPerCubicMetre => new() { Value = "B27" };
 
     /// <summary>
     /// kilocoulomb per square metre
     /// </summary>
-    public static readonly QuantityCode KilocoulombPerSquareMetre = new QuantityCode { Value = "B28" };
+    public static QuantityCode KilocoulombPerSquareMetre => new() { Value = "B28" };
 
     /// <summary>
     /// kiloelectronvolt
     /// </summary>
-    public static readonly QuantityCode Kiloelectronvolt = new QuantityCode { Value = "B29" };
+    public static QuantityCode Kiloelectronvolt => new() { Value = "B29" };
 
     /// <summary>
     /// batting pound
     /// </summary>
-    public static readonly QuantityCode BattingPound = new QuantityCode { Value = "B3" };
+    public static QuantityCode BattingPound => new() { Value = "B3" };
 
     /// <summary>
     /// gibibit
     /// </summary>
-    public static readonly QuantityCode Gibibit = new QuantityCode { Value = "B30" };
+    public static QuantityCode Gibibit => new() { Value = "B30" };
 
     /// <summary>
     /// kilogram metre per second
     /// </summary>
-    public static readonly QuantityCode KilogramMetrePerSecond = new QuantityCode { Value = "B31" };
+    public static QuantityCode KilogramMetrePerSecond => new() { Value = "B31" };
 
     /// <summary>
     /// kilogram metre squared
     /// </summary>
-    public static readonly QuantityCode KilogramMetreSquared = new QuantityCode { Value = "B32" };
+    public static QuantityCode KilogramMetreSquared => new() { Value = "B32" };
 
     /// <summary>
     /// kilogram metre squared per second
     /// </summary>
-    public static readonly QuantityCode KilogramMetreSquaredPerSecond = new QuantityCode { Value = "B33" };
+    public static QuantityCode KilogramMetreSquaredPerSecond => new() { Value = "B33" };
 
     /// <summary>
     /// kilogram per cubic decimetre
     /// </summary>
-    public static readonly QuantityCode KilogramPerCubicDecimetre = new QuantityCode { Value = "B34" };
+    public static QuantityCode KilogramPerCubicDecimetre => new() { Value = "B34" };
 
     /// <summary>
     /// kilogram per litre
     /// </summary>
-    public static readonly QuantityCode KilogramPerLitre = new QuantityCode { Value = "B35" };
+    public static QuantityCode KilogramPerLitre => new() { Value = "B35" };
 
     /// <summary>
     /// barrel, imperial
     /// </summary>
-    public static readonly QuantityCode BarrelImperial = new QuantityCode { Value = "B4" };
+    public static QuantityCode BarrelImperial => new() { Value = "B4" };
 
     /// <summary>
     /// kilojoule per kelvin
     /// </summary>
-    public static readonly QuantityCode KilojoulePerKelvin = new QuantityCode { Value = "B41" };
+    public static QuantityCode KilojoulePerKelvin => new() { Value = "B41" };
 
     /// <summary>
     /// kilojoule per kilogram
     /// </summary>
-    public static readonly QuantityCode KilojoulePerKilogram = new QuantityCode { Value = "B42" };
+    public static QuantityCode KilojoulePerKilogram => new() { Value = "B42" };
 
     /// <summary>
     /// kilojoule per kilogram kelvin
     /// </summary>
-    public static readonly QuantityCode KilojoulePerKilogramKelvin = new QuantityCode { Value = "B43" };
+    public static QuantityCode KilojoulePerKilogramKelvin => new() { Value = "B43" };
 
     /// <summary>
     /// kilojoule per mole
     /// </summary>
-    public static readonly QuantityCode KilojoulePerMole = new QuantityCode { Value = "B44" };
+    public static QuantityCode KilojoulePerMole => new() { Value = "B44" };
 
     /// <summary>
     /// kilomole
     /// </summary>
-    public static readonly QuantityCode Kilomole = new QuantityCode { Value = "B45" };
+    public static QuantityCode Kilomole => new() { Value = "B45" };
 
     /// <summary>
     /// kilomole per cubic metre
     /// </summary>
-    public static readonly QuantityCode KilomolePerCubicMetre = new QuantityCode { Value = "B46" };
+    public static QuantityCode KilomolePerCubicMetre => new() { Value = "B46" };
 
     /// <summary>
     /// kilonewton
     /// </summary>
-    public static readonly QuantityCode Kilonewton = new QuantityCode { Value = "B47" };
+    public static QuantityCode Kilonewton => new() { Value = "B47" };
 
     /// <summary>
     /// kilonewton metre
     /// </summary>
-    public static readonly QuantityCode KilonewtonMetre = new QuantityCode { Value = "B48" };
+    public static QuantityCode KilonewtonMetre => new() { Value = "B48" };
 
     /// <summary>
     /// kiloohm
     /// </summary>
-    public static readonly QuantityCode Kiloohm = new QuantityCode { Value = "B49" };
+    public static QuantityCode Kiloohm => new() { Value = "B49" };
 
     /// <summary>
     /// kiloohm metre
     /// </summary>
-    public static readonly QuantityCode KiloohmMetre = new QuantityCode { Value = "B50" };
+    public static QuantityCode KiloohmMetre => new() { Value = "B50" };
 
     /// <summary>
     /// kilosecond
     /// </summary>
-    public static readonly QuantityCode Kilosecond = new QuantityCode { Value = "B52" };
+    public static QuantityCode Kilosecond => new() { Value = "B52" };
 
     /// <summary>
     /// kilosiemens
     /// </summary>
-    public static readonly QuantityCode Kilosiemens = new QuantityCode { Value = "B53" };
+    public static QuantityCode Kilosiemens => new() { Value = "B53" };
 
     /// <summary>
     /// kilosiemens per metre
     /// </summary>
-    public static readonly QuantityCode KilosiemensPerMetre = new QuantityCode { Value = "B54" };
+    public static QuantityCode KilosiemensPerMetre => new() { Value = "B54" };
 
     /// <summary>
     /// kilovolt per metre
     /// </summary>
-    public static readonly QuantityCode KilovoltPerMetre = new QuantityCode { Value = "B55" };
+    public static QuantityCode KilovoltPerMetre => new() { Value = "B55" };
 
     /// <summary>
     /// kiloweber per metre
     /// </summary>
-    public static readonly QuantityCode KiloweberPerMetre = new QuantityCode { Value = "B56" };
+    public static QuantityCode KiloweberPerMetre => new() { Value = "B56" };
 
     /// <summary>
     /// light year
     /// </summary>
-    public static readonly QuantityCode LightYear = new QuantityCode { Value = "B57" };
+    public static QuantityCode LightYear => new() { Value = "B57" };
 
     /// <summary>
     /// litre per mole
     /// </summary>
-    public static readonly QuantityCode LitrePerMole = new QuantityCode { Value = "B58" };
+    public static QuantityCode LitrePerMole => new() { Value = "B58" };
 
     /// <summary>
     /// lumen hour
     /// </summary>
-    public static readonly QuantityCode LumenHour = new QuantityCode { Value = "B59" };
+    public static QuantityCode LumenHour => new() { Value = "B59" };
 
     /// <summary>
     /// lumen per square metre
     /// </summary>
-    public static readonly QuantityCode LumenPerSquareMetre = new QuantityCode { Value = "B60" };
+    public static QuantityCode LumenPerSquareMetre => new() { Value = "B60" };
 
     /// <summary>
     /// lumen per watt
     /// </summary>
-    public static readonly QuantityCode LumenPerWatt = new QuantityCode { Value = "B61" };
+    public static QuantityCode LumenPerWatt => new() { Value = "B61" };
 
     /// <summary>
     /// lumen second
     /// </summary>
-    public static readonly QuantityCode LumenSecond = new QuantityCode { Value = "B62" };
+    public static QuantityCode LumenSecond => new() { Value = "B62" };
 
     /// <summary>
     /// lux hour
     /// </summary>
-    public static readonly QuantityCode LuxHour = new QuantityCode { Value = "B63" };
+    public static QuantityCode LuxHour => new() { Value = "B63" };
 
     /// <summary>
     /// lux second
     /// </summary>
-    public static readonly QuantityCode LuxSecond = new QuantityCode { Value = "B64" };
+    public static QuantityCode LuxSecond => new() { Value = "B64" };
 
     /// <summary>
     /// megaampere per square metre
     /// </summary>
-    public static readonly QuantityCode MegaamperePerSquareMetre = new QuantityCode { Value = "B66" };
+    public static QuantityCode MegaamperePerSquareMetre => new() { Value = "B66" };
 
     /// <summary>
     /// megabecquerel per kilogram
     /// </summary>
-    public static readonly QuantityCode MegabecquerelPerKilogram = new QuantityCode { Value = "B67" };
+    public static QuantityCode MegabecquerelPerKilogram => new() { Value = "B67" };
 
     /// <summary>
     /// gigabit
     /// </summary>
-    public static readonly QuantityCode Gigabit = new QuantityCode { Value = "B68" };
+    public static QuantityCode Gigabit => new() { Value = "B68" };
 
     /// <summary>
     /// megacoulomb per cubic metre
     /// </summary>
-    public static readonly QuantityCode MegacoulombPerCubicMetre = new QuantityCode { Value = "B69" };
+    public static QuantityCode MegacoulombPerCubicMetre => new() { Value = "B69" };
 
     /// <summary>
     /// cycle
     /// </summary>
-    public static readonly QuantityCode Cycle = new QuantityCode { Value = "B7" };
+    public static QuantityCode Cycle => new() { Value = "B7" };
 
     /// <summary>
     /// megacoulomb per square metre
     /// </summary>
-    public static readonly QuantityCode MegacoulombPerSquareMetre = new QuantityCode { Value = "B70" };
+    public static QuantityCode MegacoulombPerSquareMetre => new() { Value = "B70" };
 
     /// <summary>
     /// megaelectronvolt
     /// </summary>
-    public static readonly QuantityCode Megaelectronvolt = new QuantityCode { Value = "B71" };
+    public static QuantityCode Megaelectronvolt => new() { Value = "B71" };
 
     /// <summary>
     /// megagram per cubic metre
     /// </summary>
-    public static readonly QuantityCode MegagramPerCubicMetre = new QuantityCode { Value = "B72" };
+    public static QuantityCode MegagramPerCubicMetre => new() { Value = "B72" };
 
     /// <summary>
     /// meganewton
     /// </summary>
-    public static readonly QuantityCode Meganewton = new QuantityCode { Value = "B73" };
+    public static QuantityCode Meganewton => new() { Value = "B73" };
 
     /// <summary>
     /// meganewton metre
     /// </summary>
-    public static readonly QuantityCode MeganewtonMetre = new QuantityCode { Value = "B74" };
+    public static QuantityCode MeganewtonMetre => new() { Value = "B74" };
 
     /// <summary>
     /// megaohm
     /// </summary>
-    public static readonly QuantityCode Megaohm = new QuantityCode { Value = "B75" };
+    public static QuantityCode Megaohm => new() { Value = "B75" };
 
     /// <summary>
     /// megaohm metre
     /// </summary>
-    public static readonly QuantityCode MegaohmMetre = new QuantityCode { Value = "B76" };
+    public static QuantityCode MegaohmMetre => new() { Value = "B76" };
 
     /// <summary>
     /// megasiemens per metre
     /// </summary>
-    public static readonly QuantityCode MegasiemensPerMetre = new QuantityCode { Value = "B77" };
+    public static QuantityCode MegasiemensPerMetre => new() { Value = "B77" };
 
     /// <summary>
     /// megavolt
     /// </summary>
-    public static readonly QuantityCode Megavolt = new QuantityCode { Value = "B78" };
+    public static QuantityCode Megavolt => new() { Value = "B78" };
 
     /// <summary>
     /// megavolt per metre
     /// </summary>
-    public static readonly QuantityCode MegavoltPerMetre = new QuantityCode { Value = "B79" };
+    public static QuantityCode MegavoltPerMetre => new() { Value = "B79" };
 
     /// <summary>
     /// joule per cubic metre
     /// </summary>
-    public static readonly QuantityCode JoulePerCubicMetre = new QuantityCode { Value = "B8" };
+    public static QuantityCode JoulePerCubicMetre => new() { Value = "B8" };
 
     /// <summary>
     /// gigabit per second
     /// </summary>
-    public static readonly QuantityCode GigabitPerSecond = new QuantityCode { Value = "B80" };
+    public static QuantityCode GigabitPerSecond => new() { Value = "B80" };
 
     /// <summary>
     /// reciprocal metre squared reciprocal second
     /// </summary>
-    public static readonly QuantityCode ReciprocalMetreSquaredReciprocalSecond = new QuantityCode { Value = "B81" };
+    public static QuantityCode ReciprocalMetreSquaredReciprocalSecond => new() { Value = "B81" };
 
     /// <summary>
     /// inch per linear foot
     /// </summary>
-    public static readonly QuantityCode InchPerLinearFoot = new QuantityCode { Value = "B82" };
+    public static QuantityCode InchPerLinearFoot => new() { Value = "B82" };
 
     /// <summary>
     /// metre to the fourth power
     /// </summary>
-    public static readonly QuantityCode MetreToTheFourthPower = new QuantityCode { Value = "B83" };
+    public static QuantityCode MetreToTheFourthPower => new() { Value = "B83" };
 
     /// <summary>
     /// microampere
     /// </summary>
-    public static readonly QuantityCode Microampere = new QuantityCode { Value = "B84" };
+    public static QuantityCode Microampere => new() { Value = "B84" };
 
     /// <summary>
     /// microbar
     /// </summary>
-    public static readonly QuantityCode Microbar = new QuantityCode { Value = "B85" };
+    public static QuantityCode Microbar => new() { Value = "B85" };
 
     /// <summary>
     /// microcoulomb
     /// </summary>
-    public static readonly QuantityCode Microcoulomb = new QuantityCode { Value = "B86" };
+    public static QuantityCode Microcoulomb => new() { Value = "B86" };
 
     /// <summary>
     /// microcoulomb per cubic metre
     /// </summary>
-    public static readonly QuantityCode MicrocoulombPerCubicMetre = new QuantityCode { Value = "B87" };
+    public static QuantityCode MicrocoulombPerCubicMetre => new() { Value = "B87" };
 
     /// <summary>
     /// microcoulomb per square metre
     /// </summary>
-    public static readonly QuantityCode MicrocoulombPerSquareMetre = new QuantityCode { Value = "B88" };
+    public static QuantityCode MicrocoulombPerSquareMetre => new() { Value = "B88" };
 
     /// <summary>
     /// microfarad per metre
     /// </summary>
-    public static readonly QuantityCode MicrofaradPerMetre = new QuantityCode { Value = "B89" };
+    public static QuantityCode MicrofaradPerMetre => new() { Value = "B89" };
 
     /// <summary>
     /// microhenry
     /// </summary>
-    public static readonly QuantityCode Microhenry = new QuantityCode { Value = "B90" };
+    public static QuantityCode Microhenry => new() { Value = "B90" };
 
     /// <summary>
     /// microhenry per metre
     /// </summary>
-    public static readonly QuantityCode MicrohenryPerMetre = new QuantityCode { Value = "B91" };
+    public static QuantityCode MicrohenryPerMetre => new() { Value = "B91" };
 
     /// <summary>
     /// micronewton
     /// </summary>
-    public static readonly QuantityCode Micronewton = new QuantityCode { Value = "B92" };
+    public static QuantityCode Micronewton => new() { Value = "B92" };
 
     /// <summary>
     /// micronewton metre
     /// </summary>
-    public static readonly QuantityCode MicronewtonMetre = new QuantityCode { Value = "B93" };
+    public static QuantityCode MicronewtonMetre => new() { Value = "B93" };
 
     /// <summary>
     /// microohm
     /// </summary>
-    public static readonly QuantityCode Microohm = new QuantityCode { Value = "B94" };
+    public static QuantityCode Microohm => new() { Value = "B94" };
 
     /// <summary>
     /// microohm metre
     /// </summary>
-    public static readonly QuantityCode MicroohmMetre = new QuantityCode { Value = "B95" };
+    public static QuantityCode MicroohmMetre => new() { Value = "B95" };
 
     /// <summary>
     /// micropascal
     /// </summary>
-    public static readonly QuantityCode Micropascal = new QuantityCode { Value = "B96" };
+    public static QuantityCode Micropascal => new() { Value = "B96" };
 
     /// <summary>
     /// microradian
     /// </summary>
-    public static readonly QuantityCode Microradian = new QuantityCode { Value = "B97" };
+    public static QuantityCode Microradian => new() { Value = "B97" };
 
     /// <summary>
     /// microsecond
     /// </summary>
-    public static readonly QuantityCode Microsecond = new QuantityCode { Value = "B98" };
+    public static QuantityCode Microsecond => new() { Value = "B98" };
 
     /// <summary>
     /// microsiemens
     /// </summary>
-    public static readonly QuantityCode Microsiemens = new QuantityCode { Value = "B99" };
+    public static QuantityCode Microsiemens => new() { Value = "B99" };
 
     /// <summary>
     /// bar [unit of pressure]
     /// </summary>
-    public static readonly QuantityCode BarUnitOfPressure = new QuantityCode { Value = "BAR" };
+    public static QuantityCode BarUnitOfPressure => new() { Value = "BAR" };
 
     /// <summary>
     /// base box
     /// </summary>
-    public static readonly QuantityCode BaseBox = new QuantityCode { Value = "BB" };
+    public static QuantityCode BaseBox => new() { Value = "BB" };
 
     /// <summary>
     /// board foot
     /// </summary>
-    public static readonly QuantityCode BoardFoot = new QuantityCode { Value = "BFT" };
+    public static QuantityCode BoardFoot => new() { Value = "BFT" };
 
     /// <summary>
     /// brake horse power
     /// </summary>
-    public static readonly QuantityCode BrakeHorsePower = new QuantityCode { Value = "BHP" };
+    public static QuantityCode BrakeHorsePower => new() { Value = "BHP" };
 
     /// <summary>
     /// billion (EUR)
     /// </summary>
-    public static readonly QuantityCode BillionEUR = new QuantityCode { Value = "BIL" };
+    public static QuantityCode BillionEUR => new() { Value = "BIL" };
 
     /// <summary>
     /// dry barrel (US)
     /// </summary>
-    public static readonly QuantityCode DryBarrelUS = new QuantityCode { Value = "BLD" };
+    public static QuantityCode DryBarrelUS => new() { Value = "BLD" };
 
     /// <summary>
     /// barrel (US)
     /// </summary>
-    public static readonly QuantityCode BarrelUS = new QuantityCode { Value = "BLL" };
+    public static QuantityCode BarrelUS => new() { Value = "BLL" };
 
     /// <summary>
     /// hundred board foot
     /// </summary>
-    public static readonly QuantityCode HundredBoardFoot = new QuantityCode { Value = "BP" };
+    public static QuantityCode HundredBoardFoot => new() { Value = "BP" };
 
     /// <summary>
     /// beats per minute
     /// </summary>
-    public static readonly QuantityCode BeatsPerMinute = new QuantityCode { Value = "BPM" };
+    public static QuantityCode BeatsPerMinute => new() { Value = "BPM" };
 
     /// <summary>
     /// becquerel
     /// </summary>
-    public static readonly QuantityCode Becquerel = new QuantityCode { Value = "BQL" };
+    public static QuantityCode Becquerel => new() { Value = "BQL" };
 
     /// <summary>
     /// British thermal unit (international table)
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTable = new QuantityCode { Value = "BTU" };
+    public static QuantityCode BritishThermalUnitInternationalTable => new() { Value = "BTU" };
 
     /// <summary>
     /// bushel (US)
     /// </summary>
-    public static readonly QuantityCode BushelUS = new QuantityCode { Value = "BUA" };
+    public static QuantityCode BushelUS => new() { Value = "BUA" };
 
     /// <summary>
     /// bushel (UK)
     /// </summary>
-    public static readonly QuantityCode BushelUK = new QuantityCode { Value = "BUI" };
+    public static QuantityCode BushelUK => new() { Value = "BUI" };
 
     /// <summary>
     /// call
     /// </summary>
-    public static readonly QuantityCode Call = new QuantityCode { Value = "C0" };
+    public static QuantityCode Call => new() { Value = "C0" };
 
     /// <summary>
     /// millifarad
     /// </summary>
-    public static readonly QuantityCode Millifarad = new QuantityCode { Value = "C10" };
+    public static QuantityCode Millifarad => new() { Value = "C10" };
 
     /// <summary>
     /// milligal
     /// </summary>
-    public static readonly QuantityCode Milligal = new QuantityCode { Value = "C11" };
+    public static QuantityCode Milligal => new() { Value = "C11" };
 
     /// <summary>
     /// milligram per metre
     /// </summary>
-    public static readonly QuantityCode MilligramPerMetre = new QuantityCode { Value = "C12" };
+    public static QuantityCode MilligramPerMetre => new() { Value = "C12" };
 
     /// <summary>
     /// milligray
     /// </summary>
-    public static readonly QuantityCode Milligray = new QuantityCode { Value = "C13" };
+    public static QuantityCode Milligray => new() { Value = "C13" };
 
     /// <summary>
     /// millihenry
     /// </summary>
-    public static readonly QuantityCode Millihenry = new QuantityCode { Value = "C14" };
+    public static QuantityCode Millihenry => new() { Value = "C14" };
 
     /// <summary>
     /// millijoule
     /// </summary>
-    public static readonly QuantityCode Millijoule = new QuantityCode { Value = "C15" };
+    public static QuantityCode Millijoule => new() { Value = "C15" };
 
     /// <summary>
     /// millimetre per second
     /// </summary>
-    public static readonly QuantityCode MillimetrePerSecond = new QuantityCode { Value = "C16" };
+    public static QuantityCode MillimetrePerSecond => new() { Value = "C16" };
 
     /// <summary>
     /// millimetre squared per second
     /// </summary>
-    public static readonly QuantityCode MillimetreSquaredPerSecond = new QuantityCode { Value = "C17" };
+    public static QuantityCode MillimetreSquaredPerSecond => new() { Value = "C17" };
 
     /// <summary>
     /// millimole
     /// </summary>
-    public static readonly QuantityCode Millimole = new QuantityCode { Value = "C18" };
+    public static QuantityCode Millimole => new() { Value = "C18" };
 
     /// <summary>
     /// mole per kilogram
     /// </summary>
-    public static readonly QuantityCode MolePerKilogram = new QuantityCode { Value = "C19" };
+    public static QuantityCode MolePerKilogram => new() { Value = "C19" };
 
     /// <summary>
     /// millinewton
     /// </summary>
-    public static readonly QuantityCode Millinewton = new QuantityCode { Value = "C20" };
+    public static QuantityCode Millinewton => new() { Value = "C20" };
 
     /// <summary>
     /// kibibit
     /// </summary>
-    public static readonly QuantityCode Kibibit = new QuantityCode { Value = "C21" };
+    public static QuantityCode Kibibit => new() { Value = "C21" };
 
     /// <summary>
     /// millinewton per metre
     /// </summary>
-    public static readonly QuantityCode MillinewtonPerMetre = new QuantityCode { Value = "C22" };
+    public static QuantityCode MillinewtonPerMetre => new() { Value = "C22" };
 
     /// <summary>
     /// milliohm metre
     /// </summary>
-    public static readonly QuantityCode MilliohmMetre = new QuantityCode { Value = "C23" };
+    public static QuantityCode MilliohmMetre => new() { Value = "C23" };
 
     /// <summary>
     /// millipascal second
     /// </summary>
-    public static readonly QuantityCode MillipascalSecond = new QuantityCode { Value = "C24" };
+    public static QuantityCode MillipascalSecond => new() { Value = "C24" };
 
     /// <summary>
     /// milliradian
     /// </summary>
-    public static readonly QuantityCode Milliradian = new QuantityCode { Value = "C25" };
+    public static QuantityCode Milliradian => new() { Value = "C25" };
 
     /// <summary>
     /// millisecond
     /// </summary>
-    public static readonly QuantityCode Millisecond = new QuantityCode { Value = "C26" };
+    public static QuantityCode Millisecond => new() { Value = "C26" };
 
     /// <summary>
     /// millisiemens
     /// </summary>
-    public static readonly QuantityCode Millisiemens = new QuantityCode { Value = "C27" };
+    public static QuantityCode Millisiemens => new() { Value = "C27" };
 
     /// <summary>
     /// millisievert
     /// </summary>
-    public static readonly QuantityCode Millisievert = new QuantityCode { Value = "C28" };
+    public static QuantityCode Millisievert => new() { Value = "C28" };
 
     /// <summary>
     /// millitesla
     /// </summary>
-    public static readonly QuantityCode Millitesla = new QuantityCode { Value = "C29" };
+    public static QuantityCode Millitesla => new() { Value = "C29" };
 
     /// <summary>
     /// microvolt per metre
     /// </summary>
-    public static readonly QuantityCode MicrovoltPerMetre = new QuantityCode { Value = "C3" };
+    public static QuantityCode MicrovoltPerMetre => new() { Value = "C3" };
 
     /// <summary>
     /// millivolt per metre
     /// </summary>
-    public static readonly QuantityCode MillivoltPerMetre = new QuantityCode { Value = "C30" };
+    public static QuantityCode MillivoltPerMetre => new() { Value = "C30" };
 
     /// <summary>
     /// milliwatt
     /// </summary>
-    public static readonly QuantityCode Milliwatt = new QuantityCode { Value = "C31" };
+    public static QuantityCode Milliwatt => new() { Value = "C31" };
 
     /// <summary>
     /// milliwatt per square metre
     /// </summary>
-    public static readonly QuantityCode MilliwattPerSquareMetre = new QuantityCode { Value = "C32" };
+    public static QuantityCode MilliwattPerSquareMetre => new() { Value = "C32" };
 
     /// <summary>
     /// milliweber
     /// </summary>
-    public static readonly QuantityCode Milliweber = new QuantityCode { Value = "C33" };
+    public static QuantityCode Milliweber => new() { Value = "C33" };
 
     /// <summary>
     /// mole
     /// </summary>
-    public static readonly QuantityCode Mole = new QuantityCode { Value = "C34" };
+    public static QuantityCode Mole => new() { Value = "C34" };
 
     /// <summary>
     /// mole per cubic decimetre
     /// </summary>
-    public static readonly QuantityCode MolePerCubicDecimetre = new QuantityCode { Value = "C35" };
+    public static QuantityCode MolePerCubicDecimetre => new() { Value = "C35" };
 
     /// <summary>
     /// mole per cubic metre
     /// </summary>
-    public static readonly QuantityCode MolePerCubicMetre = new QuantityCode { Value = "C36" };
+    public static QuantityCode MolePerCubicMetre => new() { Value = "C36" };
 
     /// <summary>
     /// kilobit
     /// </summary>
-    public static readonly QuantityCode Kilobit = new QuantityCode { Value = "C37" };
+    public static QuantityCode Kilobit => new() { Value = "C37" };
 
     /// <summary>
     /// mole per litre
     /// </summary>
-    public static readonly QuantityCode MolePerLitre = new QuantityCode { Value = "C38" };
+    public static QuantityCode MolePerLitre => new() { Value = "C38" };
 
     /// <summary>
     /// nanoampere
     /// </summary>
-    public static readonly QuantityCode Nanoampere = new QuantityCode { Value = "C39" };
+    public static QuantityCode Nanoampere => new() { Value = "C39" };
 
     /// <summary>
     /// nanocoulomb
     /// </summary>
-    public static readonly QuantityCode Nanocoulomb = new QuantityCode { Value = "C40" };
+    public static QuantityCode Nanocoulomb => new() { Value = "C40" };
 
     /// <summary>
     /// nanofarad
     /// </summary>
-    public static readonly QuantityCode Nanofarad = new QuantityCode { Value = "C41" };
+    public static QuantityCode Nanofarad => new() { Value = "C41" };
 
     /// <summary>
     /// nanofarad per metre
     /// </summary>
-    public static readonly QuantityCode NanofaradPerMetre = new QuantityCode { Value = "C42" };
+    public static QuantityCode NanofaradPerMetre => new() { Value = "C42" };
 
     /// <summary>
     /// nanohenry
     /// </summary>
-    public static readonly QuantityCode Nanohenry = new QuantityCode { Value = "C43" };
+    public static QuantityCode Nanohenry => new() { Value = "C43" };
 
     /// <summary>
     /// nanohenry per metre
     /// </summary>
-    public static readonly QuantityCode NanohenryPerMetre = new QuantityCode { Value = "C44" };
+    public static QuantityCode NanohenryPerMetre => new() { Value = "C44" };
 
     /// <summary>
     /// nanometre
     /// </summary>
-    public static readonly QuantityCode Nanometre = new QuantityCode { Value = "C45" };
+    public static QuantityCode Nanometre => new() { Value = "C45" };
 
     /// <summary>
     /// nanoohm metre
     /// </summary>
-    public static readonly QuantityCode NanoohmMetre = new QuantityCode { Value = "C46" };
+    public static QuantityCode NanoohmMetre => new() { Value = "C46" };
 
     /// <summary>
     /// nanosecond
     /// </summary>
-    public static readonly QuantityCode Nanosecond = new QuantityCode { Value = "C47" };
+    public static QuantityCode Nanosecond => new() { Value = "C47" };
 
     /// <summary>
     /// nanotesla
     /// </summary>
-    public static readonly QuantityCode Nanotesla = new QuantityCode { Value = "C48" };
+    public static QuantityCode Nanotesla => new() { Value = "C48" };
 
     /// <summary>
     /// nanowatt
     /// </summary>
-    public static readonly QuantityCode Nanowatt = new QuantityCode { Value = "C49" };
+    public static QuantityCode Nanowatt => new() { Value = "C49" };
 
     /// <summary>
     /// neper
     /// </summary>
-    public static readonly QuantityCode Neper = new QuantityCode { Value = "C50" };
+    public static QuantityCode Neper => new() { Value = "C50" };
 
     /// <summary>
     /// neper per second
     /// </summary>
-    public static readonly QuantityCode NeperPerSecond = new QuantityCode { Value = "C51" };
+    public static QuantityCode NeperPerSecond => new() { Value = "C51" };
 
     /// <summary>
     /// picometre
     /// </summary>
-    public static readonly QuantityCode Picometre = new QuantityCode { Value = "C52" };
+    public static QuantityCode Picometre => new() { Value = "C52" };
 
     /// <summary>
     /// newton metre second
     /// </summary>
-    public static readonly QuantityCode NewtonMetreSecond = new QuantityCode { Value = "C53" };
+    public static QuantityCode NewtonMetreSecond => new() { Value = "C53" };
 
     /// <summary>
     /// newton metre squared per kilogram squared
     /// </summary>
-    public static readonly QuantityCode NewtonMetreSquaredPerKilogramSquared = new QuantityCode { Value = "C54" };
+    public static QuantityCode NewtonMetreSquaredPerKilogramSquared => new() { Value = "C54" };
 
     /// <summary>
     /// newton per square metre
     /// </summary>
-    public static readonly QuantityCode NewtonPerSquareMetre = new QuantityCode { Value = "C55" };
+    public static QuantityCode NewtonPerSquareMetre => new() { Value = "C55" };
 
     /// <summary>
     /// newton per square millimetre
     /// </summary>
-    public static readonly QuantityCode NewtonPerSquareMillimetre = new QuantityCode { Value = "C56" };
+    public static QuantityCode NewtonPerSquareMillimetre => new() { Value = "C56" };
 
     /// <summary>
     /// newton second
     /// </summary>
-    public static readonly QuantityCode NewtonSecond = new QuantityCode { Value = "C57" };
+    public static QuantityCode NewtonSecond => new() { Value = "C57" };
 
     /// <summary>
     /// newton second per metre
     /// </summary>
-    public static readonly QuantityCode NewtonSecondPerMetre = new QuantityCode { Value = "C58" };
+    public static QuantityCode NewtonSecondPerMetre => new() { Value = "C58" };
 
     /// <summary>
     /// octave
     /// </summary>
-    public static readonly QuantityCode Octave = new QuantityCode { Value = "C59" };
+    public static QuantityCode Octave => new() { Value = "C59" };
 
     /// <summary>
     /// ohm centimetre
     /// </summary>
-    public static readonly QuantityCode OhmCentimetre = new QuantityCode { Value = "C60" };
+    public static QuantityCode OhmCentimetre => new() { Value = "C60" };
 
     /// <summary>
     /// ohm metre
     /// </summary>
-    public static readonly QuantityCode OhmMetre = new QuantityCode { Value = "C61" };
+    public static QuantityCode OhmMetre => new() { Value = "C61" };
 
     /// <summary>
     /// one
     /// </summary>
-    public static readonly QuantityCode One = new QuantityCode { Value = "C62" };
+    public static QuantityCode One => new() { Value = "C62" };
 
     /// <summary>
     /// parsec
     /// </summary>
-    public static readonly QuantityCode Parsec = new QuantityCode { Value = "C63" };
+    public static QuantityCode Parsec => new() { Value = "C63" };
 
     /// <summary>
     /// pascal per kelvin
     /// </summary>
-    public static readonly QuantityCode PascalPerKelvin = new QuantityCode { Value = "C64" };
+    public static QuantityCode PascalPerKelvin => new() { Value = "C64" };
 
     /// <summary>
     /// pascal second
     /// </summary>
-    public static readonly QuantityCode PascalSecond = new QuantityCode { Value = "C65" };
+    public static QuantityCode PascalSecond => new() { Value = "C65" };
 
     /// <summary>
     /// pascal second per cubic metre
     /// </summary>
-    public static readonly QuantityCode PascalSecondPerCubicMetre = new QuantityCode { Value = "C66" };
+    public static QuantityCode PascalSecondPerCubicMetre => new() { Value = "C66" };
 
     /// <summary>
     /// pascal second per metre
     /// </summary>
-    public static readonly QuantityCode PascalSecondPerMetre = new QuantityCode { Value = "C67" };
+    public static QuantityCode PascalSecondPerMetre => new() { Value = "C67" };
 
     /// <summary>
     /// petajoule
     /// </summary>
-    public static readonly QuantityCode Petajoule = new QuantityCode { Value = "C68" };
+    public static QuantityCode Petajoule => new() { Value = "C68" };
 
     /// <summary>
     /// phon
     /// </summary>
-    public static readonly QuantityCode Phon = new QuantityCode { Value = "C69" };
+    public static QuantityCode Phon => new() { Value = "C69" };
 
     /// <summary>
     /// centipoise
     /// </summary>
-    public static readonly QuantityCode Centipoise = new QuantityCode { Value = "C7" };
+    public static QuantityCode Centipoise => new() { Value = "C7" };
 
     /// <summary>
     /// picoampere
     /// </summary>
-    public static readonly QuantityCode Picoampere = new QuantityCode { Value = "C70" };
+    public static QuantityCode Picoampere => new() { Value = "C70" };
 
     /// <summary>
     /// picocoulomb
     /// </summary>
-    public static readonly QuantityCode Picocoulomb = new QuantityCode { Value = "C71" };
+    public static QuantityCode Picocoulomb => new() { Value = "C71" };
 
     /// <summary>
     /// picofarad per metre
     /// </summary>
-    public static readonly QuantityCode PicofaradPerMetre = new QuantityCode { Value = "C72" };
+    public static QuantityCode PicofaradPerMetre => new() { Value = "C72" };
 
     /// <summary>
     /// picohenry
     /// </summary>
-    public static readonly QuantityCode Picohenry = new QuantityCode { Value = "C73" };
+    public static QuantityCode Picohenry => new() { Value = "C73" };
 
     /// <summary>
     /// kilobit per second
     /// </summary>
-    public static readonly QuantityCode KilobitPerSecond = new QuantityCode { Value = "C74" };
+    public static QuantityCode KilobitPerSecond => new() { Value = "C74" };
 
     /// <summary>
     /// picowatt
     /// </summary>
-    public static readonly QuantityCode Picowatt = new QuantityCode { Value = "C75" };
+    public static QuantityCode Picowatt => new() { Value = "C75" };
 
     /// <summary>
     /// picowatt per square metre
     /// </summary>
-    public static readonly QuantityCode PicowattPerSquareMetre = new QuantityCode { Value = "C76" };
+    public static QuantityCode PicowattPerSquareMetre => new() { Value = "C76" };
 
     /// <summary>
     /// pound-force
     /// </summary>
-    public static readonly QuantityCode PoundForce = new QuantityCode { Value = "C78" };
+    public static QuantityCode PoundForce => new() { Value = "C78" };
 
     /// <summary>
     /// kilovolt ampere hour
     /// </summary>
-    public static readonly QuantityCode KilovoltAmpereHour = new QuantityCode { Value = "C79" };
+    public static QuantityCode KilovoltAmpereHour => new() { Value = "C79" };
 
     /// <summary>
     /// millicoulomb per kilogram
     /// </summary>
-    public static readonly QuantityCode MillicoulombPerKilogram = new QuantityCode { Value = "C8" };
+    public static QuantityCode MillicoulombPerKilogram => new() { Value = "C8" };
 
     /// <summary>
     /// rad
     /// </summary>
-    public static readonly QuantityCode Rad = new QuantityCode { Value = "C80" };
+    public static QuantityCode Rad => new() { Value = "C80" };
 
     /// <summary>
     /// radian
     /// </summary>
-    public static readonly QuantityCode Radian = new QuantityCode { Value = "C81" };
+    public static QuantityCode Radian => new() { Value = "C81" };
 
     /// <summary>
     /// radian square metre per mole
     /// </summary>
-    public static readonly QuantityCode RadianSquareMetrePerMole = new QuantityCode { Value = "C82" };
+    public static QuantityCode RadianSquareMetrePerMole => new() { Value = "C82" };
 
     /// <summary>
     /// radian square metre per kilogram
     /// </summary>
-    public static readonly QuantityCode RadianSquareMetrePerKilogram = new QuantityCode { Value = "C83" };
+    public static QuantityCode RadianSquareMetrePerKilogram => new() { Value = "C83" };
 
     /// <summary>
     /// radian per metre
     /// </summary>
-    public static readonly QuantityCode RadianPerMetre = new QuantityCode { Value = "C84" };
+    public static QuantityCode RadianPerMetre => new() { Value = "C84" };
 
     /// <summary>
     /// reciprocal angstrom
     /// </summary>
-    public static readonly QuantityCode ReciprocalAngstrom = new QuantityCode { Value = "C85" };
+    public static QuantityCode ReciprocalAngstrom => new() { Value = "C85" };
 
     /// <summary>
     /// reciprocal cubic metre
     /// </summary>
-    public static readonly QuantityCode ReciprocalCubicMetre = new QuantityCode { Value = "C86" };
+    public static QuantityCode ReciprocalCubicMetre => new() { Value = "C86" };
 
     /// <summary>
     /// reciprocal cubic metre per second
     /// </summary>
-    public static readonly QuantityCode ReciprocalCubicMetrePerSecond = new QuantityCode { Value = "C87" };
+    public static QuantityCode ReciprocalCubicMetrePerSecond => new() { Value = "C87" };
 
     /// <summary>
     /// reciprocal electron volt per cubic metre
     /// </summary>
-    public static readonly QuantityCode ReciprocalElectronVoltPerCubicMetre = new QuantityCode { Value = "C88" };
+    public static QuantityCode ReciprocalElectronVoltPerCubicMetre => new() { Value = "C88" };
 
     /// <summary>
     /// reciprocal henry
     /// </summary>
-    public static readonly QuantityCode ReciprocalHenry = new QuantityCode { Value = "C89" };
+    public static QuantityCode ReciprocalHenry => new() { Value = "C89" };
 
     /// <summary>
     /// coil group
     /// </summary>
-    public static readonly QuantityCode CoilGroup = new QuantityCode { Value = "C9" };
+    public static QuantityCode CoilGroup => new() { Value = "C9" };
 
     /// <summary>
     /// reciprocal joule per cubic metre
     /// </summary>
-    public static readonly QuantityCode ReciprocalJoulePerCubicMetre = new QuantityCode { Value = "C90" };
+    public static QuantityCode ReciprocalJoulePerCubicMetre => new() { Value = "C90" };
 
     /// <summary>
     /// reciprocal kelvin or kelvin to the power minus one
     /// </summary>
-    public static readonly QuantityCode ReciprocalKelvinOrKelvinToThePowerMinusOne = new QuantityCode { Value = "C91" };
+    public static QuantityCode ReciprocalKelvinOrKelvinToThePowerMinusOne => new() { Value = "C91" };
 
     /// <summary>
     /// reciprocal metre
     /// </summary>
-    public static readonly QuantityCode ReciprocalMetre = new QuantityCode { Value = "C92" };
+    public static QuantityCode ReciprocalMetre => new() { Value = "C92" };
 
     /// <summary>
     /// reciprocal square metre
     /// </summary>
-    public static readonly QuantityCode ReciprocalSquareMetre = new QuantityCode { Value = "C93" };
+    public static QuantityCode ReciprocalSquareMetre => new() { Value = "C93" };
 
     /// <summary>
     /// reciprocal minute
     /// </summary>
-    public static readonly QuantityCode ReciprocalMinute = new QuantityCode { Value = "C94" };
+    public static QuantityCode ReciprocalMinute => new() { Value = "C94" };
 
     /// <summary>
     /// reciprocal mole
     /// </summary>
-    public static readonly QuantityCode ReciprocalMole = new QuantityCode { Value = "C95" };
+    public static QuantityCode ReciprocalMole => new() { Value = "C95" };
 
     /// <summary>
     /// reciprocal pascal or pascal to the power minus one
     /// </summary>
-    public static readonly QuantityCode ReciprocalPascalOrPascalToThePowerMinusOne = new QuantityCode { Value = "C96" };
+    public static QuantityCode ReciprocalPascalOrPascalToThePowerMinusOne => new() { Value = "C96" };
 
     /// <summary>
     /// reciprocal second
     /// </summary>
-    public static readonly QuantityCode ReciprocalSecond = new QuantityCode { Value = "C97" };
+    public static QuantityCode ReciprocalSecond => new() { Value = "C97" };
 
     /// <summary>
     /// reciprocal second per metre squared
     /// </summary>
-    public static readonly QuantityCode ReciprocalSecondPerMetreSquared = new QuantityCode { Value = "C99" };
+    public static QuantityCode ReciprocalSecondPerMetreSquared => new() { Value = "C99" };
 
     /// <summary>
     /// carrying capacity in metric ton
     /// </summary>
-    public static readonly QuantityCode CarryingCapacityInMetricTon = new QuantityCode { Value = "CCT" };
+    public static QuantityCode CarryingCapacityInMetricTon => new() { Value = "CCT" };
 
     /// <summary>
     /// candela
     /// </summary>
-    public static readonly QuantityCode Candela = new QuantityCode { Value = "CDL" };
+    public static QuantityCode Candela => new() { Value = "CDL" };
 
     /// <summary>
     /// degree Celsius
     /// </summary>
-    public static readonly QuantityCode DegreeCelsius = new QuantityCode { Value = "CEL" };
+    public static QuantityCode DegreeCelsius => new() { Value = "CEL" };
 
     /// <summary>
     /// hundred
     /// </summary>
-    public static readonly QuantityCode Hundred = new QuantityCode { Value = "CEN" };
+    public static QuantityCode Hundred => new() { Value = "CEN" };
 
     /// <summary>
     /// card
     /// </summary>
-    public static readonly QuantityCode Card = new QuantityCode { Value = "CG" };
+    public static QuantityCode Card => new() { Value = "CG" };
 
     /// <summary>
     /// centigram
     /// </summary>
-    public static readonly QuantityCode Centigram = new QuantityCode { Value = "CGM" };
+    public static QuantityCode Centigram => new() { Value = "CGM" };
 
     /// <summary>
     /// coulomb per kilogram
     /// </summary>
-    public static readonly QuantityCode CoulombPerKilogram = new QuantityCode { Value = "CKG" };
+    public static QuantityCode CoulombPerKilogram => new() { Value = "CKG" };
 
     /// <summary>
     /// hundred leave
     /// </summary>
-    public static readonly QuantityCode HundredLeave = new QuantityCode { Value = "CLF" };
+    public static QuantityCode HundredLeave => new() { Value = "CLF" };
 
     /// <summary>
     /// centilitre
     /// </summary>
-    public static readonly QuantityCode Centilitre = new QuantityCode { Value = "CLT" };
+    public static QuantityCode Centilitre => new() { Value = "CLT" };
 
     /// <summary>
     /// square centimetre
     /// </summary>
-    public static readonly QuantityCode SquareCentimetre = new QuantityCode { Value = "CMK" };
+    public static QuantityCode SquareCentimetre => new() { Value = "CMK" };
 
     /// <summary>
     /// cubic centimetre
     /// </summary>
-    public static readonly QuantityCode CubicCentimetre = new QuantityCode { Value = "CMQ" };
+    public static QuantityCode CubicCentimetre => new() { Value = "CMQ" };
 
     /// <summary>
     /// centimetre
     /// </summary>
-    public static readonly QuantityCode Centimetre = new QuantityCode { Value = "CMT" };
+    public static QuantityCode Centimetre => new() { Value = "CMT" };
 
     /// <summary>
     /// hundred pack
     /// </summary>
-    public static readonly QuantityCode HundredPack = new QuantityCode { Value = "CNP" };
+    public static QuantityCode HundredPack => new() { Value = "CNP" };
 
     /// <summary>
     /// cental (UK)
     /// </summary>
-    public static readonly QuantityCode CentalUK = new QuantityCode { Value = "CNT" };
+    public static QuantityCode CentalUK => new() { Value = "CNT" };
 
     /// <summary>
     /// coulomb
     /// </summary>
-    public static readonly QuantityCode Coulomb = new QuantityCode { Value = "COU" };
+    public static QuantityCode Coulomb => new() { Value = "COU" };
 
     /// <summary>
     /// content gram
     /// </summary>
-    public static readonly QuantityCode ContentGram = new QuantityCode { Value = "CTG" };
+    public static QuantityCode ContentGram => new() { Value = "CTG" };
 
     /// <summary>
     /// metric carat
     /// </summary>
-    public static readonly QuantityCode MetricCarat = new QuantityCode { Value = "CTM" };
+    public static QuantityCode MetricCarat => new() { Value = "CTM" };
 
     /// <summary>
     /// content ton (metric)
     /// </summary>
-    public static readonly QuantityCode ContentTonMetric = new QuantityCode { Value = "CTN" };
+    public static QuantityCode ContentTonMetric => new() { Value = "CTN" };
 
     /// <summary>
     /// curie
     /// </summary>
-    public static readonly QuantityCode Curie = new QuantityCode { Value = "CUR" };
+    public static QuantityCode Curie => new() { Value = "CUR" };
 
     /// <summary>
     /// hundred pound (cwt) / hundred weight (US)
     /// </summary>
-    public static readonly QuantityCode HundredPoundCwtHundredWeightUS = new QuantityCode { Value = "CWA" };
+    public static QuantityCode HundredPoundCwtHundredWeightUS => new() { Value = "CWA" };
 
     /// <summary>
     /// hundred weight (UK)
     /// </summary>
-    public static readonly QuantityCode HundredWeightUK = new QuantityCode { Value = "CWI" };
+    public static QuantityCode HundredWeightUK => new() { Value = "CWI" };
 
     /// <summary>
     /// kilowatt hour per hour
     /// </summary>
-    public static readonly QuantityCode KilowattHourPerHour = new QuantityCode { Value = "D03" };
+    public static QuantityCode KilowattHourPerHour => new() { Value = "D03" };
 
     /// <summary>
     /// lot [unit of weight]
     /// </summary>
-    public static readonly QuantityCode LotUnitOfWeight = new QuantityCode { Value = "D04" };
+    public static QuantityCode LotUnitOfWeight => new() { Value = "D04" };
 
     /// <summary>
     /// reciprocal second per steradian
     /// </summary>
-    public static readonly QuantityCode ReciprocalSecondPerSteradian = new QuantityCode { Value = "D1" };
+    public static QuantityCode ReciprocalSecondPerSteradian => new() { Value = "D1" };
 
     /// <summary>
     /// siemens per metre
     /// </summary>
-    public static readonly QuantityCode SiemensPerMetre = new QuantityCode { Value = "D10" };
+    public static QuantityCode SiemensPerMetre => new() { Value = "D10" };
 
     /// <summary>
     /// mebibit
     /// </summary>
-    public static readonly QuantityCode Mebibit = new QuantityCode { Value = "D11" };
+    public static QuantityCode Mebibit => new() { Value = "D11" };
 
     /// <summary>
     /// siemens square metre per mole
     /// </summary>
-    public static readonly QuantityCode SiemensSquareMetrePerMole = new QuantityCode { Value = "D12" };
+    public static QuantityCode SiemensSquareMetrePerMole => new() { Value = "D12" };
 
     /// <summary>
     /// sievert
     /// </summary>
-    public static readonly QuantityCode Sievert = new QuantityCode { Value = "D13" };
+    public static QuantityCode Sievert => new() { Value = "D13" };
 
     /// <summary>
     /// sone
     /// </summary>
-    public static readonly QuantityCode Sone = new QuantityCode { Value = "D15" };
+    public static QuantityCode Sone => new() { Value = "D15" };
 
     /// <summary>
     /// square centimetre per erg
     /// </summary>
-    public static readonly QuantityCode SquareCentimetrePerErg = new QuantityCode { Value = "D16" };
+    public static QuantityCode SquareCentimetrePerErg => new() { Value = "D16" };
 
     /// <summary>
     /// square centimetre per steradian erg
     /// </summary>
-    public static readonly QuantityCode SquareCentimetrePerSteradianErg = new QuantityCode { Value = "D17" };
+    public static QuantityCode SquareCentimetrePerSteradianErg => new() { Value = "D17" };
 
     /// <summary>
     /// metre kelvin
     /// </summary>
-    public static readonly QuantityCode MetreKelvin = new QuantityCode { Value = "D18" };
+    public static QuantityCode MetreKelvin => new() { Value = "D18" };
 
     /// <summary>
     /// square metre kelvin per watt
     /// </summary>
-    public static readonly QuantityCode SquareMetreKelvinPerWatt = new QuantityCode { Value = "D19" };
+    public static QuantityCode SquareMetreKelvinPerWatt => new() { Value = "D19" };
 
     /// <summary>
     /// reciprocal second per steradian metre squared
     /// </summary>
-    public static readonly QuantityCode ReciprocalSecondPerSteradianMetreSquared = new QuantityCode { Value = "D2" };
+    public static QuantityCode ReciprocalSecondPerSteradianMetreSquared => new() { Value = "D2" };
 
     /// <summary>
     /// square metre per joule
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerJoule = new QuantityCode { Value = "D20" };
+    public static QuantityCode SquareMetrePerJoule => new() { Value = "D20" };
 
     /// <summary>
     /// square metre per kilogram
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerKilogram = new QuantityCode { Value = "D21" };
+    public static QuantityCode SquareMetrePerKilogram => new() { Value = "D21" };
 
     /// <summary>
     /// square metre per mole
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerMole = new QuantityCode { Value = "D22" };
+    public static QuantityCode SquareMetrePerMole => new() { Value = "D22" };
 
     /// <summary>
     /// pen gram (protein)
     /// </summary>
-    public static readonly QuantityCode PenGramProtein = new QuantityCode { Value = "D23" };
+    public static QuantityCode PenGramProtein => new() { Value = "D23" };
 
     /// <summary>
     /// square metre per steradian
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerSteradian = new QuantityCode { Value = "D24" };
+    public static QuantityCode SquareMetrePerSteradian => new() { Value = "D24" };
 
     /// <summary>
     /// square metre per steradian joule
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerSteradianJoule = new QuantityCode { Value = "D25" };
+    public static QuantityCode SquareMetrePerSteradianJoule => new() { Value = "D25" };
 
     /// <summary>
     /// square metre per volt second
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerVoltSecond = new QuantityCode { Value = "D26" };
+    public static QuantityCode SquareMetrePerVoltSecond => new() { Value = "D26" };
 
     /// <summary>
     /// steradian
     /// </summary>
-    public static readonly QuantityCode Steradian = new QuantityCode { Value = "D27" };
+    public static QuantityCode Steradian => new() { Value = "D27" };
 
     /// <summary>
     /// terahertz
     /// </summary>
-    public static readonly QuantityCode Terahertz = new QuantityCode { Value = "D29" };
+    public static QuantityCode Terahertz => new() { Value = "D29" };
 
     /// <summary>
     /// terajoule
     /// </summary>
-    public static readonly QuantityCode Terajoule = new QuantityCode { Value = "D30" };
+    public static QuantityCode Terajoule => new() { Value = "D30" };
 
     /// <summary>
     /// terawatt
     /// </summary>
-    public static readonly QuantityCode Terawatt = new QuantityCode { Value = "D31" };
+    public static QuantityCode Terawatt => new() { Value = "D31" };
 
     /// <summary>
     /// terawatt hour
     /// </summary>
-    public static readonly QuantityCode TerawattHour = new QuantityCode { Value = "D32" };
+    public static QuantityCode TerawattHour => new() { Value = "D32" };
 
     /// <summary>
     /// tesla
     /// </summary>
-    public static readonly QuantityCode Tesla = new QuantityCode { Value = "D33" };
+    public static QuantityCode Tesla => new() { Value = "D33" };
 
     /// <summary>
     /// tex
     /// </summary>
-    public static readonly QuantityCode Tex = new QuantityCode { Value = "D34" };
+    public static QuantityCode Tex => new() { Value = "D34" };
 
     /// <summary>
     /// megabit
     /// </summary>
-    public static readonly QuantityCode Megabit = new QuantityCode { Value = "D36" };
+    public static QuantityCode Megabit => new() { Value = "D36" };
 
     /// <summary>
     /// tonne per cubic metre
     /// </summary>
-    public static readonly QuantityCode TonnePerCubicMetre = new QuantityCode { Value = "D41" };
+    public static QuantityCode TonnePerCubicMetre => new() { Value = "D41" };
 
     /// <summary>
     /// tropical year
     /// </summary>
-    public static readonly QuantityCode TropicalYear = new QuantityCode { Value = "D42" };
+    public static QuantityCode TropicalYear => new() { Value = "D42" };
 
     /// <summary>
     /// unified atomic mass unit
     /// </summary>
-    public static readonly QuantityCode UnifiedAtomicMassUnit = new QuantityCode { Value = "D43" };
+    public static QuantityCode UnifiedAtomicMassUnit => new() { Value = "D43" };
 
     /// <summary>
     /// var
     /// </summary>
-    public static readonly QuantityCode Var = new QuantityCode { Value = "D44" };
+    public static QuantityCode Var => new() { Value = "D44" };
 
     /// <summary>
     /// volt squared per kelvin squared
     /// </summary>
-    public static readonly QuantityCode VoltSquaredPerKelvinSquared = new QuantityCode { Value = "D45" };
+    public static QuantityCode VoltSquaredPerKelvinSquared => new() { Value = "D45" };
 
     /// <summary>
     /// volt - ampere
     /// </summary>
-    public static readonly QuantityCode VoltAmpere = new QuantityCode { Value = "D46" };
+    public static QuantityCode VoltAmpere => new() { Value = "D46" };
 
     /// <summary>
     /// volt per centimetre
     /// </summary>
-    public static readonly QuantityCode VoltPerCentimetre = new QuantityCode { Value = "D47" };
+    public static QuantityCode VoltPerCentimetre => new() { Value = "D47" };
 
     /// <summary>
     /// volt per kelvin
     /// </summary>
-    public static readonly QuantityCode VoltPerKelvin = new QuantityCode { Value = "D48" };
+    public static QuantityCode VoltPerKelvin => new() { Value = "D48" };
 
     /// <summary>
     /// millivolt per kelvin
     /// </summary>
-    public static readonly QuantityCode MillivoltPerKelvin = new QuantityCode { Value = "D49" };
+    public static QuantityCode MillivoltPerKelvin => new() { Value = "D49" };
 
     /// <summary>
     /// kilogram per square centimetre
     /// </summary>
-    public static readonly QuantityCode KilogramPerSquareCentimetre = new QuantityCode { Value = "D5" };
+    public static QuantityCode KilogramPerSquareCentimetre => new() { Value = "D5" };
 
     /// <summary>
     /// volt per metre
     /// </summary>
-    public static readonly QuantityCode VoltPerMetre = new QuantityCode { Value = "D50" };
+    public static QuantityCode VoltPerMetre => new() { Value = "D50" };
 
     /// <summary>
     /// volt per millimetre
     /// </summary>
-    public static readonly QuantityCode VoltPerMillimetre = new QuantityCode { Value = "D51" };
+    public static QuantityCode VoltPerMillimetre => new() { Value = "D51" };
 
     /// <summary>
     /// watt per kelvin
     /// </summary>
-    public static readonly QuantityCode WattPerKelvin = new QuantityCode { Value = "D52" };
+    public static QuantityCode WattPerKelvin => new() { Value = "D52" };
 
     /// <summary>
     /// watt per metre kelvin
     /// </summary>
-    public static readonly QuantityCode WattPerMetreKelvin = new QuantityCode { Value = "D53" };
+    public static QuantityCode WattPerMetreKelvin => new() { Value = "D53" };
 
     /// <summary>
     /// watt per square metre
     /// </summary>
-    public static readonly QuantityCode WattPerSquareMetre = new QuantityCode { Value = "D54" };
+    public static QuantityCode WattPerSquareMetre => new() { Value = "D54" };
 
     /// <summary>
     /// watt per square metre kelvin
     /// </summary>
-    public static readonly QuantityCode WattPerSquareMetreKelvin = new QuantityCode { Value = "D55" };
+    public static QuantityCode WattPerSquareMetreKelvin => new() { Value = "D55" };
 
     /// <summary>
     /// watt per square metre kelvin to the fourth power
     /// </summary>
-    public static readonly QuantityCode WattPerSquareMetreKelvinToTheFourthPower = new QuantityCode { Value = "D56" };
+    public static QuantityCode WattPerSquareMetreKelvinToTheFourthPower => new() { Value = "D56" };
 
     /// <summary>
     /// watt per steradian
     /// </summary>
-    public static readonly QuantityCode WattPerSteradian = new QuantityCode { Value = "D57" };
+    public static QuantityCode WattPerSteradian => new() { Value = "D57" };
 
     /// <summary>
     /// watt per steradian square metre
     /// </summary>
-    public static readonly QuantityCode WattPerSteradianSquareMetre = new QuantityCode { Value = "D58" };
+    public static QuantityCode WattPerSteradianSquareMetre => new() { Value = "D58" };
 
     /// <summary>
     /// weber per metre
     /// </summary>
-    public static readonly QuantityCode WeberPerMetre = new QuantityCode { Value = "D59" };
+    public static QuantityCode WeberPerMetre => new() { Value = "D59" };
 
     /// <summary>
     /// roentgen per second
     /// </summary>
-    public static readonly QuantityCode RoentgenPerSecond = new QuantityCode { Value = "D6" };
+    public static QuantityCode RoentgenPerSecond => new() { Value = "D6" };
 
     /// <summary>
     /// weber per millimetre
     /// </summary>
-    public static readonly QuantityCode WeberPerMillimetre = new QuantityCode { Value = "D60" };
+    public static QuantityCode WeberPerMillimetre => new() { Value = "D60" };
 
     /// <summary>
     /// minute [unit of angle]
     /// </summary>
-    public static readonly QuantityCode MinuteUnitOfAngle = new QuantityCode { Value = "D61" };
+    public static QuantityCode MinuteUnitOfAngle => new() { Value = "D61" };
 
     /// <summary>
     /// second [unit of angle]
     /// </summary>
-    public static readonly QuantityCode SecondUnitOfAngle = new QuantityCode { Value = "D62" };
+    public static QuantityCode SecondUnitOfAngle => new() { Value = "D62" };
 
     /// <summary>
     /// book
     /// </summary>
-    public static readonly QuantityCode Book = new QuantityCode { Value = "D63" };
+    public static QuantityCode Book => new() { Value = "D63" };
 
     /// <summary>
     /// round
     /// </summary>
-    public static readonly QuantityCode Round = new QuantityCode { Value = "D65" };
+    public static QuantityCode Round => new() { Value = "D65" };
 
     /// <summary>
     /// number of words
     /// </summary>
-    public static readonly QuantityCode NumberOfWords = new QuantityCode { Value = "D68" };
+    public static QuantityCode NumberOfWords => new() { Value = "D68" };
 
     /// <summary>
     /// inch to the fourth power
     /// </summary>
-    public static readonly QuantityCode InchToTheFourthPower = new QuantityCode { Value = "D69" };
+    public static QuantityCode InchToTheFourthPower => new() { Value = "D69" };
 
     /// <summary>
     /// joule square metre
     /// </summary>
-    public static readonly QuantityCode JouleSquareMetre = new QuantityCode { Value = "D73" };
+    public static QuantityCode JouleSquareMetre => new() { Value = "D73" };
 
     /// <summary>
     /// kilogram per mole
     /// </summary>
-    public static readonly QuantityCode KilogramPerMole = new QuantityCode { Value = "D74" };
+    public static QuantityCode KilogramPerMole => new() { Value = "D74" };
 
     /// <summary>
     /// megacoulomb
     /// </summary>
-    public static readonly QuantityCode Megacoulomb = new QuantityCode { Value = "D77" };
+    public static QuantityCode Megacoulomb => new() { Value = "D77" };
 
     /// <summary>
     /// megajoule per second
     /// </summary>
-    public static readonly QuantityCode MegajoulePerSecond = new QuantityCode { Value = "D78" };
+    public static QuantityCode MegajoulePerSecond => new() { Value = "D78" };
 
     /// <summary>
     /// microwatt
     /// </summary>
-    public static readonly QuantityCode Microwatt = new QuantityCode { Value = "D80" };
+    public static QuantityCode Microwatt => new() { Value = "D80" };
 
     /// <summary>
     /// microtesla
     /// </summary>
-    public static readonly QuantityCode Microtesla = new QuantityCode { Value = "D81" };
+    public static QuantityCode Microtesla => new() { Value = "D81" };
 
     /// <summary>
     /// microvolt
     /// </summary>
-    public static readonly QuantityCode Microvolt = new QuantityCode { Value = "D82" };
+    public static QuantityCode Microvolt => new() { Value = "D82" };
 
     /// <summary>
     /// millinewton metre
     /// </summary>
-    public static readonly QuantityCode MillinewtonMetre = new QuantityCode { Value = "D83" };
+    public static QuantityCode MillinewtonMetre => new() { Value = "D83" };
 
     /// <summary>
     /// microwatt per square metre
     /// </summary>
-    public static readonly QuantityCode MicrowattPerSquareMetre = new QuantityCode { Value = "D85" };
+    public static QuantityCode MicrowattPerSquareMetre => new() { Value = "D85" };
 
     /// <summary>
     /// millicoulomb
     /// </summary>
-    public static readonly QuantityCode Millicoulomb = new QuantityCode { Value = "D86" };
+    public static QuantityCode Millicoulomb => new() { Value = "D86" };
 
     /// <summary>
     /// millimole per kilogram
     /// </summary>
-    public static readonly QuantityCode MillimolePerKilogram = new QuantityCode { Value = "D87" };
+    public static QuantityCode MillimolePerKilogram => new() { Value = "D87" };
 
     /// <summary>
     /// millicoulomb per cubic metre
     /// </summary>
-    public static readonly QuantityCode MillicoulombPerCubicMetre = new QuantityCode { Value = "D88" };
+    public static QuantityCode MillicoulombPerCubicMetre => new() { Value = "D88" };
 
     /// <summary>
     /// millicoulomb per square metre
     /// </summary>
-    public static readonly QuantityCode MillicoulombPerSquareMetre = new QuantityCode { Value = "D89" };
+    public static QuantityCode MillicoulombPerSquareMetre => new() { Value = "D89" };
 
     /// <summary>
     /// rem
     /// </summary>
-    public static readonly QuantityCode Rem = new QuantityCode { Value = "D91" };
+    public static QuantityCode Rem => new() { Value = "D91" };
 
     /// <summary>
     /// second per cubic metre
     /// </summary>
-    public static readonly QuantityCode SecondPerCubicMetre = new QuantityCode { Value = "D93" };
+    public static QuantityCode SecondPerCubicMetre => new() { Value = "D93" };
 
     /// <summary>
     /// second per cubic metre radian
     /// </summary>
-    public static readonly QuantityCode SecondPerCubicMetreRadian = new QuantityCode { Value = "D94" };
+    public static QuantityCode SecondPerCubicMetreRadian => new() { Value = "D94" };
 
     /// <summary>
     /// joule per gram
     /// </summary>
-    public static readonly QuantityCode JoulePerGram = new QuantityCode { Value = "D95" };
+    public static QuantityCode JoulePerGram => new() { Value = "D95" };
 
     /// <summary>
     /// decare
     /// </summary>
-    public static readonly QuantityCode Decare = new QuantityCode { Value = "DAA" };
+    public static QuantityCode Decare => new() { Value = "DAA" };
 
     /// <summary>
     /// ten day
     /// </summary>
-    public static readonly QuantityCode TenDay = new QuantityCode { Value = "DAD" };
+    public static QuantityCode TenDay => new() { Value = "DAD" };
 
     /// <summary>
     /// day
     /// </summary>
-    public static readonly QuantityCode Day = new QuantityCode { Value = "DAY" };
+    public static QuantityCode Day => new() { Value = "DAY" };
 
     /// <summary>
     /// dry pound
     /// </summary>
-    public static readonly QuantityCode DryPound = new QuantityCode { Value = "DB" };
+    public static QuantityCode DryPound => new() { Value = "DB" };
 
     /// <summary>
     /// Decibel-milliwatts
     /// </summary>
-    public static readonly QuantityCode DecibelMilliwatts = new QuantityCode { Value = "DBM" };
+    public static QuantityCode DecibelMilliwatts => new() { Value = "DBM" };
 
     /// <summary>
     /// Decibel watt
     /// </summary>
-    public static readonly QuantityCode DecibelWatt = new QuantityCode { Value = "DBW" };
+    public static QuantityCode DecibelWatt => new() { Value = "DBW" };
 
     /// <summary>
     /// degree [unit of angle]
     /// </summary>
-    public static readonly QuantityCode DegreeUnitOfAngle = new QuantityCode { Value = "DD" };
+    public static QuantityCode DegreeUnitOfAngle => new() { Value = "DD" };
 
     /// <summary>
     /// decade
     /// </summary>
-    public static readonly QuantityCode Decade = new QuantityCode { Value = "DEC" };
+    public static QuantityCode Decade => new() { Value = "DEC" };
 
     /// <summary>
     /// decigram
     /// </summary>
-    public static readonly QuantityCode Decigram = new QuantityCode { Value = "DG" };
+    public static QuantityCode Decigram => new() { Value = "DG" };
 
     /// <summary>
     /// decagram
     /// </summary>
-    public static readonly QuantityCode Decagram = new QuantityCode { Value = "DJ" };
+    public static QuantityCode Decagram => new() { Value = "DJ" };
 
     /// <summary>
     /// decilitre
     /// </summary>
-    public static readonly QuantityCode Decilitre = new QuantityCode { Value = "DLT" };
+    public static QuantityCode Decilitre => new() { Value = "DLT" };
 
     /// <summary>
     /// cubic decametre
     /// </summary>
-    public static readonly QuantityCode CubicDecametre = new QuantityCode { Value = "DMA" };
+    public static QuantityCode CubicDecametre => new() { Value = "DMA" };
 
     /// <summary>
     /// square decimetre
     /// </summary>
-    public static readonly QuantityCode SquareDecimetre = new QuantityCode { Value = "DMK" };
+    public static QuantityCode SquareDecimetre => new() { Value = "DMK" };
 
     /// <summary>
     /// standard kilolitre
     /// </summary>
-    public static readonly QuantityCode StandardKilolitre = new QuantityCode { Value = "DMO" };
+    public static QuantityCode StandardKilolitre => new() { Value = "DMO" };
 
     /// <summary>
     /// cubic decimetre
     /// </summary>
-    public static readonly QuantityCode CubicDecimetre = new QuantityCode { Value = "DMQ" };
+    public static QuantityCode CubicDecimetre => new() { Value = "DMQ" };
 
     /// <summary>
     /// decimetre
     /// </summary>
-    public static readonly QuantityCode Decimetre = new QuantityCode { Value = "DMT" };
+    public static QuantityCode Decimetre => new() { Value = "DMT" };
 
     /// <summary>
     /// decinewton metre
     /// </summary>
-    public static readonly QuantityCode DecinewtonMetre = new QuantityCode { Value = "DN" };
+    public static QuantityCode DecinewtonMetre => new() { Value = "DN" };
 
     /// <summary>
     /// dozen piece
     /// </summary>
-    public static readonly QuantityCode DozenPiece = new QuantityCode { Value = "DPC" };
+    public static QuantityCode DozenPiece => new() { Value = "DPC" };
 
     /// <summary>
     /// dozen pair
     /// </summary>
-    public static readonly QuantityCode DozenPair = new QuantityCode { Value = "DPR" };
+    public static QuantityCode DozenPair => new() { Value = "DPR" };
 
     /// <summary>
     /// displacement tonnage
     /// </summary>
-    public static readonly QuantityCode DisplacementTonnage = new QuantityCode { Value = "DPT" };
+    public static QuantityCode DisplacementTonnage => new() { Value = "DPT" };
 
     /// <summary>
     /// dram (US)
     /// </summary>
-    public static readonly QuantityCode DramUS = new QuantityCode { Value = "DRA" };
+    public static QuantityCode DramUS => new() { Value = "DRA" };
 
     /// <summary>
     /// dram (UK)
     /// </summary>
-    public static readonly QuantityCode DramUK = new QuantityCode { Value = "DRI" };
+    public static QuantityCode DramUK => new() { Value = "DRI" };
 
     /// <summary>
     /// dozen roll
     /// </summary>
-    public static readonly QuantityCode DozenRoll = new QuantityCode { Value = "DRL" };
+    public static QuantityCode DozenRoll => new() { Value = "DRL" };
 
     /// <summary>
     /// dry ton
     /// </summary>
-    public static readonly QuantityCode DryTon = new QuantityCode { Value = "DT" };
+    public static QuantityCode DryTon => new() { Value = "DT" };
 
     /// <summary>
     /// decitonne
     /// </summary>
-    public static readonly QuantityCode Decitonne = new QuantityCode { Value = "DTN" };
+    public static QuantityCode Decitonne => new() { Value = "DTN" };
 
     /// <summary>
     /// pennyweight
     /// </summary>
-    public static readonly QuantityCode Pennyweight = new QuantityCode { Value = "DWT" };
+    public static QuantityCode Pennyweight => new() { Value = "DWT" };
 
     /// <summary>
     /// dozen
     /// </summary>
-    public static readonly QuantityCode Dozen = new QuantityCode { Value = "DZN" };
+    public static QuantityCode Dozen => new() { Value = "DZN" };
 
     /// <summary>
     /// dozen pack
     /// </summary>
-    public static readonly QuantityCode DozenPack = new QuantityCode { Value = "DZP" };
+    public static QuantityCode DozenPack => new() { Value = "DZP" };
 
     /// <summary>
     /// newton per square centimetre
     /// </summary>
-    public static readonly QuantityCode NewtonPerSquareCentimetre = new QuantityCode { Value = "E01" };
+    public static QuantityCode NewtonPerSquareCentimetre => new() { Value = "E01" };
 
     /// <summary>
     /// megawatt hour per hour
     /// </summary>
-    public static readonly QuantityCode MegawattHourPerHour = new QuantityCode { Value = "E07" };
+    public static QuantityCode MegawattHourPerHour => new() { Value = "E07" };
 
     /// <summary>
     /// megawatt per hertz
     /// </summary>
-    public static readonly QuantityCode MegawattPerHertz = new QuantityCode { Value = "E08" };
+    public static QuantityCode MegawattPerHertz => new() { Value = "E08" };
 
     /// <summary>
     /// milliampere hour
     /// </summary>
-    public static readonly QuantityCode MilliampereHour = new QuantityCode { Value = "E09" };
+    public static QuantityCode MilliampereHour => new() { Value = "E09" };
 
     /// <summary>
     /// degree day
     /// </summary>
-    public static readonly QuantityCode DegreeDay = new QuantityCode { Value = "E10" };
+    public static QuantityCode DegreeDay => new() { Value = "E10" };
 
     /// <summary>
     /// mille
     /// </summary>
-    public static readonly QuantityCode Mille = new QuantityCode { Value = "E12" };
+    public static QuantityCode Mille => new() { Value = "E12" };
 
     /// <summary>
     /// kilocalorie (international table)
     /// </summary>
-    public static readonly QuantityCode KilocalorieInternationalTable = new QuantityCode { Value = "E14" };
+    public static QuantityCode KilocalorieInternationalTable => new() { Value = "E14" };
 
     /// <summary>
     /// kilocalorie (thermochemical) per hour
     /// </summary>
-    public static readonly QuantityCode KilocalorieThermochemicalPerHour = new QuantityCode { Value = "E15" };
+    public static QuantityCode KilocalorieThermochemicalPerHour => new() { Value = "E15" };
 
     /// <summary>
     /// million Btu(IT) per hour
     /// </summary>
-    public static readonly QuantityCode MillionBtuITPerHour = new QuantityCode { Value = "E16" };
+    public static QuantityCode MillionBtuITPerHour => new() { Value = "E16" };
 
     /// <summary>
     /// cubic foot per second
     /// </summary>
-    public static readonly QuantityCode CubicFootPerSecond = new QuantityCode { Value = "E17" };
+    public static QuantityCode CubicFootPerSecond => new() { Value = "E17" };
 
     /// <summary>
     /// tonne per hour
     /// </summary>
-    public static readonly QuantityCode TonnePerHour = new QuantityCode { Value = "E18" };
+    public static QuantityCode TonnePerHour => new() { Value = "E18" };
 
     /// <summary>
     /// ping
     /// </summary>
-    public static readonly QuantityCode Ping = new QuantityCode { Value = "E19" };
+    public static QuantityCode Ping => new() { Value = "E19" };
 
     /// <summary>
     /// megabit per second
     /// </summary>
-    public static readonly QuantityCode MegabitPerSecond = new QuantityCode { Value = "E20" };
+    public static QuantityCode MegabitPerSecond => new() { Value = "E20" };
 
     /// <summary>
     /// shares
     /// </summary>
-    public static readonly QuantityCode Shares = new QuantityCode { Value = "E21" };
+    public static QuantityCode Shares => new() { Value = "E21" };
 
     /// <summary>
     /// TEU
     /// </summary>
-    public static readonly QuantityCode TEU = new QuantityCode { Value = "E22" };
+    public static QuantityCode TEU => new() { Value = "E22" };
 
     /// <summary>
     /// tyre
     /// </summary>
-    public static readonly QuantityCode Tyre = new QuantityCode { Value = "E23" };
+    public static QuantityCode Tyre => new() { Value = "E23" };
 
     /// <summary>
     /// active unit
     /// </summary>
-    public static readonly QuantityCode ActiveUnit = new QuantityCode { Value = "E25" };
+    public static QuantityCode ActiveUnit => new() { Value = "E25" };
 
     /// <summary>
     /// dose
     /// </summary>
-    public static readonly QuantityCode Dose = new QuantityCode { Value = "E27" };
+    public static QuantityCode Dose => new() { Value = "E27" };
 
     /// <summary>
     /// air dry ton
     /// </summary>
-    public static readonly QuantityCode AirDryTon = new QuantityCode { Value = "E28" };
+    public static QuantityCode AirDryTon => new() { Value = "E28" };
 
     /// <summary>
     /// strand
     /// </summary>
-    public static readonly QuantityCode Strand = new QuantityCode { Value = "E30" };
+    public static QuantityCode Strand => new() { Value = "E30" };
 
     /// <summary>
     /// square metre per litre
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerLitre = new QuantityCode { Value = "E31" };
+    public static QuantityCode SquareMetrePerLitre => new() { Value = "E31" };
 
     /// <summary>
     /// litre per hour
     /// </summary>
-    public static readonly QuantityCode LitrePerHour = new QuantityCode { Value = "E32" };
+    public static QuantityCode LitrePerHour => new() { Value = "E32" };
 
     /// <summary>
     /// foot per thousand
     /// </summary>
-    public static readonly QuantityCode FootPerThousand = new QuantityCode { Value = "E33" };
+    public static QuantityCode FootPerThousand => new() { Value = "E33" };
 
     /// <summary>
     /// gigabyte
     /// </summary>
-    public static readonly QuantityCode Gigabyte = new QuantityCode { Value = "E34" };
+    public static QuantityCode Gigabyte => new() { Value = "E34" };
 
     /// <summary>
     /// terabyte
     /// </summary>
-    public static readonly QuantityCode Terabyte = new QuantityCode { Value = "E35" };
+    public static QuantityCode Terabyte => new() { Value = "E35" };
 
     /// <summary>
     /// petabyte
     /// </summary>
-    public static readonly QuantityCode Petabyte = new QuantityCode { Value = "E36" };
+    public static QuantityCode Petabyte => new() { Value = "E36" };
 
     /// <summary>
     /// pixel
     /// </summary>
-    public static readonly QuantityCode Pixel = new QuantityCode { Value = "E37" };
+    public static QuantityCode Pixel => new() { Value = "E37" };
 
     /// <summary>
     /// megapixel
     /// </summary>
-    public static readonly QuantityCode Megapixel = new QuantityCode { Value = "E38" };
+    public static QuantityCode Megapixel => new() { Value = "E38" };
 
     /// <summary>
     /// dots per inch
     /// </summary>
-    public static readonly QuantityCode DotsPerInch = new QuantityCode { Value = "E39" };
+    public static QuantityCode DotsPerInch => new() { Value = "E39" };
 
     /// <summary>
     /// gross kilogram
     /// </summary>
-    public static readonly QuantityCode GrossKilogram = new QuantityCode { Value = "E4" };
+    public static QuantityCode GrossKilogram => new() { Value = "E4" };
 
     /// <summary>
     /// part per hundred thousand
     /// </summary>
-    public static readonly QuantityCode PartPerHundredThousand = new QuantityCode { Value = "E40" };
+    public static QuantityCode PartPerHundredThousand => new() { Value = "E40" };
 
     /// <summary>
     /// kilogram-force per square millimetre
     /// </summary>
-    public static readonly QuantityCode KilogramForcePerSquareMillimetre = new QuantityCode { Value = "E41" };
+    public static QuantityCode KilogramForcePerSquareMillimetre => new() { Value = "E41" };
 
     /// <summary>
     /// kilogram-force per square centimetre
     /// </summary>
-    public static readonly QuantityCode KilogramForcePerSquareCentimetre = new QuantityCode { Value = "E42" };
+    public static QuantityCode KilogramForcePerSquareCentimetre => new() { Value = "E42" };
 
     /// <summary>
     /// joule per square centimetre
     /// </summary>
-    public static readonly QuantityCode JoulePerSquareCentimetre = new QuantityCode { Value = "E43" };
+    public static QuantityCode JoulePerSquareCentimetre => new() { Value = "E43" };
 
     /// <summary>
     /// kilogram-force metre per square centimetre
     /// </summary>
-    public static readonly QuantityCode KilogramForceMetrePerSquareCentimetre = new QuantityCode { Value = "E44" };
+    public static QuantityCode KilogramForceMetrePerSquareCentimetre => new() { Value = "E44" };
 
     /// <summary>
     /// milliohm
     /// </summary>
-    public static readonly QuantityCode Milliohm = new QuantityCode { Value = "E45" };
+    public static QuantityCode Milliohm => new() { Value = "E45" };
 
     /// <summary>
     /// kilowatt hour per cubic metre
     /// </summary>
-    public static readonly QuantityCode KilowattHourPerCubicMetre = new QuantityCode { Value = "E46" };
+    public static QuantityCode KilowattHourPerCubicMetre => new() { Value = "E46" };
 
     /// <summary>
     /// kilowatt hour per kelvin
     /// </summary>
-    public static readonly QuantityCode KilowattHourPerKelvin = new QuantityCode { Value = "E47" };
+    public static QuantityCode KilowattHourPerKelvin => new() { Value = "E47" };
 
     /// <summary>
     /// service unit
     /// </summary>
-    public static readonly QuantityCode ServiceUnit = new QuantityCode { Value = "E48" };
+    public static QuantityCode ServiceUnit => new() { Value = "E48" };
 
     /// <summary>
     /// working day
     /// </summary>
-    public static readonly QuantityCode WorkingDay = new QuantityCode { Value = "E49" };
+    public static QuantityCode WorkingDay => new() { Value = "E49" };
 
     /// <summary>
     /// accounting unit
     /// </summary>
-    public static readonly QuantityCode AccountingUnit = new QuantityCode { Value = "E50" };
+    public static QuantityCode AccountingUnit => new() { Value = "E50" };
 
     /// <summary>
     /// job
     /// </summary>
-    public static readonly QuantityCode Job = new QuantityCode { Value = "E51" };
+    public static QuantityCode Job => new() { Value = "E51" };
 
     /// <summary>
     /// run foot
     /// </summary>
-    public static readonly QuantityCode RunFoot = new QuantityCode { Value = "E52" };
+    public static QuantityCode RunFoot => new() { Value = "E52" };
 
     /// <summary>
     /// test
     /// </summary>
-    public static readonly QuantityCode Test = new QuantityCode { Value = "E53" };
+    public static QuantityCode Test => new() { Value = "E53" };
 
     /// <summary>
     /// trip
     /// </summary>
-    public static readonly QuantityCode Trip = new QuantityCode { Value = "E54" };
+    public static QuantityCode Trip => new() { Value = "E54" };
 
     /// <summary>
     /// use
     /// </summary>
-    public static readonly QuantityCode Use = new QuantityCode { Value = "E55" };
+    public static QuantityCode Use => new() { Value = "E55" };
 
     /// <summary>
     /// well
     /// </summary>
-    public static readonly QuantityCode Well = new QuantityCode { Value = "E56" };
+    public static QuantityCode Well => new() { Value = "E56" };
 
     /// <summary>
     /// zone
     /// </summary>
-    public static readonly QuantityCode Zone = new QuantityCode { Value = "E57" };
+    public static QuantityCode Zone => new() { Value = "E57" };
 
     /// <summary>
     /// exabit per second
     /// </summary>
-    public static readonly QuantityCode ExabitPerSecond = new QuantityCode { Value = "E58" };
+    public static QuantityCode ExabitPerSecond => new() { Value = "E58" };
 
     /// <summary>
     /// exbibyte
     /// </summary>
-    public static readonly QuantityCode Exbibyte = new QuantityCode { Value = "E59" };
+    public static QuantityCode Exbibyte => new() { Value = "E59" };
 
     /// <summary>
     /// pebibyte
     /// </summary>
-    public static readonly QuantityCode Pebibyte = new QuantityCode { Value = "E60" };
+    public static QuantityCode Pebibyte => new() { Value = "E60" };
 
     /// <summary>
     /// tebibyte
     /// </summary>
-    public static readonly QuantityCode Tebibyte = new QuantityCode { Value = "E61" };
+    public static QuantityCode Tebibyte => new() { Value = "E61" };
 
     /// <summary>
     /// gibibyte
     /// </summary>
-    public static readonly QuantityCode Gibibyte = new QuantityCode { Value = "E62" };
+    public static QuantityCode Gibibyte => new() { Value = "E62" };
 
     /// <summary>
     /// mebibyte
     /// </summary>
-    public static readonly QuantityCode Mebibyte = new QuantityCode { Value = "E63" };
+    public static QuantityCode Mebibyte => new() { Value = "E63" };
 
     /// <summary>
     /// kibibyte
     /// </summary>
-    public static readonly QuantityCode Kibibyte = new QuantityCode { Value = "E64" };
+    public static QuantityCode Kibibyte => new() { Value = "E64" };
 
     /// <summary>
     /// exbibit per metre
     /// </summary>
-    public static readonly QuantityCode ExbibitPerMetre = new QuantityCode { Value = "E65" };
+    public static QuantityCode ExbibitPerMetre => new() { Value = "E65" };
 
     /// <summary>
     /// exbibit per square metre
     /// </summary>
-    public static readonly QuantityCode ExbibitPerSquareMetre = new QuantityCode { Value = "E66" };
+    public static QuantityCode ExbibitPerSquareMetre => new() { Value = "E66" };
 
     /// <summary>
     /// exbibit per cubic metre
     /// </summary>
-    public static readonly QuantityCode ExbibitPerCubicMetre = new QuantityCode { Value = "E67" };
+    public static QuantityCode ExbibitPerCubicMetre => new() { Value = "E67" };
 
     /// <summary>
     /// gigabyte per second
     /// </summary>
-    public static readonly QuantityCode GigabytePerSecond = new QuantityCode { Value = "E68" };
+    public static QuantityCode GigabytePerSecond => new() { Value = "E68" };
 
     /// <summary>
     /// gibibit per metre
     /// </summary>
-    public static readonly QuantityCode GibibitPerMetre = new QuantityCode { Value = "E69" };
+    public static QuantityCode GibibitPerMetre => new() { Value = "E69" };
 
     /// <summary>
     /// gibibit per square metre
     /// </summary>
-    public static readonly QuantityCode GibibitPerSquareMetre = new QuantityCode { Value = "E70" };
+    public static QuantityCode GibibitPerSquareMetre => new() { Value = "E70" };
 
     /// <summary>
     /// gibibit per cubic metre
     /// </summary>
-    public static readonly QuantityCode GibibitPerCubicMetre = new QuantityCode { Value = "E71" };
+    public static QuantityCode GibibitPerCubicMetre => new() { Value = "E71" };
 
     /// <summary>
     /// kibibit per metre
     /// </summary>
-    public static readonly QuantityCode KibibitPerMetre = new QuantityCode { Value = "E72" };
+    public static QuantityCode KibibitPerMetre => new() { Value = "E72" };
 
     /// <summary>
     /// kibibit per square metre
     /// </summary>
-    public static readonly QuantityCode KibibitPerSquareMetre = new QuantityCode { Value = "E73" };
+    public static QuantityCode KibibitPerSquareMetre => new() { Value = "E73" };
 
     /// <summary>
     /// kibibit per cubic metre
     /// </summary>
-    public static readonly QuantityCode KibibitPerCubicMetre = new QuantityCode { Value = "E74" };
+    public static QuantityCode KibibitPerCubicMetre => new() { Value = "E74" };
 
     /// <summary>
     /// mebibit per metre
     /// </summary>
-    public static readonly QuantityCode MebibitPerMetre = new QuantityCode { Value = "E75" };
+    public static QuantityCode MebibitPerMetre => new() { Value = "E75" };
 
     /// <summary>
     /// mebibit per square metre
     /// </summary>
-    public static readonly QuantityCode MebibitPerSquareMetre = new QuantityCode { Value = "E76" };
+    public static QuantityCode MebibitPerSquareMetre => new() { Value = "E76" };
 
     /// <summary>
     /// mebibit per cubic metre
     /// </summary>
-    public static readonly QuantityCode MebibitPerCubicMetre = new QuantityCode { Value = "E77" };
+    public static QuantityCode MebibitPerCubicMetre => new() { Value = "E77" };
 
     /// <summary>
     /// petabit
     /// </summary>
-    public static readonly QuantityCode Petabit = new QuantityCode { Value = "E78" };
+    public static QuantityCode Petabit => new() { Value = "E78" };
 
     /// <summary>
     /// petabit per second
     /// </summary>
-    public static readonly QuantityCode PetabitPerSecond = new QuantityCode { Value = "E79" };
+    public static QuantityCode PetabitPerSecond => new() { Value = "E79" };
 
     /// <summary>
     /// pebibit per metre
     /// </summary>
-    public static readonly QuantityCode PebibitPerMetre = new QuantityCode { Value = "E80" };
+    public static QuantityCode PebibitPerMetre => new() { Value = "E80" };
 
     /// <summary>
     /// pebibit per square metre
     /// </summary>
-    public static readonly QuantityCode PebibitPerSquareMetre = new QuantityCode { Value = "E81" };
+    public static QuantityCode PebibitPerSquareMetre => new() { Value = "E81" };
 
     /// <summary>
     /// pebibit per cubic metre
     /// </summary>
-    public static readonly QuantityCode PebibitPerCubicMetre = new QuantityCode { Value = "E82" };
+    public static QuantityCode PebibitPerCubicMetre => new() { Value = "E82" };
 
     /// <summary>
     /// terabit
     /// </summary>
-    public static readonly QuantityCode Terabit = new QuantityCode { Value = "E83" };
+    public static QuantityCode Terabit => new() { Value = "E83" };
 
     /// <summary>
     /// terabit per second
     /// </summary>
-    public static readonly QuantityCode TerabitPerSecond = new QuantityCode { Value = "E84" };
+    public static QuantityCode TerabitPerSecond => new() { Value = "E84" };
 
     /// <summary>
     /// tebibit per metre
     /// </summary>
-    public static readonly QuantityCode TebibitPerMetre = new QuantityCode { Value = "E85" };
+    public static QuantityCode TebibitPerMetre => new() { Value = "E85" };
 
     /// <summary>
     /// tebibit per cubic metre
     /// </summary>
-    public static readonly QuantityCode TebibitPerCubicMetre = new QuantityCode { Value = "E86" };
+    public static QuantityCode TebibitPerCubicMetre => new() { Value = "E86" };
 
     /// <summary>
     /// tebibit per square metre
     /// </summary>
-    public static readonly QuantityCode TebibitPerSquareMetre = new QuantityCode { Value = "E87" };
+    public static QuantityCode TebibitPerSquareMetre => new() { Value = "E87" };
 
     /// <summary>
     /// bit per metre
     /// </summary>
-    public static readonly QuantityCode BitPerMetre = new QuantityCode { Value = "E88" };
+    public static QuantityCode BitPerMetre => new() { Value = "E88" };
 
     /// <summary>
     /// bit per square metre
     /// </summary>
-    public static readonly QuantityCode BitPerSquareMetre = new QuantityCode { Value = "E89" };
+    public static QuantityCode BitPerSquareMetre => new() { Value = "E89" };
 
     /// <summary>
     /// reciprocal centimetre
     /// </summary>
-    public static readonly QuantityCode ReciprocalCentimetre = new QuantityCode { Value = "E90" };
+    public static QuantityCode ReciprocalCentimetre => new() { Value = "E90" };
 
     /// <summary>
     /// reciprocal day
     /// </summary>
-    public static readonly QuantityCode ReciprocalDay = new QuantityCode { Value = "E91" };
+    public static QuantityCode ReciprocalDay => new() { Value = "E91" };
 
     /// <summary>
     /// cubic decimetre per hour
     /// </summary>
-    public static readonly QuantityCode CubicDecimetrePerHour = new QuantityCode { Value = "E92" };
+    public static QuantityCode CubicDecimetrePerHour => new() { Value = "E92" };
 
     /// <summary>
     /// kilogram per hour
     /// </summary>
-    public static readonly QuantityCode KilogramPerHour = new QuantityCode { Value = "E93" };
+    public static QuantityCode KilogramPerHour => new() { Value = "E93" };
 
     /// <summary>
     /// kilomole per second
     /// </summary>
-    public static readonly QuantityCode KilomolePerSecond = new QuantityCode { Value = "E94" };
+    public static QuantityCode KilomolePerSecond => new() { Value = "E94" };
 
     /// <summary>
     /// mole per second
     /// </summary>
-    public static readonly QuantityCode MolePerSecond = new QuantityCode { Value = "E95" };
+    public static QuantityCode MolePerSecond => new() { Value = "E95" };
 
     /// <summary>
     /// degree per second
     /// </summary>
-    public static readonly QuantityCode DegreePerSecond = new QuantityCode { Value = "E96" };
+    public static QuantityCode DegreePerSecond => new() { Value = "E96" };
 
     /// <summary>
     /// millimetre per degree Celcius metre
     /// </summary>
-    public static readonly QuantityCode MillimetrePerDegreeCelciusMetre = new QuantityCode { Value = "E97" };
+    public static QuantityCode MillimetrePerDegreeCelciusMetre => new() { Value = "E97" };
 
     /// <summary>
     /// degree Celsius per kelvin
     /// </summary>
-    public static readonly QuantityCode DegreeCelsiusPerKelvin = new QuantityCode { Value = "E98" };
+    public static QuantityCode DegreeCelsiusPerKelvin => new() { Value = "E98" };
 
     /// <summary>
     /// hectopascal per bar
     /// </summary>
-    public static readonly QuantityCode HectopascalPerBar = new QuantityCode { Value = "E99" };
+    public static QuantityCode HectopascalPerBar => new() { Value = "E99" };
 
     /// <summary>
     /// each
     /// </summary>
-    public static readonly QuantityCode Each = new QuantityCode { Value = "EA" };
+    public static QuantityCode Each => new() { Value = "EA" };
 
     /// <summary>
     /// electronic mail box
     /// </summary>
-    public static readonly QuantityCode ElectronicMailBox = new QuantityCode { Value = "EB" };
+    public static QuantityCode ElectronicMailBox => new() { Value = "EB" };
 
     /// <summary>
     /// equivalent gallon
     /// </summary>
-    public static readonly QuantityCode EquivalentGallon = new QuantityCode { Value = "EQ" };
+    public static QuantityCode EquivalentGallon => new() { Value = "EQ" };
 
     /// <summary>
     /// bit per cubic metre
     /// </summary>
-    public static readonly QuantityCode BitPerCubicMetre = new QuantityCode { Value = "F01" };
+    public static QuantityCode BitPerCubicMetre => new() { Value = "F01" };
 
     /// <summary>
     /// kelvin per kelvin
     /// </summary>
-    public static readonly QuantityCode KelvinPerKelvin = new QuantityCode { Value = "F02" };
+    public static QuantityCode KelvinPerKelvin => new() { Value = "F02" };
 
     /// <summary>
     /// kilopascal per bar
     /// </summary>
-    public static readonly QuantityCode KilopascalPerBar = new QuantityCode { Value = "F03" };
+    public static QuantityCode KilopascalPerBar => new() { Value = "F03" };
 
     /// <summary>
     /// millibar per bar
     /// </summary>
-    public static readonly QuantityCode MillibarPerBar = new QuantityCode { Value = "F04" };
+    public static QuantityCode MillibarPerBar => new() { Value = "F04" };
 
     /// <summary>
     /// megapascal per bar
     /// </summary>
-    public static readonly QuantityCode MegapascalPerBar = new QuantityCode { Value = "F05" };
+    public static QuantityCode MegapascalPerBar => new() { Value = "F05" };
 
     /// <summary>
     /// poise per bar
     /// </summary>
-    public static readonly QuantityCode PoisePerBar = new QuantityCode { Value = "F06" };
+    public static QuantityCode PoisePerBar => new() { Value = "F06" };
 
     /// <summary>
     /// pascal per bar
     /// </summary>
-    public static readonly QuantityCode PascalPerBar = new QuantityCode { Value = "F07" };
+    public static QuantityCode PascalPerBar => new() { Value = "F07" };
 
     /// <summary>
     /// milliampere per inch
     /// </summary>
-    public static readonly QuantityCode MilliamperePerInch = new QuantityCode { Value = "F08" };
+    public static QuantityCode MilliamperePerInch => new() { Value = "F08" };
 
     /// <summary>
     /// kelvin per hour
     /// </summary>
-    public static readonly QuantityCode KelvinPerHour = new QuantityCode { Value = "F10" };
+    public static QuantityCode KelvinPerHour => new() { Value = "F10" };
 
     /// <summary>
     /// kelvin per minute
     /// </summary>
-    public static readonly QuantityCode KelvinPerMinute = new QuantityCode { Value = "F11" };
+    public static QuantityCode KelvinPerMinute => new() { Value = "F11" };
 
     /// <summary>
     /// kelvin per second
     /// </summary>
-    public static readonly QuantityCode KelvinPerSecond = new QuantityCode { Value = "F12" };
+    public static QuantityCode KelvinPerSecond => new() { Value = "F12" };
 
     /// <summary>
     /// slug
     /// </summary>
-    public static readonly QuantityCode Slug = new QuantityCode { Value = "F13" };
+    public static QuantityCode Slug => new() { Value = "F13" };
 
     /// <summary>
     /// gram per kelvin
     /// </summary>
-    public static readonly QuantityCode GramPerKelvin = new QuantityCode { Value = "F14" };
+    public static QuantityCode GramPerKelvin => new() { Value = "F14" };
 
     /// <summary>
     /// kilogram per kelvin
     /// </summary>
-    public static readonly QuantityCode KilogramPerKelvin = new QuantityCode { Value = "F15" };
+    public static QuantityCode KilogramPerKelvin => new() { Value = "F15" };
 
     /// <summary>
     /// milligram per kelvin
     /// </summary>
-    public static readonly QuantityCode MilligramPerKelvin = new QuantityCode { Value = "F16" };
+    public static QuantityCode MilligramPerKelvin => new() { Value = "F16" };
 
     /// <summary>
     /// pound-force per foot
     /// </summary>
-    public static readonly QuantityCode PoundForcePerFoot = new QuantityCode { Value = "F17" };
+    public static QuantityCode PoundForcePerFoot => new() { Value = "F17" };
 
     /// <summary>
     /// kilogram square centimetre
     /// </summary>
-    public static readonly QuantityCode KilogramSquareCentimetre = new QuantityCode { Value = "F18" };
+    public static QuantityCode KilogramSquareCentimetre => new() { Value = "F18" };
 
     /// <summary>
     /// kilogram square millimetre
     /// </summary>
-    public static readonly QuantityCode KilogramSquareMillimetre = new QuantityCode { Value = "F19" };
+    public static QuantityCode KilogramSquareMillimetre => new() { Value = "F19" };
 
     /// <summary>
     /// pound inch squared
     /// </summary>
-    public static readonly QuantityCode PoundInchSquared = new QuantityCode { Value = "F20" };
+    public static QuantityCode PoundInchSquared => new() { Value = "F20" };
 
     /// <summary>
     /// pound-force inch
     /// </summary>
-    public static readonly QuantityCode PoundForceInch = new QuantityCode { Value = "F21" };
+    public static QuantityCode PoundForceInch => new() { Value = "F21" };
 
     /// <summary>
     /// pound-force foot per ampere
     /// </summary>
-    public static readonly QuantityCode PoundForceFootPerAmpere = new QuantityCode { Value = "F22" };
+    public static QuantityCode PoundForceFootPerAmpere => new() { Value = "F22" };
 
     /// <summary>
     /// gram per cubic decimetre
     /// </summary>
-    public static readonly QuantityCode GramPerCubicDecimetre = new QuantityCode { Value = "F23" };
+    public static QuantityCode GramPerCubicDecimetre => new() { Value = "F23" };
 
     /// <summary>
     /// kilogram per kilomol
     /// </summary>
-    public static readonly QuantityCode KilogramPerKilomol = new QuantityCode { Value = "F24" };
+    public static QuantityCode KilogramPerKilomol => new() { Value = "F24" };
 
     /// <summary>
     /// gram per hertz
     /// </summary>
-    public static readonly QuantityCode GramPerHertz = new QuantityCode { Value = "F25" };
+    public static QuantityCode GramPerHertz => new() { Value = "F25" };
 
     /// <summary>
     /// gram per day
     /// </summary>
-    public static readonly QuantityCode GramPerDay = new QuantityCode { Value = "F26" };
+    public static QuantityCode GramPerDay => new() { Value = "F26" };
 
     /// <summary>
     /// gram per hour
     /// </summary>
-    public static readonly QuantityCode GramPerHour = new QuantityCode { Value = "F27" };
+    public static QuantityCode GramPerHour => new() { Value = "F27" };
 
     /// <summary>
     /// gram per minute
     /// </summary>
-    public static readonly QuantityCode GramPerMinute = new QuantityCode { Value = "F28" };
+    public static QuantityCode GramPerMinute => new() { Value = "F28" };
 
     /// <summary>
     /// gram per second
     /// </summary>
-    public static readonly QuantityCode GramPerSecond = new QuantityCode { Value = "F29" };
+    public static QuantityCode GramPerSecond => new() { Value = "F29" };
 
     /// <summary>
     /// kilogram per day
     /// </summary>
-    public static readonly QuantityCode KilogramPerDay = new QuantityCode { Value = "F30" };
+    public static QuantityCode KilogramPerDay => new() { Value = "F30" };
 
     /// <summary>
     /// kilogram per minute
     /// </summary>
-    public static readonly QuantityCode KilogramPerMinute = new QuantityCode { Value = "F31" };
+    public static QuantityCode KilogramPerMinute => new() { Value = "F31" };
 
     /// <summary>
     /// milligram per day
     /// </summary>
-    public static readonly QuantityCode MilligramPerDay = new QuantityCode { Value = "F32" };
+    public static QuantityCode MilligramPerDay => new() { Value = "F32" };
 
     /// <summary>
     /// milligram per minute
     /// </summary>
-    public static readonly QuantityCode MilligramPerMinute = new QuantityCode { Value = "F33" };
+    public static QuantityCode MilligramPerMinute => new() { Value = "F33" };
 
     /// <summary>
     /// milligram per second
     /// </summary>
-    public static readonly QuantityCode MilligramPerSecond = new QuantityCode { Value = "F34" };
+    public static QuantityCode MilligramPerSecond => new() { Value = "F34" };
 
     /// <summary>
     /// gram per day kelvin
     /// </summary>
-    public static readonly QuantityCode GramPerDayKelvin = new QuantityCode { Value = "F35" };
+    public static QuantityCode GramPerDayKelvin => new() { Value = "F35" };
 
     /// <summary>
     /// gram per hour kelvin
     /// </summary>
-    public static readonly QuantityCode GramPerHourKelvin = new QuantityCode { Value = "F36" };
+    public static QuantityCode GramPerHourKelvin => new() { Value = "F36" };
 
     /// <summary>
     /// gram per minute kelvin
     /// </summary>
-    public static readonly QuantityCode GramPerMinuteKelvin = new QuantityCode { Value = "F37" };
+    public static QuantityCode GramPerMinuteKelvin => new() { Value = "F37" };
 
     /// <summary>
     /// gram per second kelvin
     /// </summary>
-    public static readonly QuantityCode GramPerSecondKelvin = new QuantityCode { Value = "F38" };
+    public static QuantityCode GramPerSecondKelvin => new() { Value = "F38" };
 
     /// <summary>
     /// kilogram per day kelvin
     /// </summary>
-    public static readonly QuantityCode KilogramPerDayKelvin = new QuantityCode { Value = "F39" };
+    public static QuantityCode KilogramPerDayKelvin => new() { Value = "F39" };
 
     /// <summary>
     /// kilogram per hour kelvin
     /// </summary>
-    public static readonly QuantityCode KilogramPerHourKelvin = new QuantityCode { Value = "F40" };
+    public static QuantityCode KilogramPerHourKelvin => new() { Value = "F40" };
 
     /// <summary>
     /// kilogram per minute kelvin
     /// </summary>
-    public static readonly QuantityCode KilogramPerMinuteKelvin = new QuantityCode { Value = "F41" };
+    public static QuantityCode KilogramPerMinuteKelvin => new() { Value = "F41" };
 
     /// <summary>
     /// kilogram per second kelvin
     /// </summary>
-    public static readonly QuantityCode KilogramPerSecondKelvin = new QuantityCode { Value = "F42" };
+    public static QuantityCode KilogramPerSecondKelvin => new() { Value = "F42" };
 
     /// <summary>
     /// milligram per day kelvin
     /// </summary>
-    public static readonly QuantityCode MilligramPerDayKelvin = new QuantityCode { Value = "F43" };
+    public static QuantityCode MilligramPerDayKelvin => new() { Value = "F43" };
 
     /// <summary>
     /// milligram per hour kelvin
     /// </summary>
-    public static readonly QuantityCode MilligramPerHourKelvin = new QuantityCode { Value = "F44" };
+    public static QuantityCode MilligramPerHourKelvin => new() { Value = "F44" };
 
     /// <summary>
     /// milligram per minute kelvin
     /// </summary>
-    public static readonly QuantityCode MilligramPerMinuteKelvin = new QuantityCode { Value = "F45" };
+    public static QuantityCode MilligramPerMinuteKelvin => new() { Value = "F45" };
 
     /// <summary>
     /// milligram per second kelvin
     /// </summary>
-    public static readonly QuantityCode MilligramPerSecondKelvin = new QuantityCode { Value = "F46" };
+    public static QuantityCode MilligramPerSecondKelvin => new() { Value = "F46" };
 
     /// <summary>
     /// newton per millimetre
     /// </summary>
-    public static readonly QuantityCode NewtonPerMillimetre = new QuantityCode { Value = "F47" };
+    public static QuantityCode NewtonPerMillimetre => new() { Value = "F47" };
 
     /// <summary>
     /// pound-force per inch
     /// </summary>
-    public static readonly QuantityCode PoundForcePerInch = new QuantityCode { Value = "F48" };
+    public static QuantityCode PoundForcePerInch => new() { Value = "F48" };
 
     /// <summary>
     /// rod [unit of distance]
     /// </summary>
-    public static readonly QuantityCode RodUnitOfDistance = new QuantityCode { Value = "F49" };
+    public static QuantityCode RodUnitOfDistance => new() { Value = "F49" };
 
     /// <summary>
     /// micrometre per kelvin
     /// </summary>
-    public static readonly QuantityCode MicrometrePerKelvin = new QuantityCode { Value = "F50" };
+    public static QuantityCode MicrometrePerKelvin => new() { Value = "F50" };
 
     /// <summary>
     /// centimetre per kelvin
     /// </summary>
-    public static readonly QuantityCode CentimetrePerKelvin = new QuantityCode { Value = "F51" };
+    public static QuantityCode CentimetrePerKelvin => new() { Value = "F51" };
 
     /// <summary>
     /// metre per kelvin
     /// </summary>
-    public static readonly QuantityCode MetrePerKelvin = new QuantityCode { Value = "F52" };
+    public static QuantityCode MetrePerKelvin => new() { Value = "F52" };
 
     /// <summary>
     /// millimetre per kelvin
     /// </summary>
-    public static readonly QuantityCode MillimetrePerKelvin = new QuantityCode { Value = "F53" };
+    public static QuantityCode MillimetrePerKelvin => new() { Value = "F53" };
 
     /// <summary>
     /// milliohm per metre
     /// </summary>
-    public static readonly QuantityCode MilliohmPerMetre = new QuantityCode { Value = "F54" };
+    public static QuantityCode MilliohmPerMetre => new() { Value = "F54" };
 
     /// <summary>
     /// ohm per mile (statute mile)
     /// </summary>
-    public static readonly QuantityCode OhmPerMileStatuteMile = new QuantityCode { Value = "F55" };
+    public static QuantityCode OhmPerMileStatuteMile => new() { Value = "F55" };
 
     /// <summary>
     /// ohm per kilometre
     /// </summary>
-    public static readonly QuantityCode OhmPerKilometre = new QuantityCode { Value = "F56" };
+    public static QuantityCode OhmPerKilometre => new() { Value = "F56" };
 
     /// <summary>
     /// milliampere per pound-force per square inch
     /// </summary>
-    public static readonly QuantityCode MilliamperePerPoundForcePerSquareInch = new QuantityCode { Value = "F57" };
+    public static QuantityCode MilliamperePerPoundForcePerSquareInch => new() { Value = "F57" };
 
     /// <summary>
     /// reciprocal bar
     /// </summary>
-    public static readonly QuantityCode ReciprocalBar = new QuantityCode { Value = "F58" };
+    public static QuantityCode ReciprocalBar => new() { Value = "F58" };
 
     /// <summary>
     /// milliampere per bar
     /// </summary>
-    public static readonly QuantityCode MilliamperePerBar = new QuantityCode { Value = "F59" };
+    public static QuantityCode MilliamperePerBar => new() { Value = "F59" };
 
     /// <summary>
     /// degree Celsius per bar
     /// </summary>
-    public static readonly QuantityCode DegreeCelsiusPerBar = new QuantityCode { Value = "F60" };
+    public static QuantityCode DegreeCelsiusPerBar => new() { Value = "F60" };
 
     /// <summary>
     /// kelvin per bar
     /// </summary>
-    public static readonly QuantityCode KelvinPerBar = new QuantityCode { Value = "F61" };
+    public static QuantityCode KelvinPerBar => new() { Value = "F61" };
 
     /// <summary>
     /// gram per day bar
     /// </summary>
-    public static readonly QuantityCode GramPerDayBar = new QuantityCode { Value = "F62" };
+    public static QuantityCode GramPerDayBar => new() { Value = "F62" };
 
     /// <summary>
     /// gram per hour bar
     /// </summary>
-    public static readonly QuantityCode GramPerHourBar = new QuantityCode { Value = "F63" };
+    public static QuantityCode GramPerHourBar => new() { Value = "F63" };
 
     /// <summary>
     /// gram per minute bar
     /// </summary>
-    public static readonly QuantityCode GramPerMinuteBar = new QuantityCode { Value = "F64" };
+    public static QuantityCode GramPerMinuteBar => new() { Value = "F64" };
 
     /// <summary>
     /// gram per second bar
     /// </summary>
-    public static readonly QuantityCode GramPerSecondBar = new QuantityCode { Value = "F65" };
+    public static QuantityCode GramPerSecondBar => new() { Value = "F65" };
 
     /// <summary>
     /// kilogram per day bar
     /// </summary>
-    public static readonly QuantityCode KilogramPerDayBar = new QuantityCode { Value = "F66" };
+    public static QuantityCode KilogramPerDayBar => new() { Value = "F66" };
 
     /// <summary>
     /// kilogram per hour bar
     /// </summary>
-    public static readonly QuantityCode KilogramPerHourBar = new QuantityCode { Value = "F67" };
+    public static QuantityCode KilogramPerHourBar => new() { Value = "F67" };
 
     /// <summary>
     /// kilogram per minute bar
     /// </summary>
-    public static readonly QuantityCode KilogramPerMinuteBar = new QuantityCode { Value = "F68" };
+    public static QuantityCode KilogramPerMinuteBar => new() { Value = "F68" };
 
     /// <summary>
     /// kilogram per second bar
     /// </summary>
-    public static readonly QuantityCode KilogramPerSecondBar = new QuantityCode { Value = "F69" };
+    public static QuantityCode KilogramPerSecondBar => new() { Value = "F69" };
 
     /// <summary>
     /// milligram per day bar
     /// </summary>
-    public static readonly QuantityCode MilligramPerDayBar = new QuantityCode { Value = "F70" };
+    public static QuantityCode MilligramPerDayBar => new() { Value = "F70" };
 
     /// <summary>
     /// milligram per hour bar
     /// </summary>
-    public static readonly QuantityCode MilligramPerHourBar = new QuantityCode { Value = "F71" };
+    public static QuantityCode MilligramPerHourBar => new() { Value = "F71" };
 
     /// <summary>
     /// milligram per minute bar
     /// </summary>
-    public static readonly QuantityCode MilligramPerMinuteBar = new QuantityCode { Value = "F72" };
+    public static QuantityCode MilligramPerMinuteBar => new() { Value = "F72" };
 
     /// <summary>
     /// milligram per second bar
     /// </summary>
-    public static readonly QuantityCode MilligramPerSecondBar = new QuantityCode { Value = "F73" };
+    public static QuantityCode MilligramPerSecondBar => new() { Value = "F73" };
 
     /// <summary>
     /// gram per bar
     /// </summary>
-    public static readonly QuantityCode GramPerBar = new QuantityCode { Value = "F74" };
+    public static QuantityCode GramPerBar => new() { Value = "F74" };
 
     /// <summary>
     /// milligram per bar
     /// </summary>
-    public static readonly QuantityCode MilligramPerBar = new QuantityCode { Value = "F75" };
+    public static QuantityCode MilligramPerBar => new() { Value = "F75" };
 
     /// <summary>
     /// milliampere per millimetre
     /// </summary>
-    public static readonly QuantityCode MilliamperePerMillimetre = new QuantityCode { Value = "F76" };
+    public static QuantityCode MilliamperePerMillimetre => new() { Value = "F76" };
 
     /// <summary>
     /// pascal second per kelvin
     /// </summary>
-    public static readonly QuantityCode PascalSecondPerKelvin = new QuantityCode { Value = "F77" };
+    public static QuantityCode PascalSecondPerKelvin => new() { Value = "F77" };
 
     /// <summary>
     /// inch of water
     /// </summary>
-    public static readonly QuantityCode InchOfWater = new QuantityCode { Value = "F78" };
+    public static QuantityCode InchOfWater => new() { Value = "F78" };
 
     /// <summary>
     /// inch of mercury
     /// </summary>
-    public static readonly QuantityCode InchOfMercury = new QuantityCode { Value = "F79" };
+    public static QuantityCode InchOfMercury => new() { Value = "F79" };
 
     /// <summary>
     /// water horse power
     /// </summary>
-    public static readonly QuantityCode WaterHorsePower = new QuantityCode { Value = "F80" };
+    public static QuantityCode WaterHorsePower => new() { Value = "F80" };
 
     /// <summary>
     /// bar per kelvin
     /// </summary>
-    public static readonly QuantityCode BarPerKelvin = new QuantityCode { Value = "F81" };
+    public static QuantityCode BarPerKelvin => new() { Value = "F81" };
 
     /// <summary>
     /// hectopascal per kelvin
     /// </summary>
-    public static readonly QuantityCode HectopascalPerKelvin = new QuantityCode { Value = "F82" };
+    public static QuantityCode HectopascalPerKelvin => new() { Value = "F82" };
 
     /// <summary>
     /// kilopascal per kelvin
     /// </summary>
-    public static readonly QuantityCode KilopascalPerKelvin = new QuantityCode { Value = "F83" };
+    public static QuantityCode KilopascalPerKelvin => new() { Value = "F83" };
 
     /// <summary>
     /// millibar per kelvin
     /// </summary>
-    public static readonly QuantityCode MillibarPerKelvin = new QuantityCode { Value = "F84" };
+    public static QuantityCode MillibarPerKelvin => new() { Value = "F84" };
 
     /// <summary>
     /// megapascal per kelvin
     /// </summary>
-    public static readonly QuantityCode MegapascalPerKelvin = new QuantityCode { Value = "F85" };
+    public static QuantityCode MegapascalPerKelvin => new() { Value = "F85" };
 
     /// <summary>
     /// poise per kelvin
     /// </summary>
-    public static readonly QuantityCode PoisePerKelvin = new QuantityCode { Value = "F86" };
+    public static QuantityCode PoisePerKelvin => new() { Value = "F86" };
 
     /// <summary>
     /// volt per litre minute
     /// </summary>
-    public static readonly QuantityCode VoltPerLitreMinute = new QuantityCode { Value = "F87" };
+    public static QuantityCode VoltPerLitreMinute => new() { Value = "F87" };
 
     /// <summary>
     /// newton centimetre
     /// </summary>
-    public static readonly QuantityCode NewtonCentimetre = new QuantityCode { Value = "F88" };
+    public static QuantityCode NewtonCentimetre => new() { Value = "F88" };
 
     /// <summary>
     /// newton metre per degree
     /// </summary>
-    public static readonly QuantityCode NewtonMetrePerDegree = new QuantityCode { Value = "F89" };
+    public static QuantityCode NewtonMetrePerDegree => new() { Value = "F89" };
 
     /// <summary>
     /// newton metre per ampere
     /// </summary>
-    public static readonly QuantityCode NewtonMetrePerAmpere = new QuantityCode { Value = "F90" };
+    public static QuantityCode NewtonMetrePerAmpere => new() { Value = "F90" };
 
     /// <summary>
     /// bar litre per second
     /// </summary>
-    public static readonly QuantityCode BarLitrePerSecond = new QuantityCode { Value = "F91" };
+    public static QuantityCode BarLitrePerSecond => new() { Value = "F91" };
 
     /// <summary>
     /// bar cubic metre per second
     /// </summary>
-    public static readonly QuantityCode BarCubicMetrePerSecond = new QuantityCode { Value = "F92" };
+    public static QuantityCode BarCubicMetrePerSecond => new() { Value = "F92" };
 
     /// <summary>
     /// hectopascal litre per second
     /// </summary>
-    public static readonly QuantityCode HectopascalLitrePerSecond = new QuantityCode { Value = "F93" };
+    public static QuantityCode HectopascalLitrePerSecond => new() { Value = "F93" };
 
     /// <summary>
     /// hectopascal cubic metre per second
     /// </summary>
-    public static readonly QuantityCode HectopascalCubicMetrePerSecond = new QuantityCode { Value = "F94" };
+    public static QuantityCode HectopascalCubicMetrePerSecond => new() { Value = "F94" };
 
     /// <summary>
     /// millibar litre per second
     /// </summary>
-    public static readonly QuantityCode MillibarLitrePerSecond = new QuantityCode { Value = "F95" };
+    public static QuantityCode MillibarLitrePerSecond => new() { Value = "F95" };
 
     /// <summary>
     /// millibar cubic metre per second
     /// </summary>
-    public static readonly QuantityCode MillibarCubicMetrePerSecond = new QuantityCode { Value = "F96" };
+    public static QuantityCode MillibarCubicMetrePerSecond => new() { Value = "F96" };
 
     /// <summary>
     /// megapascal litre per second
     /// </summary>
-    public static readonly QuantityCode MegapascalLitrePerSecond = new QuantityCode { Value = "F97" };
+    public static QuantityCode MegapascalLitrePerSecond => new() { Value = "F97" };
 
     /// <summary>
     /// megapascal cubic metre per second
     /// </summary>
-    public static readonly QuantityCode MegapascalCubicMetrePerSecond = new QuantityCode { Value = "F98" };
+    public static QuantityCode MegapascalCubicMetrePerSecond => new() { Value = "F98" };
 
     /// <summary>
     /// pascal litre per second
     /// </summary>
-    public static readonly QuantityCode PascalLitrePerSecond = new QuantityCode { Value = "F99" };
+    public static QuantityCode PascalLitrePerSecond => new() { Value = "F99" };
 
     /// <summary>
     /// degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheit = new QuantityCode { Value = "FAH" };
+    public static QuantityCode DegreeFahrenheit => new() { Value = "FAH" };
 
     /// <summary>
     /// farad
     /// </summary>
-    public static readonly QuantityCode Farad = new QuantityCode { Value = "FAR" };
+    public static QuantityCode Farad => new() { Value = "FAR" };
 
     /// <summary>
     /// fibre metre
     /// </summary>
-    public static readonly QuantityCode FibreMetre = new QuantityCode { Value = "FBM" };
+    public static QuantityCode FibreMetre => new() { Value = "FBM" };
 
     /// <summary>
     /// thousand cubic foot
     /// </summary>
-    public static readonly QuantityCode ThousandCubicFoot = new QuantityCode { Value = "FC" };
+    public static QuantityCode ThousandCubicFoot => new() { Value = "FC" };
 
     /// <summary>
     /// hundred cubic metre
     /// </summary>
-    public static readonly QuantityCode HundredCubicMetre = new QuantityCode { Value = "FF" };
+    public static QuantityCode HundredCubicMetre => new() { Value = "FF" };
 
     /// <summary>
     /// micromole
     /// </summary>
-    public static readonly QuantityCode Micromole = new QuantityCode { Value = "FH" };
+    public static QuantityCode Micromole => new() { Value = "FH" };
 
     /// <summary>
     /// failures in time
     /// </summary>
-    public static readonly QuantityCode FailuresInTime = new QuantityCode { Value = "FIT" };
+    public static QuantityCode FailuresInTime => new() { Value = "FIT" };
 
     /// <summary>
     /// flake ton
     /// </summary>
-    public static readonly QuantityCode FlakeTon = new QuantityCode { Value = "FL" };
+    public static QuantityCode FlakeTon => new() { Value = "FL" };
 
     /// <summary>
     /// Formazin nephelometric unit
     /// </summary>
-    public static readonly QuantityCode FormazinNephelometricUnit = new QuantityCode { Value = "FNU" };
+    public static QuantityCode FormazinNephelometricUnit => new() { Value = "FNU" };
 
     /// <summary>
     /// foot
     /// </summary>
-    public static readonly QuantityCode Foot = new QuantityCode { Value = "FOT" };
+    public static QuantityCode Foot => new() { Value = "FOT" };
 
     /// <summary>
     /// pound per square foot
     /// </summary>
-    public static readonly QuantityCode PoundPerSquareFoot = new QuantityCode { Value = "FP" };
+    public static QuantityCode PoundPerSquareFoot => new() { Value = "FP" };
 
     /// <summary>
     /// foot per minute
     /// </summary>
-    public static readonly QuantityCode FootPerMinute = new QuantityCode { Value = "FR" };
+    public static QuantityCode FootPerMinute => new() { Value = "FR" };
 
     /// <summary>
     /// foot per second
     /// </summary>
-    public static readonly QuantityCode FootPerSecond = new QuantityCode { Value = "FS" };
+    public static QuantityCode FootPerSecond => new() { Value = "FS" };
 
     /// <summary>
     /// square foot
     /// </summary>
-    public static readonly QuantityCode SquareFoot = new QuantityCode { Value = "FTK" };
+    public static QuantityCode SquareFoot => new() { Value = "FTK" };
 
     /// <summary>
     /// cubic foot
     /// </summary>
-    public static readonly QuantityCode CubicFoot = new QuantityCode { Value = "FTQ" };
+    public static QuantityCode CubicFoot => new() { Value = "FTQ" };
 
     /// <summary>
     /// pascal cubic metre per second
     /// </summary>
-    public static readonly QuantityCode PascalCubicMetrePerSecond = new QuantityCode { Value = "G01" };
+    public static QuantityCode PascalCubicMetrePerSecond => new() { Value = "G01" };
 
     /// <summary>
     /// centimetre per bar
     /// </summary>
-    public static readonly QuantityCode CentimetrePerBar = new QuantityCode { Value = "G04" };
+    public static QuantityCode CentimetrePerBar => new() { Value = "G04" };
 
     /// <summary>
     /// metre per bar
     /// </summary>
-    public static readonly QuantityCode MetrePerBar = new QuantityCode { Value = "G05" };
+    public static QuantityCode MetrePerBar => new() { Value = "G05" };
 
     /// <summary>
     /// millimetre per bar
     /// </summary>
-    public static readonly QuantityCode MillimetrePerBar = new QuantityCode { Value = "G06" };
+    public static QuantityCode MillimetrePerBar => new() { Value = "G06" };
 
     /// <summary>
     /// square inch per second
     /// </summary>
-    public static readonly QuantityCode SquareInchPerSecond = new QuantityCode { Value = "G08" };
+    public static QuantityCode SquareInchPerSecond => new() { Value = "G08" };
 
     /// <summary>
     /// square metre per second kelvin
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerSecondKelvin = new QuantityCode { Value = "G09" };
+    public static QuantityCode SquareMetrePerSecondKelvin => new() { Value = "G09" };
 
     /// <summary>
     /// stokes per kelvin
     /// </summary>
-    public static readonly QuantityCode StokesPerKelvin = new QuantityCode { Value = "G10" };
+    public static QuantityCode StokesPerKelvin => new() { Value = "G10" };
 
     /// <summary>
     /// gram per cubic centimetre bar
     /// </summary>
-    public static readonly QuantityCode GramPerCubicCentimetreBar = new QuantityCode { Value = "G11" };
+    public static QuantityCode GramPerCubicCentimetreBar => new() { Value = "G11" };
 
     /// <summary>
     /// gram per cubic decimetre bar
     /// </summary>
-    public static readonly QuantityCode GramPerCubicDecimetreBar = new QuantityCode { Value = "G12" };
+    public static QuantityCode GramPerCubicDecimetreBar => new() { Value = "G12" };
 
     /// <summary>
     /// gram per litre bar
     /// </summary>
-    public static readonly QuantityCode GramPerLitreBar = new QuantityCode { Value = "G13" };
+    public static QuantityCode GramPerLitreBar => new() { Value = "G13" };
 
     /// <summary>
     /// gram per cubic metre bar
     /// </summary>
-    public static readonly QuantityCode GramPerCubicMetreBar = new QuantityCode { Value = "G14" };
+    public static QuantityCode GramPerCubicMetreBar => new() { Value = "G14" };
 
     /// <summary>
     /// gram per millilitre bar
     /// </summary>
-    public static readonly QuantityCode GramPerMillilitreBar = new QuantityCode { Value = "G15" };
+    public static QuantityCode GramPerMillilitreBar => new() { Value = "G15" };
 
     /// <summary>
     /// kilogram per cubic centimetre bar
     /// </summary>
-    public static readonly QuantityCode KilogramPerCubicCentimetreBar = new QuantityCode { Value = "G16" };
+    public static QuantityCode KilogramPerCubicCentimetreBar => new() { Value = "G16" };
 
     /// <summary>
     /// kilogram per litre bar
     /// </summary>
-    public static readonly QuantityCode KilogramPerLitreBar = new QuantityCode { Value = "G17" };
+    public static QuantityCode KilogramPerLitreBar => new() { Value = "G17" };
 
     /// <summary>
     /// kilogram per cubic metre bar
     /// </summary>
-    public static readonly QuantityCode KilogramPerCubicMetreBar = new QuantityCode { Value = "G18" };
+    public static QuantityCode KilogramPerCubicMetreBar => new() { Value = "G18" };
 
     /// <summary>
     /// newton metre per kilogram
     /// </summary>
-    public static readonly QuantityCode NewtonMetrePerKilogram = new QuantityCode { Value = "G19" };
+    public static QuantityCode NewtonMetrePerKilogram => new() { Value = "G19" };
 
     /// <summary>
     /// US gallon per minute
     /// </summary>
-    public static readonly QuantityCode USGallonPerMinute = new QuantityCode { Value = "G2" };
+    public static QuantityCode USGallonPerMinute => new() { Value = "G2" };
 
     /// <summary>
     /// pound-force foot per pound
     /// </summary>
-    public static readonly QuantityCode PoundForceFootPerPound = new QuantityCode { Value = "G20" };
+    public static QuantityCode PoundForceFootPerPound => new() { Value = "G20" };
 
     /// <summary>
     /// cup [unit of volume]
     /// </summary>
-    public static readonly QuantityCode CupUnitOfVolume = new QuantityCode { Value = "G21" };
+    public static QuantityCode CupUnitOfVolume => new() { Value = "G21" };
 
     /// <summary>
     /// peck
     /// </summary>
-    public static readonly QuantityCode Peck = new QuantityCode { Value = "G23" };
+    public static QuantityCode Peck => new() { Value = "G23" };
 
     /// <summary>
     /// tablespoon (US)
     /// </summary>
-    public static readonly QuantityCode TablespoonUS = new QuantityCode { Value = "G24" };
+    public static QuantityCode TablespoonUS => new() { Value = "G24" };
 
     /// <summary>
     /// teaspoon (US)
     /// </summary>
-    public static readonly QuantityCode TeaspoonUS = new QuantityCode { Value = "G25" };
+    public static QuantityCode TeaspoonUS => new() { Value = "G25" };
 
     /// <summary>
     /// stere
     /// </summary>
-    public static readonly QuantityCode Stere = new QuantityCode { Value = "G26" };
+    public static QuantityCode Stere => new() { Value = "G26" };
 
     /// <summary>
     /// cubic centimetre per kelvin
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerKelvin = new QuantityCode { Value = "G27" };
+    public static QuantityCode CubicCentimetrePerKelvin => new() { Value = "G27" };
 
     /// <summary>
     /// litre per kelvin
     /// </summary>
-    public static readonly QuantityCode LitrePerKelvin = new QuantityCode { Value = "G28" };
+    public static QuantityCode LitrePerKelvin => new() { Value = "G28" };
 
     /// <summary>
     /// cubic metre per kelvin
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerKelvin = new QuantityCode { Value = "G29" };
+    public static QuantityCode CubicMetrePerKelvin => new() { Value = "G29" };
 
     /// <summary>
     /// Imperial gallon per minute
     /// </summary>
-    public static readonly QuantityCode ImperialGallonPerMinute = new QuantityCode { Value = "G3" };
+    public static QuantityCode ImperialGallonPerMinute => new() { Value = "G3" };
 
     /// <summary>
     /// millilitre per kelvin
     /// </summary>
-    public static readonly QuantityCode MillilitrePerKelvin = new QuantityCode { Value = "G30" };
+    public static QuantityCode MillilitrePerKelvin => new() { Value = "G30" };
 
     /// <summary>
     /// kilogram per cubic centimetre
     /// </summary>
-    public static readonly QuantityCode KilogramPerCubicCentimetre = new QuantityCode { Value = "G31" };
+    public static QuantityCode KilogramPerCubicCentimetre => new() { Value = "G31" };
 
     /// <summary>
     /// ounce (avoirdupois) per cubic yard
     /// </summary>
-    public static readonly QuantityCode OunceAvoirdupoisPerCubicYard = new QuantityCode { Value = "G32" };
+    public static QuantityCode OunceAvoirdupoisPerCubicYard => new() { Value = "G32" };
 
     /// <summary>
     /// gram per cubic centimetre kelvin
     /// </summary>
-    public static readonly QuantityCode GramPerCubicCentimetreKelvin = new QuantityCode { Value = "G33" };
+    public static QuantityCode GramPerCubicCentimetreKelvin => new() { Value = "G33" };
 
     /// <summary>
     /// gram per cubic decimetre kelvin
     /// </summary>
-    public static readonly QuantityCode GramPerCubicDecimetreKelvin = new QuantityCode { Value = "G34" };
+    public static QuantityCode GramPerCubicDecimetreKelvin => new() { Value = "G34" };
 
     /// <summary>
     /// gram per litre kelvin
     /// </summary>
-    public static readonly QuantityCode GramPerLitreKelvin = new QuantityCode { Value = "G35" };
+    public static QuantityCode GramPerLitreKelvin => new() { Value = "G35" };
 
     /// <summary>
     /// gram per cubic metre kelvin
     /// </summary>
-    public static readonly QuantityCode GramPerCubicMetreKelvin = new QuantityCode { Value = "G36" };
+    public static QuantityCode GramPerCubicMetreKelvin => new() { Value = "G36" };
 
     /// <summary>
     /// gram per millilitre kelvin
     /// </summary>
-    public static readonly QuantityCode GramPerMillilitreKelvin = new QuantityCode { Value = "G37" };
+    public static QuantityCode GramPerMillilitreKelvin => new() { Value = "G37" };
 
     /// <summary>
     /// kilogram per cubic centimetre kelvin
     /// </summary>
-    public static readonly QuantityCode KilogramPerCubicCentimetreKelvin = new QuantityCode { Value = "G38" };
+    public static QuantityCode KilogramPerCubicCentimetreKelvin => new() { Value = "G38" };
 
     /// <summary>
     /// kilogram per litre kelvin
     /// </summary>
-    public static readonly QuantityCode KilogramPerLitreKelvin = new QuantityCode { Value = "G39" };
+    public static QuantityCode KilogramPerLitreKelvin => new() { Value = "G39" };
 
     /// <summary>
     /// kilogram per cubic metre kelvin
     /// </summary>
-    public static readonly QuantityCode KilogramPerCubicMetreKelvin = new QuantityCode { Value = "G40" };
+    public static QuantityCode KilogramPerCubicMetreKelvin => new() { Value = "G40" };
 
     /// <summary>
     /// square metre per second bar
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerSecondBar = new QuantityCode { Value = "G41" };
+    public static QuantityCode SquareMetrePerSecondBar => new() { Value = "G41" };
 
     /// <summary>
     /// microsiemens per centimetre
     /// </summary>
-    public static readonly QuantityCode MicrosiemensPerCentimetre = new QuantityCode { Value = "G42" };
+    public static QuantityCode MicrosiemensPerCentimetre => new() { Value = "G42" };
 
     /// <summary>
     /// microsiemens per metre
     /// </summary>
-    public static readonly QuantityCode MicrosiemensPerMetre = new QuantityCode { Value = "G43" };
+    public static QuantityCode MicrosiemensPerMetre => new() { Value = "G43" };
 
     /// <summary>
     /// nanosiemens per centimetre
     /// </summary>
-    public static readonly QuantityCode NanosiemensPerCentimetre = new QuantityCode { Value = "G44" };
+    public static QuantityCode NanosiemensPerCentimetre => new() { Value = "G44" };
 
     /// <summary>
     /// nanosiemens per metre
     /// </summary>
-    public static readonly QuantityCode NanosiemensPerMetre = new QuantityCode { Value = "G45" };
+    public static QuantityCode NanosiemensPerMetre => new() { Value = "G45" };
 
     /// <summary>
     /// stokes per bar
     /// </summary>
-    public static readonly QuantityCode StokesPerBar = new QuantityCode { Value = "G46" };
+    public static QuantityCode StokesPerBar => new() { Value = "G46" };
 
     /// <summary>
     /// cubic centimetre per day
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerDay = new QuantityCode { Value = "G47" };
+    public static QuantityCode CubicCentimetrePerDay => new() { Value = "G47" };
 
     /// <summary>
     /// cubic centimetre per hour
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerHour = new QuantityCode { Value = "G48" };
+    public static QuantityCode CubicCentimetrePerHour => new() { Value = "G48" };
 
     /// <summary>
     /// cubic centimetre per minute
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerMinute = new QuantityCode { Value = "G49" };
+    public static QuantityCode CubicCentimetrePerMinute => new() { Value = "G49" };
 
     /// <summary>
     /// gallon (US) per hour
     /// </summary>
-    public static readonly QuantityCode GallonUSPerHour = new QuantityCode { Value = "G50" };
+    public static QuantityCode GallonUSPerHour => new() { Value = "G50" };
 
     /// <summary>
     /// litre per second
     /// </summary>
-    public static readonly QuantityCode LitrePerSecond = new QuantityCode { Value = "G51" };
+    public static QuantityCode LitrePerSecond => new() { Value = "G51" };
 
     /// <summary>
     /// cubic metre per day
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerDay = new QuantityCode { Value = "G52" };
+    public static QuantityCode CubicMetrePerDay => new() { Value = "G52" };
 
     /// <summary>
     /// cubic metre per minute
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerMinute = new QuantityCode { Value = "G53" };
+    public static QuantityCode CubicMetrePerMinute => new() { Value = "G53" };
 
     /// <summary>
     /// millilitre per day
     /// </summary>
-    public static readonly QuantityCode MillilitrePerDay = new QuantityCode { Value = "G54" };
+    public static QuantityCode MillilitrePerDay => new() { Value = "G54" };
 
     /// <summary>
     /// millilitre per hour
     /// </summary>
-    public static readonly QuantityCode MillilitrePerHour = new QuantityCode { Value = "G55" };
+    public static QuantityCode MillilitrePerHour => new() { Value = "G55" };
 
     /// <summary>
     /// cubic inch per hour
     /// </summary>
-    public static readonly QuantityCode CubicInchPerHour = new QuantityCode { Value = "G56" };
+    public static QuantityCode CubicInchPerHour => new() { Value = "G56" };
 
     /// <summary>
     /// cubic inch per minute
     /// </summary>
-    public static readonly QuantityCode CubicInchPerMinute = new QuantityCode { Value = "G57" };
+    public static QuantityCode CubicInchPerMinute => new() { Value = "G57" };
 
     /// <summary>
     /// cubic inch per second
     /// </summary>
-    public static readonly QuantityCode CubicInchPerSecond = new QuantityCode { Value = "G58" };
+    public static QuantityCode CubicInchPerSecond => new() { Value = "G58" };
 
     /// <summary>
     /// milliampere per litre minute
     /// </summary>
-    public static readonly QuantityCode MilliamperePerLitreMinute = new QuantityCode { Value = "G59" };
+    public static QuantityCode MilliamperePerLitreMinute => new() { Value = "G59" };
 
     /// <summary>
     /// volt per bar
     /// </summary>
-    public static readonly QuantityCode VoltPerBar = new QuantityCode { Value = "G60" };
+    public static QuantityCode VoltPerBar => new() { Value = "G60" };
 
     /// <summary>
     /// cubic centimetre per day kelvin
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerDayKelvin = new QuantityCode { Value = "G61" };
+    public static QuantityCode CubicCentimetrePerDayKelvin => new() { Value = "G61" };
 
     /// <summary>
     /// cubic centimetre per hour kelvin
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerHourKelvin = new QuantityCode { Value = "G62" };
+    public static QuantityCode CubicCentimetrePerHourKelvin => new() { Value = "G62" };
 
     /// <summary>
     /// cubic centimetre per minute kelvin
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerMinuteKelvin = new QuantityCode { Value = "G63" };
+    public static QuantityCode CubicCentimetrePerMinuteKelvin => new() { Value = "G63" };
 
     /// <summary>
     /// cubic centimetre per second kelvin
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerSecondKelvin = new QuantityCode { Value = "G64" };
+    public static QuantityCode CubicCentimetrePerSecondKelvin => new() { Value = "G64" };
 
     /// <summary>
     /// litre per day kelvin
     /// </summary>
-    public static readonly QuantityCode LitrePerDayKelvin = new QuantityCode { Value = "G65" };
+    public static QuantityCode LitrePerDayKelvin => new() { Value = "G65" };
 
     /// <summary>
     /// litre per hour kelvin
     /// </summary>
-    public static readonly QuantityCode LitrePerHourKelvin = new QuantityCode { Value = "G66" };
+    public static QuantityCode LitrePerHourKelvin => new() { Value = "G66" };
 
     /// <summary>
     /// litre per minute kelvin
     /// </summary>
-    public static readonly QuantityCode LitrePerMinuteKelvin = new QuantityCode { Value = "G67" };
+    public static QuantityCode LitrePerMinuteKelvin => new() { Value = "G67" };
 
     /// <summary>
     /// litre per second kelvin
     /// </summary>
-    public static readonly QuantityCode LitrePerSecondKelvin = new QuantityCode { Value = "G68" };
+    public static QuantityCode LitrePerSecondKelvin => new() { Value = "G68" };
 
     /// <summary>
     /// cubic metre per day kelvin
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerDayKelvin = new QuantityCode { Value = "G69" };
+    public static QuantityCode CubicMetrePerDayKelvin => new() { Value = "G69" };
 
     /// <summary>
     /// cubic metre per hour kelvin
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerHourKelvin = new QuantityCode { Value = "G70" };
+    public static QuantityCode CubicMetrePerHourKelvin => new() { Value = "G70" };
 
     /// <summary>
     /// cubic metre per minute kelvin
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerMinuteKelvin = new QuantityCode { Value = "G71" };
+    public static QuantityCode CubicMetrePerMinuteKelvin => new() { Value = "G71" };
 
     /// <summary>
     /// cubic metre per second kelvin
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerSecondKelvin = new QuantityCode { Value = "G72" };
+    public static QuantityCode CubicMetrePerSecondKelvin => new() { Value = "G72" };
 
     /// <summary>
     /// millilitre per day kelvin
     /// </summary>
-    public static readonly QuantityCode MillilitrePerDayKelvin = new QuantityCode { Value = "G73" };
+    public static QuantityCode MillilitrePerDayKelvin => new() { Value = "G73" };
 
     /// <summary>
     /// millilitre per hour kelvin
     /// </summary>
-    public static readonly QuantityCode MillilitrePerHourKelvin = new QuantityCode { Value = "G74" };
+    public static QuantityCode MillilitrePerHourKelvin => new() { Value = "G74" };
 
     /// <summary>
     /// millilitre per minute kelvin
     /// </summary>
-    public static readonly QuantityCode MillilitrePerMinuteKelvin = new QuantityCode { Value = "G75" };
+    public static QuantityCode MillilitrePerMinuteKelvin => new() { Value = "G75" };
 
     /// <summary>
     /// millilitre per second kelvin
     /// </summary>
-    public static readonly QuantityCode MillilitrePerSecondKelvin = new QuantityCode { Value = "G76" };
+    public static QuantityCode MillilitrePerSecondKelvin => new() { Value = "G76" };
 
     /// <summary>
     /// millimetre to the fourth power
     /// </summary>
-    public static readonly QuantityCode MillimetreToTheFourthPower = new QuantityCode { Value = "G77" };
+    public static QuantityCode MillimetreToTheFourthPower => new() { Value = "G77" };
 
     /// <summary>
     /// cubic centimetre per day bar
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerDayBar = new QuantityCode { Value = "G78" };
+    public static QuantityCode CubicCentimetrePerDayBar => new() { Value = "G78" };
 
     /// <summary>
     /// cubic centimetre per hour bar
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerHourBar = new QuantityCode { Value = "G79" };
+    public static QuantityCode CubicCentimetrePerHourBar => new() { Value = "G79" };
 
     /// <summary>
     /// cubic centimetre per minute bar
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerMinuteBar = new QuantityCode { Value = "G80" };
+    public static QuantityCode CubicCentimetrePerMinuteBar => new() { Value = "G80" };
 
     /// <summary>
     /// cubic centimetre per second bar
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerSecondBar = new QuantityCode { Value = "G81" };
+    public static QuantityCode CubicCentimetrePerSecondBar => new() { Value = "G81" };
 
     /// <summary>
     /// litre per day bar
     /// </summary>
-    public static readonly QuantityCode LitrePerDayBar = new QuantityCode { Value = "G82" };
+    public static QuantityCode LitrePerDayBar => new() { Value = "G82" };
 
     /// <summary>
     /// litre per hour bar
     /// </summary>
-    public static readonly QuantityCode LitrePerHourBar = new QuantityCode { Value = "G83" };
+    public static QuantityCode LitrePerHourBar => new() { Value = "G83" };
 
     /// <summary>
     /// litre per minute bar
     /// </summary>
-    public static readonly QuantityCode LitrePerMinuteBar = new QuantityCode { Value = "G84" };
+    public static QuantityCode LitrePerMinuteBar => new() { Value = "G84" };
 
     /// <summary>
     /// litre per second bar
     /// </summary>
-    public static readonly QuantityCode LitrePerSecondBar = new QuantityCode { Value = "G85" };
+    public static QuantityCode LitrePerSecondBar => new() { Value = "G85" };
 
     /// <summary>
     /// cubic metre per day bar
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerDayBar = new QuantityCode { Value = "G86" };
+    public static QuantityCode CubicMetrePerDayBar => new() { Value = "G86" };
 
     /// <summary>
     /// cubic metre per hour bar
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerHourBar = new QuantityCode { Value = "G87" };
+    public static QuantityCode CubicMetrePerHourBar => new() { Value = "G87" };
 
     /// <summary>
     /// cubic metre per minute bar
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerMinuteBar = new QuantityCode { Value = "G88" };
+    public static QuantityCode CubicMetrePerMinuteBar => new() { Value = "G88" };
 
     /// <summary>
     /// cubic metre per second bar
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerSecondBar = new QuantityCode { Value = "G89" };
+    public static QuantityCode CubicMetrePerSecondBar => new() { Value = "G89" };
 
     /// <summary>
     /// millilitre per day bar
     /// </summary>
-    public static readonly QuantityCode MillilitrePerDayBar = new QuantityCode { Value = "G90" };
+    public static QuantityCode MillilitrePerDayBar => new() { Value = "G90" };
 
     /// <summary>
     /// millilitre per hour bar
     /// </summary>
-    public static readonly QuantityCode MillilitrePerHourBar = new QuantityCode { Value = "G91" };
+    public static QuantityCode MillilitrePerHourBar => new() { Value = "G91" };
 
     /// <summary>
     /// millilitre per minute bar
     /// </summary>
-    public static readonly QuantityCode MillilitrePerMinuteBar = new QuantityCode { Value = "G92" };
+    public static QuantityCode MillilitrePerMinuteBar => new() { Value = "G92" };
 
     /// <summary>
     /// millilitre per second bar
     /// </summary>
-    public static readonly QuantityCode MillilitrePerSecondBar = new QuantityCode { Value = "G93" };
+    public static QuantityCode MillilitrePerSecondBar => new() { Value = "G93" };
 
     /// <summary>
     /// cubic centimetre per bar
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerBar = new QuantityCode { Value = "G94" };
+    public static QuantityCode CubicCentimetrePerBar => new() { Value = "G94" };
 
     /// <summary>
     /// litre per bar
     /// </summary>
-    public static readonly QuantityCode LitrePerBar = new QuantityCode { Value = "G95" };
+    public static QuantityCode LitrePerBar => new() { Value = "G95" };
 
     /// <summary>
     /// cubic metre per bar
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerBar = new QuantityCode { Value = "G96" };
+    public static QuantityCode CubicMetrePerBar => new() { Value = "G96" };
 
     /// <summary>
     /// millilitre per bar
     /// </summary>
-    public static readonly QuantityCode MillilitrePerBar = new QuantityCode { Value = "G97" };
+    public static QuantityCode MillilitrePerBar => new() { Value = "G97" };
 
     /// <summary>
     /// microhenry per kiloohm
     /// </summary>
-    public static readonly QuantityCode MicrohenryPerKiloohm = new QuantityCode { Value = "G98" };
+    public static QuantityCode MicrohenryPerKiloohm => new() { Value = "G98" };
 
     /// <summary>
     /// microhenry per ohm
     /// </summary>
-    public static readonly QuantityCode MicrohenryPerOhm = new QuantityCode { Value = "G99" };
+    public static QuantityCode MicrohenryPerOhm => new() { Value = "G99" };
 
     /// <summary>
     /// gallon (US) per day
     /// </summary>
-    public static readonly QuantityCode GallonUSPerDay = new QuantityCode { Value = "GB" };
+    public static QuantityCode GallonUSPerDay => new() { Value = "GB" };
 
     /// <summary>
     /// gigabecquerel
     /// </summary>
-    public static readonly QuantityCode Gigabecquerel = new QuantityCode { Value = "GBQ" };
+    public static QuantityCode Gigabecquerel => new() { Value = "GBQ" };
 
     /// <summary>
     /// gram, dry weight
     /// </summary>
-    public static readonly QuantityCode GramDryWeight = new QuantityCode { Value = "GDW" };
+    public static QuantityCode GramDryWeight => new() { Value = "GDW" };
 
     /// <summary>
     /// pound per gallon (US)
     /// </summary>
-    public static readonly QuantityCode PoundPerGallonUS = new QuantityCode { Value = "GE" };
+    public static QuantityCode PoundPerGallonUS => new() { Value = "GE" };
 
     /// <summary>
     /// gram per metre (gram per 100 centimetres)
     /// </summary>
-    public static readonly QuantityCode GramPerMetreGramPer100Centimetres = new QuantityCode { Value = "GF" };
+    public static QuantityCode GramPerMetreGramPer100Centimetres => new() { Value = "GF" };
 
     /// <summary>
     /// gram of fissile isotope
     /// </summary>
-    public static readonly QuantityCode GramOfFissileIsotope = new QuantityCode { Value = "GFI" };
+    public static QuantityCode GramOfFissileIsotope => new() { Value = "GFI" };
 
     /// <summary>
     /// great gross
     /// </summary>
-    public static readonly QuantityCode GreatGross = new QuantityCode { Value = "GGR" };
+    public static QuantityCode GreatGross => new() { Value = "GGR" };
 
     /// <summary>
     /// gill (US)
     /// </summary>
-    public static readonly QuantityCode GillUS = new QuantityCode { Value = "GIA" };
+    public static QuantityCode GillUS => new() { Value = "GIA" };
 
     /// <summary>
     /// gram, including container
     /// </summary>
-    public static readonly QuantityCode GramIncludingContainer = new QuantityCode { Value = "GIC" };
+    public static QuantityCode GramIncludingContainer => new() { Value = "GIC" };
 
     /// <summary>
     /// gill (UK)
     /// </summary>
-    public static readonly QuantityCode GillUK = new QuantityCode { Value = "GII" };
+    public static QuantityCode GillUK => new() { Value = "GII" };
 
     /// <summary>
     /// gram, including inner packaging
     /// </summary>
-    public static readonly QuantityCode GramIncludingInnerPackaging = new QuantityCode { Value = "GIP" };
+    public static QuantityCode GramIncludingInnerPackaging => new() { Value = "GIP" };
 
     /// <summary>
     /// gram per millilitre
     /// </summary>
-    public static readonly QuantityCode GramPerMillilitre = new QuantityCode { Value = "GJ" };
+    public static QuantityCode GramPerMillilitre => new() { Value = "GJ" };
 
     /// <summary>
     /// gram per litre
     /// </summary>
-    public static readonly QuantityCode GramPerLitre = new QuantityCode { Value = "GL" };
+    public static QuantityCode GramPerLitre => new() { Value = "GL" };
 
     /// <summary>
     /// dry gallon (US)
     /// </summary>
-    public static readonly QuantityCode DryGallonUS = new QuantityCode { Value = "GLD" };
+    public static QuantityCode DryGallonUS => new() { Value = "GLD" };
 
     /// <summary>
     /// gallon (UK)
     /// </summary>
-    public static readonly QuantityCode GallonUK = new QuantityCode { Value = "GLI" };
+    public static QuantityCode GallonUK => new() { Value = "GLI" };
 
     /// <summary>
     /// gallon (US)
     /// </summary>
-    public static readonly QuantityCode GallonUS = new QuantityCode { Value = "GLL" };
+    public static QuantityCode GallonUS => new() { Value = "GLL" };
 
     /// <summary>
     /// gram per square metre
     /// </summary>
-    public static readonly QuantityCode GramPerSquareMetre = new QuantityCode { Value = "GM" };
+    public static QuantityCode GramPerSquareMetre => new() { Value = "GM" };
 
     /// <summary>
     /// milligram per square metre
     /// </summary>
-    public static readonly QuantityCode MilligramPerSquareMetre = new QuantityCode { Value = "GO" };
+    public static QuantityCode MilligramPerSquareMetre => new() { Value = "GO" };
 
     /// <summary>
     /// milligram per cubic metre
     /// </summary>
-    public static readonly QuantityCode MilligramPerCubicMetre = new QuantityCode { Value = "GP" };
+    public static QuantityCode MilligramPerCubicMetre => new() { Value = "GP" };
 
     /// <summary>
     /// microgram per cubic metre
     /// </summary>
-    public static readonly QuantityCode MicrogramPerCubicMetre = new QuantityCode { Value = "GQ" };
+    public static QuantityCode MicrogramPerCubicMetre => new() { Value = "GQ" };
 
     /// <summary>
     /// gram
     /// </summary>
-    public static readonly QuantityCode Gram = new QuantityCode { Value = "GRM" };
+    public static QuantityCode Gram => new() { Value = "GRM" };
 
     /// <summary>
     /// grain
     /// </summary>
-    public static readonly QuantityCode Grain = new QuantityCode { Value = "GRN" };
+    public static QuantityCode Grain => new() { Value = "GRN" };
 
     /// <summary>
     /// gross
     /// </summary>
-    public static readonly QuantityCode Gross = new QuantityCode { Value = "GRO" };
+    public static QuantityCode Gross => new() { Value = "GRO" };
 
     /// <summary>
     /// gigajoule
     /// </summary>
-    public static readonly QuantityCode Gigajoule = new QuantityCode { Value = "GV" };
+    public static QuantityCode Gigajoule => new() { Value = "GV" };
 
     /// <summary>
     /// gigawatt hour
     /// </summary>
-    public static readonly QuantityCode GigawattHour = new QuantityCode { Value = "GWH" };
+    public static QuantityCode GigawattHour => new() { Value = "GWH" };
 
     /// <summary>
     /// henry per kiloohm
     /// </summary>
-    public static readonly QuantityCode HenryPerKiloohm = new QuantityCode { Value = "H03" };
+    public static QuantityCode HenryPerKiloohm => new() { Value = "H03" };
 
     /// <summary>
     /// henry per ohm
     /// </summary>
-    public static readonly QuantityCode HenryPerOhm = new QuantityCode { Value = "H04" };
+    public static QuantityCode HenryPerOhm => new() { Value = "H04" };
 
     /// <summary>
     /// millihenry per kiloohm
     /// </summary>
-    public static readonly QuantityCode MillihenryPerKiloohm = new QuantityCode { Value = "H05" };
+    public static QuantityCode MillihenryPerKiloohm => new() { Value = "H05" };
 
     /// <summary>
     /// millihenry per ohm
     /// </summary>
-    public static readonly QuantityCode MillihenryPerOhm = new QuantityCode { Value = "H06" };
+    public static QuantityCode MillihenryPerOhm => new() { Value = "H06" };
 
     /// <summary>
     /// pascal second per bar
     /// </summary>
-    public static readonly QuantityCode PascalSecondPerBar = new QuantityCode { Value = "H07" };
+    public static QuantityCode PascalSecondPerBar => new() { Value = "H07" };
 
     /// <summary>
     /// microbecquerel
     /// </summary>
-    public static readonly QuantityCode Microbecquerel = new QuantityCode { Value = "H08" };
+    public static QuantityCode Microbecquerel => new() { Value = "H08" };
 
     /// <summary>
     /// reciprocal year
     /// </summary>
-    public static readonly QuantityCode ReciprocalYear = new QuantityCode { Value = "H09" };
+    public static QuantityCode ReciprocalYear => new() { Value = "H09" };
 
     /// <summary>
     /// reciprocal hour
     /// </summary>
-    public static readonly QuantityCode ReciprocalHour = new QuantityCode { Value = "H10" };
+    public static QuantityCode ReciprocalHour => new() { Value = "H10" };
 
     /// <summary>
     /// reciprocal month
     /// </summary>
-    public static readonly QuantityCode ReciprocalMonth = new QuantityCode { Value = "H11" };
+    public static QuantityCode ReciprocalMonth => new() { Value = "H11" };
 
     /// <summary>
     /// degree Celsius per hour
     /// </summary>
-    public static readonly QuantityCode DegreeCelsiusPerHour = new QuantityCode { Value = "H12" };
+    public static QuantityCode DegreeCelsiusPerHour => new() { Value = "H12" };
 
     /// <summary>
     /// degree Celsius per minute
     /// </summary>
-    public static readonly QuantityCode DegreeCelsiusPerMinute = new QuantityCode { Value = "H13" };
+    public static QuantityCode DegreeCelsiusPerMinute => new() { Value = "H13" };
 
     /// <summary>
     /// degree Celsius per second
     /// </summary>
-    public static readonly QuantityCode DegreeCelsiusPerSecond = new QuantityCode { Value = "H14" };
+    public static QuantityCode DegreeCelsiusPerSecond => new() { Value = "H14" };
 
     /// <summary>
     /// square centimetre per gram
     /// </summary>
-    public static readonly QuantityCode SquareCentimetrePerGram = new QuantityCode { Value = "H15" };
+    public static QuantityCode SquareCentimetrePerGram => new() { Value = "H15" };
 
     /// <summary>
     /// square decametre
     /// </summary>
-    public static readonly QuantityCode SquareDecametre = new QuantityCode { Value = "H16" };
+    public static QuantityCode SquareDecametre => new() { Value = "H16" };
 
     /// <summary>
     /// square hectometre
     /// </summary>
-    public static readonly QuantityCode SquareHectometre = new QuantityCode { Value = "H18" };
+    public static QuantityCode SquareHectometre => new() { Value = "H18" };
 
     /// <summary>
     /// cubic hectometre
     /// </summary>
-    public static readonly QuantityCode CubicHectometre = new QuantityCode { Value = "H19" };
+    public static QuantityCode CubicHectometre => new() { Value = "H19" };
 
     /// <summary>
     /// cubic kilometre
     /// </summary>
-    public static readonly QuantityCode CubicKilometre = new QuantityCode { Value = "H20" };
+    public static QuantityCode CubicKilometre => new() { Value = "H20" };
 
     /// <summary>
     /// blank
     /// </summary>
-    public static readonly QuantityCode Blank = new QuantityCode { Value = "H21" };
+    public static QuantityCode Blank => new() { Value = "H21" };
 
     /// <summary>
     /// volt square inch per pound-force
     /// </summary>
-    public static readonly QuantityCode VoltSquareInchPerPoundForce = new QuantityCode { Value = "H22" };
+    public static QuantityCode VoltSquareInchPerPoundForce => new() { Value = "H22" };
 
     /// <summary>
     /// volt per inch
     /// </summary>
-    public static readonly QuantityCode VoltPerInch = new QuantityCode { Value = "H23" };
+    public static QuantityCode VoltPerInch => new() { Value = "H23" };
 
     /// <summary>
     /// volt per microsecond
     /// </summary>
-    public static readonly QuantityCode VoltPerMicrosecond = new QuantityCode { Value = "H24" };
+    public static QuantityCode VoltPerMicrosecond => new() { Value = "H24" };
 
     /// <summary>
     /// percent per kelvin
     /// </summary>
-    public static readonly QuantityCode PercentPerKelvin = new QuantityCode { Value = "H25" };
+    public static QuantityCode PercentPerKelvin => new() { Value = "H25" };
 
     /// <summary>
     /// ohm per metre
     /// </summary>
-    public static readonly QuantityCode OhmPerMetre = new QuantityCode { Value = "H26" };
+    public static QuantityCode OhmPerMetre => new() { Value = "H26" };
 
     /// <summary>
     /// degree per metre
     /// </summary>
-    public static readonly QuantityCode DegreePerMetre = new QuantityCode { Value = "H27" };
+    public static QuantityCode DegreePerMetre => new() { Value = "H27" };
 
     /// <summary>
     /// microfarad per kilometre
     /// </summary>
-    public static readonly QuantityCode MicrofaradPerKilometre = new QuantityCode { Value = "H28" };
+    public static QuantityCode MicrofaradPerKilometre => new() { Value = "H28" };
 
     /// <summary>
     /// microgram per litre
     /// </summary>
-    public static readonly QuantityCode MicrogramPerLitre = new QuantityCode { Value = "H29" };
+    public static QuantityCode MicrogramPerLitre => new() { Value = "H29" };
 
     /// <summary>
     /// square micrometre (square micron)
     /// </summary>
-    public static readonly QuantityCode SquareMicrometreSquareMicron = new QuantityCode { Value = "H30" };
+    public static QuantityCode SquareMicrometreSquareMicron => new() { Value = "H30" };
 
     /// <summary>
     /// ampere per kilogram
     /// </summary>
-    public static readonly QuantityCode AmperePerKilogram = new QuantityCode { Value = "H31" };
+    public static QuantityCode AmperePerKilogram => new() { Value = "H31" };
 
     /// <summary>
     /// ampere squared second
     /// </summary>
-    public static readonly QuantityCode AmpereSquaredSecond = new QuantityCode { Value = "H32" };
+    public static QuantityCode AmpereSquaredSecond => new() { Value = "H32" };
 
     /// <summary>
     /// farad per kilometre
     /// </summary>
-    public static readonly QuantityCode FaradPerKilometre = new QuantityCode { Value = "H33" };
+    public static QuantityCode FaradPerKilometre => new() { Value = "H33" };
 
     /// <summary>
     /// hertz metre
     /// </summary>
-    public static readonly QuantityCode HertzMetre = new QuantityCode { Value = "H34" };
+    public static QuantityCode HertzMetre => new() { Value = "H34" };
 
     /// <summary>
     /// kelvin metre per watt
     /// </summary>
-    public static readonly QuantityCode KelvinMetrePerWatt = new QuantityCode { Value = "H35" };
+    public static QuantityCode KelvinMetrePerWatt => new() { Value = "H35" };
 
     /// <summary>
     /// megaohm per kilometre
     /// </summary>
-    public static readonly QuantityCode MegaohmPerKilometre = new QuantityCode { Value = "H36" };
+    public static QuantityCode MegaohmPerKilometre => new() { Value = "H36" };
 
     /// <summary>
     /// megaohm per metre
     /// </summary>
-    public static readonly QuantityCode MegaohmPerMetre = new QuantityCode { Value = "H37" };
+    public static QuantityCode MegaohmPerMetre => new() { Value = "H37" };
 
     /// <summary>
     /// megaampere
     /// </summary>
-    public static readonly QuantityCode Megaampere = new QuantityCode { Value = "H38" };
+    public static QuantityCode Megaampere => new() { Value = "H38" };
 
     /// <summary>
     /// megahertz kilometre
     /// </summary>
-    public static readonly QuantityCode MegahertzKilometre = new QuantityCode { Value = "H39" };
+    public static QuantityCode MegahertzKilometre => new() { Value = "H39" };
 
     /// <summary>
     /// newton per ampere
     /// </summary>
-    public static readonly QuantityCode NewtonPerAmpere = new QuantityCode { Value = "H40" };
+    public static QuantityCode NewtonPerAmpere => new() { Value = "H40" };
 
     /// <summary>
     /// newton metre watt to the power minus 0,5
     /// </summary>
-    public static readonly QuantityCode NewtonMetreWattToThePowerMinus05 = new QuantityCode { Value = "H41" };
+    public static QuantityCode NewtonMetreWattToThePowerMinus05 => new() { Value = "H41" };
 
     /// <summary>
     /// pascal per metre
     /// </summary>
-    public static readonly QuantityCode PascalPerMetre = new QuantityCode { Value = "H42" };
+    public static QuantityCode PascalPerMetre => new() { Value = "H42" };
 
     /// <summary>
     /// siemens per centimetre
     /// </summary>
-    public static readonly QuantityCode SiemensPerCentimetre = new QuantityCode { Value = "H43" };
+    public static QuantityCode SiemensPerCentimetre => new() { Value = "H43" };
 
     /// <summary>
     /// teraohm
     /// </summary>
-    public static readonly QuantityCode Teraohm = new QuantityCode { Value = "H44" };
+    public static QuantityCode Teraohm => new() { Value = "H44" };
 
     /// <summary>
     /// volt second per metre
     /// </summary>
-    public static readonly QuantityCode VoltSecondPerMetre = new QuantityCode { Value = "H45" };
+    public static QuantityCode VoltSecondPerMetre => new() { Value = "H45" };
 
     /// <summary>
     /// volt per second
     /// </summary>
-    public static readonly QuantityCode VoltPerSecond = new QuantityCode { Value = "H46" };
+    public static QuantityCode VoltPerSecond => new() { Value = "H46" };
 
     /// <summary>
     /// watt per cubic metre
     /// </summary>
-    public static readonly QuantityCode WattPerCubicMetre = new QuantityCode { Value = "H47" };
+    public static QuantityCode WattPerCubicMetre => new() { Value = "H47" };
 
     /// <summary>
     /// attofarad
     /// </summary>
-    public static readonly QuantityCode Attofarad = new QuantityCode { Value = "H48" };
+    public static QuantityCode Attofarad => new() { Value = "H48" };
 
     /// <summary>
     /// centimetre per hour
     /// </summary>
-    public static readonly QuantityCode CentimetrePerHour = new QuantityCode { Value = "H49" };
+    public static QuantityCode CentimetrePerHour => new() { Value = "H49" };
 
     /// <summary>
     /// reciprocal cubic centimetre
     /// </summary>
-    public static readonly QuantityCode ReciprocalCubicCentimetre = new QuantityCode { Value = "H50" };
+    public static QuantityCode ReciprocalCubicCentimetre => new() { Value = "H50" };
 
     /// <summary>
     /// decibel per kilometre
     /// </summary>
-    public static readonly QuantityCode DecibelPerKilometre = new QuantityCode { Value = "H51" };
+    public static QuantityCode DecibelPerKilometre => new() { Value = "H51" };
 
     /// <summary>
     /// decibel per metre
     /// </summary>
-    public static readonly QuantityCode DecibelPerMetre = new QuantityCode { Value = "H52" };
+    public static QuantityCode DecibelPerMetre => new() { Value = "H52" };
 
     /// <summary>
     /// kilogram per bar
     /// </summary>
-    public static readonly QuantityCode KilogramPerBar = new QuantityCode { Value = "H53" };
+    public static QuantityCode KilogramPerBar => new() { Value = "H53" };
 
     /// <summary>
     /// kilogram per cubic decimetre kelvin
     /// </summary>
-    public static readonly QuantityCode KilogramPerCubicDecimetreKelvin = new QuantityCode { Value = "H54" };
+    public static QuantityCode KilogramPerCubicDecimetreKelvin => new() { Value = "H54" };
 
     /// <summary>
     /// kilogram per cubic decimetre bar
     /// </summary>
-    public static readonly QuantityCode KilogramPerCubicDecimetreBar = new QuantityCode { Value = "H55" };
+    public static QuantityCode KilogramPerCubicDecimetreBar => new() { Value = "H55" };
 
     /// <summary>
     /// kilogram per square metre second
     /// </summary>
-    public static readonly QuantityCode KilogramPerSquareMetreSecond = new QuantityCode { Value = "H56" };
+    public static QuantityCode KilogramPerSquareMetreSecond => new() { Value = "H56" };
 
     /// <summary>
     /// inch per two pi radiant
     /// </summary>
-    public static readonly QuantityCode InchPerTwoPiRadiant = new QuantityCode { Value = "H57" };
+    public static QuantityCode InchPerTwoPiRadiant => new() { Value = "H57" };
 
     /// <summary>
     /// metre per volt second
     /// </summary>
-    public static readonly QuantityCode MetrePerVoltSecond = new QuantityCode { Value = "H58" };
+    public static QuantityCode MetrePerVoltSecond => new() { Value = "H58" };
 
     /// <summary>
     /// square metre per newton
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerNewton = new QuantityCode { Value = "H59" };
+    public static QuantityCode SquareMetrePerNewton => new() { Value = "H59" };
 
     /// <summary>
     /// cubic metre per cubic metre
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerCubicMetre = new QuantityCode { Value = "H60" };
+    public static QuantityCode CubicMetrePerCubicMetre => new() { Value = "H60" };
 
     /// <summary>
     /// millisiemens per centimetre
     /// </summary>
-    public static readonly QuantityCode MillisiemensPerCentimetre = new QuantityCode { Value = "H61" };
+    public static QuantityCode MillisiemensPerCentimetre => new() { Value = "H61" };
 
     /// <summary>
     /// millivolt per minute
     /// </summary>
-    public static readonly QuantityCode MillivoltPerMinute = new QuantityCode { Value = "H62" };
+    public static QuantityCode MillivoltPerMinute => new() { Value = "H62" };
 
     /// <summary>
     /// milligram per square centimetre
     /// </summary>
-    public static readonly QuantityCode MilligramPerSquareCentimetre = new QuantityCode { Value = "H63" };
+    public static QuantityCode MilligramPerSquareCentimetre => new() { Value = "H63" };
 
     /// <summary>
     /// milligram per gram
     /// </summary>
-    public static readonly QuantityCode MilligramPerGram = new QuantityCode { Value = "H64" };
+    public static QuantityCode MilligramPerGram => new() { Value = "H64" };
 
     /// <summary>
     /// millilitre per cubic metre
     /// </summary>
-    public static readonly QuantityCode MillilitrePerCubicMetre = new QuantityCode { Value = "H65" };
+    public static QuantityCode MillilitrePerCubicMetre => new() { Value = "H65" };
 
     /// <summary>
     /// millimetre per year
     /// </summary>
-    public static readonly QuantityCode MillimetrePerYear = new QuantityCode { Value = "H66" };
+    public static QuantityCode MillimetrePerYear => new() { Value = "H66" };
 
     /// <summary>
     /// millimetre per hour
     /// </summary>
-    public static readonly QuantityCode MillimetrePerHour = new QuantityCode { Value = "H67" };
+    public static QuantityCode MillimetrePerHour => new() { Value = "H67" };
 
     /// <summary>
     /// millimole per gram
     /// </summary>
-    public static readonly QuantityCode MillimolePerGram = new QuantityCode { Value = "H68" };
+    public static QuantityCode MillimolePerGram => new() { Value = "H68" };
 
     /// <summary>
     /// picopascal per kilometre
     /// </summary>
-    public static readonly QuantityCode PicopascalPerKilometre = new QuantityCode { Value = "H69" };
+    public static QuantityCode PicopascalPerKilometre => new() { Value = "H69" };
 
     /// <summary>
     /// picosecond
     /// </summary>
-    public static readonly QuantityCode Picosecond = new QuantityCode { Value = "H70" };
+    public static QuantityCode Picosecond => new() { Value = "H70" };
 
     /// <summary>
     /// percent per month
     /// </summary>
-    public static readonly QuantityCode PercentPerMonth = new QuantityCode { Value = "H71" };
+    public static QuantityCode PercentPerMonth => new() { Value = "H71" };
 
     /// <summary>
     /// percent per hectobar
     /// </summary>
-    public static readonly QuantityCode PercentPerHectobar = new QuantityCode { Value = "H72" };
+    public static QuantityCode PercentPerHectobar => new() { Value = "H72" };
 
     /// <summary>
     /// percent per decakelvin
     /// </summary>
-    public static readonly QuantityCode PercentPerDecakelvin = new QuantityCode { Value = "H73" };
+    public static QuantityCode PercentPerDecakelvin => new() { Value = "H73" };
 
     /// <summary>
     /// watt per metre
     /// </summary>
-    public static readonly QuantityCode WattPerMetre = new QuantityCode { Value = "H74" };
+    public static QuantityCode WattPerMetre => new() { Value = "H74" };
 
     /// <summary>
     /// decapascal
     /// </summary>
-    public static readonly QuantityCode Decapascal = new QuantityCode { Value = "H75" };
+    public static QuantityCode Decapascal => new() { Value = "H75" };
 
     /// <summary>
     /// gram per millimetre
     /// </summary>
-    public static readonly QuantityCode GramPerMillimetre = new QuantityCode { Value = "H76" };
+    public static QuantityCode GramPerMillimetre => new() { Value = "H76" };
 
     /// <summary>
     /// module width
     /// </summary>
-    public static readonly QuantityCode ModuleWidth = new QuantityCode { Value = "H77" };
+    public static QuantityCode ModuleWidth => new() { Value = "H77" };
 
     /// <summary>
     /// French gauge
     /// </summary>
-    public static readonly QuantityCode FrenchGauge = new QuantityCode { Value = "H79" };
+    public static QuantityCode FrenchGauge => new() { Value = "H79" };
 
     /// <summary>
     /// rack unit
     /// </summary>
-    public static readonly QuantityCode RackUnit = new QuantityCode { Value = "H80" };
+    public static QuantityCode RackUnit => new() { Value = "H80" };
 
     /// <summary>
     /// millimetre per minute
     /// </summary>
-    public static readonly QuantityCode MillimetrePerMinute = new QuantityCode { Value = "H81" };
+    public static QuantityCode MillimetrePerMinute => new() { Value = "H81" };
 
     /// <summary>
     /// big point
     /// </summary>
-    public static readonly QuantityCode BigPoint = new QuantityCode { Value = "H82" };
+    public static QuantityCode BigPoint => new() { Value = "H82" };
 
     /// <summary>
     /// litre per kilogram
     /// </summary>
-    public static readonly QuantityCode LitrePerKilogram = new QuantityCode { Value = "H83" };
+    public static QuantityCode LitrePerKilogram => new() { Value = "H83" };
 
     /// <summary>
     /// gram millimetre
     /// </summary>
-    public static readonly QuantityCode GramMillimetre = new QuantityCode { Value = "H84" };
+    public static QuantityCode GramMillimetre => new() { Value = "H84" };
 
     /// <summary>
     /// reciprocal week
     /// </summary>
-    public static readonly QuantityCode ReciprocalWeek = new QuantityCode { Value = "H85" };
+    public static QuantityCode ReciprocalWeek => new() { Value = "H85" };
 
     /// <summary>
     /// piece
     /// </summary>
-    public static readonly QuantityCode Piece = new QuantityCode { Value = "H87" };
+    public static QuantityCode Piece => new() { Value = "H87" };
 
     /// <summary>
     /// megaohm kilometre
     /// </summary>
-    public static readonly QuantityCode MegaohmKilometre = new QuantityCode { Value = "H88" };
+    public static QuantityCode MegaohmKilometre => new() { Value = "H88" };
 
     /// <summary>
     /// percent per ohm
     /// </summary>
-    public static readonly QuantityCode PercentPerOhm = new QuantityCode { Value = "H89" };
+    public static QuantityCode PercentPerOhm => new() { Value = "H89" };
 
     /// <summary>
     /// percent per degree
     /// </summary>
-    public static readonly QuantityCode PercentPerDegree = new QuantityCode { Value = "H90" };
+    public static QuantityCode PercentPerDegree => new() { Value = "H90" };
 
     /// <summary>
     /// percent per ten thousand
     /// </summary>
-    public static readonly QuantityCode PercentPerTenThousand = new QuantityCode { Value = "H91" };
+    public static QuantityCode PercentPerTenThousand => new() { Value = "H91" };
 
     /// <summary>
     /// percent per one hundred thousand
     /// </summary>
-    public static readonly QuantityCode PercentPerOneHundredThousand = new QuantityCode { Value = "H92" };
+    public static QuantityCode PercentPerOneHundredThousand => new() { Value = "H92" };
 
     /// <summary>
     /// percent per hundred
     /// </summary>
-    public static readonly QuantityCode PercentPerHundred = new QuantityCode { Value = "H93" };
+    public static QuantityCode PercentPerHundred => new() { Value = "H93" };
 
     /// <summary>
     /// percent per thousand
     /// </summary>
-    public static readonly QuantityCode PercentPerThousand = new QuantityCode { Value = "H94" };
+    public static QuantityCode PercentPerThousand => new() { Value = "H94" };
 
     /// <summary>
     /// percent per volt
     /// </summary>
-    public static readonly QuantityCode PercentPerVolt = new QuantityCode { Value = "H95" };
+    public static QuantityCode PercentPerVolt => new() { Value = "H95" };
 
     /// <summary>
     /// percent per bar
     /// </summary>
-    public static readonly QuantityCode PercentPerBar = new QuantityCode { Value = "H96" };
+    public static QuantityCode PercentPerBar => new() { Value = "H96" };
 
     /// <summary>
     /// percent per inch
     /// </summary>
-    public static readonly QuantityCode PercentPerInch = new QuantityCode { Value = "H98" };
+    public static QuantityCode PercentPerInch => new() { Value = "H98" };
 
     /// <summary>
     /// percent per metre
     /// </summary>
-    public static readonly QuantityCode PercentPerMetre = new QuantityCode { Value = "H99" };
+    public static QuantityCode PercentPerMetre => new() { Value = "H99" };
 
     /// <summary>
     /// hank
     /// </summary>
-    public static readonly QuantityCode Hank = new QuantityCode { Value = "HA" };
+    public static QuantityCode Hank => new() { Value = "HA" };
 
     /// <summary>
     /// Piece Day
     /// </summary>
-    public static readonly QuantityCode PieceDay = new QuantityCode { Value = "HAD" };
+    public static QuantityCode PieceDay => new() { Value = "HAD" };
 
     /// <summary>
     /// hectobar
     /// </summary>
-    public static readonly QuantityCode Hectobar = new QuantityCode { Value = "HBA" };
+    public static QuantityCode Hectobar => new() { Value = "HBA" };
 
     /// <summary>
     /// hundred boxes
     /// </summary>
-    public static readonly QuantityCode HundredBoxes = new QuantityCode { Value = "HBX" };
+    public static QuantityCode HundredBoxes => new() { Value = "HBX" };
 
     /// <summary>
     /// hundred count
     /// </summary>
-    public static readonly QuantityCode HundredCount = new QuantityCode { Value = "HC" };
+    public static QuantityCode HundredCount => new() { Value = "HC" };
 
     /// <summary>
     /// hundred kilogram, dry weight
     /// </summary>
-    public static readonly QuantityCode HundredKilogramDryWeight = new QuantityCode { Value = "HDW" };
+    public static QuantityCode HundredKilogramDryWeight => new() { Value = "HDW" };
 
     /// <summary>
     /// head
     /// </summary>
-    public static readonly QuantityCode Head = new QuantityCode { Value = "HEA" };
+    public static QuantityCode Head => new() { Value = "HEA" };
 
     /// <summary>
     /// hectogram
     /// </summary>
-    public static readonly QuantityCode Hectogram = new QuantityCode { Value = "HGM" };
+    public static QuantityCode Hectogram => new() { Value = "HGM" };
 
     /// <summary>
     /// hundred cubic foot
     /// </summary>
-    public static readonly QuantityCode HundredCubicFoot = new QuantityCode { Value = "HH" };
+    public static QuantityCode HundredCubicFoot => new() { Value = "HH" };
 
     /// <summary>
     /// hundred international unit
     /// </summary>
-    public static readonly QuantityCode HundredInternationalUnit = new QuantityCode { Value = "HIU" };
+    public static QuantityCode HundredInternationalUnit => new() { Value = "HIU" };
 
     /// <summary>
     /// hundred kilogram, net mass
     /// </summary>
-    public static readonly QuantityCode HundredKilogramNetMass = new QuantityCode { Value = "HKM" };
+    public static QuantityCode HundredKilogramNetMass => new() { Value = "HKM" };
 
     /// <summary>
     /// hectolitre
     /// </summary>
-    public static readonly QuantityCode Hectolitre = new QuantityCode { Value = "HLT" };
+    public static QuantityCode Hectolitre => new() { Value = "HLT" };
 
     /// <summary>
     /// mile per hour (statute mile)
     /// </summary>
-    public static readonly QuantityCode MilePerHourStatuteMile = new QuantityCode { Value = "HM" };
+    public static QuantityCode MilePerHourStatuteMile => new() { Value = "HM" };
 
     /// <summary>
     /// Piece Month
     /// </summary>
-    public static readonly QuantityCode PieceMonth = new QuantityCode { Value = "HMO" };
+    public static QuantityCode PieceMonth => new() { Value = "HMO" };
 
     /// <summary>
     /// million cubic metre
     /// </summary>
-    public static readonly QuantityCode MillionCubicMetre = new QuantityCode { Value = "HMQ" };
+    public static QuantityCode MillionCubicMetre => new() { Value = "HMQ" };
 
     /// <summary>
     /// hectometre
     /// </summary>
-    public static readonly QuantityCode Hectometre = new QuantityCode { Value = "HMT" };
+    public static QuantityCode Hectometre => new() { Value = "HMT" };
 
     /// <summary>
     /// hectolitre of pure alcohol
     /// </summary>
-    public static readonly QuantityCode HectolitreOfPureAlcohol = new QuantityCode { Value = "HPA" };
+    public static QuantityCode HectolitreOfPureAlcohol => new() { Value = "HPA" };
 
     /// <summary>
     /// hertz
     /// </summary>
-    public static readonly QuantityCode Hertz = new QuantityCode { Value = "HTZ" };
+    public static QuantityCode Hertz => new() { Value = "HTZ" };
 
     /// <summary>
     /// hour
     /// </summary>
-    public static readonly QuantityCode Hour = new QuantityCode { Value = "HUR" };
+    public static QuantityCode Hour => new() { Value = "HUR" };
 
     /// <summary>
     /// Piece Week
     /// </summary>
-    public static readonly QuantityCode PieceWeek = new QuantityCode { Value = "HWE" };
+    public static QuantityCode PieceWeek => new() { Value = "HWE" };
 
     /// <summary>
     /// inch pound (pound inch)
     /// </summary>
-    public static readonly QuantityCode InchPoundPoundInch = new QuantityCode { Value = "IA" };
+    public static QuantityCode InchPoundPoundInch => new() { Value = "IA" };
 
     /// <summary>
     /// person
     /// </summary>
-    public static readonly QuantityCode Person = new QuantityCode { Value = "IE" };
+    public static QuantityCode Person => new() { Value = "IE" };
 
     /// <summary>
     /// inch
     /// </summary>
-    public static readonly QuantityCode Inch = new QuantityCode { Value = "INH" };
+    public static QuantityCode Inch => new() { Value = "INH" };
 
     /// <summary>
     /// square inch
     /// </summary>
-    public static readonly QuantityCode SquareInch = new QuantityCode { Value = "INK" };
+    public static QuantityCode SquareInch => new() { Value = "INK" };
 
     /// <summary>
     /// cubic inch
     /// </summary>
-    public static readonly QuantityCode CubicInch = new QuantityCode { Value = "INQ" };
+    public static QuantityCode CubicInch => new() { Value = "INQ" };
 
     /// <summary>
     /// international sugar degree
     /// </summary>
-    public static readonly QuantityCode InternationalSugarDegree = new QuantityCode { Value = "ISD" };
+    public static QuantityCode InternationalSugarDegree => new() { Value = "ISD" };
 
     /// <summary>
     /// inch per second
     /// </summary>
-    public static readonly QuantityCode InchPerSecond = new QuantityCode { Value = "IU" };
+    public static QuantityCode InchPerSecond => new() { Value = "IU" };
 
     /// <summary>
     /// international unit per gram
     /// </summary>
-    public static readonly QuantityCode InternationalUnitPerGram = new QuantityCode { Value = "IUG" };
+    public static QuantityCode InternationalUnitPerGram => new() { Value = "IUG" };
 
     /// <summary>
     /// inch per second squared
     /// </summary>
-    public static readonly QuantityCode InchPerSecondSquared = new QuantityCode { Value = "IV" };
+    public static QuantityCode InchPerSecondSquared => new() { Value = "IV" };
 
     /// <summary>
     /// percent per millimetre
     /// </summary>
-    public static readonly QuantityCode PercentPerMillimetre = new QuantityCode { Value = "J10" };
+    public static QuantityCode PercentPerMillimetre => new() { Value = "J10" };
 
     /// <summary>
     /// per mille per psi
     /// </summary>
-    public static readonly QuantityCode PerMillePerPsi = new QuantityCode { Value = "J12" };
+    public static QuantityCode PerMillePerPsi => new() { Value = "J12" };
 
     /// <summary>
     /// degree API
     /// </summary>
-    public static readonly QuantityCode DegreeAPI = new QuantityCode { Value = "J13" };
+    public static QuantityCode DegreeAPI => new() { Value = "J13" };
 
     /// <summary>
     /// degree Baume (origin scale)
     /// </summary>
-    public static readonly QuantityCode DegreeBaumeOriginScale = new QuantityCode { Value = "J14" };
+    public static QuantityCode DegreeBaumeOriginScale => new() { Value = "J14" };
 
     /// <summary>
     /// degree Baume (US heavy)
     /// </summary>
-    public static readonly QuantityCode DegreeBaumeUSHeavy = new QuantityCode { Value = "J15" };
+    public static QuantityCode DegreeBaumeUSHeavy => new() { Value = "J15" };
 
     /// <summary>
     /// degree Baume (US light)
     /// </summary>
-    public static readonly QuantityCode DegreeBaumeUSLight = new QuantityCode { Value = "J16" };
+    public static QuantityCode DegreeBaumeUSLight => new() { Value = "J16" };
 
     /// <summary>
     /// degree Balling
     /// </summary>
-    public static readonly QuantityCode DegreeBalling = new QuantityCode { Value = "J17" };
+    public static QuantityCode DegreeBalling => new() { Value = "J17" };
 
     /// <summary>
     /// degree Brix
     /// </summary>
-    public static readonly QuantityCode DegreeBrix = new QuantityCode { Value = "J18" };
+    public static QuantityCode DegreeBrix => new() { Value = "J18" };
 
     /// <summary>
     /// degree Fahrenheit hour square foot per British thermal unit (thermochemical)
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitHourSquareFootPerBritishThermalUnitThermochemical = new QuantityCode { Value = "J19" };
+    public static QuantityCode DegreeFahrenheitHourSquareFootPerBritishThermalUnitThermochemical => new() { Value = "J19" };
 
     /// <summary>
     /// joule per kilogram
     /// </summary>
-    public static readonly QuantityCode JoulePerKilogram = new QuantityCode { Value = "J2" };
+    public static QuantityCode JoulePerKilogram => new() { Value = "J2" };
 
     /// <summary>
     /// degree Fahrenheit per kelvin
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitPerKelvin = new QuantityCode { Value = "J20" };
+    public static QuantityCode DegreeFahrenheitPerKelvin => new() { Value = "J20" };
 
     /// <summary>
     /// degree Fahrenheit per bar
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitPerBar = new QuantityCode { Value = "J21" };
+    public static QuantityCode DegreeFahrenheitPerBar => new() { Value = "J21" };
 
     /// <summary>
     /// degree Fahrenheit hour square foot per British thermal unit (international table)
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitHourSquareFootPerBritishThermalUnitInternationalTable = new QuantityCode { Value = "J22" };
+    public static QuantityCode DegreeFahrenheitHourSquareFootPerBritishThermalUnitInternationalTable => new() { Value = "J22" };
 
     /// <summary>
     /// degree Fahrenheit per hour
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitPerHour = new QuantityCode { Value = "J23" };
+    public static QuantityCode DegreeFahrenheitPerHour => new() { Value = "J23" };
 
     /// <summary>
     /// degree Fahrenheit per minute
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitPerMinute = new QuantityCode { Value = "J24" };
+    public static QuantityCode DegreeFahrenheitPerMinute => new() { Value = "J24" };
 
     /// <summary>
     /// degree Fahrenheit per second
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitPerSecond = new QuantityCode { Value = "J25" };
+    public static QuantityCode DegreeFahrenheitPerSecond => new() { Value = "J25" };
 
     /// <summary>
     /// reciprocal degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode ReciprocalDegreeFahrenheit = new QuantityCode { Value = "J26" };
+    public static QuantityCode ReciprocalDegreeFahrenheit => new() { Value = "J26" };
 
     /// <summary>
     /// degree Oechsle
     /// </summary>
-    public static readonly QuantityCode DegreeOechsle = new QuantityCode { Value = "J27" };
+    public static QuantityCode DegreeOechsle => new() { Value = "J27" };
 
     /// <summary>
     /// degree Rankine per hour
     /// </summary>
-    public static readonly QuantityCode DegreeRankinePerHour = new QuantityCode { Value = "J28" };
+    public static QuantityCode DegreeRankinePerHour => new() { Value = "J28" };
 
     /// <summary>
     /// degree Rankine per minute
     /// </summary>
-    public static readonly QuantityCode DegreeRankinePerMinute = new QuantityCode { Value = "J29" };
+    public static QuantityCode DegreeRankinePerMinute => new() { Value = "J29" };
 
     /// <summary>
     /// degree Rankine per second
     /// </summary>
-    public static readonly QuantityCode DegreeRankinePerSecond = new QuantityCode { Value = "J30" };
+    public static QuantityCode DegreeRankinePerSecond => new() { Value = "J30" };
 
     /// <summary>
     /// degree Twaddell
     /// </summary>
-    public static readonly QuantityCode DegreeTwaddell = new QuantityCode { Value = "J31" };
+    public static QuantityCode DegreeTwaddell => new() { Value = "J31" };
 
     /// <summary>
     /// micropoise
     /// </summary>
-    public static readonly QuantityCode Micropoise = new QuantityCode { Value = "J32" };
+    public static QuantityCode Micropoise => new() { Value = "J32" };
 
     /// <summary>
     /// microgram per kilogram
     /// </summary>
-    public static readonly QuantityCode MicrogramPerKilogram = new QuantityCode { Value = "J33" };
+    public static QuantityCode MicrogramPerKilogram => new() { Value = "J33" };
 
     /// <summary>
     /// microgram per cubic metre kelvin
     /// </summary>
-    public static readonly QuantityCode MicrogramPerCubicMetreKelvin = new QuantityCode { Value = "J34" };
+    public static QuantityCode MicrogramPerCubicMetreKelvin => new() { Value = "J34" };
 
     /// <summary>
     /// microgram per cubic metre bar
     /// </summary>
-    public static readonly QuantityCode MicrogramPerCubicMetreBar = new QuantityCode { Value = "J35" };
+    public static QuantityCode MicrogramPerCubicMetreBar => new() { Value = "J35" };
 
     /// <summary>
     /// microlitre per litre
     /// </summary>
-    public static readonly QuantityCode MicrolitrePerLitre = new QuantityCode { Value = "J36" };
+    public static QuantityCode MicrolitrePerLitre => new() { Value = "J36" };
 
     /// <summary>
     /// baud
     /// </summary>
-    public static readonly QuantityCode Baud = new QuantityCode { Value = "J38" };
+    public static QuantityCode Baud => new() { Value = "J38" };
 
     /// <summary>
     /// British thermal unit (mean)
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitMean = new QuantityCode { Value = "J39" };
+    public static QuantityCode BritishThermalUnitMean => new() { Value = "J39" };
 
     /// <summary>
     /// British thermal unit (international table) foot per hour square foot degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTableFootPerHourSquareFootDegreeFahrenheit = new QuantityCode { Value = "J40" };
+    public static QuantityCode BritishThermalUnitInternationalTableFootPerHourSquareFootDegreeFahrenheit => new() { Value = "J40" };
 
     /// <summary>
     /// British thermal unit (international table) inch per hour square foot degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTableInchPerHourSquareFootDegreeFahrenheit = new QuantityCode { Value = "J41" };
+    public static QuantityCode BritishThermalUnitInternationalTableInchPerHourSquareFootDegreeFahrenheit => new() { Value = "J41" };
 
     /// <summary>
     /// British thermal unit (international table) inch per second square foot degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTableInchPerSecondSquareFootDegreeFahrenheit = new QuantityCode { Value = "J42" };
+    public static QuantityCode BritishThermalUnitInternationalTableInchPerSecondSquareFootDegreeFahrenheit => new() { Value = "J42" };
 
     /// <summary>
     /// British thermal unit (international table) per pound degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerPoundDegreeFahrenheit = new QuantityCode { Value = "J43" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerPoundDegreeFahrenheit => new() { Value = "J43" };
 
     /// <summary>
     /// British thermal unit (international table) per minute
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerMinute = new QuantityCode { Value = "J44" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerMinute => new() { Value = "J44" };
 
     /// <summary>
     /// British thermal unit (international table) per second
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerSecond = new QuantityCode { Value = "J45" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerSecond => new() { Value = "J45" };
 
     /// <summary>
     /// British thermal unit (thermochemical) foot per hour square foot degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalFootPerHourSquareFootDegreeFahrenheit = new QuantityCode { Value = "J46" };
+    public static QuantityCode BritishThermalUnitThermochemicalFootPerHourSquareFootDegreeFahrenheit => new() { Value = "J46" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per hour
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerHour = new QuantityCode { Value = "J47" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerHour => new() { Value = "J47" };
 
     /// <summary>
     /// British thermal unit (thermochemical) inch per hour square foot degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalInchPerHourSquareFootDegreeFahrenheit = new QuantityCode { Value = "J48" };
+    public static QuantityCode BritishThermalUnitThermochemicalInchPerHourSquareFootDegreeFahrenheit => new() { Value = "J48" };
 
     /// <summary>
     /// British thermal unit (thermochemical) inch per second square foot degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalInchPerSecondSquareFootDegreeFahrenheit = new QuantityCode { Value = "J49" };
+    public static QuantityCode BritishThermalUnitThermochemicalInchPerSecondSquareFootDegreeFahrenheit => new() { Value = "J49" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per pound degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerPoundDegreeFahrenheit = new QuantityCode { Value = "J50" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerPoundDegreeFahrenheit => new() { Value = "J50" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per minute
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerMinute = new QuantityCode { Value = "J51" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerMinute => new() { Value = "J51" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per second
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerSecond = new QuantityCode { Value = "J52" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerSecond => new() { Value = "J52" };
 
     /// <summary>
     /// coulomb square metre per kilogram
     /// </summary>
-    public static readonly QuantityCode CoulombSquareMetrePerKilogram = new QuantityCode { Value = "J53" };
+    public static QuantityCode CoulombSquareMetrePerKilogram => new() { Value = "J53" };
 
     /// <summary>
     /// megabaud
     /// </summary>
-    public static readonly QuantityCode Megabaud = new QuantityCode { Value = "J54" };
+    public static QuantityCode Megabaud => new() { Value = "J54" };
 
     /// <summary>
     /// watt second
     /// </summary>
-    public static readonly QuantityCode WattSecond = new QuantityCode { Value = "J55" };
+    public static QuantityCode WattSecond => new() { Value = "J55" };
 
     /// <summary>
     /// bar per bar
     /// </summary>
-    public static readonly QuantityCode BarPerBar = new QuantityCode { Value = "J56" };
+    public static QuantityCode BarPerBar => new() { Value = "J56" };
 
     /// <summary>
     /// barrel (UK petroleum)
     /// </summary>
-    public static readonly QuantityCode BarrelUKPetroleum = new QuantityCode { Value = "J57" };
+    public static QuantityCode BarrelUKPetroleum => new() { Value = "J57" };
 
     /// <summary>
     /// barrel (UK petroleum) per minute
     /// </summary>
-    public static readonly QuantityCode BarrelUKPetroleumPerMinute = new QuantityCode { Value = "J58" };
+    public static QuantityCode BarrelUKPetroleumPerMinute => new() { Value = "J58" };
 
     /// <summary>
     /// barrel (UK petroleum) per day
     /// </summary>
-    public static readonly QuantityCode BarrelUKPetroleumPerDay = new QuantityCode { Value = "J59" };
+    public static QuantityCode BarrelUKPetroleumPerDay => new() { Value = "J59" };
 
     /// <summary>
     /// barrel (UK petroleum) per hour
     /// </summary>
-    public static readonly QuantityCode BarrelUKPetroleumPerHour = new QuantityCode { Value = "J60" };
+    public static QuantityCode BarrelUKPetroleumPerHour => new() { Value = "J60" };
 
     /// <summary>
     /// barrel (UK petroleum) per second
     /// </summary>
-    public static readonly QuantityCode BarrelUKPetroleumPerSecond = new QuantityCode { Value = "J61" };
+    public static QuantityCode BarrelUKPetroleumPerSecond => new() { Value = "J61" };
 
     /// <summary>
     /// barrel (US petroleum) per hour
     /// </summary>
-    public static readonly QuantityCode BarrelUSPetroleumPerHour = new QuantityCode { Value = "J62" };
+    public static QuantityCode BarrelUSPetroleumPerHour => new() { Value = "J62" };
 
     /// <summary>
     /// barrel (US petroleum) per second
     /// </summary>
-    public static readonly QuantityCode BarrelUSPetroleumPerSecond = new QuantityCode { Value = "J63" };
+    public static QuantityCode BarrelUSPetroleumPerSecond => new() { Value = "J63" };
 
     /// <summary>
     /// bushel (UK) per day
     /// </summary>
-    public static readonly QuantityCode BushelUKPerDay = new QuantityCode { Value = "J64" };
+    public static QuantityCode BushelUKPerDay => new() { Value = "J64" };
 
     /// <summary>
     /// bushel (UK) per hour
     /// </summary>
-    public static readonly QuantityCode BushelUKPerHour = new QuantityCode { Value = "J65" };
+    public static QuantityCode BushelUKPerHour => new() { Value = "J65" };
 
     /// <summary>
     /// bushel (UK) per minute
     /// </summary>
-    public static readonly QuantityCode BushelUKPerMinute = new QuantityCode { Value = "J66" };
+    public static QuantityCode BushelUKPerMinute => new() { Value = "J66" };
 
     /// <summary>
     /// bushel (UK) per second
     /// </summary>
-    public static readonly QuantityCode BushelUKPerSecond = new QuantityCode { Value = "J67" };
+    public static QuantityCode BushelUKPerSecond => new() { Value = "J67" };
 
     /// <summary>
     /// bushel (US dry) per day
     /// </summary>
-    public static readonly QuantityCode BushelUSDryPerDay = new QuantityCode { Value = "J68" };
+    public static QuantityCode BushelUSDryPerDay => new() { Value = "J68" };
 
     /// <summary>
     /// bushel (US dry) per hour
     /// </summary>
-    public static readonly QuantityCode BushelUSDryPerHour = new QuantityCode { Value = "J69" };
+    public static QuantityCode BushelUSDryPerHour => new() { Value = "J69" };
 
     /// <summary>
     /// bushel (US dry) per minute
     /// </summary>
-    public static readonly QuantityCode BushelUSDryPerMinute = new QuantityCode { Value = "J70" };
+    public static QuantityCode BushelUSDryPerMinute => new() { Value = "J70" };
 
     /// <summary>
     /// bushel (US dry) per second
     /// </summary>
-    public static readonly QuantityCode BushelUSDryPerSecond = new QuantityCode { Value = "J71" };
+    public static QuantityCode BushelUSDryPerSecond => new() { Value = "J71" };
 
     /// <summary>
     /// centinewton metre
     /// </summary>
-    public static readonly QuantityCode CentinewtonMetre = new QuantityCode { Value = "J72" };
+    public static QuantityCode CentinewtonMetre => new() { Value = "J72" };
 
     /// <summary>
     /// centipoise per kelvin
     /// </summary>
-    public static readonly QuantityCode CentipoisePerKelvin = new QuantityCode { Value = "J73" };
+    public static QuantityCode CentipoisePerKelvin => new() { Value = "J73" };
 
     /// <summary>
     /// centipoise per bar
     /// </summary>
-    public static readonly QuantityCode CentipoisePerBar = new QuantityCode { Value = "J74" };
+    public static QuantityCode CentipoisePerBar => new() { Value = "J74" };
 
     /// <summary>
     /// calorie (mean)
     /// </summary>
-    public static readonly QuantityCode CalorieMean = new QuantityCode { Value = "J75" };
+    public static QuantityCode CalorieMean => new() { Value = "J75" };
 
     /// <summary>
     /// calorie (international table) per gram degree Celsius
     /// </summary>
-    public static readonly QuantityCode CalorieInternationalTablePerGramDegreeCelsius = new QuantityCode { Value = "J76" };
+    public static QuantityCode CalorieInternationalTablePerGramDegreeCelsius => new() { Value = "J76" };
 
     /// <summary>
     /// calorie (thermochemical) per centimetre second degree Celsius
     /// </summary>
-    public static readonly QuantityCode CalorieThermochemicalPerCentimetreSecondDegreeCelsius = new QuantityCode { Value = "J78" };
+    public static QuantityCode CalorieThermochemicalPerCentimetreSecondDegreeCelsius => new() { Value = "J78" };
 
     /// <summary>
     /// calorie (thermochemical) per gram degree Celsius
     /// </summary>
-    public static readonly QuantityCode CalorieThermochemicalPerGramDegreeCelsius = new QuantityCode { Value = "J79" };
+    public static QuantityCode CalorieThermochemicalPerGramDegreeCelsius => new() { Value = "J79" };
 
     /// <summary>
     /// calorie (thermochemical) per minute
     /// </summary>
-    public static readonly QuantityCode CalorieThermochemicalPerMinute = new QuantityCode { Value = "J81" };
+    public static QuantityCode CalorieThermochemicalPerMinute => new() { Value = "J81" };
 
     /// <summary>
     /// calorie (thermochemical) per second
     /// </summary>
-    public static readonly QuantityCode CalorieThermochemicalPerSecond = new QuantityCode { Value = "J82" };
+    public static QuantityCode CalorieThermochemicalPerSecond => new() { Value = "J82" };
 
     /// <summary>
     /// clo
     /// </summary>
-    public static readonly QuantityCode Clo = new QuantityCode { Value = "J83" };
+    public static QuantityCode Clo => new() { Value = "J83" };
 
     /// <summary>
     /// centimetre per second kelvin
     /// </summary>
-    public static readonly QuantityCode CentimetrePerSecondKelvin = new QuantityCode { Value = "J84" };
+    public static QuantityCode CentimetrePerSecondKelvin => new() { Value = "J84" };
 
     /// <summary>
     /// centimetre per second bar
     /// </summary>
-    public static readonly QuantityCode CentimetrePerSecondBar = new QuantityCode { Value = "J85" };
+    public static QuantityCode CentimetrePerSecondBar => new() { Value = "J85" };
 
     /// <summary>
     /// cubic centimetre per cubic metre
     /// </summary>
-    public static readonly QuantityCode CubicCentimetrePerCubicMetre = new QuantityCode { Value = "J87" };
+    public static QuantityCode CubicCentimetrePerCubicMetre => new() { Value = "J87" };
 
     /// <summary>
     /// cubic decimetre per day
     /// </summary>
-    public static readonly QuantityCode CubicDecimetrePerDay = new QuantityCode { Value = "J90" };
+    public static QuantityCode CubicDecimetrePerDay => new() { Value = "J90" };
 
     /// <summary>
     /// cubic decimetre per cubic metre
     /// </summary>
-    public static readonly QuantityCode CubicDecimetrePerCubicMetre = new QuantityCode { Value = "J91" };
+    public static QuantityCode CubicDecimetrePerCubicMetre => new() { Value = "J91" };
 
     /// <summary>
     /// cubic decimetre per minute
     /// </summary>
-    public static readonly QuantityCode CubicDecimetrePerMinute = new QuantityCode { Value = "J92" };
+    public static QuantityCode CubicDecimetrePerMinute => new() { Value = "J92" };
 
     /// <summary>
     /// cubic decimetre per second
     /// </summary>
-    public static readonly QuantityCode CubicDecimetrePerSecond = new QuantityCode { Value = "J93" };
+    public static QuantityCode CubicDecimetrePerSecond => new() { Value = "J93" };
 
     /// <summary>
     /// ounce (UK fluid) per day
     /// </summary>
-    public static readonly QuantityCode OunceUKFluidPerDay = new QuantityCode { Value = "J95" };
+    public static QuantityCode OunceUKFluidPerDay => new() { Value = "J95" };
 
     /// <summary>
     /// ounce (UK fluid) per hour
     /// </summary>
-    public static readonly QuantityCode OunceUKFluidPerHour = new QuantityCode { Value = "J96" };
+    public static QuantityCode OunceUKFluidPerHour => new() { Value = "J96" };
 
     /// <summary>
     /// ounce (UK fluid) per minute
     /// </summary>
-    public static readonly QuantityCode OunceUKFluidPerMinute = new QuantityCode { Value = "J97" };
+    public static QuantityCode OunceUKFluidPerMinute => new() { Value = "J97" };
 
     /// <summary>
     /// ounce (UK fluid) per second
     /// </summary>
-    public static readonly QuantityCode OunceUKFluidPerSecond = new QuantityCode { Value = "J98" };
+    public static QuantityCode OunceUKFluidPerSecond => new() { Value = "J98" };
 
     /// <summary>
     /// ounce (US fluid) per day
     /// </summary>
-    public static readonly QuantityCode OunceUSFluidPerDay = new QuantityCode { Value = "J99" };
+    public static QuantityCode OunceUSFluidPerDay => new() { Value = "J99" };
 
     /// <summary>
     /// joule per kelvin
     /// </summary>
-    public static readonly QuantityCode JoulePerKelvin = new QuantityCode { Value = "JE" };
+    public static QuantityCode JoulePerKelvin => new() { Value = "JE" };
 
     /// <summary>
     /// megajoule per kilogram
     /// </summary>
-    public static readonly QuantityCode MegajoulePerKilogram = new QuantityCode { Value = "JK" };
+    public static QuantityCode MegajoulePerKilogram => new() { Value = "JK" };
 
     /// <summary>
     /// megajoule per cubic metre
     /// </summary>
-    public static readonly QuantityCode MegajoulePerCubicMetre = new QuantityCode { Value = "JM" };
+    public static QuantityCode MegajoulePerCubicMetre => new() { Value = "JM" };
 
     /// <summary>
     /// pipeline joint
     /// </summary>
-    public static readonly QuantityCode PipelineJoint = new QuantityCode { Value = "JNT" };
+    public static QuantityCode PipelineJoint => new() { Value = "JNT" };
 
     /// <summary>
     /// joule
     /// </summary>
-    public static readonly QuantityCode Joule = new QuantityCode { Value = "JOU" };
+    public static QuantityCode Joule => new() { Value = "JOU" };
 
     /// <summary>
     /// hundred metre
     /// </summary>
-    public static readonly QuantityCode HundredMetre = new QuantityCode { Value = "JPS" };
+    public static QuantityCode HundredMetre => new() { Value = "JPS" };
 
     /// <summary>
     /// number of jewels
     /// </summary>
-    public static readonly QuantityCode NumberOfJewels = new QuantityCode { Value = "JWL" };
+    public static QuantityCode NumberOfJewels => new() { Value = "JWL" };
 
     /// <summary>
     /// kilowatt demand
     /// </summary>
-    public static readonly QuantityCode KilowattDemand = new QuantityCode { Value = "K1" };
+    public static QuantityCode KilowattDemand => new() { Value = "K1" };
 
     /// <summary>
     /// ounce (US fluid) per hour
     /// </summary>
-    public static readonly QuantityCode OunceUSFluidPerHour = new QuantityCode { Value = "K10" };
+    public static QuantityCode OunceUSFluidPerHour => new() { Value = "K10" };
 
     /// <summary>
     /// ounce (US fluid) per minute
     /// </summary>
-    public static readonly QuantityCode OunceUSFluidPerMinute = new QuantityCode { Value = "K11" };
+    public static QuantityCode OunceUSFluidPerMinute => new() { Value = "K11" };
 
     /// <summary>
     /// ounce (US fluid) per second
     /// </summary>
-    public static readonly QuantityCode OunceUSFluidPerSecond = new QuantityCode { Value = "K12" };
+    public static QuantityCode OunceUSFluidPerSecond => new() { Value = "K12" };
 
     /// <summary>
     /// foot per degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode FootPerDegreeFahrenheit = new QuantityCode { Value = "K13" };
+    public static QuantityCode FootPerDegreeFahrenheit => new() { Value = "K13" };
 
     /// <summary>
     /// foot per hour
     /// </summary>
-    public static readonly QuantityCode FootPerHour = new QuantityCode { Value = "K14" };
+    public static QuantityCode FootPerHour => new() { Value = "K14" };
 
     /// <summary>
     /// foot pound-force per hour
     /// </summary>
-    public static readonly QuantityCode FootPoundForcePerHour = new QuantityCode { Value = "K15" };
+    public static QuantityCode FootPoundForcePerHour => new() { Value = "K15" };
 
     /// <summary>
     /// foot pound-force per minute
     /// </summary>
-    public static readonly QuantityCode FootPoundForcePerMinute = new QuantityCode { Value = "K16" };
+    public static QuantityCode FootPoundForcePerMinute => new() { Value = "K16" };
 
     /// <summary>
     /// foot per psi
     /// </summary>
-    public static readonly QuantityCode FootPerPsi = new QuantityCode { Value = "K17" };
+    public static QuantityCode FootPerPsi => new() { Value = "K17" };
 
     /// <summary>
     /// foot per second degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode FootPerSecondDegreeFahrenheit = new QuantityCode { Value = "K18" };
+    public static QuantityCode FootPerSecondDegreeFahrenheit => new() { Value = "K18" };
 
     /// <summary>
     /// foot per second psi
     /// </summary>
-    public static readonly QuantityCode FootPerSecondPsi = new QuantityCode { Value = "K19" };
+    public static QuantityCode FootPerSecondPsi => new() { Value = "K19" };
 
     /// <summary>
     /// kilovolt ampere reactive demand
     /// </summary>
-    public static readonly QuantityCode KilovoltAmpereReactiveDemand = new QuantityCode { Value = "K2" };
+    public static QuantityCode KilovoltAmpereReactiveDemand => new() { Value = "K2" };
 
     /// <summary>
     /// reciprocal cubic foot
     /// </summary>
-    public static readonly QuantityCode ReciprocalCubicFoot = new QuantityCode { Value = "K20" };
+    public static QuantityCode ReciprocalCubicFoot => new() { Value = "K20" };
 
     /// <summary>
     /// cubic foot per degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode CubicFootPerDegreeFahrenheit = new QuantityCode { Value = "K21" };
+    public static QuantityCode CubicFootPerDegreeFahrenheit => new() { Value = "K21" };
 
     /// <summary>
     /// cubic foot per day
     /// </summary>
-    public static readonly QuantityCode CubicFootPerDay = new QuantityCode { Value = "K22" };
+    public static QuantityCode CubicFootPerDay => new() { Value = "K22" };
 
     /// <summary>
     /// cubic foot per psi
     /// </summary>
-    public static readonly QuantityCode CubicFootPerPsi = new QuantityCode { Value = "K23" };
+    public static QuantityCode CubicFootPerPsi => new() { Value = "K23" };
 
     /// <summary>
     /// gallon (UK) per day
     /// </summary>
-    public static readonly QuantityCode GallonUKPerDay = new QuantityCode { Value = "K26" };
+    public static QuantityCode GallonUKPerDay => new() { Value = "K26" };
 
     /// <summary>
     /// gallon (UK) per hour
     /// </summary>
-    public static readonly QuantityCode GallonUKPerHour = new QuantityCode { Value = "K27" };
+    public static QuantityCode GallonUKPerHour => new() { Value = "K27" };
 
     /// <summary>
     /// gallon (UK) per second
     /// </summary>
-    public static readonly QuantityCode GallonUKPerSecond = new QuantityCode { Value = "K28" };
+    public static QuantityCode GallonUKPerSecond => new() { Value = "K28" };
 
     /// <summary>
     /// kilovolt ampere reactive hour
     /// </summary>
-    public static readonly QuantityCode KilovoltAmpereReactiveHour = new QuantityCode { Value = "K3" };
+    public static QuantityCode KilovoltAmpereReactiveHour => new() { Value = "K3" };
 
     /// <summary>
     /// gallon (US liquid) per second
     /// </summary>
-    public static readonly QuantityCode GallonUSLiquidPerSecond = new QuantityCode { Value = "K30" };
+    public static QuantityCode GallonUSLiquidPerSecond => new() { Value = "K30" };
 
     /// <summary>
     /// gram-force per square centimetre
     /// </summary>
-    public static readonly QuantityCode GramForcePerSquareCentimetre = new QuantityCode { Value = "K31" };
+    public static QuantityCode GramForcePerSquareCentimetre => new() { Value = "K31" };
 
     /// <summary>
     /// gill (UK) per day
     /// </summary>
-    public static readonly QuantityCode GillUKPerDay = new QuantityCode { Value = "K32" };
+    public static QuantityCode GillUKPerDay => new() { Value = "K32" };
 
     /// <summary>
     /// gill (UK) per hour
     /// </summary>
-    public static readonly QuantityCode GillUKPerHour = new QuantityCode { Value = "K33" };
+    public static QuantityCode GillUKPerHour => new() { Value = "K33" };
 
     /// <summary>
     /// gill (UK) per minute
     /// </summary>
-    public static readonly QuantityCode GillUKPerMinute = new QuantityCode { Value = "K34" };
+    public static QuantityCode GillUKPerMinute => new() { Value = "K34" };
 
     /// <summary>
     /// gill (UK) per second
     /// </summary>
-    public static readonly QuantityCode GillUKPerSecond = new QuantityCode { Value = "K35" };
+    public static QuantityCode GillUKPerSecond => new() { Value = "K35" };
 
     /// <summary>
     /// gill (US) per day
     /// </summary>
-    public static readonly QuantityCode GillUSPerDay = new QuantityCode { Value = "K36" };
+    public static QuantityCode GillUSPerDay => new() { Value = "K36" };
 
     /// <summary>
     /// gill (US) per hour
     /// </summary>
-    public static readonly QuantityCode GillUSPerHour = new QuantityCode { Value = "K37" };
+    public static QuantityCode GillUSPerHour => new() { Value = "K37" };
 
     /// <summary>
     /// gill (US) per minute
     /// </summary>
-    public static readonly QuantityCode GillUSPerMinute = new QuantityCode { Value = "K38" };
+    public static QuantityCode GillUSPerMinute => new() { Value = "K38" };
 
     /// <summary>
     /// gill (US) per second
     /// </summary>
-    public static readonly QuantityCode GillUSPerSecond = new QuantityCode { Value = "K39" };
+    public static QuantityCode GillUSPerSecond => new() { Value = "K39" };
 
     /// <summary>
     /// standard acceleration of free fall
     /// </summary>
-    public static readonly QuantityCode StandardAccelerationOfFreeFall = new QuantityCode { Value = "K40" };
+    public static QuantityCode StandardAccelerationOfFreeFall => new() { Value = "K40" };
 
     /// <summary>
     /// grain per gallon (US)
     /// </summary>
-    public static readonly QuantityCode GrainPerGallonUS = new QuantityCode { Value = "K41" };
+    public static QuantityCode GrainPerGallonUS => new() { Value = "K41" };
 
     /// <summary>
     /// horsepower (boiler)
     /// </summary>
-    public static readonly QuantityCode HorsepowerBoiler = new QuantityCode { Value = "K42" };
+    public static QuantityCode HorsepowerBoiler => new() { Value = "K42" };
 
     /// <summary>
     /// horsepower (electric)
     /// </summary>
-    public static readonly QuantityCode HorsepowerElectric = new QuantityCode { Value = "K43" };
+    public static QuantityCode HorsepowerElectric => new() { Value = "K43" };
 
     /// <summary>
     /// inch per degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode InchPerDegreeFahrenheit = new QuantityCode { Value = "K45" };
+    public static QuantityCode InchPerDegreeFahrenheit => new() { Value = "K45" };
 
     /// <summary>
     /// inch per psi
     /// </summary>
-    public static readonly QuantityCode InchPerPsi = new QuantityCode { Value = "K46" };
+    public static QuantityCode InchPerPsi => new() { Value = "K46" };
 
     /// <summary>
     /// inch per second degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode InchPerSecondDegreeFahrenheit = new QuantityCode { Value = "K47" };
+    public static QuantityCode InchPerSecondDegreeFahrenheit => new() { Value = "K47" };
 
     /// <summary>
     /// inch per second psi
     /// </summary>
-    public static readonly QuantityCode InchPerSecondPsi = new QuantityCode { Value = "K48" };
+    public static QuantityCode InchPerSecondPsi => new() { Value = "K48" };
 
     /// <summary>
     /// reciprocal cubic inch
     /// </summary>
-    public static readonly QuantityCode ReciprocalCubicInch = new QuantityCode { Value = "K49" };
+    public static QuantityCode ReciprocalCubicInch => new() { Value = "K49" };
 
     /// <summary>
     /// kilobaud
     /// </summary>
-    public static readonly QuantityCode Kilobaud = new QuantityCode { Value = "K50" };
+    public static QuantityCode Kilobaud => new() { Value = "K50" };
 
     /// <summary>
     /// kilocalorie (mean)
     /// </summary>
-    public static readonly QuantityCode KilocalorieMean = new QuantityCode { Value = "K51" };
+    public static QuantityCode KilocalorieMean => new() { Value = "K51" };
 
     /// <summary>
     /// kilocalorie (international table) per hour metre degree Celsius
     /// </summary>
-    public static readonly QuantityCode KilocalorieInternationalTablePerHourMetreDegreeCelsius = new QuantityCode { Value = "K52" };
+    public static QuantityCode KilocalorieInternationalTablePerHourMetreDegreeCelsius => new() { Value = "K52" };
 
     /// <summary>
     /// kilocalorie (thermochemical)
     /// </summary>
-    public static readonly QuantityCode KilocalorieThermochemical = new QuantityCode { Value = "K53" };
+    public static QuantityCode KilocalorieThermochemical => new() { Value = "K53" };
 
     /// <summary>
     /// kilocalorie (thermochemical) per minute
     /// </summary>
-    public static readonly QuantityCode KilocalorieThermochemicalPerMinute = new QuantityCode { Value = "K54" };
+    public static QuantityCode KilocalorieThermochemicalPerMinute => new() { Value = "K54" };
 
     /// <summary>
     /// kilocalorie (thermochemical) per second
     /// </summary>
-    public static readonly QuantityCode KilocalorieThermochemicalPerSecond = new QuantityCode { Value = "K55" };
+    public static QuantityCode KilocalorieThermochemicalPerSecond => new() { Value = "K55" };
 
     /// <summary>
     /// kilomole per hour
     /// </summary>
-    public static readonly QuantityCode KilomolePerHour = new QuantityCode { Value = "K58" };
+    public static QuantityCode KilomolePerHour => new() { Value = "K58" };
 
     /// <summary>
     /// kilomole per cubic metre kelvin
     /// </summary>
-    public static readonly QuantityCode KilomolePerCubicMetreKelvin = new QuantityCode { Value = "K59" };
+    public static QuantityCode KilomolePerCubicMetreKelvin => new() { Value = "K59" };
 
     /// <summary>
     /// kilolitre
     /// </summary>
-    public static readonly QuantityCode Kilolitre = new QuantityCode { Value = "K6" };
+    public static QuantityCode Kilolitre => new() { Value = "K6" };
 
     /// <summary>
     /// kilomole per cubic metre bar
     /// </summary>
-    public static readonly QuantityCode KilomolePerCubicMetreBar = new QuantityCode { Value = "K60" };
+    public static QuantityCode KilomolePerCubicMetreBar => new() { Value = "K60" };
 
     /// <summary>
     /// kilomole per minute
     /// </summary>
-    public static readonly QuantityCode KilomolePerMinute = new QuantityCode { Value = "K61" };
+    public static QuantityCode KilomolePerMinute => new() { Value = "K61" };
 
     /// <summary>
     /// litre per litre
     /// </summary>
-    public static readonly QuantityCode LitrePerLitre = new QuantityCode { Value = "K62" };
+    public static QuantityCode LitrePerLitre => new() { Value = "K62" };
 
     /// <summary>
     /// reciprocal litre
     /// </summary>
-    public static readonly QuantityCode ReciprocalLitre = new QuantityCode { Value = "K63" };
+    public static QuantityCode ReciprocalLitre => new() { Value = "K63" };
 
     /// <summary>
     /// pound (avoirdupois) per degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerDegreeFahrenheit = new QuantityCode { Value = "K64" };
+    public static QuantityCode PoundAvoirdupoisPerDegreeFahrenheit => new() { Value = "K64" };
 
     /// <summary>
     /// pound (avoirdupois) square foot
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisSquareFoot = new QuantityCode { Value = "K65" };
+    public static QuantityCode PoundAvoirdupoisSquareFoot => new() { Value = "K65" };
 
     /// <summary>
     /// pound (avoirdupois) per day
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerDay = new QuantityCode { Value = "K66" };
+    public static QuantityCode PoundAvoirdupoisPerDay => new() { Value = "K66" };
 
     /// <summary>
     /// pound per foot hour
     /// </summary>
-    public static readonly QuantityCode PoundPerFootHour = new QuantityCode { Value = "K67" };
+    public static QuantityCode PoundPerFootHour => new() { Value = "K67" };
 
     /// <summary>
     /// pound per foot second
     /// </summary>
-    public static readonly QuantityCode PoundPerFootSecond = new QuantityCode { Value = "K68" };
+    public static QuantityCode PoundPerFootSecond => new() { Value = "K68" };
 
     /// <summary>
     /// pound (avoirdupois) per cubic foot degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerCubicFootDegreeFahrenheit = new QuantityCode { Value = "K69" };
+    public static QuantityCode PoundAvoirdupoisPerCubicFootDegreeFahrenheit => new() { Value = "K69" };
 
     /// <summary>
     /// pound (avoirdupois) per cubic foot psi
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerCubicFootPsi = new QuantityCode { Value = "K70" };
+    public static QuantityCode PoundAvoirdupoisPerCubicFootPsi => new() { Value = "K70" };
 
     /// <summary>
     /// pound (avoirdupois) per gallon (UK)
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerGallonUK = new QuantityCode { Value = "K71" };
+    public static QuantityCode PoundAvoirdupoisPerGallonUK => new() { Value = "K71" };
 
     /// <summary>
     /// pound (avoirdupois) per hour degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerHourDegreeFahrenheit = new QuantityCode { Value = "K73" };
+    public static QuantityCode PoundAvoirdupoisPerHourDegreeFahrenheit => new() { Value = "K73" };
 
     /// <summary>
     /// pound (avoirdupois) per hour psi
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerHourPsi = new QuantityCode { Value = "K74" };
+    public static QuantityCode PoundAvoirdupoisPerHourPsi => new() { Value = "K74" };
 
     /// <summary>
     /// pound (avoirdupois) per cubic inch degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerCubicInchDegreeFahrenheit = new QuantityCode { Value = "K75" };
+    public static QuantityCode PoundAvoirdupoisPerCubicInchDegreeFahrenheit => new() { Value = "K75" };
 
     /// <summary>
     /// pound (avoirdupois) per cubic inch psi
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerCubicInchPsi = new QuantityCode { Value = "K76" };
+    public static QuantityCode PoundAvoirdupoisPerCubicInchPsi => new() { Value = "K76" };
 
     /// <summary>
     /// pound (avoirdupois) per psi
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerPsi = new QuantityCode { Value = "K77" };
+    public static QuantityCode PoundAvoirdupoisPerPsi => new() { Value = "K77" };
 
     /// <summary>
     /// pound (avoirdupois) per minute
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerMinute = new QuantityCode { Value = "K78" };
+    public static QuantityCode PoundAvoirdupoisPerMinute => new() { Value = "K78" };
 
     /// <summary>
     /// pound (avoirdupois) per minute degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerMinuteDegreeFahrenheit = new QuantityCode { Value = "K79" };
+    public static QuantityCode PoundAvoirdupoisPerMinuteDegreeFahrenheit => new() { Value = "K79" };
 
     /// <summary>
     /// pound (avoirdupois) per minute psi
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerMinutePsi = new QuantityCode { Value = "K80" };
+    public static QuantityCode PoundAvoirdupoisPerMinutePsi => new() { Value = "K80" };
 
     /// <summary>
     /// pound (avoirdupois) per second
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerSecond = new QuantityCode { Value = "K81" };
+    public static QuantityCode PoundAvoirdupoisPerSecond => new() { Value = "K81" };
 
     /// <summary>
     /// pound (avoirdupois) per second degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerSecondDegreeFahrenheit = new QuantityCode { Value = "K82" };
+    public static QuantityCode PoundAvoirdupoisPerSecondDegreeFahrenheit => new() { Value = "K82" };
 
     /// <summary>
     /// pound (avoirdupois) per second psi
     /// </summary>
-    public static readonly QuantityCode PoundAvoirdupoisPerSecondPsi = new QuantityCode { Value = "K83" };
+    public static QuantityCode PoundAvoirdupoisPerSecondPsi => new() { Value = "K83" };
 
     /// <summary>
     /// pound per cubic yard
     /// </summary>
-    public static readonly QuantityCode PoundPerCubicYard = new QuantityCode { Value = "K84" };
+    public static QuantityCode PoundPerCubicYard => new() { Value = "K84" };
 
     /// <summary>
     /// pound-force per square foot
     /// </summary>
-    public static readonly QuantityCode PoundForcePerSquareFoot = new QuantityCode { Value = "K85" };
+    public static QuantityCode PoundForcePerSquareFoot => new() { Value = "K85" };
 
     /// <summary>
     /// pound-force per square inch degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode PoundForcePerSquareInchDegreeFahrenheit = new QuantityCode { Value = "K86" };
+    public static QuantityCode PoundForcePerSquareInchDegreeFahrenheit => new() { Value = "K86" };
 
     /// <summary>
     /// psi cubic inch per second
     /// </summary>
-    public static readonly QuantityCode PsiCubicInchPerSecond = new QuantityCode { Value = "K87" };
+    public static QuantityCode PsiCubicInchPerSecond => new() { Value = "K87" };
 
     /// <summary>
     /// psi litre per second
     /// </summary>
-    public static readonly QuantityCode PsiLitrePerSecond = new QuantityCode { Value = "K88" };
+    public static QuantityCode PsiLitrePerSecond => new() { Value = "K88" };
 
     /// <summary>
     /// psi cubic metre per second
     /// </summary>
-    public static readonly QuantityCode PsiCubicMetrePerSecond = new QuantityCode { Value = "K89" };
+    public static QuantityCode PsiCubicMetrePerSecond => new() { Value = "K89" };
 
     /// <summary>
     /// psi cubic yard per second
     /// </summary>
-    public static readonly QuantityCode PsiCubicYardPerSecond = new QuantityCode { Value = "K90" };
+    public static QuantityCode PsiCubicYardPerSecond => new() { Value = "K90" };
 
     /// <summary>
     /// pound-force second per square foot
     /// </summary>
-    public static readonly QuantityCode PoundForceSecondPerSquareFoot = new QuantityCode { Value = "K91" };
+    public static QuantityCode PoundForceSecondPerSquareFoot => new() { Value = "K91" };
 
     /// <summary>
     /// pound-force second per square inch
     /// </summary>
-    public static readonly QuantityCode PoundForceSecondPerSquareInch = new QuantityCode { Value = "K92" };
+    public static QuantityCode PoundForceSecondPerSquareInch => new() { Value = "K92" };
 
     /// <summary>
     /// reciprocal psi
     /// </summary>
-    public static readonly QuantityCode ReciprocalPsi = new QuantityCode { Value = "K93" };
+    public static QuantityCode ReciprocalPsi => new() { Value = "K93" };
 
     /// <summary>
     /// quart (UK liquid) per day
     /// </summary>
-    public static readonly QuantityCode QuartUKLiquidPerDay = new QuantityCode { Value = "K94" };
+    public static QuantityCode QuartUKLiquidPerDay => new() { Value = "K94" };
 
     /// <summary>
     /// quart (UK liquid) per hour
     /// </summary>
-    public static readonly QuantityCode QuartUKLiquidPerHour = new QuantityCode { Value = "K95" };
+    public static QuantityCode QuartUKLiquidPerHour => new() { Value = "K95" };
 
     /// <summary>
     /// quart (UK liquid) per minute
     /// </summary>
-    public static readonly QuantityCode QuartUKLiquidPerMinute = new QuantityCode { Value = "K96" };
+    public static QuantityCode QuartUKLiquidPerMinute => new() { Value = "K96" };
 
     /// <summary>
     /// quart (UK liquid) per second
     /// </summary>
-    public static readonly QuantityCode QuartUKLiquidPerSecond = new QuantityCode { Value = "K97" };
+    public static QuantityCode QuartUKLiquidPerSecond => new() { Value = "K97" };
 
     /// <summary>
     /// quart (US liquid) per day
     /// </summary>
-    public static readonly QuantityCode QuartUSLiquidPerDay = new QuantityCode { Value = "K98" };
+    public static QuantityCode QuartUSLiquidPerDay => new() { Value = "K98" };
 
     /// <summary>
     /// quart (US liquid) per hour
     /// </summary>
-    public static readonly QuantityCode QuartUSLiquidPerHour = new QuantityCode { Value = "K99" };
+    public static QuantityCode QuartUSLiquidPerHour => new() { Value = "K99" };
 
     /// <summary>
     /// cake
     /// </summary>
-    public static readonly QuantityCode Cake = new QuantityCode { Value = "KA" };
+    public static QuantityCode Cake => new() { Value = "KA" };
 
     /// <summary>
     /// katal
     /// </summary>
-    public static readonly QuantityCode Katal = new QuantityCode { Value = "KAT" };
+    public static QuantityCode Katal => new() { Value = "KAT" };
 
     /// <summary>
     /// kilocharacter
     /// </summary>
-    public static readonly QuantityCode Kilocharacter = new QuantityCode { Value = "KB" };
+    public static QuantityCode Kilocharacter => new() { Value = "KB" };
 
     /// <summary>
     /// kilobar
     /// </summary>
-    public static readonly QuantityCode Kilobar = new QuantityCode { Value = "KBA" };
+    public static QuantityCode Kilobar => new() { Value = "KBA" };
 
     /// <summary>
     /// kilogram of choline chloride
     /// </summary>
-    public static readonly QuantityCode KilogramOfCholineChloride = new QuantityCode { Value = "KCC" };
+    public static QuantityCode KilogramOfCholineChloride => new() { Value = "KCC" };
 
     /// <summary>
     /// kilogram drained net weight
     /// </summary>
-    public static readonly QuantityCode KilogramDrainedNetWeight = new QuantityCode { Value = "KDW" };
+    public static QuantityCode KilogramDrainedNetWeight => new() { Value = "KDW" };
 
     /// <summary>
     /// kelvin
     /// </summary>
-    public static readonly QuantityCode Kelvin = new QuantityCode { Value = "KEL" };
+    public static QuantityCode Kelvin => new() { Value = "KEL" };
 
     /// <summary>
     /// kilogram
     /// </summary>
-    public static readonly QuantityCode Kilogram = new QuantityCode { Value = "KGM" };
+    public static QuantityCode Kilogram => new() { Value = "KGM" };
 
     /// <summary>
     /// kilogram per second
     /// </summary>
-    public static readonly QuantityCode KilogramPerSecond = new QuantityCode { Value = "KGS" };
+    public static QuantityCode KilogramPerSecond => new() { Value = "KGS" };
 
     /// <summary>
     /// kilogram of hydrogen peroxide
     /// </summary>
-    public static readonly QuantityCode KilogramOfHydrogenPeroxide = new QuantityCode { Value = "KHY" };
+    public static QuantityCode KilogramOfHydrogenPeroxide => new() { Value = "KHY" };
 
     /// <summary>
     /// kilohertz
     /// </summary>
-    public static readonly QuantityCode Kilohertz = new QuantityCode { Value = "KHZ" };
+    public static QuantityCode Kilohertz => new() { Value = "KHZ" };
 
     /// <summary>
     /// kilogram per millimetre width
     /// </summary>
-    public static readonly QuantityCode KilogramPerMillimetreWidth = new QuantityCode { Value = "KI" };
+    public static QuantityCode KilogramPerMillimetreWidth => new() { Value = "KI" };
 
     /// <summary>
     /// kilogram, including container
     /// </summary>
-    public static readonly QuantityCode KilogramIncludingContainer = new QuantityCode { Value = "KIC" };
+    public static QuantityCode KilogramIncludingContainer => new() { Value = "KIC" };
 
     /// <summary>
     /// kilogram, including inner packaging
     /// </summary>
-    public static readonly QuantityCode KilogramIncludingInnerPackaging = new QuantityCode { Value = "KIP" };
+    public static QuantityCode KilogramIncludingInnerPackaging => new() { Value = "KIP" };
 
     /// <summary>
     /// kilosegment
     /// </summary>
-    public static readonly QuantityCode Kilosegment = new QuantityCode { Value = "KJ" };
+    public static QuantityCode Kilosegment => new() { Value = "KJ" };
 
     /// <summary>
     /// kilojoule
     /// </summary>
-    public static readonly QuantityCode Kilojoule = new QuantityCode { Value = "KJO" };
+    public static QuantityCode Kilojoule => new() { Value = "KJO" };
 
     /// <summary>
     /// kilogram per metre
     /// </summary>
-    public static readonly QuantityCode KilogramPerMetre = new QuantityCode { Value = "KL" };
+    public static QuantityCode KilogramPerMetre => new() { Value = "KL" };
 
     /// <summary>
     /// lactic dry material percentage
     /// </summary>
-    public static readonly QuantityCode LacticDryMaterialPercentage = new QuantityCode { Value = "KLK" };
+    public static QuantityCode LacticDryMaterialPercentage => new() { Value = "KLK" };
 
     /// <summary>
     /// kilolux
     /// </summary>
-    public static readonly QuantityCode Kilolux = new QuantityCode { Value = "KLX" };
+    public static QuantityCode Kilolux => new() { Value = "KLX" };
 
     /// <summary>
     /// kilogram of methylamine
     /// </summary>
-    public static readonly QuantityCode KilogramOfMethylamine = new QuantityCode { Value = "KMA" };
+    public static QuantityCode KilogramOfMethylamine => new() { Value = "KMA" };
 
     /// <summary>
     /// kilometre per hour
     /// </summary>
-    public static readonly QuantityCode KilometrePerHour = new QuantityCode { Value = "KMH" };
+    public static QuantityCode KilometrePerHour => new() { Value = "KMH" };
 
     /// <summary>
     /// square kilometre
     /// </summary>
-    public static readonly QuantityCode SquareKilometre = new QuantityCode { Value = "KMK" };
+    public static QuantityCode SquareKilometre => new() { Value = "KMK" };
 
     /// <summary>
     /// kilogram per cubic metre
     /// </summary>
-    public static readonly QuantityCode KilogramPerCubicMetre = new QuantityCode { Value = "KMQ" };
+    public static QuantityCode KilogramPerCubicMetre => new() { Value = "KMQ" };
 
     /// <summary>
     /// kilometre
     /// </summary>
-    public static readonly QuantityCode Kilometre = new QuantityCode { Value = "KMT" };
+    public static QuantityCode Kilometre => new() { Value = "KMT" };
 
     /// <summary>
     /// kilogram of nitrogen
     /// </summary>
-    public static readonly QuantityCode KilogramOfNitrogen = new QuantityCode { Value = "KNI" };
+    public static QuantityCode KilogramOfNitrogen => new() { Value = "KNI" };
 
     /// <summary>
     /// kilonewton per square metre
     /// </summary>
-    public static readonly QuantityCode KilonewtonPerSquareMetre = new QuantityCode { Value = "KNM" };
+    public static QuantityCode KilonewtonPerSquareMetre => new() { Value = "KNM" };
 
     /// <summary>
     /// kilogram named substance
     /// </summary>
-    public static readonly QuantityCode KilogramNamedSubstance = new QuantityCode { Value = "KNS" };
+    public static QuantityCode KilogramNamedSubstance => new() { Value = "KNS" };
 
     /// <summary>
     /// knot
     /// </summary>
-    public static readonly QuantityCode Knot = new QuantityCode { Value = "KNT" };
+    public static QuantityCode Knot => new() { Value = "KNT" };
 
     /// <summary>
     /// milliequivalence caustic potash per gram of product
     /// </summary>
-    public static readonly QuantityCode MilliequivalenceCausticPotashPerGramOfProduct = new QuantityCode { Value = "KO" };
+    public static QuantityCode MilliequivalenceCausticPotashPerGramOfProduct => new() { Value = "KO" };
 
     /// <summary>
     /// kilopascal
     /// </summary>
-    public static readonly QuantityCode Kilopascal = new QuantityCode { Value = "KPA" };
+    public static QuantityCode Kilopascal => new() { Value = "KPA" };
 
     /// <summary>
     /// kilogram of potassium hydroxide (caustic potash)
     /// </summary>
-    public static readonly QuantityCode KilogramOfPotassiumHydroxideCausticPotash = new QuantityCode { Value = "KPH" };
+    public static QuantityCode KilogramOfPotassiumHydroxideCausticPotash => new() { Value = "KPH" };
 
     /// <summary>
     /// kilogram of potassium oxide
     /// </summary>
-    public static readonly QuantityCode KilogramOfPotassiumOxide = new QuantityCode { Value = "KPO" };
+    public static QuantityCode KilogramOfPotassiumOxide => new() { Value = "KPO" };
 
     /// <summary>
     /// kilogram of phosphorus pentoxide (phosphoric anhydride)
     /// </summary>
-    public static readonly QuantityCode KilogramOfPhosphorusPentoxidePhosphoricAnhydride = new QuantityCode { Value = "KPP" };
+    public static QuantityCode KilogramOfPhosphorusPentoxidePhosphoricAnhydride => new() { Value = "KPP" };
 
     /// <summary>
     /// kiloroentgen
     /// </summary>
-    public static readonly QuantityCode Kiloroentgen = new QuantityCode { Value = "KR" };
+    public static QuantityCode Kiloroentgen => new() { Value = "KR" };
 
     /// <summary>
     /// kilogram of substance 90 % dry
     /// </summary>
-    public static readonly QuantityCode KilogramOfSubstance90Dry = new QuantityCode { Value = "KSD" };
+    public static QuantityCode KilogramOfSubstance90Dry => new() { Value = "KSD" };
 
     /// <summary>
     /// kilogram of sodium hydroxide (caustic soda)
     /// </summary>
-    public static readonly QuantityCode KilogramOfSodiumHydroxideCausticSoda = new QuantityCode { Value = "KSH" };
+    public static QuantityCode KilogramOfSodiumHydroxideCausticSoda => new() { Value = "KSH" };
 
     /// <summary>
     /// kit
     /// </summary>
-    public static readonly QuantityCode Kit = new QuantityCode { Value = "KT" };
+    public static QuantityCode Kit => new() { Value = "KT" };
 
     /// <summary>
     /// kilotonne
     /// </summary>
-    public static readonly QuantityCode Kilotonne = new QuantityCode { Value = "KTN" };
+    public static QuantityCode Kilotonne => new() { Value = "KTN" };
 
     /// <summary>
     /// kilogram of uranium
     /// </summary>
-    public static readonly QuantityCode KilogramOfUranium = new QuantityCode { Value = "KUR" };
+    public static QuantityCode KilogramOfUranium => new() { Value = "KUR" };
 
     /// <summary>
     /// kilovolt - ampere
     /// </summary>
-    public static readonly QuantityCode KilovoltAmpere = new QuantityCode { Value = "KVA" };
+    public static QuantityCode KilovoltAmpere => new() { Value = "KVA" };
 
     /// <summary>
     /// kilovar
     /// </summary>
-    public static readonly QuantityCode Kilovar = new QuantityCode { Value = "KVR" };
+    public static QuantityCode Kilovar => new() { Value = "KVR" };
 
     /// <summary>
     /// kilovolt
     /// </summary>
-    public static readonly QuantityCode Kilovolt = new QuantityCode { Value = "KVT" };
+    public static QuantityCode Kilovolt => new() { Value = "KVT" };
 
     /// <summary>
     /// kilogram per millimetre
     /// </summary>
-    public static readonly QuantityCode KilogramPerMillimetre = new QuantityCode { Value = "KW" };
+    public static QuantityCode KilogramPerMillimetre => new() { Value = "KW" };
 
     /// <summary>
     /// kilowatt hour
     /// </summary>
-    public static readonly QuantityCode KilowattHour = new QuantityCode { Value = "KWH" };
+    public static QuantityCode KilowattHour => new() { Value = "KWH" };
 
     /// <summary>
     /// Kilowatt hour per normalized cubic metre
     /// </summary>
-    public static readonly QuantityCode KilowattHourPerNormalizedCubicMetre = new QuantityCode { Value = "KWN" };
+    public static QuantityCode KilowattHourPerNormalizedCubicMetre => new() { Value = "KWN" };
 
     /// <summary>
     /// kilogram of tungsten trioxide
     /// </summary>
-    public static readonly QuantityCode KilogramOfTungstenTrioxide = new QuantityCode { Value = "KWO" };
+    public static QuantityCode KilogramOfTungstenTrioxide => new() { Value = "KWO" };
 
     /// <summary>
     /// Kilowatt hour per standard cubic metre
     /// </summary>
-    public static readonly QuantityCode KilowattHourPerStandardCubicMetre = new QuantityCode { Value = "KWS" };
+    public static QuantityCode KilowattHourPerStandardCubicMetre => new() { Value = "KWS" };
 
     /// <summary>
     /// kilowatt
     /// </summary>
-    public static readonly QuantityCode Kilowatt = new QuantityCode { Value = "KWT" };
+    public static QuantityCode Kilowatt => new() { Value = "KWT" };
 
     /// <summary>
     /// kilowatt year
     /// </summary>
-    public static readonly QuantityCode KilowattYear = new QuantityCode { Value = "KWY" };
+    public static QuantityCode KilowattYear => new() { Value = "KWY" };
 
     /// <summary>
     /// millilitre per kilogram
     /// </summary>
-    public static readonly QuantityCode MillilitrePerKilogram = new QuantityCode { Value = "KX" };
+    public static QuantityCode MillilitrePerKilogram => new() { Value = "KX" };
 
     /// <summary>
     /// quart (US liquid) per minute
     /// </summary>
-    public static readonly QuantityCode QuartUSLiquidPerMinute = new QuantityCode { Value = "L10" };
+    public static QuantityCode QuartUSLiquidPerMinute => new() { Value = "L10" };
 
     /// <summary>
     /// quart (US liquid) per second
     /// </summary>
-    public static readonly QuantityCode QuartUSLiquidPerSecond = new QuantityCode { Value = "L11" };
+    public static QuantityCode QuartUSLiquidPerSecond => new() { Value = "L11" };
 
     /// <summary>
     /// metre per second kelvin
     /// </summary>
-    public static readonly QuantityCode MetrePerSecondKelvin = new QuantityCode { Value = "L12" };
+    public static QuantityCode MetrePerSecondKelvin => new() { Value = "L12" };
 
     /// <summary>
     /// metre per second bar
     /// </summary>
-    public static readonly QuantityCode MetrePerSecondBar = new QuantityCode { Value = "L13" };
+    public static QuantityCode MetrePerSecondBar => new() { Value = "L13" };
 
     /// <summary>
     /// square metre hour degree Celsius per kilocalorie (international table)
     /// </summary>
-    public static readonly QuantityCode SquareMetreHourDegreeCelsiusPerKilocalorieInternationalTable = new QuantityCode { Value = "L14" };
+    public static QuantityCode SquareMetreHourDegreeCelsiusPerKilocalorieInternationalTable => new() { Value = "L14" };
 
     /// <summary>
     /// millipascal second per kelvin
     /// </summary>
-    public static readonly QuantityCode MillipascalSecondPerKelvin = new QuantityCode { Value = "L15" };
+    public static QuantityCode MillipascalSecondPerKelvin => new() { Value = "L15" };
 
     /// <summary>
     /// millipascal second per bar
     /// </summary>
-    public static readonly QuantityCode MillipascalSecondPerBar = new QuantityCode { Value = "L16" };
+    public static QuantityCode MillipascalSecondPerBar => new() { Value = "L16" };
 
     /// <summary>
     /// milligram per cubic metre kelvin
     /// </summary>
-    public static readonly QuantityCode MilligramPerCubicMetreKelvin = new QuantityCode { Value = "L17" };
+    public static QuantityCode MilligramPerCubicMetreKelvin => new() { Value = "L17" };
 
     /// <summary>
     /// milligram per cubic metre bar
     /// </summary>
-    public static readonly QuantityCode MilligramPerCubicMetreBar = new QuantityCode { Value = "L18" };
+    public static QuantityCode MilligramPerCubicMetreBar => new() { Value = "L18" };
 
     /// <summary>
     /// millilitre per litre
     /// </summary>
-    public static readonly QuantityCode MillilitrePerLitre = new QuantityCode { Value = "L19" };
+    public static QuantityCode MillilitrePerLitre => new() { Value = "L19" };
 
     /// <summary>
     /// litre per minute
     /// </summary>
-    public static readonly QuantityCode LitrePerMinute = new QuantityCode { Value = "L2" };
+    public static QuantityCode LitrePerMinute => new() { Value = "L2" };
 
     /// <summary>
     /// reciprocal cubic millimetre
     /// </summary>
-    public static readonly QuantityCode ReciprocalCubicMillimetre = new QuantityCode { Value = "L20" };
+    public static QuantityCode ReciprocalCubicMillimetre => new() { Value = "L20" };
 
     /// <summary>
     /// cubic millimetre per cubic metre
     /// </summary>
-    public static readonly QuantityCode CubicMillimetrePerCubicMetre = new QuantityCode { Value = "L21" };
+    public static QuantityCode CubicMillimetrePerCubicMetre => new() { Value = "L21" };
 
     /// <summary>
     /// mole per hour
     /// </summary>
-    public static readonly QuantityCode MolePerHour = new QuantityCode { Value = "L23" };
+    public static QuantityCode MolePerHour => new() { Value = "L23" };
 
     /// <summary>
     /// mole per kilogram kelvin
     /// </summary>
-    public static readonly QuantityCode MolePerKilogramKelvin = new QuantityCode { Value = "L24" };
+    public static QuantityCode MolePerKilogramKelvin => new() { Value = "L24" };
 
     /// <summary>
     /// mole per kilogram bar
     /// </summary>
-    public static readonly QuantityCode MolePerKilogramBar = new QuantityCode { Value = "L25" };
+    public static QuantityCode MolePerKilogramBar => new() { Value = "L25" };
 
     /// <summary>
     /// mole per litre kelvin
     /// </summary>
-    public static readonly QuantityCode MolePerLitreKelvin = new QuantityCode { Value = "L26" };
+    public static QuantityCode MolePerLitreKelvin => new() { Value = "L26" };
 
     /// <summary>
     /// mole per litre bar
     /// </summary>
-    public static readonly QuantityCode MolePerLitreBar = new QuantityCode { Value = "L27" };
+    public static QuantityCode MolePerLitreBar => new() { Value = "L27" };
 
     /// <summary>
     /// mole per cubic metre kelvin
     /// </summary>
-    public static readonly QuantityCode MolePerCubicMetreKelvin = new QuantityCode { Value = "L28" };
+    public static QuantityCode MolePerCubicMetreKelvin => new() { Value = "L28" };
 
     /// <summary>
     /// mole per cubic metre bar
     /// </summary>
-    public static readonly QuantityCode MolePerCubicMetreBar = new QuantityCode { Value = "L29" };
+    public static QuantityCode MolePerCubicMetreBar => new() { Value = "L29" };
 
     /// <summary>
     /// mole per minute
     /// </summary>
-    public static readonly QuantityCode MolePerMinute = new QuantityCode { Value = "L30" };
+    public static QuantityCode MolePerMinute => new() { Value = "L30" };
 
     /// <summary>
     /// milliroentgen aequivalent men
     /// </summary>
-    public static readonly QuantityCode MilliroentgenAequivalentMen = new QuantityCode { Value = "L31" };
+    public static QuantityCode MilliroentgenAequivalentMen => new() { Value = "L31" };
 
     /// <summary>
     /// nanogram per kilogram
     /// </summary>
-    public static readonly QuantityCode NanogramPerKilogram = new QuantityCode { Value = "L32" };
+    public static QuantityCode NanogramPerKilogram => new() { Value = "L32" };
 
     /// <summary>
     /// ounce (avoirdupois) per day
     /// </summary>
-    public static readonly QuantityCode OunceAvoirdupoisPerDay = new QuantityCode { Value = "L33" };
+    public static QuantityCode OunceAvoirdupoisPerDay => new() { Value = "L33" };
 
     /// <summary>
     /// ounce (avoirdupois) per hour
     /// </summary>
-    public static readonly QuantityCode OunceAvoirdupoisPerHour = new QuantityCode { Value = "L34" };
+    public static QuantityCode OunceAvoirdupoisPerHour => new() { Value = "L34" };
 
     /// <summary>
     /// ounce (avoirdupois) per minute
     /// </summary>
-    public static readonly QuantityCode OunceAvoirdupoisPerMinute = new QuantityCode { Value = "L35" };
+    public static QuantityCode OunceAvoirdupoisPerMinute => new() { Value = "L35" };
 
     /// <summary>
     /// ounce (avoirdupois) per second
     /// </summary>
-    public static readonly QuantityCode OunceAvoirdupoisPerSecond = new QuantityCode { Value = "L36" };
+    public static QuantityCode OunceAvoirdupoisPerSecond => new() { Value = "L36" };
 
     /// <summary>
     /// ounce (avoirdupois) per gallon (UK)
     /// </summary>
-    public static readonly QuantityCode OunceAvoirdupoisPerGallonUK = new QuantityCode { Value = "L37" };
+    public static QuantityCode OunceAvoirdupoisPerGallonUK => new() { Value = "L37" };
 
     /// <summary>
     /// ounce (avoirdupois) per gallon (US)
     /// </summary>
-    public static readonly QuantityCode OunceAvoirdupoisPerGallonUS = new QuantityCode { Value = "L38" };
+    public static QuantityCode OunceAvoirdupoisPerGallonUS => new() { Value = "L38" };
 
     /// <summary>
     /// ounce (avoirdupois) per cubic inch
     /// </summary>
-    public static readonly QuantityCode OunceAvoirdupoisPerCubicInch = new QuantityCode { Value = "L39" };
+    public static QuantityCode OunceAvoirdupoisPerCubicInch => new() { Value = "L39" };
 
     /// <summary>
     /// ounce (avoirdupois)-force
     /// </summary>
-    public static readonly QuantityCode OunceAvoirdupoisForce = new QuantityCode { Value = "L40" };
+    public static QuantityCode OunceAvoirdupoisForce => new() { Value = "L40" };
 
     /// <summary>
     /// ounce (avoirdupois)-force inch
     /// </summary>
-    public static readonly QuantityCode OunceAvoirdupoisForceInch = new QuantityCode { Value = "L41" };
+    public static QuantityCode OunceAvoirdupoisForceInch => new() { Value = "L41" };
 
     /// <summary>
     /// picosiemens per metre
     /// </summary>
-    public static readonly QuantityCode PicosiemensPerMetre = new QuantityCode { Value = "L42" };
+    public static QuantityCode PicosiemensPerMetre => new() { Value = "L42" };
 
     /// <summary>
     /// peck (UK)
     /// </summary>
-    public static readonly QuantityCode PeckUK = new QuantityCode { Value = "L43" };
+    public static QuantityCode PeckUK => new() { Value = "L43" };
 
     /// <summary>
     /// peck (UK) per day
     /// </summary>
-    public static readonly QuantityCode PeckUKPerDay = new QuantityCode { Value = "L44" };
+    public static QuantityCode PeckUKPerDay => new() { Value = "L44" };
 
     /// <summary>
     /// peck (UK) per hour
     /// </summary>
-    public static readonly QuantityCode PeckUKPerHour = new QuantityCode { Value = "L45" };
+    public static QuantityCode PeckUKPerHour => new() { Value = "L45" };
 
     /// <summary>
     /// peck (UK) per minute
     /// </summary>
-    public static readonly QuantityCode PeckUKPerMinute = new QuantityCode { Value = "L46" };
+    public static QuantityCode PeckUKPerMinute => new() { Value = "L46" };
 
     /// <summary>
     /// peck (UK) per second
     /// </summary>
-    public static readonly QuantityCode PeckUKPerSecond = new QuantityCode { Value = "L47" };
+    public static QuantityCode PeckUKPerSecond => new() { Value = "L47" };
 
     /// <summary>
     /// peck (US dry) per day
     /// </summary>
-    public static readonly QuantityCode PeckUSDryPerDay = new QuantityCode { Value = "L48" };
+    public static QuantityCode PeckUSDryPerDay => new() { Value = "L48" };
 
     /// <summary>
     /// peck (US dry) per hour
     /// </summary>
-    public static readonly QuantityCode PeckUSDryPerHour = new QuantityCode { Value = "L49" };
+    public static QuantityCode PeckUSDryPerHour => new() { Value = "L49" };
 
     /// <summary>
     /// peck (US dry) per minute
     /// </summary>
-    public static readonly QuantityCode PeckUSDryPerMinute = new QuantityCode { Value = "L50" };
+    public static QuantityCode PeckUSDryPerMinute => new() { Value = "L50" };
 
     /// <summary>
     /// peck (US dry) per second
     /// </summary>
-    public static readonly QuantityCode PeckUSDryPerSecond = new QuantityCode { Value = "L51" };
+    public static QuantityCode PeckUSDryPerSecond => new() { Value = "L51" };
 
     /// <summary>
     /// psi per psi
     /// </summary>
-    public static readonly QuantityCode PsiPerPsi = new QuantityCode { Value = "L52" };
+    public static QuantityCode PsiPerPsi => new() { Value = "L52" };
 
     /// <summary>
     /// pint (UK) per day
     /// </summary>
-    public static readonly QuantityCode PintUKPerDay = new QuantityCode { Value = "L53" };
+    public static QuantityCode PintUKPerDay => new() { Value = "L53" };
 
     /// <summary>
     /// pint (UK) per hour
     /// </summary>
-    public static readonly QuantityCode PintUKPerHour = new QuantityCode { Value = "L54" };
+    public static QuantityCode PintUKPerHour => new() { Value = "L54" };
 
     /// <summary>
     /// pint (UK) per minute
     /// </summary>
-    public static readonly QuantityCode PintUKPerMinute = new QuantityCode { Value = "L55" };
+    public static QuantityCode PintUKPerMinute => new() { Value = "L55" };
 
     /// <summary>
     /// pint (UK) per second
     /// </summary>
-    public static readonly QuantityCode PintUKPerSecond = new QuantityCode { Value = "L56" };
+    public static QuantityCode PintUKPerSecond => new() { Value = "L56" };
 
     /// <summary>
     /// pint (US liquid) per day
     /// </summary>
-    public static readonly QuantityCode PintUSLiquidPerDay = new QuantityCode { Value = "L57" };
+    public static QuantityCode PintUSLiquidPerDay => new() { Value = "L57" };
 
     /// <summary>
     /// pint (US liquid) per hour
     /// </summary>
-    public static readonly QuantityCode PintUSLiquidPerHour = new QuantityCode { Value = "L58" };
+    public static QuantityCode PintUSLiquidPerHour => new() { Value = "L58" };
 
     /// <summary>
     /// pint (US liquid) per minute
     /// </summary>
-    public static readonly QuantityCode PintUSLiquidPerMinute = new QuantityCode { Value = "L59" };
+    public static QuantityCode PintUSLiquidPerMinute => new() { Value = "L59" };
 
     /// <summary>
     /// pint (US liquid) per second
     /// </summary>
-    public static readonly QuantityCode PintUSLiquidPerSecond = new QuantityCode { Value = "L60" };
+    public static QuantityCode PintUSLiquidPerSecond => new() { Value = "L60" };
 
     /// <summary>
     /// slug per day
     /// </summary>
-    public static readonly QuantityCode SlugPerDay = new QuantityCode { Value = "L63" };
+    public static QuantityCode SlugPerDay => new() { Value = "L63" };
 
     /// <summary>
     /// slug per foot second
     /// </summary>
-    public static readonly QuantityCode SlugPerFootSecond = new QuantityCode { Value = "L64" };
+    public static QuantityCode SlugPerFootSecond => new() { Value = "L64" };
 
     /// <summary>
     /// slug per cubic foot
     /// </summary>
-    public static readonly QuantityCode SlugPerCubicFoot = new QuantityCode { Value = "L65" };
+    public static QuantityCode SlugPerCubicFoot => new() { Value = "L65" };
 
     /// <summary>
     /// slug per hour
     /// </summary>
-    public static readonly QuantityCode SlugPerHour = new QuantityCode { Value = "L66" };
+    public static QuantityCode SlugPerHour => new() { Value = "L66" };
 
     /// <summary>
     /// slug per minute
     /// </summary>
-    public static readonly QuantityCode SlugPerMinute = new QuantityCode { Value = "L67" };
+    public static QuantityCode SlugPerMinute => new() { Value = "L67" };
 
     /// <summary>
     /// slug per second
     /// </summary>
-    public static readonly QuantityCode SlugPerSecond = new QuantityCode { Value = "L68" };
+    public static QuantityCode SlugPerSecond => new() { Value = "L68" };
 
     /// <summary>
     /// tonne per kelvin
     /// </summary>
-    public static readonly QuantityCode TonnePerKelvin = new QuantityCode { Value = "L69" };
+    public static QuantityCode TonnePerKelvin => new() { Value = "L69" };
 
     /// <summary>
     /// tonne per bar
     /// </summary>
-    public static readonly QuantityCode TonnePerBar = new QuantityCode { Value = "L70" };
+    public static QuantityCode TonnePerBar => new() { Value = "L70" };
 
     /// <summary>
     /// tonne per day
     /// </summary>
-    public static readonly QuantityCode TonnePerDay = new QuantityCode { Value = "L71" };
+    public static QuantityCode TonnePerDay => new() { Value = "L71" };
 
     /// <summary>
     /// tonne per day kelvin
     /// </summary>
-    public static readonly QuantityCode TonnePerDayKelvin = new QuantityCode { Value = "L72" };
+    public static QuantityCode TonnePerDayKelvin => new() { Value = "L72" };
 
     /// <summary>
     /// tonne per day bar
     /// </summary>
-    public static readonly QuantityCode TonnePerDayBar = new QuantityCode { Value = "L73" };
+    public static QuantityCode TonnePerDayBar => new() { Value = "L73" };
 
     /// <summary>
     /// tonne per hour kelvin
     /// </summary>
-    public static readonly QuantityCode TonnePerHourKelvin = new QuantityCode { Value = "L74" };
+    public static QuantityCode TonnePerHourKelvin => new() { Value = "L74" };
 
     /// <summary>
     /// tonne per hour bar
     /// </summary>
-    public static readonly QuantityCode TonnePerHourBar = new QuantityCode { Value = "L75" };
+    public static QuantityCode TonnePerHourBar => new() { Value = "L75" };
 
     /// <summary>
     /// tonne per cubic metre kelvin
     /// </summary>
-    public static readonly QuantityCode TonnePerCubicMetreKelvin = new QuantityCode { Value = "L76" };
+    public static QuantityCode TonnePerCubicMetreKelvin => new() { Value = "L76" };
 
     /// <summary>
     /// tonne per cubic metre bar
     /// </summary>
-    public static readonly QuantityCode TonnePerCubicMetreBar = new QuantityCode { Value = "L77" };
+    public static QuantityCode TonnePerCubicMetreBar => new() { Value = "L77" };
 
     /// <summary>
     /// tonne per minute
     /// </summary>
-    public static readonly QuantityCode TonnePerMinute = new QuantityCode { Value = "L78" };
+    public static QuantityCode TonnePerMinute => new() { Value = "L78" };
 
     /// <summary>
     /// tonne per minute kelvin
     /// </summary>
-    public static readonly QuantityCode TonnePerMinuteKelvin = new QuantityCode { Value = "L79" };
+    public static QuantityCode TonnePerMinuteKelvin => new() { Value = "L79" };
 
     /// <summary>
     /// tonne per minute bar
     /// </summary>
-    public static readonly QuantityCode TonnePerMinuteBar = new QuantityCode { Value = "L80" };
+    public static QuantityCode TonnePerMinuteBar => new() { Value = "L80" };
 
     /// <summary>
     /// tonne per second
     /// </summary>
-    public static readonly QuantityCode TonnePerSecond = new QuantityCode { Value = "L81" };
+    public static QuantityCode TonnePerSecond => new() { Value = "L81" };
 
     /// <summary>
     /// tonne per second kelvin
     /// </summary>
-    public static readonly QuantityCode TonnePerSecondKelvin = new QuantityCode { Value = "L82" };
+    public static QuantityCode TonnePerSecondKelvin => new() { Value = "L82" };
 
     /// <summary>
     /// tonne per second bar
     /// </summary>
-    public static readonly QuantityCode TonnePerSecondBar = new QuantityCode { Value = "L83" };
+    public static QuantityCode TonnePerSecondBar => new() { Value = "L83" };
 
     /// <summary>
     /// ton (UK shipping)
     /// </summary>
-    public static readonly QuantityCode TonUKShipping = new QuantityCode { Value = "L84" };
+    public static QuantityCode TonUKShipping => new() { Value = "L84" };
 
     /// <summary>
     /// ton long per day
     /// </summary>
-    public static readonly QuantityCode TonLongPerDay = new QuantityCode { Value = "L85" };
+    public static QuantityCode TonLongPerDay => new() { Value = "L85" };
 
     /// <summary>
     /// ton (US shipping)
     /// </summary>
-    public static readonly QuantityCode TonUSShipping = new QuantityCode { Value = "L86" };
+    public static QuantityCode TonUSShipping => new() { Value = "L86" };
 
     /// <summary>
     /// ton short per degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode TonShortPerDegreeFahrenheit = new QuantityCode { Value = "L87" };
+    public static QuantityCode TonShortPerDegreeFahrenheit => new() { Value = "L87" };
 
     /// <summary>
     /// ton short per day
     /// </summary>
-    public static readonly QuantityCode TonShortPerDay = new QuantityCode { Value = "L88" };
+    public static QuantityCode TonShortPerDay => new() { Value = "L88" };
 
     /// <summary>
     /// ton short per hour degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode TonShortPerHourDegreeFahrenheit = new QuantityCode { Value = "L89" };
+    public static QuantityCode TonShortPerHourDegreeFahrenheit => new() { Value = "L89" };
 
     /// <summary>
     /// ton short per hour psi
     /// </summary>
-    public static readonly QuantityCode TonShortPerHourPsi = new QuantityCode { Value = "L90" };
+    public static QuantityCode TonShortPerHourPsi => new() { Value = "L90" };
 
     /// <summary>
     /// ton short per psi
     /// </summary>
-    public static readonly QuantityCode TonShortPerPsi = new QuantityCode { Value = "L91" };
+    public static QuantityCode TonShortPerPsi => new() { Value = "L91" };
 
     /// <summary>
     /// ton (UK long) per cubic yard
     /// </summary>
-    public static readonly QuantityCode TonUKLongPerCubicYard = new QuantityCode { Value = "L92" };
+    public static QuantityCode TonUKLongPerCubicYard => new() { Value = "L92" };
 
     /// <summary>
     /// ton (US short) per cubic yard
     /// </summary>
-    public static readonly QuantityCode TonUSShortPerCubicYard = new QuantityCode { Value = "L93" };
+    public static QuantityCode TonUSShortPerCubicYard => new() { Value = "L93" };
 
     /// <summary>
     /// ton-force (US short)
     /// </summary>
-    public static readonly QuantityCode TonForceUSShort = new QuantityCode { Value = "L94" };
+    public static QuantityCode TonForceUSShort => new() { Value = "L94" };
 
     /// <summary>
     /// common year
     /// </summary>
-    public static readonly QuantityCode CommonYear = new QuantityCode { Value = "L95" };
+    public static QuantityCode CommonYear => new() { Value = "L95" };
 
     /// <summary>
     /// sidereal year
     /// </summary>
-    public static readonly QuantityCode SiderealYear = new QuantityCode { Value = "L96" };
+    public static QuantityCode SiderealYear => new() { Value = "L96" };
 
     /// <summary>
     /// yard per degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode YardPerDegreeFahrenheit = new QuantityCode { Value = "L98" };
+    public static QuantityCode YardPerDegreeFahrenheit => new() { Value = "L98" };
 
     /// <summary>
     /// yard per psi
     /// </summary>
-    public static readonly QuantityCode YardPerPsi = new QuantityCode { Value = "L99" };
+    public static QuantityCode YardPerPsi => new() { Value = "L99" };
 
     /// <summary>
     /// pound per cubic inch
     /// </summary>
-    public static readonly QuantityCode PoundPerCubicInch = new QuantityCode { Value = "LA" };
+    public static QuantityCode PoundPerCubicInch => new() { Value = "LA" };
 
     /// <summary>
     /// lactose excess percentage
     /// </summary>
-    public static readonly QuantityCode LactoseExcessPercentage = new QuantityCode { Value = "LAC" };
+    public static QuantityCode LactoseExcessPercentage => new() { Value = "LAC" };
 
     /// <summary>
     /// pound
     /// </summary>
-    public static readonly QuantityCode Pound = new QuantityCode { Value = "LBR" };
+    public static QuantityCode Pound => new() { Value = "LBR" };
 
     /// <summary>
     /// troy pound (US)
     /// </summary>
-    public static readonly QuantityCode TroyPoundUS = new QuantityCode { Value = "LBT" };
+    public static QuantityCode TroyPoundUS => new() { Value = "LBT" };
 
     /// <summary>
     /// litre per day
     /// </summary>
-    public static readonly QuantityCode LitrePerDay = new QuantityCode { Value = "LD" };
+    public static QuantityCode LitrePerDay => new() { Value = "LD" };
 
     /// <summary>
     /// leaf
     /// </summary>
-    public static readonly QuantityCode Leaf = new QuantityCode { Value = "LEF" };
+    public static QuantityCode Leaf => new() { Value = "LEF" };
 
     /// <summary>
     /// linear foot
     /// </summary>
-    public static readonly QuantityCode LinearFoot = new QuantityCode { Value = "LF" };
+    public static QuantityCode LinearFoot => new() { Value = "LF" };
 
     /// <summary>
     /// labour hour
     /// </summary>
-    public static readonly QuantityCode LabourHour = new QuantityCode { Value = "LH" };
+    public static QuantityCode LabourHour => new() { Value = "LH" };
 
     /// <summary>
     /// link
     /// </summary>
-    public static readonly QuantityCode Link = new QuantityCode { Value = "LK" };
+    public static QuantityCode Link => new() { Value = "LK" };
 
     /// <summary>
     /// linear metre
     /// </summary>
-    public static readonly QuantityCode LinearMetre = new QuantityCode { Value = "LM" };
+    public static QuantityCode LinearMetre => new() { Value = "LM" };
 
     /// <summary>
     /// length
     /// </summary>
-    public static readonly QuantityCode Length = new QuantityCode { Value = "LN" };
+    public static QuantityCode Length => new() { Value = "LN" };
 
     /// <summary>
     /// lot [unit of procurement]
     /// </summary>
-    public static readonly QuantityCode LotUnitOfProcurement = new QuantityCode { Value = "LO" };
+    public static QuantityCode LotUnitOfProcurement => new() { Value = "LO" };
 
     /// <summary>
     /// liquid pound
     /// </summary>
-    public static readonly QuantityCode LiquidPound = new QuantityCode { Value = "LP" };
+    public static QuantityCode LiquidPound => new() { Value = "LP" };
 
     /// <summary>
     /// litre of pure alcohol
     /// </summary>
-    public static readonly QuantityCode LitreOfPureAlcohol = new QuantityCode { Value = "LPA" };
+    public static QuantityCode LitreOfPureAlcohol => new() { Value = "LPA" };
 
     /// <summary>
     /// layer
     /// </summary>
-    public static readonly QuantityCode Layer = new QuantityCode { Value = "LR" };
+    public static QuantityCode Layer => new() { Value = "LR" };
 
     /// <summary>
     /// lump sum
     /// </summary>
-    public static readonly QuantityCode LumpSum = new QuantityCode { Value = "LS" };
+    public static QuantityCode LumpSum => new() { Value = "LS" };
 
     /// <summary>
     /// ton (UK) or long ton (US)
     /// </summary>
-    public static readonly QuantityCode TonUKOrLongTonUS = new QuantityCode { Value = "LTN" };
+    public static QuantityCode TonUKOrLongTonUS => new() { Value = "LTN" };
 
     /// <summary>
     /// litre
     /// </summary>
-    public static readonly QuantityCode Litre = new QuantityCode { Value = "LTR" };
+    public static QuantityCode Litre => new() { Value = "LTR" };
 
     /// <summary>
     /// metric ton, lubricating oil
     /// </summary>
-    public static readonly QuantityCode MetricTonLubricatingOil = new QuantityCode { Value = "LUB" };
+    public static QuantityCode MetricTonLubricatingOil => new() { Value = "LUB" };
 
     /// <summary>
     /// lumen
     /// </summary>
-    public static readonly QuantityCode Lumen = new QuantityCode { Value = "LUM" };
+    public static QuantityCode Lumen => new() { Value = "LUM" };
 
     /// <summary>
     /// lux
     /// </summary>
-    public static readonly QuantityCode Lux = new QuantityCode { Value = "LUX" };
+    public static QuantityCode Lux => new() { Value = "LUX" };
 
     /// <summary>
     /// linear yard
     /// </summary>
-    public static readonly QuantityCode LinearYard = new QuantityCode { Value = "LY" };
+    public static QuantityCode LinearYard => new() { Value = "LY" };
 
     /// <summary>
     /// milligram per litre
     /// </summary>
-    public static readonly QuantityCode MilligramPerLitre = new QuantityCode { Value = "M1" };
+    public static QuantityCode MilligramPerLitre => new() { Value = "M1" };
 
     /// <summary>
     /// reciprocal cubic yard
     /// </summary>
-    public static readonly QuantityCode ReciprocalCubicYard = new QuantityCode { Value = "M10" };
+    public static QuantityCode ReciprocalCubicYard => new() { Value = "M10" };
 
     /// <summary>
     /// cubic yard per degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode CubicYardPerDegreeFahrenheit = new QuantityCode { Value = "M11" };
+    public static QuantityCode CubicYardPerDegreeFahrenheit => new() { Value = "M11" };
 
     /// <summary>
     /// cubic yard per day
     /// </summary>
-    public static readonly QuantityCode CubicYardPerDay = new QuantityCode { Value = "M12" };
+    public static QuantityCode CubicYardPerDay => new() { Value = "M12" };
 
     /// <summary>
     /// cubic yard per hour
     /// </summary>
-    public static readonly QuantityCode CubicYardPerHour = new QuantityCode { Value = "M13" };
+    public static QuantityCode CubicYardPerHour => new() { Value = "M13" };
 
     /// <summary>
     /// cubic yard per psi
     /// </summary>
-    public static readonly QuantityCode CubicYardPerPsi = new QuantityCode { Value = "M14" };
+    public static QuantityCode CubicYardPerPsi => new() { Value = "M14" };
 
     /// <summary>
     /// cubic yard per minute
     /// </summary>
-    public static readonly QuantityCode CubicYardPerMinute = new QuantityCode { Value = "M15" };
+    public static QuantityCode CubicYardPerMinute => new() { Value = "M15" };
 
     /// <summary>
     /// cubic yard per second
     /// </summary>
-    public static readonly QuantityCode CubicYardPerSecond = new QuantityCode { Value = "M16" };
+    public static QuantityCode CubicYardPerSecond => new() { Value = "M16" };
 
     /// <summary>
     /// kilohertz metre
     /// </summary>
-    public static readonly QuantityCode KilohertzMetre = new QuantityCode { Value = "M17" };
+    public static QuantityCode KilohertzMetre => new() { Value = "M17" };
 
     /// <summary>
     /// gigahertz metre
     /// </summary>
-    public static readonly QuantityCode GigahertzMetre = new QuantityCode { Value = "M18" };
+    public static QuantityCode GigahertzMetre => new() { Value = "M18" };
 
     /// <summary>
     /// Beaufort
     /// </summary>
-    public static readonly QuantityCode Beaufort = new QuantityCode { Value = "M19" };
+    public static QuantityCode Beaufort => new() { Value = "M19" };
 
     /// <summary>
     /// reciprocal megakelvin or megakelvin to the power minus one
     /// </summary>
-    public static readonly QuantityCode ReciprocalMegakelvinOrMegakelvinToThePowerMinusOne = new QuantityCode { Value = "M20" };
+    public static QuantityCode ReciprocalMegakelvinOrMegakelvinToThePowerMinusOne => new() { Value = "M20" };
 
     /// <summary>
     /// reciprocal kilovolt - ampere reciprocal hour
     /// </summary>
-    public static readonly QuantityCode ReciprocalKilovoltAmpereReciprocalHour = new QuantityCode { Value = "M21" };
+    public static QuantityCode ReciprocalKilovoltAmpereReciprocalHour => new() { Value = "M21" };
 
     /// <summary>
     /// millilitre per square centimetre minute
     /// </summary>
-    public static readonly QuantityCode MillilitrePerSquareCentimetreMinute = new QuantityCode { Value = "M22" };
+    public static QuantityCode MillilitrePerSquareCentimetreMinute => new() { Value = "M22" };
 
     /// <summary>
     /// newton per centimetre
     /// </summary>
-    public static readonly QuantityCode NewtonPerCentimetre = new QuantityCode { Value = "M23" };
+    public static QuantityCode NewtonPerCentimetre => new() { Value = "M23" };
 
     /// <summary>
     /// ohm kilometre
     /// </summary>
-    public static readonly QuantityCode OhmKilometre = new QuantityCode { Value = "M24" };
+    public static QuantityCode OhmKilometre => new() { Value = "M24" };
 
     /// <summary>
     /// percent per degree Celsius
     /// </summary>
-    public static readonly QuantityCode PercentPerDegreeCelsius = new QuantityCode { Value = "M25" };
+    public static QuantityCode PercentPerDegreeCelsius => new() { Value = "M25" };
 
     /// <summary>
     /// gigaohm per metre
     /// </summary>
-    public static readonly QuantityCode GigaohmPerMetre = new QuantityCode { Value = "M26" };
+    public static QuantityCode GigaohmPerMetre => new() { Value = "M26" };
 
     /// <summary>
     /// megahertz metre
     /// </summary>
-    public static readonly QuantityCode MegahertzMetre = new QuantityCode { Value = "M27" };
+    public static QuantityCode MegahertzMetre => new() { Value = "M27" };
 
     /// <summary>
     /// kilogram per kilogram
     /// </summary>
-    public static readonly QuantityCode KilogramPerKilogram = new QuantityCode { Value = "M29" };
+    public static QuantityCode KilogramPerKilogram => new() { Value = "M29" };
 
     /// <summary>
     /// reciprocal volt - ampere reciprocal second
     /// </summary>
-    public static readonly QuantityCode ReciprocalVoltAmpereReciprocalSecond = new QuantityCode { Value = "M30" };
+    public static QuantityCode ReciprocalVoltAmpereReciprocalSecond => new() { Value = "M30" };
 
     /// <summary>
     /// kilogram per kilometre
     /// </summary>
-    public static readonly QuantityCode KilogramPerKilometre = new QuantityCode { Value = "M31" };
+    public static QuantityCode KilogramPerKilometre => new() { Value = "M31" };
 
     /// <summary>
     /// pascal second per litre
     /// </summary>
-    public static readonly QuantityCode PascalSecondPerLitre = new QuantityCode { Value = "M32" };
+    public static QuantityCode PascalSecondPerLitre => new() { Value = "M32" };
 
     /// <summary>
     /// millimole per litre
     /// </summary>
-    public static readonly QuantityCode MillimolePerLitre = new QuantityCode { Value = "M33" };
+    public static QuantityCode MillimolePerLitre => new() { Value = "M33" };
 
     /// <summary>
     /// newton metre per square metre
     /// </summary>
-    public static readonly QuantityCode NewtonMetrePerSquareMetre = new QuantityCode { Value = "M34" };
+    public static QuantityCode NewtonMetrePerSquareMetre => new() { Value = "M34" };
 
     /// <summary>
     /// millivolt - ampere
     /// </summary>
-    public static readonly QuantityCode MillivoltAmpere = new QuantityCode { Value = "M35" };
+    public static QuantityCode MillivoltAmpere => new() { Value = "M35" };
 
     /// <summary>
     /// 30-day month
     /// </summary>
-    public static readonly QuantityCode Code30DayMonth = new QuantityCode { Value = "M36" };
+    public static QuantityCode Code30DayMonth => new() { Value = "M36" };
 
     /// <summary>
     /// actual/360
     /// </summary>
-    public static readonly QuantityCode Actual360 = new QuantityCode { Value = "M37" };
+    public static QuantityCode Actual360 => new() { Value = "M37" };
 
     /// <summary>
     /// kilometre per second squared
     /// </summary>
-    public static readonly QuantityCode KilometrePerSecondSquared = new QuantityCode { Value = "M38" };
+    public static QuantityCode KilometrePerSecondSquared => new() { Value = "M38" };
 
     /// <summary>
     /// centimetre per second squared
     /// </summary>
-    public static readonly QuantityCode CentimetrePerSecondSquared = new QuantityCode { Value = "M39" };
+    public static QuantityCode CentimetrePerSecondSquared => new() { Value = "M39" };
 
     /// <summary>
     /// monetary value
     /// </summary>
-    public static readonly QuantityCode MonetaryValue = new QuantityCode { Value = "M4" };
+    public static QuantityCode MonetaryValue => new() { Value = "M4" };
 
     /// <summary>
     /// yard per second squared
     /// </summary>
-    public static readonly QuantityCode YardPerSecondSquared = new QuantityCode { Value = "M40" };
+    public static QuantityCode YardPerSecondSquared => new() { Value = "M40" };
 
     /// <summary>
     /// millimetre per second squared
     /// </summary>
-    public static readonly QuantityCode MillimetrePerSecondSquared = new QuantityCode { Value = "M41" };
+    public static QuantityCode MillimetrePerSecondSquared => new() { Value = "M41" };
 
     /// <summary>
     /// mile (statute mile) per second squared
     /// </summary>
-    public static readonly QuantityCode MileStatuteMilePerSecondSquared = new QuantityCode { Value = "M42" };
+    public static QuantityCode MileStatuteMilePerSecondSquared => new() { Value = "M42" };
 
     /// <summary>
     /// mil
     /// </summary>
-    public static readonly QuantityCode Mil = new QuantityCode { Value = "M43" };
+    public static QuantityCode Mil => new() { Value = "M43" };
 
     /// <summary>
     /// revolution
     /// </summary>
-    public static readonly QuantityCode Revolution = new QuantityCode { Value = "M44" };
+    public static QuantityCode Revolution => new() { Value = "M44" };
 
     /// <summary>
     /// degree [unit of angle] per second squared
     /// </summary>
-    public static readonly QuantityCode DegreeUnitOfAnglePerSecondSquared = new QuantityCode { Value = "M45" };
+    public static QuantityCode DegreeUnitOfAnglePerSecondSquared => new() { Value = "M45" };
 
     /// <summary>
     /// revolution per minute
     /// </summary>
-    public static readonly QuantityCode RevolutionPerMinute = new QuantityCode { Value = "M46" };
+    public static QuantityCode RevolutionPerMinute => new() { Value = "M46" };
 
     /// <summary>
     /// circular mil
     /// </summary>
-    public static readonly QuantityCode CircularMil = new QuantityCode { Value = "M47" };
+    public static QuantityCode CircularMil => new() { Value = "M47" };
 
     /// <summary>
     /// square mile (based on U.S. survey foot)
     /// </summary>
-    public static readonly QuantityCode SquareMileBasedOnUSSurveyFoot = new QuantityCode { Value = "M48" };
+    public static QuantityCode SquareMileBasedOnUSSurveyFoot => new() { Value = "M48" };
 
     /// <summary>
     /// chain (based on U.S. survey foot)
     /// </summary>
-    public static readonly QuantityCode ChainBasedOnUSSurveyFoot = new QuantityCode { Value = "M49" };
+    public static QuantityCode ChainBasedOnUSSurveyFoot => new() { Value = "M49" };
 
     /// <summary>
     /// microcurie
     /// </summary>
-    public static readonly QuantityCode Microcurie = new QuantityCode { Value = "M5" };
+    public static QuantityCode Microcurie => new() { Value = "M5" };
 
     /// <summary>
     /// furlong
     /// </summary>
-    public static readonly QuantityCode Furlong = new QuantityCode { Value = "M50" };
+    public static QuantityCode Furlong => new() { Value = "M50" };
 
     /// <summary>
     /// foot (U.S. survey)
     /// </summary>
-    public static readonly QuantityCode FootUSSurvey = new QuantityCode { Value = "M51" };
+    public static QuantityCode FootUSSurvey => new() { Value = "M51" };
 
     /// <summary>
     /// mile (based on U.S. survey foot)
     /// </summary>
-    public static readonly QuantityCode MileBasedOnUSSurveyFoot = new QuantityCode { Value = "M52" };
+    public static QuantityCode MileBasedOnUSSurveyFoot => new() { Value = "M52" };
 
     /// <summary>
     /// metre per pascal
     /// </summary>
-    public static readonly QuantityCode MetrePerPascal = new QuantityCode { Value = "M53" };
+    public static QuantityCode MetrePerPascal => new() { Value = "M53" };
 
     /// <summary>
     /// metre per radiant
     /// </summary>
-    public static readonly QuantityCode MetrePerRadiant = new QuantityCode { Value = "M55" };
+    public static QuantityCode MetrePerRadiant => new() { Value = "M55" };
 
     /// <summary>
     /// shake
     /// </summary>
-    public static readonly QuantityCode Shake = new QuantityCode { Value = "M56" };
+    public static QuantityCode Shake => new() { Value = "M56" };
 
     /// <summary>
     /// mile per minute
     /// </summary>
-    public static readonly QuantityCode MilePerMinute = new QuantityCode { Value = "M57" };
+    public static QuantityCode MilePerMinute => new() { Value = "M57" };
 
     /// <summary>
     /// mile per second
     /// </summary>
-    public static readonly QuantityCode MilePerSecond = new QuantityCode { Value = "M58" };
+    public static QuantityCode MilePerSecond => new() { Value = "M58" };
 
     /// <summary>
     /// metre per second pascal
     /// </summary>
-    public static readonly QuantityCode MetrePerSecondPascal = new QuantityCode { Value = "M59" };
+    public static QuantityCode MetrePerSecondPascal => new() { Value = "M59" };
 
     /// <summary>
     /// metre per hour
     /// </summary>
-    public static readonly QuantityCode MetrePerHour = new QuantityCode { Value = "M60" };
+    public static QuantityCode MetrePerHour => new() { Value = "M60" };
 
     /// <summary>
     /// inch per year
     /// </summary>
-    public static readonly QuantityCode InchPerYear = new QuantityCode { Value = "M61" };
+    public static QuantityCode InchPerYear => new() { Value = "M61" };
 
     /// <summary>
     /// kilometre per second
     /// </summary>
-    public static readonly QuantityCode KilometrePerSecond = new QuantityCode { Value = "M62" };
+    public static QuantityCode KilometrePerSecond => new() { Value = "M62" };
 
     /// <summary>
     /// inch per minute
     /// </summary>
-    public static readonly QuantityCode InchPerMinute = new QuantityCode { Value = "M63" };
+    public static QuantityCode InchPerMinute => new() { Value = "M63" };
 
     /// <summary>
     /// yard per second
     /// </summary>
-    public static readonly QuantityCode YardPerSecond = new QuantityCode { Value = "M64" };
+    public static QuantityCode YardPerSecond => new() { Value = "M64" };
 
     /// <summary>
     /// yard per minute
     /// </summary>
-    public static readonly QuantityCode YardPerMinute = new QuantityCode { Value = "M65" };
+    public static QuantityCode YardPerMinute => new() { Value = "M65" };
 
     /// <summary>
     /// yard per hour
     /// </summary>
-    public static readonly QuantityCode YardPerHour = new QuantityCode { Value = "M66" };
+    public static QuantityCode YardPerHour => new() { Value = "M66" };
 
     /// <summary>
     /// acre-foot (based on U.S. survey foot)
     /// </summary>
-    public static readonly QuantityCode AcreFootBasedOnUSSurveyFoot = new QuantityCode { Value = "M67" };
+    public static QuantityCode AcreFootBasedOnUSSurveyFoot => new() { Value = "M67" };
 
     /// <summary>
     /// cord (128 ft3)
     /// </summary>
-    public static readonly QuantityCode Cord128Ft3 = new QuantityCode { Value = "M68" };
+    public static QuantityCode Cord128Ft3 => new() { Value = "M68" };
 
     /// <summary>
     /// cubic mile (UK statute)
     /// </summary>
-    public static readonly QuantityCode CubicMileUKStatute = new QuantityCode { Value = "M69" };
+    public static QuantityCode CubicMileUKStatute => new() { Value = "M69" };
 
     /// <summary>
     /// micro-inch
     /// </summary>
-    public static readonly QuantityCode MicroInch = new QuantityCode { Value = "M7" };
+    public static QuantityCode MicroInch => new() { Value = "M7" };
 
     /// <summary>
     /// ton, register
     /// </summary>
-    public static readonly QuantityCode TonRegister = new QuantityCode { Value = "M70" };
+    public static QuantityCode TonRegister => new() { Value = "M70" };
 
     /// <summary>
     /// cubic metre per pascal
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerPascal = new QuantityCode { Value = "M71" };
+    public static QuantityCode CubicMetrePerPascal => new() { Value = "M71" };
 
     /// <summary>
     /// bel
     /// </summary>
-    public static readonly QuantityCode Bel = new QuantityCode { Value = "M72" };
+    public static QuantityCode Bel => new() { Value = "M72" };
 
     /// <summary>
     /// kilogram per cubic metre pascal
     /// </summary>
-    public static readonly QuantityCode KilogramPerCubicMetrePascal = new QuantityCode { Value = "M73" };
+    public static QuantityCode KilogramPerCubicMetrePascal => new() { Value = "M73" };
 
     /// <summary>
     /// kilogram per pascal
     /// </summary>
-    public static readonly QuantityCode KilogramPerPascal = new QuantityCode { Value = "M74" };
+    public static QuantityCode KilogramPerPascal => new() { Value = "M74" };
 
     /// <summary>
     /// kilopound-force
     /// </summary>
-    public static readonly QuantityCode KilopoundForce = new QuantityCode { Value = "M75" };
+    public static QuantityCode KilopoundForce => new() { Value = "M75" };
 
     /// <summary>
     /// poundal
     /// </summary>
-    public static readonly QuantityCode Poundal = new QuantityCode { Value = "M76" };
+    public static QuantityCode Poundal => new() { Value = "M76" };
 
     /// <summary>
     /// kilogram metre per second squared
     /// </summary>
-    public static readonly QuantityCode KilogramMetrePerSecondSquared = new QuantityCode { Value = "M77" };
+    public static QuantityCode KilogramMetrePerSecondSquared => new() { Value = "M77" };
 
     /// <summary>
     /// pond
     /// </summary>
-    public static readonly QuantityCode Pond = new QuantityCode { Value = "M78" };
+    public static QuantityCode Pond => new() { Value = "M78" };
 
     /// <summary>
     /// square foot per hour
     /// </summary>
-    public static readonly QuantityCode SquareFootPerHour = new QuantityCode { Value = "M79" };
+    public static QuantityCode SquareFootPerHour => new() { Value = "M79" };
 
     /// <summary>
     /// stokes per pascal
     /// </summary>
-    public static readonly QuantityCode StokesPerPascal = new QuantityCode { Value = "M80" };
+    public static QuantityCode StokesPerPascal => new() { Value = "M80" };
 
     /// <summary>
     /// square centimetre per second
     /// </summary>
-    public static readonly QuantityCode SquareCentimetrePerSecond = new QuantityCode { Value = "M81" };
+    public static QuantityCode SquareCentimetrePerSecond => new() { Value = "M81" };
 
     /// <summary>
     /// square metre per second pascal
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerSecondPascal = new QuantityCode { Value = "M82" };
+    public static QuantityCode SquareMetrePerSecondPascal => new() { Value = "M82" };
 
     /// <summary>
     /// denier
     /// </summary>
-    public static readonly QuantityCode DenierM83 = new QuantityCode { Value = "M83" };
+    public static QuantityCode DenierM83 => new() { Value = "M83" };
 
     /// <summary>
     /// pound per yard
     /// </summary>
-    public static readonly QuantityCode PoundPerYard = new QuantityCode { Value = "M84" };
+    public static QuantityCode PoundPerYard => new() { Value = "M84" };
 
     /// <summary>
     /// ton, assay
     /// </summary>
-    public static readonly QuantityCode TonAssay = new QuantityCode { Value = "M85" };
+    public static QuantityCode TonAssay => new() { Value = "M85" };
 
     /// <summary>
     /// pfund
     /// </summary>
-    public static readonly QuantityCode Pfund = new QuantityCode { Value = "M86" };
+    public static QuantityCode Pfund => new() { Value = "M86" };
 
     /// <summary>
     /// kilogram per second pascal
     /// </summary>
-    public static readonly QuantityCode KilogramPerSecondPascal = new QuantityCode { Value = "M87" };
+    public static QuantityCode KilogramPerSecondPascal => new() { Value = "M87" };
 
     /// <summary>
     /// tonne per month
     /// </summary>
-    public static readonly QuantityCode TonnePerMonth = new QuantityCode { Value = "M88" };
+    public static QuantityCode TonnePerMonth => new() { Value = "M88" };
 
     /// <summary>
     /// tonne per year
     /// </summary>
-    public static readonly QuantityCode TonnePerYear = new QuantityCode { Value = "M89" };
+    public static QuantityCode TonnePerYear => new() { Value = "M89" };
 
     /// <summary>
     /// million Btu per 1000 cubic foot
     /// </summary>
-    public static readonly QuantityCode MillionBtuPer1000CubicFoot = new QuantityCode { Value = "M9" };
+    public static QuantityCode MillionBtuPer1000CubicFoot => new() { Value = "M9" };
 
     /// <summary>
     /// kilopound per hour
     /// </summary>
-    public static readonly QuantityCode KilopoundPerHour = new QuantityCode { Value = "M90" };
+    public static QuantityCode KilopoundPerHour => new() { Value = "M90" };
 
     /// <summary>
     /// pound per pound
     /// </summary>
-    public static readonly QuantityCode PoundPerPound = new QuantityCode { Value = "M91" };
+    public static QuantityCode PoundPerPound => new() { Value = "M91" };
 
     /// <summary>
     /// pound-force foot
     /// </summary>
-    public static readonly QuantityCode PoundForceFoot = new QuantityCode { Value = "M92" };
+    public static QuantityCode PoundForceFoot => new() { Value = "M92" };
 
     /// <summary>
     /// newton metre per radian
     /// </summary>
-    public static readonly QuantityCode NewtonMetrePerRadian = new QuantityCode { Value = "M93" };
+    public static QuantityCode NewtonMetrePerRadian => new() { Value = "M93" };
 
     /// <summary>
     /// kilogram metre
     /// </summary>
-    public static readonly QuantityCode KilogramMetre = new QuantityCode { Value = "M94" };
+    public static QuantityCode KilogramMetre => new() { Value = "M94" };
 
     /// <summary>
     /// poundal foot
     /// </summary>
-    public static readonly QuantityCode PoundalFoot = new QuantityCode { Value = "M95" };
+    public static QuantityCode PoundalFoot => new() { Value = "M95" };
 
     /// <summary>
     /// poundal inch
     /// </summary>
-    public static readonly QuantityCode PoundalInch = new QuantityCode { Value = "M96" };
+    public static QuantityCode PoundalInch => new() { Value = "M96" };
 
     /// <summary>
     /// dyne metre
     /// </summary>
-    public static readonly QuantityCode DyneMetre = new QuantityCode { Value = "M97" };
+    public static QuantityCode DyneMetre => new() { Value = "M97" };
 
     /// <summary>
     /// kilogram centimetre per second
     /// </summary>
-    public static readonly QuantityCode KilogramCentimetrePerSecond = new QuantityCode { Value = "M98" };
+    public static QuantityCode KilogramCentimetrePerSecond => new() { Value = "M98" };
 
     /// <summary>
     /// gram centimetre per second
     /// </summary>
-    public static readonly QuantityCode GramCentimetrePerSecond = new QuantityCode { Value = "M99" };
+    public static QuantityCode GramCentimetrePerSecond => new() { Value = "M99" };
 
     /// <summary>
     /// megavolt ampere reactive hour
     /// </summary>
-    public static readonly QuantityCode MegavoltAmpereReactiveHour = new QuantityCode { Value = "MAH" };
+    public static QuantityCode MegavoltAmpereReactiveHour => new() { Value = "MAH" };
 
     /// <summary>
     /// megalitre
     /// </summary>
-    public static readonly QuantityCode Megalitre = new QuantityCode { Value = "MAL" };
+    public static QuantityCode Megalitre => new() { Value = "MAL" };
 
     /// <summary>
     /// megametre
     /// </summary>
-    public static readonly QuantityCode Megametre = new QuantityCode { Value = "MAM" };
+    public static QuantityCode Megametre => new() { Value = "MAM" };
 
     /// <summary>
     /// megavar
     /// </summary>
-    public static readonly QuantityCode Megavar = new QuantityCode { Value = "MAR" };
+    public static QuantityCode Megavar => new() { Value = "MAR" };
 
     /// <summary>
     /// megawatt
     /// </summary>
-    public static readonly QuantityCode Megawatt = new QuantityCode { Value = "MAW" };
+    public static QuantityCode Megawatt => new() { Value = "MAW" };
 
     /// <summary>
     /// thousand standard brick equivalent
     /// </summary>
-    public static readonly QuantityCode ThousandStandardBrickEquivalent = new QuantityCode { Value = "MBE" };
+    public static QuantityCode ThousandStandardBrickEquivalent => new() { Value = "MBE" };
 
     /// <summary>
     /// thousand board foot
     /// </summary>
-    public static readonly QuantityCode ThousandBoardFoot = new QuantityCode { Value = "MBF" };
+    public static QuantityCode ThousandBoardFoot => new() { Value = "MBF" };
 
     /// <summary>
     /// millibar
     /// </summary>
-    public static readonly QuantityCode Millibar = new QuantityCode { Value = "MBR" };
+    public static QuantityCode Millibar => new() { Value = "MBR" };
 
     /// <summary>
     /// microgram
     /// </summary>
-    public static readonly QuantityCode Microgram = new QuantityCode { Value = "MC" };
+    public static QuantityCode Microgram => new() { Value = "MC" };
 
     /// <summary>
     /// millicurie
     /// </summary>
-    public static readonly QuantityCode Millicurie = new QuantityCode { Value = "MCU" };
+    public static QuantityCode Millicurie => new() { Value = "MCU" };
 
     /// <summary>
     /// air dry metric ton
     /// </summary>
-    public static readonly QuantityCode AirDryMetricTon = new QuantityCode { Value = "MD" };
+    public static QuantityCode AirDryMetricTon => new() { Value = "MD" };
 
     /// <summary>
     /// milligram
     /// </summary>
-    public static readonly QuantityCode Milligram = new QuantityCode { Value = "MGM" };
+    public static QuantityCode Milligram => new() { Value = "MGM" };
 
     /// <summary>
     /// megahertz
     /// </summary>
-    public static readonly QuantityCode Megahertz = new QuantityCode { Value = "MHZ" };
+    public static QuantityCode Megahertz => new() { Value = "MHZ" };
 
     /// <summary>
     /// square mile (statute mile)
     /// </summary>
-    public static readonly QuantityCode SquareMileStatuteMile = new QuantityCode { Value = "MIK" };
+    public static QuantityCode SquareMileStatuteMile => new() { Value = "MIK" };
 
     /// <summary>
     /// thousand
     /// </summary>
-    public static readonly QuantityCode Thousand = new QuantityCode { Value = "MIL" };
+    public static QuantityCode Thousand => new() { Value = "MIL" };
 
     /// <summary>
     /// minute [unit of time]
     /// </summary>
-    public static readonly QuantityCode MinuteUnitOfTime = new QuantityCode { Value = "MIN" };
+    public static QuantityCode MinuteUnitOfTime => new() { Value = "MIN" };
 
     /// <summary>
     /// million
     /// </summary>
-    public static readonly QuantityCode Million = new QuantityCode { Value = "MIO" };
+    public static QuantityCode Million => new() { Value = "MIO" };
 
     /// <summary>
     /// million international unit
     /// </summary>
-    public static readonly QuantityCode MillionInternationalUnit = new QuantityCode { Value = "MIU" };
+    public static QuantityCode MillionInternationalUnit => new() { Value = "MIU" };
 
     /// <summary>
     /// Square Metre Day
     /// </summary>
-    public static readonly QuantityCode SquareMetreDay = new QuantityCode { Value = "MKD" };
+    public static QuantityCode SquareMetreDay => new() { Value = "MKD" };
 
     /// <summary>
     /// Square Metre Month
     /// </summary>
-    public static readonly QuantityCode SquareMetreMonth = new QuantityCode { Value = "MKM" };
+    public static QuantityCode SquareMetreMonth => new() { Value = "MKM" };
 
     /// <summary>
     /// Square Metre Week
     /// </summary>
-    public static readonly QuantityCode SquareMetreWeek = new QuantityCode { Value = "MKW" };
+    public static QuantityCode SquareMetreWeek => new() { Value = "MKW" };
 
     /// <summary>
     /// milliard
     /// </summary>
-    public static readonly QuantityCode Milliard = new QuantityCode { Value = "MLD" };
+    public static QuantityCode Milliard => new() { Value = "MLD" };
 
     /// <summary>
     /// millilitre
     /// </summary>
-    public static readonly QuantityCode Millilitre = new QuantityCode { Value = "MLT" };
+    public static QuantityCode Millilitre => new() { Value = "MLT" };
 
     /// <summary>
     /// square millimetre
     /// </summary>
-    public static readonly QuantityCode SquareMillimetre = new QuantityCode { Value = "MMK" };
+    public static QuantityCode SquareMillimetre => new() { Value = "MMK" };
 
     /// <summary>
     /// cubic millimetre
     /// </summary>
-    public static readonly QuantityCode CubicMillimetre = new QuantityCode { Value = "MMQ" };
+    public static QuantityCode CubicMillimetre => new() { Value = "MMQ" };
 
     /// <summary>
     /// millimetre
     /// </summary>
-    public static readonly QuantityCode Millimetre = new QuantityCode { Value = "MMT" };
+    public static QuantityCode Millimetre => new() { Value = "MMT" };
 
     /// <summary>
     /// kilogram, dry weight
     /// </summary>
-    public static readonly QuantityCode KilogramDryWeight = new QuantityCode { Value = "MND" };
+    public static QuantityCode KilogramDryWeight => new() { Value = "MND" };
 
     /// <summary>
     /// Mega Joule per Normalised cubic Metre
     /// </summary>
-    public static readonly QuantityCode MegaJoulePerNormalisedCubicMetre = new QuantityCode { Value = "MNJ" };
+    public static QuantityCode MegaJoulePerNormalisedCubicMetre => new() { Value = "MNJ" };
 
     /// <summary>
     /// month
     /// </summary>
-    public static readonly QuantityCode Month = new QuantityCode { Value = "MON" };
+    public static QuantityCode Month => new() { Value = "MON" };
 
     /// <summary>
     /// megapascal
     /// </summary>
-    public static readonly QuantityCode Megapascal = new QuantityCode { Value = "MPA" };
+    public static QuantityCode Megapascal => new() { Value = "MPA" };
 
     /// <summary>
     /// Cubic Metre Day
     /// </summary>
-    public static readonly QuantityCode CubicMetreDay = new QuantityCode { Value = "MQD" };
+    public static QuantityCode CubicMetreDay => new() { Value = "MQD" };
 
     /// <summary>
     /// cubic metre per hour
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerHour = new QuantityCode { Value = "MQH" };
+    public static QuantityCode CubicMetrePerHour => new() { Value = "MQH" };
 
     /// <summary>
     /// Cubic Metre Month
     /// </summary>
-    public static readonly QuantityCode CubicMetreMonth = new QuantityCode { Value = "MQM" };
+    public static QuantityCode CubicMetreMonth => new() { Value = "MQM" };
 
     /// <summary>
     /// cubic metre per second
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerSecond = new QuantityCode { Value = "MQS" };
+    public static QuantityCode CubicMetrePerSecond => new() { Value = "MQS" };
 
     /// <summary>
     /// Cubic Metre Week
     /// </summary>
-    public static readonly QuantityCode CubicMetreWeek = new QuantityCode { Value = "MQW" };
+    public static QuantityCode CubicMetreWeek => new() { Value = "MQW" };
 
     /// <summary>
     /// Metre Day
     /// </summary>
-    public static readonly QuantityCode MetreDay = new QuantityCode { Value = "MRD" };
+    public static QuantityCode MetreDay => new() { Value = "MRD" };
 
     /// <summary>
     /// Metre Month
     /// </summary>
-    public static readonly QuantityCode MetreMonth = new QuantityCode { Value = "MRM" };
+    public static QuantityCode MetreMonth => new() { Value = "MRM" };
 
     /// <summary>
     /// Metre Week
     /// </summary>
-    public static readonly QuantityCode MetreWeek = new QuantityCode { Value = "MRW" };
+    public static QuantityCode MetreWeek => new() { Value = "MRW" };
 
     /// <summary>
     /// metre per second squared
     /// </summary>
-    public static readonly QuantityCode MetrePerSecondSquared = new QuantityCode { Value = "MSK" };
+    public static QuantityCode MetrePerSecondSquared => new() { Value = "MSK" };
 
     /// <summary>
     /// square metre
     /// </summary>
-    public static readonly QuantityCode SquareMetre = new QuantityCode { Value = "MTK" };
+    public static QuantityCode SquareMetre => new() { Value = "MTK" };
 
     /// <summary>
     /// cubic metre
     /// </summary>
-    public static readonly QuantityCode CubicMetre = new QuantityCode { Value = "MTQ" };
+    public static QuantityCode CubicMetre => new() { Value = "MTQ" };
 
     /// <summary>
     /// metre
     /// </summary>
-    public static readonly QuantityCode Metre = new QuantityCode { Value = "MTR" };
+    public static QuantityCode Metre => new() { Value = "MTR" };
 
     /// <summary>
     /// metre per second
     /// </summary>
-    public static readonly QuantityCode MetrePerSecond = new QuantityCode { Value = "MTS" };
+    public static QuantityCode MetrePerSecond => new() { Value = "MTS" };
 
     /// <summary>
     /// millihertz
     /// </summary>
-    public static readonly QuantityCode Millihertz = new QuantityCode { Value = "MTZ" };
+    public static QuantityCode Millihertz => new() { Value = "MTZ" };
 
     /// <summary>
     /// megavolt - ampere
     /// </summary>
-    public static readonly QuantityCode MegavoltAmpere = new QuantityCode { Value = "MVA" };
+    public static QuantityCode MegavoltAmpere => new() { Value = "MVA" };
 
     /// <summary>
     /// megawatt hour (1000 kW.h)
     /// </summary>
-    public static readonly QuantityCode MegawattHour1000KWH = new QuantityCode { Value = "MWH" };
+    public static QuantityCode MegawattHour1000KWH => new() { Value = "MWH" };
 
     /// <summary>
     /// pen calorie
     /// </summary>
-    public static readonly QuantityCode PenCalorie = new QuantityCode { Value = "N1" };
+    public static QuantityCode PenCalorie => new() { Value = "N1" };
 
     /// <summary>
     /// pound foot per second
     /// </summary>
-    public static readonly QuantityCode PoundFootPerSecond = new QuantityCode { Value = "N10" };
+    public static QuantityCode PoundFootPerSecond => new() { Value = "N10" };
 
     /// <summary>
     /// pound inch per second
     /// </summary>
-    public static readonly QuantityCode PoundInchPerSecond = new QuantityCode { Value = "N11" };
+    public static QuantityCode PoundInchPerSecond => new() { Value = "N11" };
 
     /// <summary>
     /// Pferdestaerke
     /// </summary>
-    public static readonly QuantityCode Pferdestaerke = new QuantityCode { Value = "N12" };
+    public static QuantityCode Pferdestaerke => new() { Value = "N12" };
 
     /// <summary>
     /// centimetre of mercury (0 ºC)
     /// </summary>
-    public static readonly QuantityCode CentimetreOfMercury0C = new QuantityCode { Value = "N13" };
+    public static QuantityCode CentimetreOfMercury0C => new() { Value = "N13" };
 
     /// <summary>
     /// centimetre of water (4 ºC)
     /// </summary>
-    public static readonly QuantityCode CentimetreOfWater4C = new QuantityCode { Value = "N14" };
+    public static QuantityCode CentimetreOfWater4C => new() { Value = "N14" };
 
     /// <summary>
     /// foot of water (39.2 ºF)
     /// </summary>
-    public static readonly QuantityCode FootOfWater392F = new QuantityCode { Value = "N15" };
+    public static QuantityCode FootOfWater392F => new() { Value = "N15" };
 
     /// <summary>
     /// inch of mercury (32 ºF)
     /// </summary>
-    public static readonly QuantityCode InchOfMercury32F = new QuantityCode { Value = "N16" };
+    public static QuantityCode InchOfMercury32F => new() { Value = "N16" };
 
     /// <summary>
     /// inch of mercury (60 ºF)
     /// </summary>
-    public static readonly QuantityCode InchOfMercury60F = new QuantityCode { Value = "N17" };
+    public static QuantityCode InchOfMercury60F => new() { Value = "N17" };
 
     /// <summary>
     /// inch of water (39.2 ºF)
     /// </summary>
-    public static readonly QuantityCode InchOfWater392F = new QuantityCode { Value = "N18" };
+    public static QuantityCode InchOfWater392F => new() { Value = "N18" };
 
     /// <summary>
     /// inch of water (60 ºF)
     /// </summary>
-    public static readonly QuantityCode InchOfWater60F = new QuantityCode { Value = "N19" };
+    public static QuantityCode InchOfWater60F => new() { Value = "N19" };
 
     /// <summary>
     /// kip per square inch
     /// </summary>
-    public static readonly QuantityCode KipPerSquareInch = new QuantityCode { Value = "N20" };
+    public static QuantityCode KipPerSquareInch => new() { Value = "N20" };
 
     /// <summary>
     /// poundal per square foot
     /// </summary>
-    public static readonly QuantityCode PoundalPerSquareFoot = new QuantityCode { Value = "N21" };
+    public static QuantityCode PoundalPerSquareFoot => new() { Value = "N21" };
 
     /// <summary>
     /// ounce (avoirdupois) per square inch
     /// </summary>
-    public static readonly QuantityCode OunceAvoirdupoisPerSquareInch = new QuantityCode { Value = "N22" };
+    public static QuantityCode OunceAvoirdupoisPerSquareInch => new() { Value = "N22" };
 
     /// <summary>
     /// conventional metre of water
     /// </summary>
-    public static readonly QuantityCode ConventionalMetreOfWater = new QuantityCode { Value = "N23" };
+    public static QuantityCode ConventionalMetreOfWater => new() { Value = "N23" };
 
     /// <summary>
     /// gram per square millimetre
     /// </summary>
-    public static readonly QuantityCode GramPerSquareMillimetre = new QuantityCode { Value = "N24" };
+    public static QuantityCode GramPerSquareMillimetre => new() { Value = "N24" };
 
     /// <summary>
     /// pound per square yard
     /// </summary>
-    public static readonly QuantityCode PoundPerSquareYard = new QuantityCode { Value = "N25" };
+    public static QuantityCode PoundPerSquareYard => new() { Value = "N25" };
 
     /// <summary>
     /// poundal per square inch
     /// </summary>
-    public static readonly QuantityCode PoundalPerSquareInch = new QuantityCode { Value = "N26" };
+    public static QuantityCode PoundalPerSquareInch => new() { Value = "N26" };
 
     /// <summary>
     /// foot to the fourth power
     /// </summary>
-    public static readonly QuantityCode FootToTheFourthPower = new QuantityCode { Value = "N27" };
+    public static QuantityCode FootToTheFourthPower => new() { Value = "N27" };
 
     /// <summary>
     /// cubic decimetre per kilogram
     /// </summary>
-    public static readonly QuantityCode CubicDecimetrePerKilogram = new QuantityCode { Value = "N28" };
+    public static QuantityCode CubicDecimetrePerKilogram => new() { Value = "N28" };
 
     /// <summary>
     /// cubic foot per pound
     /// </summary>
-    public static readonly QuantityCode CubicFootPerPound = new QuantityCode { Value = "N29" };
+    public static QuantityCode CubicFootPerPound => new() { Value = "N29" };
 
     /// <summary>
     /// print point
     /// </summary>
-    public static readonly QuantityCode PrintPoint = new QuantityCode { Value = "N3" };
+    public static QuantityCode PrintPoint => new() { Value = "N3" };
 
     /// <summary>
     /// cubic inch per pound
     /// </summary>
-    public static readonly QuantityCode CubicInchPerPound = new QuantityCode { Value = "N30" };
+    public static QuantityCode CubicInchPerPound => new() { Value = "N30" };
 
     /// <summary>
     /// kilonewton per metre
     /// </summary>
-    public static readonly QuantityCode KilonewtonPerMetre = new QuantityCode { Value = "N31" };
+    public static QuantityCode KilonewtonPerMetre => new() { Value = "N31" };
 
     /// <summary>
     /// poundal per inch
     /// </summary>
-    public static readonly QuantityCode PoundalPerInch = new QuantityCode { Value = "N32" };
+    public static QuantityCode PoundalPerInch => new() { Value = "N32" };
 
     /// <summary>
     /// pound-force per yard
     /// </summary>
-    public static readonly QuantityCode PoundForcePerYard = new QuantityCode { Value = "N33" };
+    public static QuantityCode PoundForcePerYard => new() { Value = "N33" };
 
     /// <summary>
     /// poundal second per square foot
     /// </summary>
-    public static readonly QuantityCode PoundalSecondPerSquareFoot = new QuantityCode { Value = "N34" };
+    public static QuantityCode PoundalSecondPerSquareFoot => new() { Value = "N34" };
 
     /// <summary>
     /// poise per pascal
     /// </summary>
-    public static readonly QuantityCode PoisePerPascal = new QuantityCode { Value = "N35" };
+    public static QuantityCode PoisePerPascal => new() { Value = "N35" };
 
     /// <summary>
     /// newton second per square metre
     /// </summary>
-    public static readonly QuantityCode NewtonSecondPerSquareMetre = new QuantityCode { Value = "N36" };
+    public static QuantityCode NewtonSecondPerSquareMetre => new() { Value = "N36" };
 
     /// <summary>
     /// kilogram per metre second
     /// </summary>
-    public static readonly QuantityCode KilogramPerMetreSecond = new QuantityCode { Value = "N37" };
+    public static QuantityCode KilogramPerMetreSecond => new() { Value = "N37" };
 
     /// <summary>
     /// kilogram per metre minute
     /// </summary>
-    public static readonly QuantityCode KilogramPerMetreMinute = new QuantityCode { Value = "N38" };
+    public static QuantityCode KilogramPerMetreMinute => new() { Value = "N38" };
 
     /// <summary>
     /// kilogram per metre day
     /// </summary>
-    public static readonly QuantityCode KilogramPerMetreDay = new QuantityCode { Value = "N39" };
+    public static QuantityCode KilogramPerMetreDay => new() { Value = "N39" };
 
     /// <summary>
     /// kilogram per metre hour
     /// </summary>
-    public static readonly QuantityCode KilogramPerMetreHour = new QuantityCode { Value = "N40" };
+    public static QuantityCode KilogramPerMetreHour => new() { Value = "N40" };
 
     /// <summary>
     /// gram per centimetre second
     /// </summary>
-    public static readonly QuantityCode GramPerCentimetreSecond = new QuantityCode { Value = "N41" };
+    public static QuantityCode GramPerCentimetreSecond => new() { Value = "N41" };
 
     /// <summary>
     /// poundal second per square inch
     /// </summary>
-    public static readonly QuantityCode PoundalSecondPerSquareInch = new QuantityCode { Value = "N42" };
+    public static QuantityCode PoundalSecondPerSquareInch => new() { Value = "N42" };
 
     /// <summary>
     /// pound per foot minute
     /// </summary>
-    public static readonly QuantityCode PoundPerFootMinute = new QuantityCode { Value = "N43" };
+    public static QuantityCode PoundPerFootMinute => new() { Value = "N43" };
 
     /// <summary>
     /// pound per foot day
     /// </summary>
-    public static readonly QuantityCode PoundPerFootDay = new QuantityCode { Value = "N44" };
+    public static QuantityCode PoundPerFootDay => new() { Value = "N44" };
 
     /// <summary>
     /// cubic metre per second pascal
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerSecondPascal = new QuantityCode { Value = "N45" };
+    public static QuantityCode CubicMetrePerSecondPascal => new() { Value = "N45" };
 
     /// <summary>
     /// foot poundal
     /// </summary>
-    public static readonly QuantityCode FootPoundal = new QuantityCode { Value = "N46" };
+    public static QuantityCode FootPoundal => new() { Value = "N46" };
 
     /// <summary>
     /// inch poundal
     /// </summary>
-    public static readonly QuantityCode InchPoundal = new QuantityCode { Value = "N47" };
+    public static QuantityCode InchPoundal => new() { Value = "N47" };
 
     /// <summary>
     /// watt per square centimetre
     /// </summary>
-    public static readonly QuantityCode WattPerSquareCentimetre = new QuantityCode { Value = "N48" };
+    public static QuantityCode WattPerSquareCentimetre => new() { Value = "N48" };
 
     /// <summary>
     /// watt per square inch
     /// </summary>
-    public static readonly QuantityCode WattPerSquareInch = new QuantityCode { Value = "N49" };
+    public static QuantityCode WattPerSquareInch => new() { Value = "N49" };
 
     /// <summary>
     /// British thermal unit (international table) per square foot hour
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerSquareFootHour = new QuantityCode { Value = "N50" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerSquareFootHour => new() { Value = "N50" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per square foot hour
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerSquareFootHour = new QuantityCode { Value = "N51" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerSquareFootHour => new() { Value = "N51" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per square foot minute
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerSquareFootMinute = new QuantityCode { Value = "N52" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerSquareFootMinute => new() { Value = "N52" };
 
     /// <summary>
     /// British thermal unit (international table) per square foot second
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerSquareFootSecond = new QuantityCode { Value = "N53" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerSquareFootSecond => new() { Value = "N53" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per square foot second
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerSquareFootSecond = new QuantityCode { Value = "N54" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerSquareFootSecond => new() { Value = "N54" };
 
     /// <summary>
     /// British thermal unit (international table) per square inch second
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerSquareInchSecond = new QuantityCode { Value = "N55" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerSquareInchSecond => new() { Value = "N55" };
 
     /// <summary>
     /// calorie (thermochemical) per square centimetre minute
     /// </summary>
-    public static readonly QuantityCode CalorieThermochemicalPerSquareCentimetreMinute = new QuantityCode { Value = "N56" };
+    public static QuantityCode CalorieThermochemicalPerSquareCentimetreMinute => new() { Value = "N56" };
 
     /// <summary>
     /// calorie (thermochemical) per square centimetre second
     /// </summary>
-    public static readonly QuantityCode CalorieThermochemicalPerSquareCentimetreSecond = new QuantityCode { Value = "N57" };
+    public static QuantityCode CalorieThermochemicalPerSquareCentimetreSecond => new() { Value = "N57" };
 
     /// <summary>
     /// British thermal unit (international table) per cubic foot
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerCubicFoot = new QuantityCode { Value = "N58" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerCubicFoot => new() { Value = "N58" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per cubic foot
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerCubicFoot = new QuantityCode { Value = "N59" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerCubicFoot => new() { Value = "N59" };
 
     /// <summary>
     /// British thermal unit (international table) per degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerDegreeFahrenheit = new QuantityCode { Value = "N60" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerDegreeFahrenheit => new() { Value = "N60" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerDegreeFahrenheit = new QuantityCode { Value = "N61" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerDegreeFahrenheit => new() { Value = "N61" };
 
     /// <summary>
     /// British thermal unit (international table) per degree Rankine
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerDegreeRankine = new QuantityCode { Value = "N62" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerDegreeRankine => new() { Value = "N62" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per degree Rankine
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerDegreeRankine = new QuantityCode { Value = "N63" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerDegreeRankine => new() { Value = "N63" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per pound degree Rankine
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerPoundDegreeRankine = new QuantityCode { Value = "N64" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerPoundDegreeRankine => new() { Value = "N64" };
 
     /// <summary>
     /// kilocalorie (international table) per gram kelvin
     /// </summary>
-    public static readonly QuantityCode KilocalorieInternationalTablePerGramKelvin = new QuantityCode { Value = "N65" };
+    public static QuantityCode KilocalorieInternationalTablePerGramKelvin => new() { Value = "N65" };
 
     /// <summary>
     /// British thermal unit (39 ºF)
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnit39F = new QuantityCode { Value = "N66" };
+    public static QuantityCode BritishThermalUnit39F => new() { Value = "N66" };
 
     /// <summary>
     /// British thermal unit (59 ºF)
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnit59F = new QuantityCode { Value = "N67" };
+    public static QuantityCode BritishThermalUnit59F => new() { Value = "N67" };
 
     /// <summary>
     /// British thermal unit (60 ºF)
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnit60F = new QuantityCode { Value = "N68" };
+    public static QuantityCode BritishThermalUnit60F => new() { Value = "N68" };
 
     /// <summary>
     /// calorie (20 ºC)
     /// </summary>
-    public static readonly QuantityCode Calorie20C = new QuantityCode { Value = "N69" };
+    public static QuantityCode Calorie20C => new() { Value = "N69" };
 
     /// <summary>
     /// quad (1015 BtuIT)
     /// </summary>
-    public static readonly QuantityCode Quad1015BtuIT = new QuantityCode { Value = "N70" };
+    public static QuantityCode Quad1015BtuIT => new() { Value = "N70" };
 
     /// <summary>
     /// therm (EC)
     /// </summary>
-    public static readonly QuantityCode ThermEC = new QuantityCode { Value = "N71" };
+    public static QuantityCode ThermEC => new() { Value = "N71" };
 
     /// <summary>
     /// therm (U.S.)
     /// </summary>
-    public static readonly QuantityCode ThermUS = new QuantityCode { Value = "N72" };
+    public static QuantityCode ThermUS => new() { Value = "N72" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per pound
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerPound = new QuantityCode { Value = "N73" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerPound => new() { Value = "N73" };
 
     /// <summary>
     /// British thermal unit (international table) per hour square foot degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerHourSquareFootDegreeFahrenheit = new QuantityCode { Value = "N74" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerHourSquareFootDegreeFahrenheit => new() { Value = "N74" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per hour square foot degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerHourSquareFootDegreeFahrenheit = new QuantityCode { Value = "N75" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerHourSquareFootDegreeFahrenheit => new() { Value = "N75" };
 
     /// <summary>
     /// British thermal unit (international table) per second square foot degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerSecondSquareFootDegreeFahrenheit = new QuantityCode { Value = "N76" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerSecondSquareFootDegreeFahrenheit => new() { Value = "N76" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per second square foot degree Fahrenheit
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerSecondSquareFootDegreeFahrenheit = new QuantityCode { Value = "N77" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerSecondSquareFootDegreeFahrenheit => new() { Value = "N77" };
 
     /// <summary>
     /// kilowatt per square metre kelvin
     /// </summary>
-    public static readonly QuantityCode KilowattPerSquareMetreKelvin = new QuantityCode { Value = "N78" };
+    public static QuantityCode KilowattPerSquareMetreKelvin => new() { Value = "N78" };
 
     /// <summary>
     /// kelvin per pascal
     /// </summary>
-    public static readonly QuantityCode KelvinPerPascal = new QuantityCode { Value = "N79" };
+    public static QuantityCode KelvinPerPascal => new() { Value = "N79" };
 
     /// <summary>
     /// watt per metre degree Celsius
     /// </summary>
-    public static readonly QuantityCode WattPerMetreDegreeCelsius = new QuantityCode { Value = "N80" };
+    public static QuantityCode WattPerMetreDegreeCelsius => new() { Value = "N80" };
 
     /// <summary>
     /// kilowatt per metre kelvin
     /// </summary>
-    public static readonly QuantityCode KilowattPerMetreKelvin = new QuantityCode { Value = "N81" };
+    public static QuantityCode KilowattPerMetreKelvin => new() { Value = "N81" };
 
     /// <summary>
     /// kilowatt per metre degree Celsius
     /// </summary>
-    public static readonly QuantityCode KilowattPerMetreDegreeCelsius = new QuantityCode { Value = "N82" };
+    public static QuantityCode KilowattPerMetreDegreeCelsius => new() { Value = "N82" };
 
     /// <summary>
     /// metre per degree Celcius metre
     /// </summary>
-    public static readonly QuantityCode MetrePerDegreeCelciusMetre = new QuantityCode { Value = "N83" };
+    public static QuantityCode MetrePerDegreeCelciusMetre => new() { Value = "N83" };
 
     /// <summary>
     /// degree Fahrenheit hour per British thermal unit (international table)
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitHourPerBritishThermalUnitInternationalTable = new QuantityCode { Value = "N84" };
+    public static QuantityCode DegreeFahrenheitHourPerBritishThermalUnitInternationalTable => new() { Value = "N84" };
 
     /// <summary>
     /// degree Fahrenheit hour per British thermal unit (thermochemical)
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitHourPerBritishThermalUnitThermochemical = new QuantityCode { Value = "N85" };
+    public static QuantityCode DegreeFahrenheitHourPerBritishThermalUnitThermochemical => new() { Value = "N85" };
 
     /// <summary>
     /// degree Fahrenheit second per British thermal unit (international table)
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitSecondPerBritishThermalUnitInternationalTable = new QuantityCode { Value = "N86" };
+    public static QuantityCode DegreeFahrenheitSecondPerBritishThermalUnitInternationalTable => new() { Value = "N86" };
 
     /// <summary>
     /// degree Fahrenheit second per British thermal unit (thermochemical)
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitSecondPerBritishThermalUnitThermochemical = new QuantityCode { Value = "N87" };
+    public static QuantityCode DegreeFahrenheitSecondPerBritishThermalUnitThermochemical => new() { Value = "N87" };
 
     /// <summary>
     /// degree Fahrenheit hour square foot per British thermal unit (international table) inch
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitHourSquareFootPerBritishThermalUnitInternationalTableInch = new QuantityCode { Value = "N88" };
+    public static QuantityCode DegreeFahrenheitHourSquareFootPerBritishThermalUnitInternationalTableInch => new() { Value = "N88" };
 
     /// <summary>
     /// degree Fahrenheit hour square foot per British thermal unit (thermochemical) inch
     /// </summary>
-    public static readonly QuantityCode DegreeFahrenheitHourSquareFootPerBritishThermalUnitThermochemicalInch = new QuantityCode { Value = "N89" };
+    public static QuantityCode DegreeFahrenheitHourSquareFootPerBritishThermalUnitThermochemicalInch => new() { Value = "N89" };
 
     /// <summary>
     /// kilofarad
     /// </summary>
-    public static readonly QuantityCode Kilofarad = new QuantityCode { Value = "N90" };
+    public static QuantityCode Kilofarad => new() { Value = "N90" };
 
     /// <summary>
     /// reciprocal joule
     /// </summary>
-    public static readonly QuantityCode ReciprocalJoule = new QuantityCode { Value = "N91" };
+    public static QuantityCode ReciprocalJoule => new() { Value = "N91" };
 
     /// <summary>
     /// picosiemens
     /// </summary>
-    public static readonly QuantityCode Picosiemens = new QuantityCode { Value = "N92" };
+    public static QuantityCode Picosiemens => new() { Value = "N92" };
 
     /// <summary>
     /// ampere per pascal
     /// </summary>
-    public static readonly QuantityCode AmperePerPascal = new QuantityCode { Value = "N93" };
+    public static QuantityCode AmperePerPascal => new() { Value = "N93" };
 
     /// <summary>
     /// franklin
     /// </summary>
-    public static readonly QuantityCode Franklin = new QuantityCode { Value = "N94" };
+    public static QuantityCode Franklin => new() { Value = "N94" };
 
     /// <summary>
     /// ampere minute
     /// </summary>
-    public static readonly QuantityCode AmpereMinute = new QuantityCode { Value = "N95" };
+    public static QuantityCode AmpereMinute => new() { Value = "N95" };
 
     /// <summary>
     /// biot
     /// </summary>
-    public static readonly QuantityCode Biot = new QuantityCode { Value = "N96" };
+    public static QuantityCode Biot => new() { Value = "N96" };
 
     /// <summary>
     /// gilbert
     /// </summary>
-    public static readonly QuantityCode Gilbert = new QuantityCode { Value = "N97" };
+    public static QuantityCode Gilbert => new() { Value = "N97" };
 
     /// <summary>
     /// volt per pascal
     /// </summary>
-    public static readonly QuantityCode VoltPerPascal = new QuantityCode { Value = "N98" };
+    public static QuantityCode VoltPerPascal => new() { Value = "N98" };
 
     /// <summary>
     /// picovolt
     /// </summary>
-    public static readonly QuantityCode Picovolt = new QuantityCode { Value = "N99" };
+    public static QuantityCode Picovolt => new() { Value = "N99" };
 
     /// <summary>
     /// milligram per kilogram
     /// </summary>
-    public static readonly QuantityCode MilligramPerKilogram = new QuantityCode { Value = "NA" };
+    public static QuantityCode MilligramPerKilogram => new() { Value = "NA" };
 
     /// <summary>
     /// number of articles
     /// </summary>
-    public static readonly QuantityCode NumberOfArticles = new QuantityCode { Value = "NAR" };
+    public static QuantityCode NumberOfArticles => new() { Value = "NAR" };
 
     /// <summary>
     /// number of cells
     /// </summary>
-    public static readonly QuantityCode NumberOfCells = new QuantityCode { Value = "NCL" };
+    public static QuantityCode NumberOfCells => new() { Value = "NCL" };
 
     /// <summary>
     /// newton
     /// </summary>
-    public static readonly QuantityCode Newton = new QuantityCode { Value = "NEW" };
+    public static QuantityCode Newton => new() { Value = "NEW" };
 
     /// <summary>
     /// message
     /// </summary>
-    public static readonly QuantityCode Message = new QuantityCode { Value = "NF" };
+    public static QuantityCode Message => new() { Value = "NF" };
 
     /// <summary>
     /// nil
     /// </summary>
-    public static readonly QuantityCode Nil = new QuantityCode { Value = "NIL" };
+    public static QuantityCode Nil => new() { Value = "NIL" };
 
     /// <summary>
     /// number of international units
     /// </summary>
-    public static readonly QuantityCode NumberOfInternationalUnits = new QuantityCode { Value = "NIU" };
+    public static QuantityCode NumberOfInternationalUnits => new() { Value = "NIU" };
 
     /// <summary>
     /// load
     /// </summary>
-    public static readonly QuantityCode Load = new QuantityCode { Value = "NL" };
+    public static QuantityCode Load => new() { Value = "NL" };
 
     /// <summary>
     /// Normalised cubic metre
     /// </summary>
-    public static readonly QuantityCode NormalisedCubicMetre = new QuantityCode { Value = "NM3" };
+    public static QuantityCode NormalisedCubicMetre => new() { Value = "NM3" };
 
     /// <summary>
     /// nautical mile
     /// </summary>
-    public static readonly QuantityCode NauticalMile = new QuantityCode { Value = "NMI" };
+    public static QuantityCode NauticalMile => new() { Value = "NMI" };
 
     /// <summary>
     /// number of packs
     /// </summary>
-    public static readonly QuantityCode NumberOfPacks = new QuantityCode { Value = "NMP" };
+    public static QuantityCode NumberOfPacks => new() { Value = "NMP" };
 
     /// <summary>
     /// number of parts
     /// </summary>
-    public static readonly QuantityCode NumberOfParts = new QuantityCode { Value = "NPT" };
+    public static QuantityCode NumberOfParts => new() { Value = "NPT" };
 
     /// <summary>
     /// net ton
     /// </summary>
-    public static readonly QuantityCode NetTon = new QuantityCode { Value = "NT" };
+    public static QuantityCode NetTon => new() { Value = "NT" };
 
     /// <summary>
     /// Nephelometric turbidity unit
     /// </summary>
-    public static readonly QuantityCode NephelometricTurbidityUnit = new QuantityCode { Value = "NTU" };
+    public static QuantityCode NephelometricTurbidityUnit => new() { Value = "NTU" };
 
     /// <summary>
     /// newton metre
     /// </summary>
-    public static readonly QuantityCode NewtonMetre = new QuantityCode { Value = "NU" };
+    public static QuantityCode NewtonMetre => new() { Value = "NU" };
 
     /// <summary>
     /// part per thousand
     /// </summary>
-    public static readonly QuantityCode PartPerThousand = new QuantityCode { Value = "NX" };
+    public static QuantityCode PartPerThousand => new() { Value = "NX" };
 
     /// <summary>
     /// panel
     /// </summary>
-    public static readonly QuantityCode Panel = new QuantityCode { Value = "OA" };
+    public static QuantityCode Panel => new() { Value = "OA" };
 
     /// <summary>
     /// ozone depletion equivalent
     /// </summary>
-    public static readonly QuantityCode OzoneDepletionEquivalent = new QuantityCode { Value = "ODE" };
+    public static QuantityCode OzoneDepletionEquivalent => new() { Value = "ODE" };
 
     /// <summary>
     /// ODS Grams
     /// </summary>
-    public static readonly QuantityCode ODSGrams = new QuantityCode { Value = "ODG" };
+    public static QuantityCode ODSGrams => new() { Value = "ODG" };
 
     /// <summary>
     /// ODS Kilograms
     /// </summary>
-    public static readonly QuantityCode ODSKilograms = new QuantityCode { Value = "ODK" };
+    public static QuantityCode ODSKilograms => new() { Value = "ODK" };
 
     /// <summary>
     /// ODS Milligrams
     /// </summary>
-    public static readonly QuantityCode ODSMilligrams = new QuantityCode { Value = "ODM" };
+    public static QuantityCode ODSMilligrams => new() { Value = "ODM" };
 
     /// <summary>
     /// ohm
     /// </summary>
-    public static readonly QuantityCode Ohm = new QuantityCode { Value = "OHM" };
+    public static QuantityCode Ohm => new() { Value = "OHM" };
 
     /// <summary>
     /// ounce per square yard
     /// </summary>
-    public static readonly QuantityCode OuncePerSquareYard = new QuantityCode { Value = "ON" };
+    public static QuantityCode OuncePerSquareYard => new() { Value = "ON" };
 
     /// <summary>
     /// ounce (avoirdupois)
     /// </summary>
-    public static readonly QuantityCode OunceAvoirdupois = new QuantityCode { Value = "ONZ" };
+    public static QuantityCode OunceAvoirdupois => new() { Value = "ONZ" };
 
     /// <summary>
     /// oscillations per minute
     /// </summary>
-    public static readonly QuantityCode OscillationsPerMinute = new QuantityCode { Value = "OPM" };
+    public static QuantityCode OscillationsPerMinute => new() { Value = "OPM" };
 
     /// <summary>
     /// overtime hour
     /// </summary>
-    public static readonly QuantityCode OvertimeHour = new QuantityCode { Value = "OT" };
+    public static QuantityCode OvertimeHour => new() { Value = "OT" };
 
     /// <summary>
     /// fluid ounce (US)
     /// </summary>
-    public static readonly QuantityCode FluidOunceUS = new QuantityCode { Value = "OZA" };
+    public static QuantityCode FluidOunceUS => new() { Value = "OZA" };
 
     /// <summary>
     /// fluid ounce (UK)
     /// </summary>
-    public static readonly QuantityCode FluidOunceUK = new QuantityCode { Value = "OZI" };
+    public static QuantityCode FluidOunceUK => new() { Value = "OZI" };
 
     /// <summary>
     /// percent
     /// </summary>
-    public static readonly QuantityCode Percent = new QuantityCode { Value = "P1" };
+    public static QuantityCode Percent => new() { Value = "P1" };
 
     /// <summary>
     /// coulomb per metre
     /// </summary>
-    public static readonly QuantityCode CoulombPerMetre = new QuantityCode { Value = "P10" };
+    public static QuantityCode CoulombPerMetre => new() { Value = "P10" };
 
     /// <summary>
     /// kiloweber
     /// </summary>
-    public static readonly QuantityCode Kiloweber = new QuantityCode { Value = "P11" };
+    public static QuantityCode Kiloweber => new() { Value = "P11" };
 
     /// <summary>
     /// gamma
     /// </summary>
-    public static readonly QuantityCode Gamma = new QuantityCode { Value = "P12" };
+    public static QuantityCode Gamma => new() { Value = "P12" };
 
     /// <summary>
     /// kilotesla
     /// </summary>
-    public static readonly QuantityCode Kilotesla = new QuantityCode { Value = "P13" };
+    public static QuantityCode Kilotesla => new() { Value = "P13" };
 
     /// <summary>
     /// joule per second
     /// </summary>
-    public static readonly QuantityCode JoulePerSecond = new QuantityCode { Value = "P14" };
+    public static QuantityCode JoulePerSecond => new() { Value = "P14" };
 
     /// <summary>
     /// joule per minute
     /// </summary>
-    public static readonly QuantityCode JoulePerMinute = new QuantityCode { Value = "P15" };
+    public static QuantityCode JoulePerMinute => new() { Value = "P15" };
 
     /// <summary>
     /// joule per hour
     /// </summary>
-    public static readonly QuantityCode JoulePerHour = new QuantityCode { Value = "P16" };
+    public static QuantityCode JoulePerHour => new() { Value = "P16" };
 
     /// <summary>
     /// joule per day
     /// </summary>
-    public static readonly QuantityCode JoulePerDay = new QuantityCode { Value = "P17" };
+    public static QuantityCode JoulePerDay => new() { Value = "P17" };
 
     /// <summary>
     /// kilojoule per second
     /// </summary>
-    public static readonly QuantityCode KilojoulePerSecond = new QuantityCode { Value = "P18" };
+    public static QuantityCode KilojoulePerSecond => new() { Value = "P18" };
 
     /// <summary>
     /// kilojoule per minute
     /// </summary>
-    public static readonly QuantityCode KilojoulePerMinute = new QuantityCode { Value = "P19" };
+    public static QuantityCode KilojoulePerMinute => new() { Value = "P19" };
 
     /// <summary>
     /// pound per foot
     /// </summary>
-    public static readonly QuantityCode PoundPerFoot = new QuantityCode { Value = "P2" };
+    public static QuantityCode PoundPerFoot => new() { Value = "P2" };
 
     /// <summary>
     /// kilojoule per hour
     /// </summary>
-    public static readonly QuantityCode KilojoulePerHour = new QuantityCode { Value = "P20" };
+    public static QuantityCode KilojoulePerHour => new() { Value = "P20" };
 
     /// <summary>
     /// kilojoule per day
     /// </summary>
-    public static readonly QuantityCode KilojoulePerDay = new QuantityCode { Value = "P21" };
+    public static QuantityCode KilojoulePerDay => new() { Value = "P21" };
 
     /// <summary>
     /// nanoohm
     /// </summary>
-    public static readonly QuantityCode Nanoohm = new QuantityCode { Value = "P22" };
+    public static QuantityCode Nanoohm => new() { Value = "P22" };
 
     /// <summary>
     /// ohm circular-mil per foot
     /// </summary>
-    public static readonly QuantityCode OhmCircularMilPerFoot = new QuantityCode { Value = "P23" };
+    public static QuantityCode OhmCircularMilPerFoot => new() { Value = "P23" };
 
     /// <summary>
     /// kilohenry
     /// </summary>
-    public static readonly QuantityCode Kilohenry = new QuantityCode { Value = "P24" };
+    public static QuantityCode Kilohenry => new() { Value = "P24" };
 
     /// <summary>
     /// lumen per square foot
     /// </summary>
-    public static readonly QuantityCode LumenPerSquareFoot = new QuantityCode { Value = "P25" };
+    public static QuantityCode LumenPerSquareFoot => new() { Value = "P25" };
 
     /// <summary>
     /// phot
     /// </summary>
-    public static readonly QuantityCode Phot = new QuantityCode { Value = "P26" };
+    public static QuantityCode Phot => new() { Value = "P26" };
 
     /// <summary>
     /// footcandle
     /// </summary>
-    public static readonly QuantityCode Footcandle = new QuantityCode { Value = "P27" };
+    public static QuantityCode Footcandle => new() { Value = "P27" };
 
     /// <summary>
     /// candela per square inch
     /// </summary>
-    public static readonly QuantityCode CandelaPerSquareInch = new QuantityCode { Value = "P28" };
+    public static QuantityCode CandelaPerSquareInch => new() { Value = "P28" };
 
     /// <summary>
     /// footlambert
     /// </summary>
-    public static readonly QuantityCode Footlambert = new QuantityCode { Value = "P29" };
+    public static QuantityCode Footlambert => new() { Value = "P29" };
 
     /// <summary>
     /// lambert
     /// </summary>
-    public static readonly QuantityCode Lambert = new QuantityCode { Value = "P30" };
+    public static QuantityCode Lambert => new() { Value = "P30" };
 
     /// <summary>
     /// stilb
     /// </summary>
-    public static readonly QuantityCode Stilb = new QuantityCode { Value = "P31" };
+    public static QuantityCode Stilb => new() { Value = "P31" };
 
     /// <summary>
     /// candela per square foot
     /// </summary>
-    public static readonly QuantityCode CandelaPerSquareFoot = new QuantityCode { Value = "P32" };
+    public static QuantityCode CandelaPerSquareFoot => new() { Value = "P32" };
 
     /// <summary>
     /// kilocandela
     /// </summary>
-    public static readonly QuantityCode Kilocandela = new QuantityCode { Value = "P33" };
+    public static QuantityCode Kilocandela => new() { Value = "P33" };
 
     /// <summary>
     /// millicandela
     /// </summary>
-    public static readonly QuantityCode Millicandela = new QuantityCode { Value = "P34" };
+    public static QuantityCode Millicandela => new() { Value = "P34" };
 
     /// <summary>
     /// Hefner-Kerze
     /// </summary>
-    public static readonly QuantityCode HefnerKerze = new QuantityCode { Value = "P35" };
+    public static QuantityCode HefnerKerze => new() { Value = "P35" };
 
     /// <summary>
     /// international candle
     /// </summary>
-    public static readonly QuantityCode InternationalCandle = new QuantityCode { Value = "P36" };
+    public static QuantityCode InternationalCandle => new() { Value = "P36" };
 
     /// <summary>
     /// British thermal unit (international table) per square foot
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitInternationalTablePerSquareFoot = new QuantityCode { Value = "P37" };
+    public static QuantityCode BritishThermalUnitInternationalTablePerSquareFoot => new() { Value = "P37" };
 
     /// <summary>
     /// British thermal unit (thermochemical) per square foot
     /// </summary>
-    public static readonly QuantityCode BritishThermalUnitThermochemicalPerSquareFoot = new QuantityCode { Value = "P38" };
+    public static QuantityCode BritishThermalUnitThermochemicalPerSquareFoot => new() { Value = "P38" };
 
     /// <summary>
     /// calorie (thermochemical) per square centimetre
     /// </summary>
-    public static readonly QuantityCode CalorieThermochemicalPerSquareCentimetre = new QuantityCode { Value = "P39" };
+    public static QuantityCode CalorieThermochemicalPerSquareCentimetre => new() { Value = "P39" };
 
     /// <summary>
     /// langley
     /// </summary>
-    public static readonly QuantityCode Langley = new QuantityCode { Value = "P40" };
+    public static QuantityCode Langley => new() { Value = "P40" };
 
     /// <summary>
     /// decade (logarithmic)
     /// </summary>
-    public static readonly QuantityCode DecadeLogarithmic = new QuantityCode { Value = "P41" };
+    public static QuantityCode DecadeLogarithmic => new() { Value = "P41" };
 
     /// <summary>
     /// pascal squared second
     /// </summary>
-    public static readonly QuantityCode PascalSquaredSecond = new QuantityCode { Value = "P42" };
+    public static QuantityCode PascalSquaredSecond => new() { Value = "P42" };
 
     /// <summary>
     /// bel per metre
     /// </summary>
-    public static readonly QuantityCode BelPerMetre = new QuantityCode { Value = "P43" };
+    public static QuantityCode BelPerMetre => new() { Value = "P43" };
 
     /// <summary>
     /// pound mole
     /// </summary>
-    public static readonly QuantityCode PoundMole = new QuantityCode { Value = "P44" };
+    public static QuantityCode PoundMole => new() { Value = "P44" };
 
     /// <summary>
     /// pound mole per second
     /// </summary>
-    public static readonly QuantityCode PoundMolePerSecond = new QuantityCode { Value = "P45" };
+    public static QuantityCode PoundMolePerSecond => new() { Value = "P45" };
 
     /// <summary>
     /// pound mole per minute
     /// </summary>
-    public static readonly QuantityCode PoundMolePerMinute = new QuantityCode { Value = "P46" };
+    public static QuantityCode PoundMolePerMinute => new() { Value = "P46" };
 
     /// <summary>
     /// kilomole per kilogram
     /// </summary>
-    public static readonly QuantityCode KilomolePerKilogram = new QuantityCode { Value = "P47" };
+    public static QuantityCode KilomolePerKilogram => new() { Value = "P47" };
 
     /// <summary>
     /// pound mole per pound
     /// </summary>
-    public static readonly QuantityCode PoundMolePerPound = new QuantityCode { Value = "P48" };
+    public static QuantityCode PoundMolePerPound => new() { Value = "P48" };
 
     /// <summary>
     /// newton square metre per ampere
     /// </summary>
-    public static readonly QuantityCode NewtonSquareMetrePerAmpere = new QuantityCode { Value = "P49" };
+    public static QuantityCode NewtonSquareMetrePerAmpere => new() { Value = "P49" };
 
     /// <summary>
     /// five pack
     /// </summary>
-    public static readonly QuantityCode FivePack = new QuantityCode { Value = "P5" };
+    public static QuantityCode FivePack => new() { Value = "P5" };
 
     /// <summary>
     /// weber metre
     /// </summary>
-    public static readonly QuantityCode WeberMetre = new QuantityCode { Value = "P50" };
+    public static QuantityCode WeberMetre => new() { Value = "P50" };
 
     /// <summary>
     /// mol per kilogram pascal
     /// </summary>
-    public static readonly QuantityCode MolPerKilogramPascal = new QuantityCode { Value = "P51" };
+    public static QuantityCode MolPerKilogramPascal => new() { Value = "P51" };
 
     /// <summary>
     /// mol per cubic metre pascal
     /// </summary>
-    public static readonly QuantityCode MolPerCubicMetrePascal = new QuantityCode { Value = "P52" };
+    public static QuantityCode MolPerCubicMetrePascal => new() { Value = "P52" };
 
     /// <summary>
     /// unit pole
     /// </summary>
-    public static readonly QuantityCode UnitPole = new QuantityCode { Value = "P53" };
+    public static QuantityCode UnitPole => new() { Value = "P53" };
 
     /// <summary>
     /// milligray per second
     /// </summary>
-    public static readonly QuantityCode MilligrayPerSecond = new QuantityCode { Value = "P54" };
+    public static QuantityCode MilligrayPerSecond => new() { Value = "P54" };
 
     /// <summary>
     /// microgray per second
     /// </summary>
-    public static readonly QuantityCode MicrograyPerSecond = new QuantityCode { Value = "P55" };
+    public static QuantityCode MicrograyPerSecond => new() { Value = "P55" };
 
     /// <summary>
     /// nanogray per second
     /// </summary>
-    public static readonly QuantityCode NanograyPerSecond = new QuantityCode { Value = "P56" };
+    public static QuantityCode NanograyPerSecond => new() { Value = "P56" };
 
     /// <summary>
     /// gray per minute
     /// </summary>
-    public static readonly QuantityCode GrayPerMinute = new QuantityCode { Value = "P57" };
+    public static QuantityCode GrayPerMinute => new() { Value = "P57" };
 
     /// <summary>
     /// milligray per minute
     /// </summary>
-    public static readonly QuantityCode MilligrayPerMinute = new QuantityCode { Value = "P58" };
+    public static QuantityCode MilligrayPerMinute => new() { Value = "P58" };
 
     /// <summary>
     /// microgray per minute
     /// </summary>
-    public static readonly QuantityCode MicrograyPerMinute = new QuantityCode { Value = "P59" };
+    public static QuantityCode MicrograyPerMinute => new() { Value = "P59" };
 
     /// <summary>
     /// nanogray per minute
     /// </summary>
-    public static readonly QuantityCode NanograyPerMinute = new QuantityCode { Value = "P60" };
+    public static QuantityCode NanograyPerMinute => new() { Value = "P60" };
 
     /// <summary>
     /// gray per hour
     /// </summary>
-    public static readonly QuantityCode GrayPerHour = new QuantityCode { Value = "P61" };
+    public static QuantityCode GrayPerHour => new() { Value = "P61" };
 
     /// <summary>
     /// milligray per hour
     /// </summary>
-    public static readonly QuantityCode MilligrayPerHour = new QuantityCode { Value = "P62" };
+    public static QuantityCode MilligrayPerHour => new() { Value = "P62" };
 
     /// <summary>
     /// microgray per hour
     /// </summary>
-    public static readonly QuantityCode MicrograyPerHour = new QuantityCode { Value = "P63" };
+    public static QuantityCode MicrograyPerHour => new() { Value = "P63" };
 
     /// <summary>
     /// nanogray per hour
     /// </summary>
-    public static readonly QuantityCode NanograyPerHour = new QuantityCode { Value = "P64" };
+    public static QuantityCode NanograyPerHour => new() { Value = "P64" };
 
     /// <summary>
     /// sievert per second
     /// </summary>
-    public static readonly QuantityCode SievertPerSecond = new QuantityCode { Value = "P65" };
+    public static QuantityCode SievertPerSecond => new() { Value = "P65" };
 
     /// <summary>
     /// millisievert per second
     /// </summary>
-    public static readonly QuantityCode MillisievertPerSecond = new QuantityCode { Value = "P66" };
+    public static QuantityCode MillisievertPerSecond => new() { Value = "P66" };
 
     /// <summary>
     /// microsievert per second
     /// </summary>
-    public static readonly QuantityCode MicrosievertPerSecond = new QuantityCode { Value = "P67" };
+    public static QuantityCode MicrosievertPerSecond => new() { Value = "P67" };
 
     /// <summary>
     /// nanosievert per second
     /// </summary>
-    public static readonly QuantityCode NanosievertPerSecond = new QuantityCode { Value = "P68" };
+    public static QuantityCode NanosievertPerSecond => new() { Value = "P68" };
 
     /// <summary>
     /// rem per second
     /// </summary>
-    public static readonly QuantityCode RemPerSecond = new QuantityCode { Value = "P69" };
+    public static QuantityCode RemPerSecond => new() { Value = "P69" };
 
     /// <summary>
     /// sievert per hour
     /// </summary>
-    public static readonly QuantityCode SievertPerHour = new QuantityCode { Value = "P70" };
+    public static QuantityCode SievertPerHour => new() { Value = "P70" };
 
     /// <summary>
     /// millisievert per hour
     /// </summary>
-    public static readonly QuantityCode MillisievertPerHour = new QuantityCode { Value = "P71" };
+    public static QuantityCode MillisievertPerHour => new() { Value = "P71" };
 
     /// <summary>
     /// microsievert per hour
     /// </summary>
-    public static readonly QuantityCode MicrosievertPerHour = new QuantityCode { Value = "P72" };
+    public static QuantityCode MicrosievertPerHour => new() { Value = "P72" };
 
     /// <summary>
     /// nanosievert per hour
     /// </summary>
-    public static readonly QuantityCode NanosievertPerHour = new QuantityCode { Value = "P73" };
+    public static QuantityCode NanosievertPerHour => new() { Value = "P73" };
 
     /// <summary>
     /// sievert per minute
     /// </summary>
-    public static readonly QuantityCode SievertPerMinute = new QuantityCode { Value = "P74" };
+    public static QuantityCode SievertPerMinute => new() { Value = "P74" };
 
     /// <summary>
     /// millisievert per minute
     /// </summary>
-    public static readonly QuantityCode MillisievertPerMinute = new QuantityCode { Value = "P75" };
+    public static QuantityCode MillisievertPerMinute => new() { Value = "P75" };
 
     /// <summary>
     /// microsievert per minute
     /// </summary>
-    public static readonly QuantityCode MicrosievertPerMinute = new QuantityCode { Value = "P76" };
+    public static QuantityCode MicrosievertPerMinute => new() { Value = "P76" };
 
     /// <summary>
     /// nanosievert per minute
     /// </summary>
-    public static readonly QuantityCode NanosievertPerMinute = new QuantityCode { Value = "P77" };
+    public static QuantityCode NanosievertPerMinute => new() { Value = "P77" };
 
     /// <summary>
     /// reciprocal square inch
     /// </summary>
-    public static readonly QuantityCode ReciprocalSquareInch = new QuantityCode { Value = "P78" };
+    public static QuantityCode ReciprocalSquareInch => new() { Value = "P78" };
 
     /// <summary>
     /// pascal square metre per kilogram
     /// </summary>
-    public static readonly QuantityCode PascalSquareMetrePerKilogram = new QuantityCode { Value = "P79" };
+    public static QuantityCode PascalSquareMetrePerKilogram => new() { Value = "P79" };
 
     /// <summary>
     /// millipascal per metre
     /// </summary>
-    public static readonly QuantityCode MillipascalPerMetre = new QuantityCode { Value = "P80" };
+    public static QuantityCode MillipascalPerMetre => new() { Value = "P80" };
 
     /// <summary>
     /// kilopascal per metre
     /// </summary>
-    public static readonly QuantityCode KilopascalPerMetre = new QuantityCode { Value = "P81" };
+    public static QuantityCode KilopascalPerMetre => new() { Value = "P81" };
 
     /// <summary>
     /// hectopascal per metre
     /// </summary>
-    public static readonly QuantityCode HectopascalPerMetre = new QuantityCode { Value = "P82" };
+    public static QuantityCode HectopascalPerMetre => new() { Value = "P82" };
 
     /// <summary>
     /// standard atmosphere per metre
     /// </summary>
-    public static readonly QuantityCode StandardAtmospherePerMetre = new QuantityCode { Value = "P83" };
+    public static QuantityCode StandardAtmospherePerMetre => new() { Value = "P83" };
 
     /// <summary>
     /// technical atmosphere per metre
     /// </summary>
-    public static readonly QuantityCode TechnicalAtmospherePerMetre = new QuantityCode { Value = "P84" };
+    public static QuantityCode TechnicalAtmospherePerMetre => new() { Value = "P84" };
 
     /// <summary>
     /// torr per metre
     /// </summary>
-    public static readonly QuantityCode TorrPerMetre = new QuantityCode { Value = "P85" };
+    public static QuantityCode TorrPerMetre => new() { Value = "P85" };
 
     /// <summary>
     /// psi per inch
     /// </summary>
-    public static readonly QuantityCode PsiPerInch = new QuantityCode { Value = "P86" };
+    public static QuantityCode PsiPerInch => new() { Value = "P86" };
 
     /// <summary>
     /// cubic metre per second square metre
     /// </summary>
-    public static readonly QuantityCode CubicMetrePerSecondSquareMetre = new QuantityCode { Value = "P87" };
+    public static QuantityCode CubicMetrePerSecondSquareMetre => new() { Value = "P87" };
 
     /// <summary>
     /// rhe
     /// </summary>
-    public static readonly QuantityCode Rhe = new QuantityCode { Value = "P88" };
+    public static QuantityCode Rhe => new() { Value = "P88" };
 
     /// <summary>
     /// pound-force foot per inch
     /// </summary>
-    public static readonly QuantityCode PoundForceFootPerInch = new QuantityCode { Value = "P89" };
+    public static QuantityCode PoundForceFootPerInch => new() { Value = "P89" };
 
     /// <summary>
     /// pound-force inch per inch
     /// </summary>
-    public static readonly QuantityCode PoundForceInchPerInch = new QuantityCode { Value = "P90" };
+    public static QuantityCode PoundForceInchPerInch => new() { Value = "P90" };
 
     /// <summary>
     /// perm (0 ºC)
     /// </summary>
-    public static readonly QuantityCode Perm0C = new QuantityCode { Value = "P91" };
+    public static QuantityCode Perm0C => new() { Value = "P91" };
 
     /// <summary>
     /// perm (23 ºC)
     /// </summary>
-    public static readonly QuantityCode Perm23C = new QuantityCode { Value = "P92" };
+    public static QuantityCode Perm23C => new() { Value = "P92" };
 
     /// <summary>
     /// byte per second
     /// </summary>
-    public static readonly QuantityCode BytePerSecond = new QuantityCode { Value = "P93" };
+    public static QuantityCode BytePerSecond => new() { Value = "P93" };
 
     /// <summary>
     /// kilobyte per second
     /// </summary>
-    public static readonly QuantityCode KilobytePerSecond = new QuantityCode { Value = "P94" };
+    public static QuantityCode KilobytePerSecond => new() { Value = "P94" };
 
     /// <summary>
     /// megabyte per second
     /// </summary>
-    public static readonly QuantityCode MegabytePerSecond = new QuantityCode { Value = "P95" };
+    public static QuantityCode MegabytePerSecond => new() { Value = "P95" };
 
     /// <summary>
     /// reciprocal volt
     /// </summary>
-    public static readonly QuantityCode ReciprocalVolt = new QuantityCode { Value = "P96" };
+    public static QuantityCode ReciprocalVolt => new() { Value = "P96" };
 
     /// <summary>
     /// reciprocal radian
     /// </summary>
-    public static readonly QuantityCode ReciprocalRadian = new QuantityCode { Value = "P97" };
+    public static QuantityCode ReciprocalRadian => new() { Value = "P97" };
 
     /// <summary>
     /// pascal to the power sum of stoichiometric numbers
     /// </summary>
-    public static readonly QuantityCode PascalToThePowerSumOfStoichiometricNumbers = new QuantityCode { Value = "P98" };
+    public static QuantityCode PascalToThePowerSumOfStoichiometricNumbers => new() { Value = "P98" };
 
     /// <summary>
     /// mole per cubiv metre to the power sum of stoichiometric numbers
     /// </summary>
-    public static readonly QuantityCode MolePerCubivMetreToThePowerSumOfStoichiometricNumbers = new QuantityCode { Value = "P99" };
+    public static QuantityCode MolePerCubivMetreToThePowerSumOfStoichiometricNumbers => new() { Value = "P99" };
 
     /// <summary>
     /// pascal
     /// </summary>
-    public static readonly QuantityCode Pascal = new QuantityCode { Value = "PAL" };
+    public static QuantityCode Pascal => new() { Value = "PAL" };
 
     /// <summary>
     /// pad
     /// </summary>
-    public static readonly QuantityCode Pad = new QuantityCode { Value = "PD" };
+    public static QuantityCode Pad => new() { Value = "PD" };
 
     /// <summary>
     /// proof litre
     /// </summary>
-    public static readonly QuantityCode ProofLitre = new QuantityCode { Value = "PFL" };
+    public static QuantityCode ProofLitre => new() { Value = "PFL" };
 
     /// <summary>
     /// proof gallon
     /// </summary>
-    public static readonly QuantityCode ProofGallon = new QuantityCode { Value = "PGL" };
+    public static QuantityCode ProofGallon => new() { Value = "PGL" };
 
     /// <summary>
     /// pitch
     /// </summary>
-    public static readonly QuantityCode Pitch = new QuantityCode { Value = "PI" };
+    public static QuantityCode Pitch => new() { Value = "PI" };
 
     /// <summary>
     /// degree Plato
     /// </summary>
-    public static readonly QuantityCode DegreePlato = new QuantityCode { Value = "PLA" };
+    public static QuantityCode DegreePlato => new() { Value = "PLA" };
 
     /// <summary>
     /// pound per inch of length
     /// </summary>
-    public static readonly QuantityCode PoundPerInchOfLength = new QuantityCode { Value = "PO" };
+    public static QuantityCode PoundPerInchOfLength => new() { Value = "PO" };
 
     /// <summary>
     /// page per inch
     /// </summary>
-    public static readonly QuantityCode PagePerInch = new QuantityCode { Value = "PQ" };
+    public static QuantityCode PagePerInch => new() { Value = "PQ" };
 
     /// <summary>
     /// pair
     /// </summary>
-    public static readonly QuantityCode Pair = new QuantityCode { Value = "PR" };
+    public static QuantityCode Pair => new() { Value = "PR" };
 
     /// <summary>
     /// pound-force per square inch
     /// </summary>
-    public static readonly QuantityCode PoundForcePerSquareInch = new QuantityCode { Value = "PS" };
+    public static QuantityCode PoundForcePerSquareInch => new() { Value = "PS" };
 
     /// <summary>
     /// dry pint (US)
     /// </summary>
-    public static readonly QuantityCode DryPintUS = new QuantityCode { Value = "PTD" };
+    public static QuantityCode DryPintUS => new() { Value = "PTD" };
 
     /// <summary>
     /// pint (UK)
     /// </summary>
-    public static readonly QuantityCode PintUK = new QuantityCode { Value = "PTI" };
+    public static QuantityCode PintUK => new() { Value = "PTI" };
 
     /// <summary>
     /// liquid pint (US)
     /// </summary>
-    public static readonly QuantityCode LiquidPintUS = new QuantityCode { Value = "PTL" };
+    public static QuantityCode LiquidPintUS => new() { Value = "PTL" };
 
     /// <summary>
     /// portion
     /// </summary>
-    public static readonly QuantityCode Portion = new QuantityCode { Value = "PTN" };
+    public static QuantityCode Portion => new() { Value = "PTN" };
 
     /// <summary>
     /// joule per tesla
     /// </summary>
-    public static readonly QuantityCode JoulePerTesla = new QuantityCode { Value = "Q10" };
+    public static QuantityCode JoulePerTesla => new() { Value = "Q10" };
 
     /// <summary>
     /// erlang
     /// </summary>
-    public static readonly QuantityCode Erlang = new QuantityCode { Value = "Q11" };
+    public static QuantityCode Erlang => new() { Value = "Q11" };
 
     /// <summary>
     /// octet
     /// </summary>
-    public static readonly QuantityCode Octet = new QuantityCode { Value = "Q12" };
+    public static QuantityCode Octet => new() { Value = "Q12" };
 
     /// <summary>
     /// octet per second
     /// </summary>
-    public static readonly QuantityCode OctetPerSecond = new QuantityCode { Value = "Q13" };
+    public static QuantityCode OctetPerSecond => new() { Value = "Q13" };
 
     /// <summary>
     /// shannon
     /// </summary>
-    public static readonly QuantityCode Shannon = new QuantityCode { Value = "Q14" };
+    public static QuantityCode Shannon => new() { Value = "Q14" };
 
     /// <summary>
     /// hartley
     /// </summary>
-    public static readonly QuantityCode Hartley = new QuantityCode { Value = "Q15" };
+    public static QuantityCode Hartley => new() { Value = "Q15" };
 
     /// <summary>
     /// natural unit of information
     /// </summary>
-    public static readonly QuantityCode NaturalUnitOfInformation = new QuantityCode { Value = "Q16" };
+    public static QuantityCode NaturalUnitOfInformation => new() { Value = "Q16" };
 
     /// <summary>
     /// shannon per second
     /// </summary>
-    public static readonly QuantityCode ShannonPerSecond = new QuantityCode { Value = "Q17" };
+    public static QuantityCode ShannonPerSecond => new() { Value = "Q17" };
 
     /// <summary>
     /// hartley per second
     /// </summary>
-    public static readonly QuantityCode HartleyPerSecond = new QuantityCode { Value = "Q18" };
+    public static QuantityCode HartleyPerSecond => new() { Value = "Q18" };
 
     /// <summary>
     /// natural unit of information per second
     /// </summary>
-    public static readonly QuantityCode NaturalUnitOfInformationPerSecond = new QuantityCode { Value = "Q19" };
+    public static QuantityCode NaturalUnitOfInformationPerSecond => new() { Value = "Q19" };
 
     /// <summary>
     /// second per kilogramm
     /// </summary>
-    public static readonly QuantityCode SecondPerKilogramm = new QuantityCode { Value = "Q20" };
+    public static QuantityCode SecondPerKilogramm => new() { Value = "Q20" };
 
     /// <summary>
     /// watt square metre
     /// </summary>
-    public static readonly QuantityCode WattSquareMetre = new QuantityCode { Value = "Q21" };
+    public static QuantityCode WattSquareMetre => new() { Value = "Q21" };
 
     /// <summary>
     /// second per radian cubic metre
     /// </summary>
-    public static readonly QuantityCode SecondPerRadianCubicMetre = new QuantityCode { Value = "Q22" };
+    public static QuantityCode SecondPerRadianCubicMetre => new() { Value = "Q22" };
 
     /// <summary>
     /// weber to the power minus one
     /// </summary>
-    public static readonly QuantityCode WeberToThePowerMinusOne = new QuantityCode { Value = "Q23" };
+    public static QuantityCode WeberToThePowerMinusOne => new() { Value = "Q23" };
 
     /// <summary>
     /// reciprocal inch
     /// </summary>
-    public static readonly QuantityCode ReciprocalInch = new QuantityCode { Value = "Q24" };
+    public static QuantityCode ReciprocalInch => new() { Value = "Q24" };
 
     /// <summary>
     /// dioptre
     /// </summary>
-    public static readonly QuantityCode Dioptre = new QuantityCode { Value = "Q25" };
+    public static QuantityCode Dioptre => new() { Value = "Q25" };
 
     /// <summary>
     /// one per one
     /// </summary>
-    public static readonly QuantityCode OnePerOne = new QuantityCode { Value = "Q26" };
+    public static QuantityCode OnePerOne => new() { Value = "Q26" };
 
     /// <summary>
     /// newton metre per metre
     /// </summary>
-    public static readonly QuantityCode NewtonMetrePerMetre = new QuantityCode { Value = "Q27" };
+    public static QuantityCode NewtonMetrePerMetre => new() { Value = "Q27" };
 
     /// <summary>
     /// kilogram per square metre pascal second
     /// </summary>
-    public static readonly QuantityCode KilogramPerSquareMetrePascalSecond = new QuantityCode { Value = "Q28" };
+    public static QuantityCode KilogramPerSquareMetrePascalSecond => new() { Value = "Q28" };
 
     /// <summary>
     /// microgram per hectogram
     /// </summary>
-    public static readonly QuantityCode MicrogramPerHectogram = new QuantityCode { Value = "Q29" };
+    public static QuantityCode MicrogramPerHectogram => new() { Value = "Q29" };
 
     /// <summary>
     /// meal
     /// </summary>
-    public static readonly QuantityCode Meal = new QuantityCode { Value = "Q3" };
+    public static QuantityCode Meal => new() { Value = "Q3" };
 
     /// <summary>
     /// pH (potential of Hydrogen)
     /// </summary>
-    public static readonly QuantityCode PHPotentialOfHydrogen = new QuantityCode { Value = "Q30" };
+    public static QuantityCode PHPotentialOfHydrogen => new() { Value = "Q30" };
 
     /// <summary>
     /// kilojoule per gram
     /// </summary>
-    public static readonly QuantityCode KilojoulePerGram = new QuantityCode { Value = "Q31" };
+    public static QuantityCode KilojoulePerGram => new() { Value = "Q31" };
 
     /// <summary>
     /// femtolitre
     /// </summary>
-    public static readonly QuantityCode Femtolitre = new QuantityCode { Value = "Q32" };
+    public static QuantityCode Femtolitre => new() { Value = "Q32" };
 
     /// <summary>
     /// picolitre
     /// </summary>
-    public static readonly QuantityCode Picolitre = new QuantityCode { Value = "Q33" };
+    public static QuantityCode Picolitre => new() { Value = "Q33" };
 
     /// <summary>
     /// nanolitre
     /// </summary>
-    public static readonly QuantityCode Nanolitre = new QuantityCode { Value = "Q34" };
+    public static QuantityCode Nanolitre => new() { Value = "Q34" };
 
     /// <summary>
     /// megawatts per minute
     /// </summary>
-    public static readonly QuantityCode MegawattsPerMinute = new QuantityCode { Value = "Q35" };
+    public static QuantityCode MegawattsPerMinute => new() { Value = "Q35" };
 
     /// <summary>
     /// square metre per cubic metre
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerCubicMetre = new QuantityCode { Value = "Q36" };
+    public static QuantityCode SquareMetrePerCubicMetre => new() { Value = "Q36" };
 
     /// <summary>
     /// Standard cubic metre per day
     /// </summary>
-    public static readonly QuantityCode StandardCubicMetrePerDay = new QuantityCode { Value = "Q37" };
+    public static QuantityCode StandardCubicMetrePerDay => new() { Value = "Q37" };
 
     /// <summary>
     /// Standard cubic metre per hour
     /// </summary>
-    public static readonly QuantityCode StandardCubicMetrePerHour = new QuantityCode { Value = "Q38" };
+    public static QuantityCode StandardCubicMetrePerHour => new() { Value = "Q38" };
 
     /// <summary>
     /// Normalized cubic metre per day
     /// </summary>
-    public static readonly QuantityCode NormalizedCubicMetrePerDay = new QuantityCode { Value = "Q39" };
+    public static QuantityCode NormalizedCubicMetrePerDay => new() { Value = "Q39" };
 
     /// <summary>
     /// Normalized cubic metre per hour
     /// </summary>
-    public static readonly QuantityCode NormalizedCubicMetrePerHour = new QuantityCode { Value = "Q40" };
+    public static QuantityCode NormalizedCubicMetrePerHour => new() { Value = "Q40" };
 
     /// <summary>
     /// Joule per normalised cubic metre
     /// </summary>
-    public static readonly QuantityCode JoulePerNormalisedCubicMetre = new QuantityCode { Value = "Q41" };
+    public static QuantityCode JoulePerNormalisedCubicMetre => new() { Value = "Q41" };
 
     /// <summary>
     /// Joule per standard cubic metre
     /// </summary>
-    public static readonly QuantityCode JoulePerStandardCubicMetre = new QuantityCode { Value = "Q42" };
+    public static QuantityCode JoulePerStandardCubicMetre => new() { Value = "Q42" };
 
     /// <summary>
     /// page - facsimile
     /// </summary>
-    public static readonly QuantityCode PageFacsimile = new QuantityCode { Value = "QA" };
+    public static QuantityCode PageFacsimile => new() { Value = "QA" };
 
     /// <summary>
     /// quarter (of a year)
     /// </summary>
-    public static readonly QuantityCode QuarterOfAYear = new QuantityCode { Value = "QAN" };
+    public static QuantityCode QuarterOfAYear => new() { Value = "QAN" };
 
     /// <summary>
     /// page - hardcopy
     /// </summary>
-    public static readonly QuantityCode PageHardcopy = new QuantityCode { Value = "QB" };
+    public static QuantityCode PageHardcopy => new() { Value = "QB" };
 
     /// <summary>
     /// quire
     /// </summary>
-    public static readonly QuantityCode Quire = new QuantityCode { Value = "QR" };
+    public static QuantityCode Quire => new() { Value = "QR" };
 
     /// <summary>
     /// dry quart (US)
     /// </summary>
-    public static readonly QuantityCode DryQuartUS = new QuantityCode { Value = "QTD" };
+    public static QuantityCode DryQuartUS => new() { Value = "QTD" };
 
     /// <summary>
     /// quart (UK)
     /// </summary>
-    public static readonly QuantityCode QuartUK = new QuantityCode { Value = "QTI" };
+    public static QuantityCode QuartUK => new() { Value = "QTI" };
 
     /// <summary>
     /// liquid quart (US)
     /// </summary>
-    public static readonly QuantityCode LiquidQuartUS = new QuantityCode { Value = "QTL" };
+    public static QuantityCode LiquidQuartUS => new() { Value = "QTL" };
 
     /// <summary>
     /// quarter (UK)
     /// </summary>
-    public static readonly QuantityCode QuarterUK = new QuantityCode { Value = "QTR" };
+    public static QuantityCode QuarterUK => new() { Value = "QTR" };
 
     /// <summary>
     /// pica
     /// </summary>
-    public static readonly QuantityCode Pica = new QuantityCode { Value = "R1" };
+    public static QuantityCode Pica => new() { Value = "R1" };
 
     /// <summary>
     /// thousand cubic metre
     /// </summary>
-    public static readonly QuantityCode ThousandCubicMetre = new QuantityCode { Value = "R9" };
+    public static QuantityCode ThousandCubicMetre => new() { Value = "R9" };
 
     /// <summary>
     /// running or operating hour
     /// </summary>
-    public static readonly QuantityCode RunningOrOperatingHour = new QuantityCode { Value = "RH" };
+    public static QuantityCode RunningOrOperatingHour => new() { Value = "RH" };
 
     /// <summary>
     /// ream
     /// </summary>
-    public static readonly QuantityCode Ream = new QuantityCode { Value = "RM" };
+    public static QuantityCode Ream => new() { Value = "RM" };
 
     /// <summary>
     /// room
     /// </summary>
-    public static readonly QuantityCode Room = new QuantityCode { Value = "ROM" };
+    public static QuantityCode Room => new() { Value = "ROM" };
 
     /// <summary>
     /// pound per ream
     /// </summary>
-    public static readonly QuantityCode PoundPerReam = new QuantityCode { Value = "RP" };
+    public static QuantityCode PoundPerReam => new() { Value = "RP" };
 
     /// <summary>
     /// revolutions per minute
     /// </summary>
-    public static readonly QuantityCode RevolutionsPerMinute = new QuantityCode { Value = "RPM" };
+    public static QuantityCode RevolutionsPerMinute => new() { Value = "RPM" };
 
     /// <summary>
     /// revolutions per second
     /// </summary>
-    public static readonly QuantityCode RevolutionsPerSecond = new QuantityCode { Value = "RPS" };
+    public static QuantityCode RevolutionsPerSecond => new() { Value = "RPS" };
 
     /// <summary>
     /// revenue ton mile
     /// </summary>
-    public static readonly QuantityCode RevenueTonMile = new QuantityCode { Value = "RT" };
+    public static QuantityCode RevenueTonMile => new() { Value = "RT" };
 
     /// <summary>
     /// square foot per second
     /// </summary>
-    public static readonly QuantityCode SquareFootPerSecond = new QuantityCode { Value = "S3" };
+    public static QuantityCode SquareFootPerSecond => new() { Value = "S3" };
 
     /// <summary>
     /// square metre per second
     /// </summary>
-    public static readonly QuantityCode SquareMetrePerSecond = new QuantityCode { Value = "S4" };
+    public static QuantityCode SquareMetrePerSecond => new() { Value = "S4" };
 
     /// <summary>
     /// half year (6 months)
     /// </summary>
-    public static readonly QuantityCode HalfYear6Months = new QuantityCode { Value = "SAN" };
+    public static QuantityCode HalfYear6Months => new() { Value = "SAN" };
 
     /// <summary>
     /// score
     /// </summary>
-    public static readonly QuantityCode Score = new QuantityCode { Value = "SCO" };
+    public static QuantityCode Score => new() { Value = "SCO" };
 
     /// <summary>
     /// scruple
     /// </summary>
-    public static readonly QuantityCode Scruple = new QuantityCode { Value = "SCR" };
+    public static QuantityCode Scruple => new() { Value = "SCR" };
 
     /// <summary>
     /// second [unit of time]
     /// </summary>
-    public static readonly QuantityCode SecondUnitOfTime = new QuantityCode { Value = "SEC" };
+    public static QuantityCode SecondUnitOfTime => new() { Value = "SEC" };
 
     /// <summary>
     /// set
     /// </summary>
-    public static readonly QuantityCode Set = new QuantityCode { Value = "SET" };
+    public static QuantityCode Set => new() { Value = "SET" };
 
     /// <summary>
     /// segment
     /// </summary>
-    public static readonly QuantityCode Segment = new QuantityCode { Value = "SG" };
+    public static QuantityCode Segment => new() { Value = "SG" };
 
     /// <summary>
     /// siemens
     /// </summary>
-    public static readonly QuantityCode Siemens = new QuantityCode { Value = "SIE" };
+    public static QuantityCode Siemens => new() { Value = "SIE" };
 
     /// <summary>
     /// Standard cubic metre
     /// </summary>
-    public static readonly QuantityCode StandardCubicMetre = new QuantityCode { Value = "SM3" };
+    public static QuantityCode StandardCubicMetre => new() { Value = "SM3" };
 
     /// <summary>
     /// mile (statute mile)
     /// </summary>
-    public static readonly QuantityCode MileStatuteMile = new QuantityCode { Value = "SMI" };
+    public static QuantityCode MileStatuteMile => new() { Value = "SMI" };
 
     /// <summary>
     /// square
     /// </summary>
-    public static readonly QuantityCode Square = new QuantityCode { Value = "SQ" };
+    public static QuantityCode Square => new() { Value = "SQ" };
 
     /// <summary>
     /// square, roofing
     /// </summary>
-    public static readonly QuantityCode SquareRoofing = new QuantityCode { Value = "SQR" };
+    public static QuantityCode SquareRoofing => new() { Value = "SQR" };
 
     /// <summary>
     /// strip
     /// </summary>
-    public static readonly QuantityCode Strip = new QuantityCode { Value = "SR" };
+    public static QuantityCode Strip => new() { Value = "SR" };
 
     /// <summary>
     /// stick
     /// </summary>
-    public static readonly QuantityCode Stick = new QuantityCode { Value = "STC" };
+    public static QuantityCode Stick => new() { Value = "STC" };
 
     /// <summary>
     /// stone (UK)
     /// </summary>
-    public static readonly QuantityCode StoneUK = new QuantityCode { Value = "STI" };
+    public static QuantityCode StoneUK => new() { Value = "STI" };
 
     /// <summary>
     /// stick, cigarette
     /// </summary>
-    public static readonly QuantityCode StickCigarette = new QuantityCode { Value = "STK" };
+    public static QuantityCode StickCigarette => new() { Value = "STK" };
 
     /// <summary>
     /// standard litre
     /// </summary>
-    public static readonly QuantityCode StandardLitre = new QuantityCode { Value = "STL" };
+    public static QuantityCode StandardLitre => new() { Value = "STL" };
 
     /// <summary>
     /// ton (US) or short ton (UK/US)
     /// </summary>
-    public static readonly QuantityCode TonUSOrShortTonUKUS = new QuantityCode { Value = "STN" };
+    public static QuantityCode TonUSOrShortTonUKUS => new() { Value = "STN" };
 
     /// <summary>
     /// straw
     /// </summary>
-    public static readonly QuantityCode Straw = new QuantityCode { Value = "STW" };
+    public static QuantityCode Straw => new() { Value = "STW" };
 
     /// <summary>
     /// skein
     /// </summary>
-    public static readonly QuantityCode Skein = new QuantityCode { Value = "SW" };
+    public static QuantityCode Skein => new() { Value = "SW" };
 
     /// <summary>
     /// shipment
     /// </summary>
-    public static readonly QuantityCode Shipment = new QuantityCode { Value = "SX" };
+    public static QuantityCode Shipment => new() { Value = "SX" };
 
     /// <summary>
     /// syringe
     /// </summary>
-    public static readonly QuantityCode Syringe = new QuantityCode { Value = "SYR" };
+    public static QuantityCode Syringe => new() { Value = "SYR" };
 
     /// <summary>
     /// telecommunication line in service
     /// </summary>
-    public static readonly QuantityCode TelecommunicationLineInService = new QuantityCode { Value = "T0" };
+    public static QuantityCode TelecommunicationLineInService => new() { Value = "T0" };
 
     /// <summary>
     /// thousand piece
     /// </summary>
-    public static readonly QuantityCode ThousandPiece = new QuantityCode { Value = "T3" };
+    public static QuantityCode ThousandPiece => new() { Value = "T3" };
 
     /// <summary>
     /// kiloampere hour (thousand ampere hour)
     /// </summary>
-    public static readonly QuantityCode KiloampereHourThousandAmpereHour = new QuantityCode { Value = "TAH" };
+    public static QuantityCode KiloampereHourThousandAmpereHour => new() { Value = "TAH" };
 
     /// <summary>
     /// total acid number
     /// </summary>
-    public static readonly QuantityCode TotalAcidNumber = new QuantityCode { Value = "TAN" };
+    public static QuantityCode TotalAcidNumber => new() { Value = "TAN" };
 
     /// <summary>
     /// thousand square inch
     /// </summary>
-    public static readonly QuantityCode ThousandSquareInch = new QuantityCode { Value = "TI" };
+    public static QuantityCode ThousandSquareInch => new() { Value = "TI" };
 
     /// <summary>
     /// metric ton, including container
     /// </summary>
-    public static readonly QuantityCode MetricTonIncludingContainer = new QuantityCode { Value = "TIC" };
+    public static QuantityCode MetricTonIncludingContainer => new() { Value = "TIC" };
 
     /// <summary>
     /// metric ton, including inner packaging
     /// </summary>
-    public static readonly QuantityCode MetricTonIncludingInnerPackaging = new QuantityCode { Value = "TIP" };
+    public static QuantityCode MetricTonIncludingInnerPackaging => new() { Value = "TIP" };
 
     /// <summary>
     /// tonne kilometre
     /// </summary>
-    public static readonly QuantityCode TonneKilometre = new QuantityCode { Value = "TKM" };
+    public static QuantityCode TonneKilometre => new() { Value = "TKM" };
 
     /// <summary>
     /// kilogram of imported meat, less offal
     /// </summary>
-    public static readonly QuantityCode KilogramOfImportedMeatLessOffal = new QuantityCode { Value = "TMS" };
+    public static QuantityCode KilogramOfImportedMeatLessOffal => new() { Value = "TMS" };
 
     /// <summary>
     /// tonne (metric ton)
     /// </summary>
-    public static readonly QuantityCode TonneMetricTon = new QuantityCode { Value = "TNE" };
+    public static QuantityCode TonneMetricTon => new() { Value = "TNE" };
 
     /// <summary>
     /// ten pack
     /// </summary>
-    public static readonly QuantityCode TenPack = new QuantityCode { Value = "TP" };
+    public static QuantityCode TenPack => new() { Value = "TP" };
 
     /// <summary>
     /// teeth per inch
     /// </summary>
-    public static readonly QuantityCode TeethPerInch = new QuantityCode { Value = "TPI" };
+    public static QuantityCode TeethPerInch => new() { Value = "TPI" };
 
     /// <summary>
     /// ten pair
     /// </summary>
-    public static readonly QuantityCode TenPair = new QuantityCode { Value = "TPR" };
+    public static QuantityCode TenPair => new() { Value = "TPR" };
 
     /// <summary>
     /// thousand cubic metre per day
     /// </summary>
-    public static readonly QuantityCode ThousandCubicMetrePerDay = new QuantityCode { Value = "TQD" };
+    public static QuantityCode ThousandCubicMetrePerDay => new() { Value = "TQD" };
 
     /// <summary>
     /// trillion (EUR)
     /// </summary>
-    public static readonly QuantityCode TrillionEUR = new QuantityCode { Value = "TRL" };
+    public static QuantityCode TrillionEUR => new() { Value = "TRL" };
 
     /// <summary>
     /// ten set
     /// </summary>
-    public static readonly QuantityCode TenSet = new QuantityCode { Value = "TST" };
+    public static QuantityCode TenSet => new() { Value = "TST" };
 
     /// <summary>
     /// ten thousand sticks
     /// </summary>
-    public static readonly QuantityCode TenThousandSticks = new QuantityCode { Value = "TTS" };
+    public static QuantityCode TenThousandSticks => new() { Value = "TTS" };
 
     /// <summary>
     /// treatment
     /// </summary>
-    public static readonly QuantityCode Treatment = new QuantityCode { Value = "U1" };
+    public static QuantityCode Treatment => new() { Value = "U1" };
 
     /// <summary>
     /// tablet
     /// </summary>
-    public static readonly QuantityCode Tablet = new QuantityCode { Value = "U2" };
+    public static QuantityCode Tablet => new() { Value = "U2" };
 
     /// <summary>
     /// telecommunication line in service average
     /// </summary>
-    public static readonly QuantityCode TelecommunicationLineInServiceAverage = new QuantityCode { Value = "UB" };
+    public static QuantityCode TelecommunicationLineInServiceAverage => new() { Value = "UB" };
 
     /// <summary>
     /// telecommunication port
     /// </summary>
-    public static readonly QuantityCode TelecommunicationPort = new QuantityCode { Value = "UC" };
+    public static QuantityCode TelecommunicationPort => new() { Value = "UC" };
 
     /// <summary>
     /// volt - ampere per kilogram
     /// </summary>
-    public static readonly QuantityCode VoltAmperePerKilogram = new QuantityCode { Value = "VA" };
+    public static QuantityCode VoltAmperePerKilogram => new() { Value = "VA" };
 
     /// <summary>
     /// volt
     /// </summary>
-    public static readonly QuantityCode Volt = new QuantityCode { Value = "VLT" };
+    public static QuantityCode Volt => new() { Value = "VLT" };
 
     /// <summary>
     /// percent volume
     /// </summary>
-    public static readonly QuantityCode PercentVolume = new QuantityCode { Value = "VP" };
+    public static QuantityCode PercentVolume => new() { Value = "VP" };
 
     /// <summary>
     /// wet kilo
     /// </summary>
-    public static readonly QuantityCode WetKilo = new QuantityCode { Value = "W2" };
+    public static QuantityCode WetKilo => new() { Value = "W2" };
 
     /// <summary>
     /// watt per kilogram
     /// </summary>
-    public static readonly QuantityCode WattPerKilogram = new QuantityCode { Value = "WA" };
+    public static QuantityCode WattPerKilogram => new() { Value = "WA" };
 
     /// <summary>
     /// wet pound
     /// </summary>
-    public static readonly QuantityCode WetPound = new QuantityCode { Value = "WB" };
+    public static QuantityCode WetPound => new() { Value = "WB" };
 
     /// <summary>
     /// cord
     /// </summary>
-    public static readonly QuantityCode Cord = new QuantityCode { Value = "WCD" };
+    public static QuantityCode Cord => new() { Value = "WCD" };
 
     /// <summary>
     /// wet ton
     /// </summary>
-    public static readonly QuantityCode WetTon = new QuantityCode { Value = "WE" };
+    public static QuantityCode WetTon => new() { Value = "WE" };
 
     /// <summary>
     /// weber
     /// </summary>
-    public static readonly QuantityCode Weber = new QuantityCode { Value = "WEB" };
+    public static QuantityCode Weber => new() { Value = "WEB" };
 
     /// <summary>
     /// week
     /// </summary>
-    public static readonly QuantityCode Week = new QuantityCode { Value = "WEE" };
+    public static QuantityCode Week => new() { Value = "WEE" };
 
     /// <summary>
     /// wine gallon
     /// </summary>
-    public static readonly QuantityCode WineGallon = new QuantityCode { Value = "WG" };
+    public static QuantityCode WineGallon => new() { Value = "WG" };
 
     /// <summary>
     /// watt hour
     /// </summary>
-    public static readonly QuantityCode WattHour = new QuantityCode { Value = "WHR" };
+    public static QuantityCode WattHour => new() { Value = "WHR" };
 
     /// <summary>
     /// working month
     /// </summary>
-    public static readonly QuantityCode WorkingMonth = new QuantityCode { Value = "WM" };
+    public static QuantityCode WorkingMonth => new() { Value = "WM" };
 
     /// <summary>
     /// standard
     /// </summary>
-    public static readonly QuantityCode Standard = new QuantityCode { Value = "WSD" };
+    public static QuantityCode Standard => new() { Value = "WSD" };
 
     /// <summary>
     /// watt
     /// </summary>
-    public static readonly QuantityCode Watt = new QuantityCode { Value = "WTT" };
+    public static QuantityCode Watt => new() { Value = "WTT" };
 
     /// <summary>
     /// Gunter's chain
     /// </summary>
-    public static readonly QuantityCode GunterSChain = new QuantityCode { Value = "X1" };
+    public static QuantityCode GunterSChain => new() { Value = "X1" };
 
     /// <summary>
     /// square yard
     /// </summary>
-    public static readonly QuantityCode SquareYard = new QuantityCode { Value = "YDK" };
+    public static QuantityCode SquareYard => new() { Value = "YDK" };
 
     /// <summary>
     /// cubic yard
     /// </summary>
-    public static readonly QuantityCode CubicYard = new QuantityCode { Value = "YDQ" };
+    public static QuantityCode CubicYard => new() { Value = "YDQ" };
 
     /// <summary>
     /// yard
     /// </summary>
-    public static readonly QuantityCode Yard = new QuantityCode { Value = "YRD" };
+    public static QuantityCode Yard => new() { Value = "YRD" };
 
     /// <summary>
     /// hanging container
     /// </summary>
-    public static readonly QuantityCode HangingContainer = new QuantityCode { Value = "Z11" };
+    public static QuantityCode HangingContainer => new() { Value = "Z11" };
 
     /// <summary>
     /// nanomole
     /// </summary>
-    public static readonly QuantityCode Nanomole = new QuantityCode { Value = "Z9" };
+    public static QuantityCode Nanomole => new() { Value = "Z9" };
 
     /// <summary>
     /// page
     /// </summary>
-    public static readonly QuantityCode Page = new QuantityCode { Value = "ZP" };
+    public static QuantityCode Page => new() { Value = "ZP" };
 
     /// <summary>
     /// mutually defined
     /// </summary>
-    public static readonly QuantityCode MutuallyDefined = new QuantityCode { Value = "ZZ" };
+    public static QuantityCode MutuallyDefined => new() { Value = "ZZ" };
 
 }

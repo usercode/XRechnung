@@ -4,7 +4,7 @@ using System.Xml.Linq;
 
 namespace XRechnung.UBL;
 
-public static partial class InvoiceWriter
+public static class InvoiceReader
 {
     private sealed record AllowanceChargeData(
         Amount Amount,
@@ -42,7 +42,7 @@ public static partial class InvoiceWriter
 
     private static InvoiceTypeCode ReadInvoiceTypeCode(this XElement element)
     {
-        return new InvoiceTypeCode(element.Value);
+        return new InvoiceTypeCode() { Value = element.Value };
     }
 
     private static CurrencyCode ReadCurrencyCode(this XElement element)
@@ -128,9 +128,9 @@ public static partial class InvoiceWriter
         return new CountryCode { Value = element.Value };
     }
 
-    private static PaymentCode ReadPaymentCode(this XElement element)
+    private static PaymentMeansCode ReadPaymentCode(this XElement element)
     {
-        return new PaymentCode { Value = element.Value };
+        return new PaymentMeansCode { Value = element.Value };
     }
 
     private static DeliveryAddress ReadDeliveryAddress(this XElement element)
@@ -434,7 +434,7 @@ public static partial class InvoiceWriter
         return new UnitPriceAmount
         {
             Value = ReadDecimal(element.Value),
-            CurrencyID = new CurrencyCode { Value = OptionalAttribute(element, "currencyID") }
+            CurrencyCode = new CurrencyCode { Value = OptionalAttribute(element, "currencyID") }
         };
     }
 
@@ -489,7 +489,7 @@ public static partial class InvoiceWriter
             Buyer = root.CAC("AccountingCustomerParty")?.ReadBuyer()!,
             PaymentInstructions = root.CAC("PaymentMeans")?.ReadPaymentInstructions()!,
             DocumentTotals = root.CAC("LegalMonetaryTotal")?.ReadDocumentTotals()!,
-            VATBreakdowns = root.CAC("TaxTotal").ReadVatBreakdowns(),
+            VATBreakdowns = root.CAC("TaxTotal")?.ReadVatBreakdowns()!,
             InvoiceLines = root.CACs("InvoiceLine").Select(line => line.ReadInvoiceLine()).ToArray(),
             InvoiceNotes = root.CACs("Note").Select(note => note.ReadInvoiceNote()).ToArray(),
             DocumentLevelAllowances = root.CACs("AllowanceCharge")
@@ -499,7 +499,7 @@ public static partial class InvoiceWriter
             DocumentLevelCharges = root.CACs("AllowanceCharge")
                                             .Where(ReadChargeIndicator)
                                             .Select(charge => charge.ReadCharge())
-                                            .ToArray(),           
+                                            .ToArray(),
             ContractReference = root.CAC("ContractDocumentReference")?.ReadDocumentReference(),
             ReceivingAdviceReference = root.CAC("ReceivingAdviceReference")?.ReadDocumentReference(),
             DespatchAdviceReference = root.CAC("DespatchAdviceReference")?.ReadDocumentReference(),

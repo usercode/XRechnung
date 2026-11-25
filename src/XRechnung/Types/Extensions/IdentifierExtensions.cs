@@ -1,11 +1,34 @@
-﻿namespace XRechnung;
+namespace XRechnung;
 
 public static class IdentifierExtensions
 {
     extension(Identifier)
     {
-        public static Identifier Email(string email) => new Identifier { Value = email, SchemeIdentifier = "EM" };
-        public static Identifier GermanLeitwegID(string id) => new Identifier { Value = id, SchemeIdentifier = "0204" };
-        public static Identifier GermanVAT(string rate) => new Identifier { Value = rate, SchemeIdentifier = "9930" };
+        /// <summary>
+        /// Electronic mail
+        /// </summary>
+        /// <remarks>
+        /// SMTP email
+        /// </remarks>
+        public static Identifier ElectronicMail(string value) => new() { Value = value, SchemeIdentifier = "EM" };
+        
+        /// <summary>
+        /// EAN Location Code
+        /// </summary>
+        public static Identifier EanLocationCode(string value) => new() { Value = value, SchemeIdentifier = "0088" };
+        
+        /// <summary>
+        /// Leitweg-ID
+        /// </summary>
+        /// <remarks>
+        /// Replaces 9958
+        /// </remarks>
+        public static Identifier LeitwegId(string value) => new() { Value = value, SchemeIdentifier = "0204" };
+
+        /// <summary>
+        /// Germany VAT number
+        /// </summary>
+        public static Identifier GermanyVatNumber(string value) => new() { Value = value, SchemeIdentifier = "9930" };               
+
     }
 }

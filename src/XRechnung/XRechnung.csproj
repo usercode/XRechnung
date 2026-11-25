@@ -4,13 +4,13 @@
 	  <Nullable>enable</Nullable>
 	  <ImplicitUsings>enable</ImplicitUsings>
 	  <Authors>usercode</Authors>
-	  <PackageProjectUrl>https://github.com/usercode/ImageWizard</PackageProjectUrl>
+	  <PackageProjectUrl>https://github.com/usercode/XRechnung</PackageProjectUrl>
 	  <Description>XRechnung</Description>
 	  <PublishRepositoryUrl>true</PublishRepositoryUrl>
 	  <PackageIcon>logo.png</PackageIcon>
 	  <PackageReadmeFile>readme.md</PackageReadmeFile>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	  <PackageTags>image processing</PackageTags>
+	  <PackageTags>invoice</PackageTags>
 	  <IncludeSymbols>true</IncludeSymbols>
 	  <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	  <MinVerTagPrefix>v</MinVerTagPrefix>

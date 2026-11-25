@@ -12,11 +12,10 @@ public record class UnitPriceAmount
     /// </summary>
     public required decimal Value { get; set; }
 
-    public required CurrencyCode CurrencyID { get; set; }
+    public required CurrencyCode CurrencyCode { get; set; }
 
     public override string ToString()
     {
-        return Value.ToString(CultureInfo.InvariantCulture);
+        return FormattableString.Invariant($"{Value} {CurrencyCode}");
     }
-
 }

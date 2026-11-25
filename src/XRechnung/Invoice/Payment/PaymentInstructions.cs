@@ -9,7 +9,7 @@ public class PaymentInstructions
     /// Das als Code ausgedrückte erwartete oder genutzte Zahlungsmittel. Hierzu wird auf die Codeliste UNTDID 4461 verwiesen.
     /// </summary>
     [Field("BT-81")]
-    public required PaymentCode PaymentMeansTypeCode { get; set; }
+    public required PaymentMeansCode PaymentMeansTypeCode { get; set; }
 
     /// <summary>
     /// Das in Textform ausgedrückte erwartete oder genutzte Zahlungsmittel.

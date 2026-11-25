@@ -1,899 +1,906 @@
 namespace XRechnung;
 
+/// <summary>
+/// Codes for the representation of currencies and funds
+/// <br /><br />
+/// Die Codeliste basiert auf dem Standard "Currency codes" der International Organization for Standardization (ISO). Die vorliegende Version der Codeliste enthält alle Codelisteneinträge, die mit einem listenweit eindeutigen Eintrag in den Feldern "Currency" und "Alphabetic Code" geführt werden. Sie ist konform zur EN16931-1 und zu dem darauf basierenden Standard XRechnung sowie zum Standard XBestellung und der zugrundeliegenden Peppol BIS Order only.
+/// <br /><br />
+/// https://www.xrepository.de/details/urn:xoev-de:kosit:codeliste:currency-codes_3
+/// </summary>
 public record class CurrencyCode : Code
 {
     /// <summary>
     /// UAE Dirham
     /// </summary>
-    public static readonly CurrencyCode AED = new CurrencyCode() { Value = "AED" };
+    public static CurrencyCode AED => new() { Value = "AED" };
 
     /// <summary>
     /// Afghani
     /// </summary>
-    public static readonly CurrencyCode AFN = new CurrencyCode() { Value = "AFN" };
+    public static CurrencyCode AFN => new() { Value = "AFN" };
 
     /// <summary>
     /// Lek
     /// </summary>
-    public static readonly CurrencyCode ALL = new CurrencyCode() { Value = "ALL" };
+    public static CurrencyCode ALL => new() { Value = "ALL" };
 
     /// <summary>
     /// Armenian Dram
     /// </summary>
-    public static readonly CurrencyCode AMD = new CurrencyCode() { Value = "AMD" };
+    public static CurrencyCode AMD => new() { Value = "AMD" };
 
     /// <summary>
     /// Netherlands Antillean Guilder
     /// </summary>
-    public static readonly CurrencyCode ANG = new CurrencyCode() { Value = "ANG" };
+    public static CurrencyCode ANG => new() { Value = "ANG" };
 
     /// <summary>
     /// Kwanza
     /// </summary>
-    public static readonly CurrencyCode AOA = new CurrencyCode() { Value = "AOA" };
+    public static CurrencyCode AOA => new() { Value = "AOA" };
 
     /// <summary>
     /// Argentine Peso
     /// </summary>
-    public static readonly CurrencyCode ARS = new CurrencyCode() { Value = "ARS" };
+    public static CurrencyCode ARS => new() { Value = "ARS" };
 
     /// <summary>
     /// Australian Dollar
     /// </summary>
-    public static readonly CurrencyCode AUD = new CurrencyCode() { Value = "AUD" };
+    public static CurrencyCode AUD => new() { Value = "AUD" };
 
     /// <summary>
     /// Aruban Florin
     /// </summary>
-    public static readonly CurrencyCode AWG = new CurrencyCode() { Value = "AWG" };
+    public static CurrencyCode AWG => new() { Value = "AWG" };
 
     /// <summary>
     /// Azerbaijan Manat
     /// </summary>
-    public static readonly CurrencyCode AZN = new CurrencyCode() { Value = "AZN" };
+    public static CurrencyCode AZN => new() { Value = "AZN" };
 
     /// <summary>
     /// Convertible Mark
     /// </summary>
-    public static readonly CurrencyCode BAM = new CurrencyCode() { Value = "BAM" };
+    public static CurrencyCode BAM => new() { Value = "BAM" };
 
     /// <summary>
     /// Barbados Dollar
     /// </summary>
-    public static readonly CurrencyCode BBD = new CurrencyCode() { Value = "BBD" };
+    public static CurrencyCode BBD => new() { Value = "BBD" };
 
     /// <summary>
     /// Taka
     /// </summary>
-    public static readonly CurrencyCode BDT = new CurrencyCode() { Value = "BDT" };
+    public static CurrencyCode BDT => new() { Value = "BDT" };
 
     /// <summary>
     /// Bulgarian Lev
     /// </summary>
-    public static readonly CurrencyCode BGN = new CurrencyCode() { Value = "BGN" };
+    public static CurrencyCode BGN => new() { Value = "BGN" };
 
     /// <summary>
     /// Bahraini Dinar
     /// </summary>
-    public static readonly CurrencyCode BHD = new CurrencyCode() { Value = "BHD" };
+    public static CurrencyCode BHD => new() { Value = "BHD" };
 
     /// <summary>
     /// Burundi Franc
     /// </summary>
-    public static readonly CurrencyCode BIF = new CurrencyCode() { Value = "BIF" };
+    public static CurrencyCode BIF => new() { Value = "BIF" };
 
     /// <summary>
     /// Bermudian Dollar
     /// </summary>
-    public static readonly CurrencyCode BMD = new CurrencyCode() { Value = "BMD" };
+    public static CurrencyCode BMD => new() { Value = "BMD" };
 
     /// <summary>
     /// Brunei Dollar
     /// </summary>
-    public static readonly CurrencyCode BND = new CurrencyCode() { Value = "BND" };
+    public static CurrencyCode BND => new() { Value = "BND" };
 
     /// <summary>
     /// Boliviano
     /// </summary>
-    public static readonly CurrencyCode BOB = new CurrencyCode() { Value = "BOB" };
+    public static CurrencyCode BOB => new() { Value = "BOB" };
 
     /// <summary>
     /// Mvdol
     /// </summary>
-    public static readonly CurrencyCode BOV = new CurrencyCode() { Value = "BOV" };
+    public static CurrencyCode BOV => new() { Value = "BOV" };
 
     /// <summary>
     /// Brazilian Real
     /// </summary>
-    public static readonly CurrencyCode BRL = new CurrencyCode() { Value = "BRL" };
+    public static CurrencyCode BRL => new() { Value = "BRL" };
 
     /// <summary>
     /// Bahamian Dollar
     /// </summary>
-    public static readonly CurrencyCode BSD = new CurrencyCode() { Value = "BSD" };
+    public static CurrencyCode BSD => new() { Value = "BSD" };
 
     /// <summary>
     /// Ngultrum
     /// </summary>
-    public static readonly CurrencyCode BTN = new CurrencyCode() { Value = "BTN" };
+    public static CurrencyCode BTN => new() { Value = "BTN" };
 
     /// <summary>
     /// Pula
     /// </summary>
-    public static readonly CurrencyCode BWP = new CurrencyCode() { Value = "BWP" };
+    public static CurrencyCode BWP => new() { Value = "BWP" };
 
     /// <summary>
     /// Belarusian Ruble
     /// </summary>
-    public static readonly CurrencyCode BYN = new CurrencyCode() { Value = "BYN" };
+    public static CurrencyCode BYN => new() { Value = "BYN" };
 
     /// <summary>
     /// Belize Dollar
     /// </summary>
-    public static readonly CurrencyCode BZD = new CurrencyCode() { Value = "BZD" };
+    public static CurrencyCode BZD => new() { Value = "BZD" };
 
     /// <summary>
     /// Canadian Dollar
     /// </summary>
-    public static readonly CurrencyCode CAD = new CurrencyCode() { Value = "CAD" };
+    public static CurrencyCode CAD => new() { Value = "CAD" };
 
     /// <summary>
     /// Congolese Franc
     /// </summary>
-    public static readonly CurrencyCode CDF = new CurrencyCode() { Value = "CDF" };
+    public static CurrencyCode CDF => new() { Value = "CDF" };
 
     /// <summary>
     /// WIR Euro
     /// </summary>
-    public static readonly CurrencyCode CHE = new CurrencyCode() { Value = "CHE" };
+    public static CurrencyCode CHE => new() { Value = "CHE" };
 
     /// <summary>
     /// Swiss Franc
     /// </summary>
-    public static readonly CurrencyCode CHF = new CurrencyCode() { Value = "CHF" };
+    public static CurrencyCode CHF => new() { Value = "CHF" };
 
     /// <summary>
     /// WIR Franc
     /// </summary>
-    public static readonly CurrencyCode CHW = new CurrencyCode() { Value = "CHW" };
+    public static CurrencyCode CHW => new() { Value = "CHW" };
 
     /// <summary>
     /// Unidad de Fomento
     /// </summary>
-    public static readonly CurrencyCode CLF = new CurrencyCode() { Value = "CLF" };
+    public static CurrencyCode CLF => new() { Value = "CLF" };
 
     /// <summary>
     /// Chilean Peso
     /// </summary>
-    public static readonly CurrencyCode CLP = new CurrencyCode() { Value = "CLP" };
+    public static CurrencyCode CLP => new() { Value = "CLP" };
 
     /// <summary>
     /// Yuan Renminbi
     /// </summary>
-    public static readonly CurrencyCode CNY = new CurrencyCode() { Value = "CNY" };
+    public static CurrencyCode CNY => new() { Value = "CNY" };
 
     /// <summary>
     /// Colombian Peso
     /// </summary>
-    public static readonly CurrencyCode COP = new CurrencyCode() { Value = "COP" };
+    public static CurrencyCode COP => new() { Value = "COP" };
 
     /// <summary>
     /// Unidad de Valor Real
     /// </summary>
-    public static readonly CurrencyCode COU = new CurrencyCode() { Value = "COU" };
+    public static CurrencyCode COU => new() { Value = "COU" };
 
     /// <summary>
     /// Costa Rican Colon
     /// </summary>
-    public static readonly CurrencyCode CRC = new CurrencyCode() { Value = "CRC" };
+    public static CurrencyCode CRC => new() { Value = "CRC" };
 
     /// <summary>
     /// Peso Convertible
     /// </summary>
-    public static readonly CurrencyCode CUC = new CurrencyCode() { Value = "CUC" };
+    public static CurrencyCode CUC => new() { Value = "CUC" };
 
     /// <summary>
     /// Cuban Peso
     /// </summary>
-    public static readonly CurrencyCode CUP = new CurrencyCode() { Value = "CUP" };
+    public static CurrencyCode CUP => new() { Value = "CUP" };
 
     /// <summary>
     /// Cabo Verde Escudo
     /// </summary>
-    public static readonly CurrencyCode CVE = new CurrencyCode() { Value = "CVE" };
+    public static CurrencyCode CVE => new() { Value = "CVE" };
 
     /// <summary>
     /// Czech Koruna
     /// </summary>
-    public static readonly CurrencyCode CZK = new CurrencyCode() { Value = "CZK" };
+    public static CurrencyCode CZK => new() { Value = "CZK" };
 
     /// <summary>
     /// Djibouti Franc
     /// </summary>
-    public static readonly CurrencyCode DJF = new CurrencyCode() { Value = "DJF" };
+    public static CurrencyCode DJF => new() { Value = "DJF" };
 
     /// <summary>
     /// Danish Krone
     /// </summary>
-    public static readonly CurrencyCode DKK = new CurrencyCode() { Value = "DKK" };
+    public static CurrencyCode DKK => new() { Value = "DKK" };
 
     /// <summary>
     /// Dominican Peso
     /// </summary>
-    public static readonly CurrencyCode DOP = new CurrencyCode() { Value = "DOP" };
+    public static CurrencyCode DOP => new() { Value = "DOP" };
 
     /// <summary>
     /// Algerian Dinar
     /// </summary>
-    public static readonly CurrencyCode DZD = new CurrencyCode() { Value = "DZD" };
+    public static CurrencyCode DZD => new() { Value = "DZD" };
 
     /// <summary>
     /// Egyptian Pound
     /// </summary>
-    public static readonly CurrencyCode EGP = new CurrencyCode() { Value = "EGP" };
+    public static CurrencyCode EGP => new() { Value = "EGP" };
 
     /// <summary>
     /// Nakfa
     /// </summary>
-    public static readonly CurrencyCode ERN = new CurrencyCode() { Value = "ERN" };
+    public static CurrencyCode ERN => new() { Value = "ERN" };
 
     /// <summary>
     /// Ethiopian Birr
     /// </summary>
-    public static readonly CurrencyCode ETB = new CurrencyCode() { Value = "ETB" };
+    public static CurrencyCode ETB => new() { Value = "ETB" };
 
     /// <summary>
     /// Euro
     /// </summary>
-    public static readonly CurrencyCode EUR = new CurrencyCode() { Value = "EUR" };
+    public static CurrencyCode EUR => new() { Value = "EUR" };
 
     /// <summary>
     /// Fiji Dollar
     /// </summary>
-    public static readonly CurrencyCode FJD = new CurrencyCode() { Value = "FJD" };
+    public static CurrencyCode FJD => new() { Value = "FJD" };
 
     /// <summary>
     /// Falkland Islands Pound
     /// </summary>
-    public static readonly CurrencyCode FKP = new CurrencyCode() { Value = "FKP" };
+    public static CurrencyCode FKP => new() { Value = "FKP" };
 
     /// <summary>
     /// Pound Sterling
     /// </summary>
-    public static readonly CurrencyCode GBP = new CurrencyCode() { Value = "GBP" };
+    public static CurrencyCode GBP => new() { Value = "GBP" };
 
     /// <summary>
     /// Lari
     /// </summary>
-    public static readonly CurrencyCode GEL = new CurrencyCode() { Value = "GEL" };
+    public static CurrencyCode GEL => new() { Value = "GEL" };
 
     /// <summary>
     /// Ghana Cedi
     /// </summary>
-    public static readonly CurrencyCode GHS = new CurrencyCode() { Value = "GHS" };
+    public static CurrencyCode GHS => new() { Value = "GHS" };
 
     /// <summary>
     /// Gibraltar Pound
     /// </summary>
-    public static readonly CurrencyCode GIP = new CurrencyCode() { Value = "GIP" };
+    public static CurrencyCode GIP => new() { Value = "GIP" };
 
     /// <summary>
     /// Dalasi
     /// </summary>
-    public static readonly CurrencyCode GMD = new CurrencyCode() { Value = "GMD" };
+    public static CurrencyCode GMD => new() { Value = "GMD" };
 
     /// <summary>
     /// Guinean Franc
     /// </summary>
-    public static readonly CurrencyCode GNF = new CurrencyCode() { Value = "GNF" };
+    public static CurrencyCode GNF => new() { Value = "GNF" };
 
     /// <summary>
     /// Quetzal
     /// </summary>
-    public static readonly CurrencyCode GTQ = new CurrencyCode() { Value = "GTQ" };
+    public static CurrencyCode GTQ => new() { Value = "GTQ" };
 
     /// <summary>
     /// Guyana Dollar
     /// </summary>
-    public static readonly CurrencyCode GYD = new CurrencyCode() { Value = "GYD" };
+    public static CurrencyCode GYD => new() { Value = "GYD" };
 
     /// <summary>
     /// Hong Kong Dollar
     /// </summary>
-    public static readonly CurrencyCode HKD = new CurrencyCode() { Value = "HKD" };
+    public static CurrencyCode HKD => new() { Value = "HKD" };
 
     /// <summary>
     /// Lempira
     /// </summary>
-    public static readonly CurrencyCode HNL = new CurrencyCode() { Value = "HNL" };
+    public static CurrencyCode HNL => new() { Value = "HNL" };
 
     /// <summary>
     /// Kuna
     /// </summary>
-    public static readonly CurrencyCode HRK = new CurrencyCode() { Value = "HRK" };
+    public static CurrencyCode HRK => new() { Value = "HRK" };
 
     /// <summary>
     /// Gourde
     /// </summary>
-    public static readonly CurrencyCode HTG = new CurrencyCode() { Value = "HTG" };
+    public static CurrencyCode HTG => new() { Value = "HTG" };
 
     /// <summary>
     /// Forint
     /// </summary>
-    public static readonly CurrencyCode HUF = new CurrencyCode() { Value = "HUF" };
+    public static CurrencyCode HUF => new() { Value = "HUF" };
 
     /// <summary>
     /// Rupiah
     /// </summary>
-    public static readonly CurrencyCode IDR = new CurrencyCode() { Value = "IDR" };
+    public static CurrencyCode IDR => new() { Value = "IDR" };
 
     /// <summary>
     /// New Israeli Sheqel
     /// </summary>
-    public static readonly CurrencyCode ILS = new CurrencyCode() { Value = "ILS" };
+    public static CurrencyCode ILS => new() { Value = "ILS" };
 
     /// <summary>
     /// Indian Rupee
     /// </summary>
-    public static readonly CurrencyCode INR = new CurrencyCode() { Value = "INR" };
+    public static CurrencyCode INR => new() { Value = "INR" };
 
     /// <summary>
     /// Iraqi Dinar
     /// </summary>
-    public static readonly CurrencyCode IQD = new CurrencyCode() { Value = "IQD" };
+    public static CurrencyCode IQD => new() { Value = "IQD" };
 
     /// <summary>
     /// Iranian Rial
     /// </summary>
-    public static readonly CurrencyCode IRR = new CurrencyCode() { Value = "IRR" };
+    public static CurrencyCode IRR => new() { Value = "IRR" };
 
     /// <summary>
     /// Iceland Krona
     /// </summary>
-    public static readonly CurrencyCode ISK = new CurrencyCode() { Value = "ISK" };
+    public static CurrencyCode ISK => new() { Value = "ISK" };
 
     /// <summary>
     /// Jamaican Dollar
     /// </summary>
-    public static readonly CurrencyCode JMD = new CurrencyCode() { Value = "JMD" };
+    public static CurrencyCode JMD => new() { Value = "JMD" };
 
     /// <summary>
     /// Jordanian Dinar
     /// </summary>
-    public static readonly CurrencyCode JOD = new CurrencyCode() { Value = "JOD" };
+    public static CurrencyCode JOD => new() { Value = "JOD" };
 
     /// <summary>
     /// Yen
     /// </summary>
-    public static readonly CurrencyCode JPY = new CurrencyCode() { Value = "JPY" };
+    public static CurrencyCode JPY => new() { Value = "JPY" };
 
     /// <summary>
     /// Kenyan Shilling
     /// </summary>
-    public static readonly CurrencyCode KES = new CurrencyCode() { Value = "KES" };
+    public static CurrencyCode KES => new() { Value = "KES" };
 
     /// <summary>
     /// Som
     /// </summary>
-    public static readonly CurrencyCode KGS = new CurrencyCode() { Value = "KGS" };
+    public static CurrencyCode KGS => new() { Value = "KGS" };
 
     /// <summary>
     /// Riel
     /// </summary>
-    public static readonly CurrencyCode KHR = new CurrencyCode() { Value = "KHR" };
+    public static CurrencyCode KHR => new() { Value = "KHR" };
 
     /// <summary>
     /// Comorian Franc
     /// </summary>
-    public static readonly CurrencyCode KMF = new CurrencyCode() { Value = "KMF" };
+    public static CurrencyCode KMF => new() { Value = "KMF" };
 
     /// <summary>
     /// North Korean Won
     /// </summary>
-    public static readonly CurrencyCode KPW = new CurrencyCode() { Value = "KPW" };
+    public static CurrencyCode KPW => new() { Value = "KPW" };
 
     /// <summary>
     /// Won
     /// </summary>
-    public static readonly CurrencyCode KRW = new CurrencyCode() { Value = "KRW" };
+    public static CurrencyCode KRW => new() { Value = "KRW" };
 
     /// <summary>
     /// Kuwaiti Dinar
     /// </summary>
-    public static readonly CurrencyCode KWD = new CurrencyCode() { Value = "KWD" };
+    public static CurrencyCode KWD => new() { Value = "KWD" };
 
     /// <summary>
     /// Cayman Islands Dollar
     /// </summary>
-    public static readonly CurrencyCode KYD = new CurrencyCode() { Value = "KYD" };
+    public static CurrencyCode KYD => new() { Value = "KYD" };
 
     /// <summary>
     /// Tenge
     /// </summary>
-    public static readonly CurrencyCode KZT = new CurrencyCode() { Value = "KZT" };
+    public static CurrencyCode KZT => new() { Value = "KZT" };
 
     /// <summary>
     /// Lao Kip
     /// </summary>
-    public static readonly CurrencyCode LAK = new CurrencyCode() { Value = "LAK" };
+    public static CurrencyCode LAK => new() { Value = "LAK" };
 
     /// <summary>
     /// Lebanese Pound
     /// </summary>
-    public static readonly CurrencyCode LBP = new CurrencyCode() { Value = "LBP" };
+    public static CurrencyCode LBP => new() { Value = "LBP" };
 
     /// <summary>
     /// Sri Lanka Rupee
     /// </summary>
-    public static readonly CurrencyCode LKR = new CurrencyCode() { Value = "LKR" };
+    public static CurrencyCode LKR => new() { Value = "LKR" };
 
     /// <summary>
     /// Liberian Dollar
     /// </summary>
-    public static readonly CurrencyCode LRD = new CurrencyCode() { Value = "LRD" };
+    public static CurrencyCode LRD => new() { Value = "LRD" };
 
     /// <summary>
     /// Loti
     /// </summary>
-    public static readonly CurrencyCode LSL = new CurrencyCode() { Value = "LSL" };
+    public static CurrencyCode LSL => new() { Value = "LSL" };
 
     /// <summary>
     /// Libyan Dinar
     /// </summary>
-    public static readonly CurrencyCode LYD = new CurrencyCode() { Value = "LYD" };
+    public static CurrencyCode LYD => new() { Value = "LYD" };
 
     /// <summary>
     /// Moroccan Dirham
     /// </summary>
-    public static readonly CurrencyCode MAD = new CurrencyCode() { Value = "MAD" };
+    public static CurrencyCode MAD => new() { Value = "MAD" };
 
     /// <summary>
     /// Moldovan Leu
     /// </summary>
-    public static readonly CurrencyCode MDL = new CurrencyCode() { Value = "MDL" };
+    public static CurrencyCode MDL => new() { Value = "MDL" };
 
     /// <summary>
     /// Malagasy Ariary
     /// </summary>
-    public static readonly CurrencyCode MGA = new CurrencyCode() { Value = "MGA" };
+    public static CurrencyCode MGA => new() { Value = "MGA" };
 
     /// <summary>
     /// Denar
     /// </summary>
-    public static readonly CurrencyCode MKD = new CurrencyCode() { Value = "MKD" };
+    public static CurrencyCode MKD => new() { Value = "MKD" };
 
     /// <summary>
     /// Kyat
     /// </summary>
-    public static readonly CurrencyCode MMK = new CurrencyCode() { Value = "MMK" };
+    public static CurrencyCode MMK => new() { Value = "MMK" };
 
     /// <summary>
     /// Tugrik
     /// </summary>
-    public static readonly CurrencyCode MNT = new CurrencyCode() { Value = "MNT" };
+    public static CurrencyCode MNT => new() { Value = "MNT" };
 
     /// <summary>
     /// Pataca
     /// </summary>
-    public static readonly CurrencyCode MOP = new CurrencyCode() { Value = "MOP" };
+    public static CurrencyCode MOP => new() { Value = "MOP" };
 
     /// <summary>
     /// Ouguiya
     /// </summary>
-    public static readonly CurrencyCode MRU = new CurrencyCode() { Value = "MRU" };
+    public static CurrencyCode MRU => new() { Value = "MRU" };
 
     /// <summary>
     /// Mauritius Rupee
     /// </summary>
-    public static readonly CurrencyCode MUR = new CurrencyCode() { Value = "MUR" };
+    public static CurrencyCode MUR => new() { Value = "MUR" };
 
     /// <summary>
     /// Rufiyaa
     /// </summary>
-    public static readonly CurrencyCode MVR = new CurrencyCode() { Value = "MVR" };
+    public static CurrencyCode MVR => new() { Value = "MVR" };
 
     /// <summary>
     /// Malawi Kwacha
     /// </summary>
-    public static readonly CurrencyCode MWK = new CurrencyCode() { Value = "MWK" };
+    public static CurrencyCode MWK => new() { Value = "MWK" };
 
     /// <summary>
     /// Mexican Peso
     /// </summary>
-    public static readonly CurrencyCode MXN = new CurrencyCode() { Value = "MXN" };
+    public static CurrencyCode MXN => new() { Value = "MXN" };
 
     /// <summary>
     /// Mexican Unidad de Inversion (UDI)
     /// </summary>
-    public static readonly CurrencyCode MXV = new CurrencyCode() { Value = "MXV" };
+    public static CurrencyCode MXV => new() { Value = "MXV" };
 
     /// <summary>
     /// Malaysian Ringgit
     /// </summary>
-    public static readonly CurrencyCode MYR = new CurrencyCode() { Value = "MYR" };
+    public static CurrencyCode MYR => new() { Value = "MYR" };
 
     /// <summary>
     /// Mozambique Metical
     /// </summary>
-    public static readonly CurrencyCode MZN = new CurrencyCode() { Value = "MZN" };
+    public static CurrencyCode MZN => new() { Value = "MZN" };
 
     /// <summary>
     /// Namibia Dollar
     /// </summary>
-    public static readonly CurrencyCode NAD = new CurrencyCode() { Value = "NAD" };
+    public static CurrencyCode NAD => new() { Value = "NAD" };
 
     /// <summary>
     /// Naira
     /// </summary>
-    public static readonly CurrencyCode NGN = new CurrencyCode() { Value = "NGN" };
+    public static CurrencyCode NGN => new() { Value = "NGN" };
 
     /// <summary>
     /// Cordoba Oro
     /// </summary>
-    public static readonly CurrencyCode NIO = new CurrencyCode() { Value = "NIO" };
+    public static CurrencyCode NIO => new() { Value = "NIO" };
 
     /// <summary>
     /// Norwegian Krone
     /// </summary>
-    public static readonly CurrencyCode NOK = new CurrencyCode() { Value = "NOK" };
+    public static CurrencyCode NOK => new() { Value = "NOK" };
 
     /// <summary>
     /// Nepalese Rupee
     /// </summary>
-    public static readonly CurrencyCode NPR = new CurrencyCode() { Value = "NPR" };
+    public static CurrencyCode NPR => new() { Value = "NPR" };
 
     /// <summary>
     /// New Zealand Dollar
     /// </summary>
-    public static readonly CurrencyCode NZD = new CurrencyCode() { Value = "NZD" };
+    public static CurrencyCode NZD => new() { Value = "NZD" };
 
     /// <summary>
     /// Rial Omani
     /// </summary>
-    public static readonly CurrencyCode OMR = new CurrencyCode() { Value = "OMR" };
+    public static CurrencyCode OMR => new() { Value = "OMR" };
 
     /// <summary>
     /// Balboa
     /// </summary>
-    public static readonly CurrencyCode PAB = new CurrencyCode() { Value = "PAB" };
+    public static CurrencyCode PAB => new() { Value = "PAB" };
 
     /// <summary>
     /// Sol
     /// </summary>
-    public static readonly CurrencyCode PEN = new CurrencyCode() { Value = "PEN" };
+    public static CurrencyCode PEN => new() { Value = "PEN" };
 
     /// <summary>
     /// Kina
     /// </summary>
-    public static readonly CurrencyCode PGK = new CurrencyCode() { Value = "PGK" };
+    public static CurrencyCode PGK => new() { Value = "PGK" };
 
     /// <summary>
     /// Philippine Peso
     /// </summary>
-    public static readonly CurrencyCode PHP = new CurrencyCode() { Value = "PHP" };
+    public static CurrencyCode PHP => new() { Value = "PHP" };
 
     /// <summary>
     /// Pakistan Rupee
     /// </summary>
-    public static readonly CurrencyCode PKR = new CurrencyCode() { Value = "PKR" };
+    public static CurrencyCode PKR => new() { Value = "PKR" };
 
     /// <summary>
     /// Zloty
     /// </summary>
-    public static readonly CurrencyCode PLN = new CurrencyCode() { Value = "PLN" };
+    public static CurrencyCode PLN => new() { Value = "PLN" };
 
     /// <summary>
     /// Guarani
     /// </summary>
-    public static readonly CurrencyCode PYG = new CurrencyCode() { Value = "PYG" };
+    public static CurrencyCode PYG => new() { Value = "PYG" };
 
     /// <summary>
     /// Qatari Rial
     /// </summary>
-    public static readonly CurrencyCode QAR = new CurrencyCode() { Value = "QAR" };
+    public static CurrencyCode QAR => new() { Value = "QAR" };
 
     /// <summary>
     /// Romanian Leu
     /// </summary>
-    public static readonly CurrencyCode RON = new CurrencyCode() { Value = "RON" };
+    public static CurrencyCode RON => new() { Value = "RON" };
 
     /// <summary>
     /// Serbian Dinar
     /// </summary>
-    public static readonly CurrencyCode RSD = new CurrencyCode() { Value = "RSD" };
+    public static CurrencyCode RSD => new() { Value = "RSD" };
 
     /// <summary>
     /// Russian Ruble
     /// </summary>
-    public static readonly CurrencyCode RUB = new CurrencyCode() { Value = "RUB" };
+    public static CurrencyCode RUB => new() { Value = "RUB" };
 
     /// <summary>
     /// Rwanda Franc
     /// </summary>
-    public static readonly CurrencyCode RWF = new CurrencyCode() { Value = "RWF" };
+    public static CurrencyCode RWF => new() { Value = "RWF" };
 
     /// <summary>
     /// Saudi Riyal
     /// </summary>
-    public static readonly CurrencyCode SAR = new CurrencyCode() { Value = "SAR" };
+    public static CurrencyCode SAR => new() { Value = "SAR" };
 
     /// <summary>
     /// Solomon Islands Dollar
     /// </summary>
-    public static readonly CurrencyCode SBD = new CurrencyCode() { Value = "SBD" };
+    public static CurrencyCode SBD => new() { Value = "SBD" };
 
     /// <summary>
     /// Seychelles Rupee
     /// </summary>
-    public static readonly CurrencyCode SCR = new CurrencyCode() { Value = "SCR" };
+    public static CurrencyCode SCR => new() { Value = "SCR" };
 
     /// <summary>
     /// Sudanese Pound
     /// </summary>
-    public static readonly CurrencyCode SDG = new CurrencyCode() { Value = "SDG" };
+    public static CurrencyCode SDG => new() { Value = "SDG" };
 
     /// <summary>
     /// Swedish Krona
     /// </summary>
-    public static readonly CurrencyCode SEK = new CurrencyCode() { Value = "SEK" };
+    public static CurrencyCode SEK => new() { Value = "SEK" };
 
     /// <summary>
     /// Singapore Dollar
     /// </summary>
-    public static readonly CurrencyCode SGD = new CurrencyCode() { Value = "SGD" };
+    public static CurrencyCode SGD => new() { Value = "SGD" };
 
     /// <summary>
     /// Saint Helena Pound
     /// </summary>
-    public static readonly CurrencyCode SHP = new CurrencyCode() { Value = "SHP" };
+    public static CurrencyCode SHP => new() { Value = "SHP" };
 
     /// <summary>
     /// Leone
     /// </summary>
-    public static readonly CurrencyCode SLL = new CurrencyCode() { Value = "SLL" };
+    public static CurrencyCode SLL => new() { Value = "SLL" };
 
     /// <summary>
     /// Somali Shilling
     /// </summary>
-    public static readonly CurrencyCode SOS = new CurrencyCode() { Value = "SOS" };
+    public static CurrencyCode SOS => new() { Value = "SOS" };
 
     /// <summary>
     /// Surinam Dollar
     /// </summary>
-    public static readonly CurrencyCode SRD = new CurrencyCode() { Value = "SRD" };
+    public static CurrencyCode SRD => new() { Value = "SRD" };
 
     /// <summary>
     /// South Sudanese Pound
     /// </summary>
-    public static readonly CurrencyCode SSP = new CurrencyCode() { Value = "SSP" };
+    public static CurrencyCode SSP => new() { Value = "SSP" };
 
     /// <summary>
     /// Dobra
     /// </summary>
-    public static readonly CurrencyCode STN = new CurrencyCode() { Value = "STN" };
+    public static CurrencyCode STN => new() { Value = "STN" };
 
     /// <summary>
     /// El Salvador Colon
     /// </summary>
-    public static readonly CurrencyCode SVC = new CurrencyCode() { Value = "SVC" };
+    public static CurrencyCode SVC => new() { Value = "SVC" };
 
     /// <summary>
     /// Syrian Pound
     /// </summary>
-    public static readonly CurrencyCode SYP = new CurrencyCode() { Value = "SYP" };
+    public static CurrencyCode SYP => new() { Value = "SYP" };
 
     /// <summary>
     /// Lilangeni
     /// </summary>
-    public static readonly CurrencyCode SZL = new CurrencyCode() { Value = "SZL" };
+    public static CurrencyCode SZL => new() { Value = "SZL" };
 
     /// <summary>
     /// Baht
     /// </summary>
-    public static readonly CurrencyCode THB = new CurrencyCode() { Value = "THB" };
+    public static CurrencyCode THB => new() { Value = "THB" };
 
     /// <summary>
     /// Somoni
     /// </summary>
-    public static readonly CurrencyCode TJS = new CurrencyCode() { Value = "TJS" };
+    public static CurrencyCode TJS => new() { Value = "TJS" };
 
     /// <summary>
     /// Turkmenistan New Manat
     /// </summary>
-    public static readonly CurrencyCode TMT = new CurrencyCode() { Value = "TMT" };
+    public static CurrencyCode TMT => new() { Value = "TMT" };
 
     /// <summary>
     /// Tunisian Dinar
     /// </summary>
-    public static readonly CurrencyCode TND = new CurrencyCode() { Value = "TND" };
+    public static CurrencyCode TND => new() { Value = "TND" };
 
     /// <summary>
     /// Pa’anga
     /// </summary>
-    public static readonly CurrencyCode TOP = new CurrencyCode() { Value = "TOP" };
+    public static CurrencyCode TOP => new() { Value = "TOP" };
 
     /// <summary>
     /// Turkish Lira
     /// </summary>
-    public static readonly CurrencyCode TRY = new CurrencyCode() { Value = "TRY" };
+    public static CurrencyCode TRY => new() { Value = "TRY" };
 
     /// <summary>
     /// Trinidad and Tobago Dollar
     /// </summary>
-    public static readonly CurrencyCode TTD = new CurrencyCode() { Value = "TTD" };
+    public static CurrencyCode TTD => new() { Value = "TTD" };
 
     /// <summary>
     /// New Taiwan Dollar
     /// </summary>
-    public static readonly CurrencyCode TWD = new CurrencyCode() { Value = "TWD" };
+    public static CurrencyCode TWD => new() { Value = "TWD" };
 
     /// <summary>
     /// Tanzanian Shilling
     /// </summary>
-    public static readonly CurrencyCode TZS = new CurrencyCode() { Value = "TZS" };
+    public static CurrencyCode TZS => new() { Value = "TZS" };
 
     /// <summary>
     /// Hryvnia
     /// </summary>
-    public static readonly CurrencyCode UAH = new CurrencyCode() { Value = "UAH" };
+    public static CurrencyCode UAH => new() { Value = "UAH" };
 
     /// <summary>
     /// Uganda Shilling
     /// </summary>
-    public static readonly CurrencyCode UGX = new CurrencyCode() { Value = "UGX" };
+    public static CurrencyCode UGX => new() { Value = "UGX" };
 
     /// <summary>
     /// US Dollar
     /// </summary>
-    public static readonly CurrencyCode USD = new CurrencyCode() { Value = "USD" };
+    public static CurrencyCode USD => new() { Value = "USD" };
 
     /// <summary>
     /// US Dollar (Next day)
     /// </summary>
-    public static readonly CurrencyCode USN = new CurrencyCode() { Value = "USN" };
+    public static CurrencyCode USN => new() { Value = "USN" };
 
     /// <summary>
     /// Uruguay Peso en Unidades Indexadas (UI)
     /// </summary>
-    public static readonly CurrencyCode UYI = new CurrencyCode() { Value = "UYI" };
+    public static CurrencyCode UYI => new() { Value = "UYI" };
 
     /// <summary>
     /// Peso Uruguayo
     /// </summary>
-    public static readonly CurrencyCode UYU = new CurrencyCode() { Value = "UYU" };
+    public static CurrencyCode UYU => new() { Value = "UYU" };
 
     /// <summary>
     /// Unidad Previsional
     /// </summary>
-    public static readonly CurrencyCode UYW = new CurrencyCode() { Value = "UYW" };
+    public static CurrencyCode UYW => new() { Value = "UYW" };
 
     /// <summary>
     /// Uzbekistan Sum
     /// </summary>
-    public static readonly CurrencyCode UZS = new CurrencyCode() { Value = "UZS" };
+    public static CurrencyCode UZS => new() { Value = "UZS" };
 
     /// <summary>
     /// Bolívar Soberano
     /// </summary>
-    public static readonly CurrencyCode VES = new CurrencyCode() { Value = "VES" };
+    public static CurrencyCode VES => new() { Value = "VES" };
 
     /// <summary>
     /// Dong
     /// </summary>
-    public static readonly CurrencyCode VND = new CurrencyCode() { Value = "VND" };
+    public static CurrencyCode VND => new() { Value = "VND" };
 
     /// <summary>
     /// Vatu
     /// </summary>
-    public static readonly CurrencyCode VUV = new CurrencyCode() { Value = "VUV" };
+    public static CurrencyCode VUV => new() { Value = "VUV" };
 
     /// <summary>
     /// Tala
     /// </summary>
-    public static readonly CurrencyCode WST = new CurrencyCode() { Value = "WST" };
+    public static CurrencyCode WST => new() { Value = "WST" };
 
     /// <summary>
     /// CFA Franc BEAC
     /// </summary>
-    public static readonly CurrencyCode XAF = new CurrencyCode() { Value = "XAF" };
+    public static CurrencyCode XAF => new() { Value = "XAF" };
 
     /// <summary>
     /// Silver
     /// </summary>
-    public static readonly CurrencyCode XAG = new CurrencyCode() { Value = "XAG" };
+    public static CurrencyCode XAG => new() { Value = "XAG" };
 
     /// <summary>
     /// Gold
     /// </summary>
-    public static readonly CurrencyCode XAU = new CurrencyCode() { Value = "XAU" };
+    public static CurrencyCode XAU => new() { Value = "XAU" };
 
     /// <summary>
     /// Bond Markets Unit European Composite Unit (EURCO)
     /// </summary>
-    public static readonly CurrencyCode XBA = new CurrencyCode() { Value = "XBA" };
+    public static CurrencyCode XBA => new() { Value = "XBA" };
 
     /// <summary>
     /// Bond Markets Unit European Monetary Unit (E.M.U.-6)
     /// </summary>
-    public static readonly CurrencyCode XBB = new CurrencyCode() { Value = "XBB" };
+    public static CurrencyCode XBB => new() { Value = "XBB" };
 
     /// <summary>
     /// Bond Markets Unit European Unit of Account 9 (E.U.A.-9)
     /// </summary>
-    public static readonly CurrencyCode XBC = new CurrencyCode() { Value = "XBC" };
+    public static CurrencyCode XBC => new() { Value = "XBC" };
 
     /// <summary>
     /// Bond Markets Unit European Unit of Account 17 (E.U.A.-17)
     /// </summary>
-    public static readonly CurrencyCode XBD = new CurrencyCode() { Value = "XBD" };
+    public static CurrencyCode XBD => new() { Value = "XBD" };
 
     /// <summary>
     /// East Caribbean Dollar
     /// </summary>
-    public static readonly CurrencyCode XCD = new CurrencyCode() { Value = "XCD" };
+    public static CurrencyCode XCD => new() { Value = "XCD" };
 
     /// <summary>
     /// SDR (Special Drawing Right)
     /// </summary>
-    public static readonly CurrencyCode XDR = new CurrencyCode() { Value = "XDR" };
+    public static CurrencyCode XDR => new() { Value = "XDR" };
 
     /// <summary>
     /// CFA Franc BCEAO
     /// </summary>
-    public static readonly CurrencyCode XOF = new CurrencyCode() { Value = "XOF" };
+    public static CurrencyCode XOF => new() { Value = "XOF" };
 
     /// <summary>
     /// Palladium
     /// </summary>
-    public static readonly CurrencyCode XPD = new CurrencyCode() { Value = "XPD" };
+    public static CurrencyCode XPD => new() { Value = "XPD" };
 
     /// <summary>
     /// CFP Franc
     /// </summary>
-    public static readonly CurrencyCode XPF = new CurrencyCode() { Value = "XPF" };
+    public static CurrencyCode XPF => new() { Value = "XPF" };
 
     /// <summary>
     /// Platinum
     /// </summary>
-    public static readonly CurrencyCode XPT = new CurrencyCode() { Value = "XPT" };
+    public static CurrencyCode XPT => new() { Value = "XPT" };
 
     /// <summary>
     /// Sucre
     /// </summary>
-    public static readonly CurrencyCode XSU = new CurrencyCode() { Value = "XSU" };
+    public static CurrencyCode XSU => new() { Value = "XSU" };
 
     /// <summary>
     /// Codes specifically reserved for testing purposes
     /// </summary>
-    public static readonly CurrencyCode XTS = new CurrencyCode() { Value = "XTS" };
+    public static CurrencyCode XTS => new() { Value = "XTS" };
 
     /// <summary>
     /// ADB Unit of Account
     /// </summary>
-    public static readonly CurrencyCode XUA = new CurrencyCode() { Value = "XUA" };
+    public static CurrencyCode XUA => new() { Value = "XUA" };
 
     /// <summary>
     /// The codes assigned for transactions where no currency is involved
     /// </summary>
-    public static readonly CurrencyCode XXX = new CurrencyCode() { Value = "XXX" };
+    public static CurrencyCode XXX => new() { Value = "XXX" };
 
     /// <summary>
     /// Yemeni Rial
     /// </summary>
-    public static readonly CurrencyCode YER = new CurrencyCode() { Value = "YER" };
+    public static CurrencyCode YER => new() { Value = "YER" };
 
     /// <summary>
     /// Rand
     /// </summary>
-    public static readonly CurrencyCode ZAR = new CurrencyCode() { Value = "ZAR" };
+    public static CurrencyCode ZAR => new() { Value = "ZAR" };
 
     /// <summary>
     /// Zambian Kwacha
     /// </summary>
-    public static readonly CurrencyCode ZMW = new CurrencyCode() { Value = "ZMW" };
+    public static CurrencyCode ZMW => new() { Value = "ZMW" };
 
     /// <summary>
     /// Zimbabwe Dollar
     /// </summary>
-    public static readonly CurrencyCode ZWL = new CurrencyCode() { Value = "ZWL" };
+    public static CurrencyCode ZWL => new() { Value = "ZWL" };
 }

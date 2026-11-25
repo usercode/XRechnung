@@ -3,7 +3,7 @@ using System.Xml.Linq;
 
 namespace XRechnung.UBL;
 
-public static partial class InvoiceWriter
+public static class InvoiceWriter
 {
     private static XElement? SurroundWithCAC(this XElement? element, string name)
     {
@@ -60,7 +60,7 @@ public static partial class InvoiceWriter
     private static XElement ToCBC(this UnitPriceAmount amount, string name)
     {
         return XElement.CBC(name,
-           amount.CurrencyID.Value.ToAttribute("currencyID"),
+           amount.CurrencyCode.Value.ToAttribute("currencyID"),
             amount.Value.ToString(CultureInfo.InvariantCulture));
     }
 
