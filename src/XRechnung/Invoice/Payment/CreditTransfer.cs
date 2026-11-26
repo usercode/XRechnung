@@ -25,7 +25,7 @@ public class CreditTransfer
     /// <br /><br />
     /// - außerhalb des SEPA-Raumes wird der Bank Identifier Code (BIC) benötigt. Dies wird durch Code 30 (Credit transfer(non-SEPA) in "Payment means type code" (BT-81) gekennzeichnet.
     /// <br /><br />
-    /// - innerhalb des SEPA-Raumes wird der Bank Identifier Code (BIC) nicht benötigt. Es reicht die Angabe der IBAN.Dies wird durch Code 58 „SCT“ in "Payment means type code" (BT-81) gekennzeichnet.Ausgenommen sind Zahlungen an Bankverbindungen z.B. in San Marino, Monaco, Schweiz, Saint Pierre und Miquelon: Hier ist die Angabe des BIC zwingend erforderlich.
+    /// - innerhalb des SEPA-Raumes wird der Bank Identifier Code (BIC) nicht benötigt. Es reicht die Angabe der IBAN.Dies wird durch Code 58 „SCT“ in "Payment means type code" (BT-81) gekennzeichnet. Ausgenommen sind Zahlungen an Bankverbindungen z.B. in San Marino, Monaco, Schweiz, Saint Pierre und Miquelon: Hier ist die Angabe des BIC zwingend erforderlich.
     /// </remarks>
     [Field("BT-86")]
     public Identifier? ServiceProviderIdentifier { get; set; }

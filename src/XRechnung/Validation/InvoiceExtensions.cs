@@ -38,7 +38,7 @@ public static partial class InvoiceExtensions
 
             if (failedRules.Any())
             {
-                throw new Exception();
+                throw new Exception($"Failed validation rules: {failedRules.Count}");
             }
         }
     }

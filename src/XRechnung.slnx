@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="XRechnung.Tests/XRechnung.Tests.csproj" Id="5c1ee390-1f01-48ce-8d48-a7f4e815913c" />
   <Project Path="XRechnung/XRechnung.csproj" />
 </Solution>

@@ -3,7 +3,7 @@
 /// <summary>
 /// Invoice
 /// </summary>
-public class Invoice
+public partial class Invoice
 {
     /// <summary>
     /// Eine eindeutige Kennung der Rechnung, die diese im System des Verkäufers identifiziert.
