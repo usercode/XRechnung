@@ -3,7 +3,7 @@
 /// <summary>
 /// Eine Gruppe von Informationselementen, die Informationen über den Erwerber enthalten.
 /// </summary>
-public record class Buyer
+public class Buyer
 {
     /// <summary>
     /// Der vollständige Name des Erwerbers.

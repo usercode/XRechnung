@@ -1,6 +1,4 @@
-﻿using System.Net;
-
-namespace XRechnung;
+﻿namespace XRechnung;
 
 /// <summary>
 /// Eine Gruppe von Informationselementen, die Informationen über die Anschrift des Erwerbers enthalten.
@@ -8,7 +6,7 @@ namespace XRechnung;
 /// <remarks>
 /// Es ist eine gültige vollständige Anschrift anzugeben.
 /// </remarks>
-public record class BuyerPostalAddress
+public class BuyerPostalAddress : IPostalAddress
 {
     /// <summary>
     /// Die Hauptzeile einer Anschrift. Üblicherweise ist dies entweder Strasse und Hausnummer oder der Text „Postfach“ gefolgt von der Postfachnummer.

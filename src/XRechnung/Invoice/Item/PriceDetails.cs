@@ -3,7 +3,7 @@
 /// <summary>
 /// Eine Gruppe von Informationselementen, die Informationen über den Preis für die in der betreffenden Rechnungsposition in Rechnung gestellten Waren und Dienstleistungen enthalten.
 /// </summary>
-public record class PriceDetails
+public class PriceDetails
 {
     /// <summary>
     /// Der Preis eines Postens, ohne Umsatzsteuer, nach Abzug des für diese Rechnungsposition geltenden Rabatts.

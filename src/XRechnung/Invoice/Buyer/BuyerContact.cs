@@ -7,7 +7,7 @@
 /// Kontaktinformationen sollen nicht zum Zweck der Weiterleitung der empfangenen Rechnung 
 /// durch die rechnungsempfangende Stelle verwendet werden; für diesen Zweck soll die "Buyer reference" (BT-10) verwendet werden.
 /// </remarks>
-public record class BuyerContact
+public class BuyerContact
 {
     /// <summary>
     /// Ansprechpartner oder Kontaktstelle beim Erwerber (wie z. B. Name einer Person, Abteilungs- oder Bürobezeichnung).

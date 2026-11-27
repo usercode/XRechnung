@@ -3,7 +3,7 @@
 /// <summary>
 /// Eine Gruppe von Informationselementen, die Informationen über die Anschrift enthalten, an die die Waren geliefert oder an der die Dienstleistungen erbracht werden.Die Gruppe ist nur zu verwenden, wenn die Lieferanschrift von der Erwerberanschrift abweicht.Wenn die Waren abgeholt werden, ist die Abholadresse die Lieferadresse.Eine vollständige gültige Anschrift ist anzugeben.
 /// </summary>
-public record class DeliveryAddress
+public class DeliveryAddress
 {
     /// <summary>
     /// Die Hauptzeile einer Anschrift. Üblicherweise ist dies entweder Strasse und Hausnummer oder der Text „Postfach“ gefolgt von der Postfachnummer.

@@ -3,7 +3,7 @@
 /// <summary>
 /// Eine Gruppe von Informationselementen, die Kontaktinformationen des Verkäufers enthalten.
 /// </summary>
-public record class SellerContact
+public class SellerContact
 {
     /// <summary>
     /// Angaben zu Ansprechpartner oder Kontaktstelle (wie z. B. Name einer Person, Abteilungs- oder Bürobezeichnung).

@@ -6,7 +6,7 @@
 /// <remarks>
 /// Das Informationselement ist zu verwenden, wenn eine vorangegangene Rechnung korrigiert wird, eine Abschlussrechnung auf vorangegangene Teilrechnungen Bezug nimmt oder eine Abschlussrechnung auf vorangegangene Vorauszahlungsrechnungen Bezug nimmt.
 /// </remarks>
-public record class PrecedingInvoiceReference
+public class PrecedingInvoiceReference
 {
     /// <summary>
     /// Die Kennung der vorausgegangenen Rechnung, auf die Bezug genommen wird.

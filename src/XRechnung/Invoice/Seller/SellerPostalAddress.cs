@@ -3,7 +3,7 @@
 /// <summary>
 /// Eine Gruppe von Informationselementen, die Informationen über die Verkäuferanschrift enthalten.
 /// </summary>
-public record class SellerPostalAddress
+public class SellerPostalAddress : IPostalAddress
 {
     /// <summary>
     /// Die Hauptzeile einer Anschrift. Üblicherweise ist dies entweder Strasse und Hausnummer oder der Text „Postfach“ gefolgt von der Postfachnummer.

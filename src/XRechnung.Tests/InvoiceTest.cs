@@ -1,4 +1,6 @@
-﻿using Xunit;
+﻿using System.Xml.Linq;
+using XRechnung.UBL;
+using Xunit;
 
 namespace XRechnung.Tests;
 
@@ -7,7 +9,36 @@ public class InvoiceTest
     [Fact]
     public void Create()
     {
-        Invoice invoice = Invoice.Create(
+        Invoice invoice = CreateInvoice();
+
+        invoice.Validate();
+
+        Assert.Equal(100, invoice.DocumentTotals.SumOfInvoiceLineNetAmount.Value);
+        Assert.Equal(30, invoice.DocumentTotals.SumOfAllowancesOnDocumentLevel.Value);
+        Assert.Equal(60, invoice.DocumentTotals.SumOfChargesOnDocumentLevel.Value);
+        Assert.Equal(130, invoice.DocumentTotals.InvoiceTotalAmountWithoutVAT.Value);
+        Assert.Equal(154.7m, invoice.DocumentTotals.InvoiceTotalAmountWithVAT.Value);
+        Assert.Equal(10, invoice.DocumentTotals.PaidAmount.Value);
+        Assert.Equal(144.7m, invoice.DocumentTotals.AmountDueForPayment.Value);
+
+
+    }
+    
+    [Fact]
+    public void ReadAndWrite()
+    {
+        Invoice invoice = CreateInvoice();
+
+        XDocument document = invoice.ToUblDocument();
+
+        Invoice invoice2 = document.ToInvoice();
+
+        Assert.Equivalent(invoice, invoice2);
+    }
+
+    private Invoice CreateInvoice()
+    {
+        return Invoice.Create(
             "123456",
             new DateOnly(2026, 01, 30),
             InvoiceTypeCode.CommercialInvoice,
@@ -90,17 +121,5 @@ public class InvoiceTest
                 new DocumentLevelCharges() { Amount = Amount.EUR(20), VATCategoryCode = TaxCategoryCode.StandardRate, VATRate = 19, Reason = "Zuschlag 1" },
                 new DocumentLevelCharges() { Amount = Amount.EUR(40), VATCategoryCode = TaxCategoryCode.StandardRate, VATRate = 19, Reason = "Zuschlag 2" }
             ]);
-
-        invoice.Validate();
-
-        Assert.Equal(100, invoice.DocumentTotals.SumOfInvoiceLineNetAmount.Value);
-        Assert.Equal(30, invoice.DocumentTotals.SumOfAllowancesOnDocumentLevel.Value);
-        Assert.Equal(60, invoice.DocumentTotals.SumOfChargesOnDocumentLevel.Value);
-        Assert.Equal(130, invoice.DocumentTotals.InvoiceTotalAmountWithoutVAT.Value);
-        Assert.Equal(154.7m, invoice.DocumentTotals.InvoiceTotalAmountWithVAT.Value);
-        Assert.Equal(10, invoice.DocumentTotals.PaidAmount.Value);
-        Assert.Equal(144.7m, invoice.DocumentTotals.AmountDueForPayment.Value);
-
-
     }
 }

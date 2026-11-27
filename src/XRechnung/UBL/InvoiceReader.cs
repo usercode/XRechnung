@@ -379,6 +379,7 @@ public static class InvoiceReader
         {
             Identifier = element.CBC("ID")?.ReadIdentifier()!,
             Note = element.CBC("Note")?.ReadText(),
+            InvoicedObjectIdentifier = element.CAC("DocumentReference")?.CBC("ID")?.ReadIdentifier(),
             Quantity = element.CBC("InvoicedQuantity")?.ReadQuantity()!,
             NetAmount = element.CBC("LineExtensionAmount")?.ReadAmount()!,
             PriceDetails = new PriceDetails
@@ -467,7 +468,7 @@ public static class InvoiceReader
         };
     }
 
-    public static Invoice FromUblDocument(this XDocument document)
+    public static Invoice ToInvoice(this XDocument document)
     {
         XElement? root = document.Root ?? throw new FormatException("The UBL document has no root element.");
 
